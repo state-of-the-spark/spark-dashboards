@@ -1,16 +1,5 @@
 [
   {
-    "slug": "superior-spray-cfl",
-    "name": "Superior Spray Service",
-    "initials": "SS",
-    "accentColor": "#22C55E",
-    "adAccountId": "act_751457483444702",
-    "pageId": null,
-    "partnerSince": "2024-05-01",
-    "services": ["facebook-ads"],
-    "active": true
-  },
-  {
     "slug": "humarian",
     "name": "Humarian (Probonix)",
     "initials": "H",
@@ -19,17 +8,6 @@
     "pageId": null,
     "partnerSince": "2021-06-01",
     "services": ["facebook-ads"],
-    "active": true
-  },
-  {
-    "slug": "golden-goose-demo",
-    "name": "The Golden Goose",
-    "initials": "GG",
-    "accentColor": "#D4A843",
-    "adAccountId": null,
-    "pageId": null,
-    "partnerSince": "2025-12-01",
-    "services": ["facebook-ads", "organic"],
     "active": true
   }
 ]
