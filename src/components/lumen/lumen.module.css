@@ -2,8 +2,10 @@
  * Lumen Marketing Engine dashboard (src/app/c/[token]).
  * Scoped entirely to this module — never touches globals.css or the
  * ads dashboard at src/app/client/[slug]. Colors are set as CSS custom
- * properties on .page so the whole tree can reference them, with a
- * prefers-color-scheme override for dark mode.
+ * properties on .page so the whole tree can reference them. This page
+ * always renders the light Spark palette by design — no
+ * prefers-color-scheme override, regardless of the viewer's OS/browser
+ * theme (per Grant, 2026-07-24).
  */
 
 .page {
@@ -34,25 +36,6 @@
     "Segoe UI", Roboto, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-}
-
-@media (prefers-color-scheme: dark) {
-  .page {
-    --bg: #14151c;
-    --surface: #1b1c26;
-    --surface-2: #21222e;
-    --ink: #f2f1ef;
-    --ink-soft: #9ca3af;
-    --ink-faint: #6b7280;
-    --hair: #2c2e3a;
-    --good: #4ade80;
-    --good-bg: #14532d;
-    --watch: #fbbf24;
-    --watch-bg: #78350f;
-    --bad: #f87171;
-    --bad-bg: #7f1d1d;
-    --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 34px rgba(0, 0, 0, 0.45);
-  }
 }
 
 .num {
