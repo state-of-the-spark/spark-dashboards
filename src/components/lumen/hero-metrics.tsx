@@ -1,8 +1,9 @@
 import type { LumenHeroMetric } from "@/lib/types";
 import styles from "./lumen.module.css";
 
-function toneClass(tone: "good" | "watch" | undefined) {
+function toneClass(tone: "good" | "watch" | "bad" | undefined) {
   if (tone === "watch") return styles.toneWatch;
+  if (tone === "bad") return styles.toneBad;
   return styles.toneGood;
 }
 

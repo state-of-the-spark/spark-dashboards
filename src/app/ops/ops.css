@@ -18,7 +18,7 @@
   min-height: 100vh;
   background: var(--ops-bg);
   color: var(--ops-text);
-  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
   padding: 1.5rem;
   /* Override body background from globals */
   background-image: none !important;

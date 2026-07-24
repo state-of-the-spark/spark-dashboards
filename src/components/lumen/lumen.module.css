@@ -7,46 +7,50 @@
  */
 
 .page {
-  --bg: #fbfaf6;
+  /* Spark Sites brand tokens — coral-to-pink gradient is the sole accent;
+     good/watch/bad stay semantic and distinct from the brand gradient. */
+  --bg: #ffffff;
   --surface: #ffffff;
-  --surface-2: #f5f1e8;
-  --ink: #1b1813;
-  --ink-soft: #5d584d;
-  --ink-faint: #8b8474;
-  --hair: #e7e1d4;
-  --gold: #b07a1e;
-  --glow: #e9a34a;
-  --good: #167a52;
-  --good-bg: #e4f1e9;
-  --watch: #b3760f;
-  --watch-bg: #faf1de;
+  --surface-2: #f4f3f0;
+  --ink: #1c1c1c;
+  --ink-soft: #6b7280;
+  --ink-faint: #9ca3af;
+  --hair: #e8e5df;
+  --brand-1: #ff6b47;
+  --brand-2: #e91e8c;
+  --brand-gradient: linear-gradient(135deg, var(--brand-1), var(--brand-2));
+  --good: #15803d;
+  --good-bg: #dcfce7;
+  --watch: #a16207;
+  --watch-bg: #fef3c7;
+  --bad: #b91c1c;
+  --bad-bg: #fee2e2;
   --shadow: 0 1px 2px rgba(27, 24, 19, 0.05), 0 8px 28px rgba(27, 24, 19, 0.07);
 
   background: var(--bg);
   color: var(--ink);
   min-height: 100vh;
-  font-family:
-    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif;
+  font-family: var(--font-body), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
 
 @media (prefers-color-scheme: dark) {
   .page {
-    --bg: #15120c;
-    --surface: #1f1b13;
-    --surface-2: #26210f;
-    --ink: #f5efe1;
-    --ink-soft: #b2aa97;
-    --ink-faint: #7e7663;
-    --hair: #332c1f;
-    --gold: #e9a34a;
-    --glow: #f2b968;
-    --good: #47c48d;
-    --good-bg: #16281f;
-    --watch: #f2b968;
-    --watch-bg: #2c2312;
+    --bg: #14151c;
+    --surface: #1b1c26;
+    --surface-2: #21222e;
+    --ink: #f2f1ef;
+    --ink-soft: #9ca3af;
+    --ink-faint: #6b7280;
+    --hair: #2c2e3a;
+    --good: #4ade80;
+    --good-bg: #14532d;
+    --watch: #fbbf24;
+    --watch-bg: #78350f;
+    --bad: #f87171;
+    --bad-bg: #7f1d1d;
     --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 12px 34px rgba(0, 0, 0, 0.45);
   }
 }
@@ -91,8 +95,9 @@
 }
 
 .who {
+  font-family: var(--font-display), Georgia, serif;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 20px;
   letter-spacing: -0.01em;
 }
 
@@ -184,6 +189,11 @@
   background: var(--watch-bg);
 }
 
+.toneBad {
+  color: var(--bad);
+  background: var(--bad-bg);
+}
+
 .heroNote {
   font-size: 12.5px;
   color: var(--ink-soft);
@@ -211,7 +221,7 @@
 .pendingLabel {
   font-weight: 700;
   font-size: 15px;
-  color: var(--gold);
+  color: var(--brand-2);
   margin-top: 8px;
 }
 
@@ -229,8 +239,8 @@
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--gold);
-  border: 1px solid color-mix(in srgb, var(--gold) 45%, transparent);
+  color: var(--brand-2);
+  border: 1px solid color-mix(in srgb, var(--brand-2) 45%, transparent);
   border-radius: 999px;
   padding: 4px 11px;
   width: fit-content;
@@ -313,9 +323,9 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: var(--gold);
+  background: var(--brand-gradient);
   flex: none;
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--gold) 18%, transparent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--brand-2) 18%, transparent);
 }
 
 .pillarScore {
@@ -343,7 +353,7 @@
 }
 
 .barWatch {
-  background: var(--glow);
+  background: var(--watch);
 }
 
 .pillarNote {
@@ -396,7 +406,7 @@
 }
 
 .reviewSelf {
-  background: color-mix(in srgb, var(--gold) 8%, transparent);
+  background: color-mix(in srgb, var(--brand-1) 8%, transparent);
   margin: 0 -10px;
   padding: 10px;
   border-radius: 8px;
@@ -411,7 +421,7 @@
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--gold);
+  color: var(--brand-2);
   font-weight: 700;
   margin-left: 7px;
 }
@@ -430,8 +440,8 @@
 
 /* ---- this week's move ---- */
 .moveBlock {
-  border: 1px solid color-mix(in srgb, var(--gold) 40%, var(--hair));
-  background: color-mix(in srgb, var(--gold) 7%, var(--surface));
+  border: 1px solid color-mix(in srgb, var(--brand-2) 35%, var(--hair));
+  background: color-mix(in srgb, var(--brand-1) 6%, var(--surface));
   border-radius: 14px;
   padding: 20px 22px;
   margin: 22px;
@@ -442,12 +452,16 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-weight: 800;
-  color: var(--gold);
   margin-bottom: 8px;
+  background: var(--brand-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .moveTitle {
-  font-size: 16px;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 17px;
   font-weight: 700;
   margin: 0 0 8px;
 }
@@ -461,19 +475,13 @@
 
 .ctaPill {
   display: inline-block;
-  background: var(--gold);
+  background: var(--brand-gradient);
   color: #fff;
   font-weight: 700;
   font-size: 14px;
   padding: 11px 18px;
   border-radius: 10px;
-  box-shadow: 0 6px 16px -8px var(--gold);
-}
-
-@media (prefers-color-scheme: dark) {
-  .ctaPill {
-    color: #201703;
-  }
+  box-shadow: 0 6px 16px -8px var(--brand-2);
 }
 
 /* ---- what lumen did ---- */
@@ -553,8 +561,8 @@
 
 .iconProgress {
   background: transparent;
-  border: 2px solid var(--glow);
-  color: var(--glow);
+  border: 2px solid var(--brand-2);
+  color: var(--brand-2);
 }
 
 .iconNext {
@@ -590,8 +598,8 @@
 }
 
 .stateProgress {
-  color: var(--gold);
-  background: color-mix(in srgb, var(--gold) 13%, transparent);
+  color: var(--brand-2);
+  background: color-mix(in srgb, var(--brand-2) 13%, transparent);
 }
 
 .stateNext {

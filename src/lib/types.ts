@@ -60,7 +60,7 @@ export interface LumenBusiness {
   serviceArea?: boolean;
 }
 
-export type LumenTone = "good" | "watch";
+export type LumenTone = "good" | "watch" | "bad";
 
 export interface LumenDelta {
   text: string;

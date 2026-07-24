@@ -35,11 +35,12 @@
     },
     {
       "key": "calls",
-      "label": "Calls + form fills · 30d",
-      "value": null,
-      "state": "pending",
-      "pendingLabel": "Connect Google Analytics",
-      "pendingSub": "Your #1 setup step — unlocks proof of leads"
+      "label": "Calls · 30d",
+      "value": "38",
+      "sub": "web tap-to-call",
+      "state": "live",
+      "delta": { "text": "-42% vs prior 30 days", "tone": "bad" },
+      "note": "Genuine tap-to-call events (down from 66) — momentum is slipping. Form-fills aren't counted yet; your site isn't sending that event."
     }
   ],
   "pillars": [
@@ -83,14 +84,15 @@
   },
   "lumenDid": [
     "Ran your first full marketing audit — Google Business Profile, website, and search visibility",
+    "Connected Google Analytics — your web calls are now tracked (38 in the last 30 days)",
     "Set up your live scorecard at this private link",
     "Found 3 service pages (mosquito, lawn care, termite) that aren't ranking yet — queued for on-page work"
   ],
   "ledger": [
-    { "title": "Rebuild review velocity — text recent customers", "state": "next", "detail": "Only 1 new review in 30 days. Fastest, cheapest lever you have." },
+    { "title": "Rebuild review velocity — text recent customers", "state": "next", "detail": "Only 1 new review in 30 days, and your calls are down 42%. Fastest, cheapest lever you have." },
     { "title": "Resume Google Posts", "state": "next", "detail": "Quiet since June 8 — posting cadence feeds your local map rank." },
-    { "title": "Connect Google Analytics", "state": "next", "detail": "Unlocks your calls + form-fills number so we can prove leads, not just rankings." },
+    { "title": "Add form-fill tracking to your site", "state": "next", "detail": "Your site isn't sending a form-submission event, so quote requests can't be counted yet. Quick fix, real visibility win." },
     { "title": "Target 3 missing money terms", "state": "next", "detail": "Mosquito, lawn care, termite \"Lakeland\" — you have the pages; they need on-page work to rank." }
   ],
-  "dataNotes": "All values pulled 2026-07-23. Reviews/GBP via Google Maps scrape; rank via SEMrush organic; site audit via live fetch. Calls/form-fills pending GA4 connection. Pillar scores are Lumen's weighted assessment (GBP + on-site conversion weighted highest). No historical series yet — trends begin from this baseline."
+  "dataNotes": "All values pulled 2026-07-23/24. Reviews/GBP via Google Maps scrape; rank via SEMrush organic; site audit via live fetch; calls via GA4 property 299466800 (ClickToCall events). Form-fills not yet tracked on the site. Pillar scores are Lumen's weighted assessment (GBP + on-site conversion weighted highest). No historical series yet — trends begin from this baseline."
 }

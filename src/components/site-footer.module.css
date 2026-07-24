@@ -1,0 +1,108 @@
+/*
+ * Site-wide footer — Spark Sites brand.
+ * Rendered once from the root layout, so it appears on every route
+ * (homepage, /client, /c, /ops). Scoped to this module only.
+ */
+
+.footer {
+  background: #1a1a2e;
+  color: #f2f1ef;
+  padding: 44px 24px 24px;
+  margin-top: auto;
+}
+
+.inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px 48px;
+  justify-content: space-between;
+}
+
+.brandCol {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 320px;
+}
+
+.logoPill {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 8px 18px;
+}
+
+.logo {
+  display: block;
+  width: 150px;
+  height: auto;
+}
+
+.tagline {
+  margin: 0;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+}
+
+.subline {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(242, 241, 239, 0.7);
+  line-height: 1.5;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-size: 14px;
+}
+
+.colHeading {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: rgba(242, 241, 239, 0.55);
+  margin: 0 0 3px;
+}
+
+.link {
+  color: #f2f1ef;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.link:hover,
+.link:focus-visible {
+  background: linear-gradient(135deg, #ff6b47, #e91e8c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.plain {
+  color: rgba(242, 241, 239, 0.85);
+}
+
+.bottom {
+  max-width: 1100px;
+  margin: 32px auto 0;
+  padding-top: 18px;
+  border-top: 1px solid rgba(242, 241, 239, 0.15);
+  font-size: 12px;
+  color: rgba(242, 241, 239, 0.55);
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .inner {
+    flex-direction: column;
+    gap: 26px;
+  }
+}
