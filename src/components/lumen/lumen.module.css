@@ -153,12 +153,30 @@
   min-height: 28px;
 }
 
+.heroValueRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
 .heroBig {
   font-size: 32px;
   font-weight: 800;
   letter-spacing: -0.02em;
   line-height: 1;
   margin-top: 9px;
+}
+
+/* Text verdicts ("Not shown") instead of numbers — smaller and wrap-safe
+   so a longer word never breaks the tile at narrow (tablet) grid widths,
+   the way the 32px numeric size would. */
+.heroBigText {
+  font-size: 24px;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  margin-top: 9px;
+  overflow-wrap: break-word;
 }
 
 .heroSub {

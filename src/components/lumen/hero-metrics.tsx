@@ -7,6 +7,14 @@ function toneClass(tone: "good" | "watch" | "bad" | undefined) {
   return styles.toneGood;
 }
 
+// Numeric-style values ("449", "38", "$1,200", "62%") keep the large
+// tabular-nums treatment. Anything with letters ("Not shown") is a text
+// verdict, not a number — give it its own smaller, wrap-safe style so it
+// never breaks the tile layout at narrow (tablet) grid widths.
+function isNumericValue(value: string | null) {
+  return value !== null && /^[\d.,$%+\-\s]+$/.test(value);
+}
+
 export function HeroMetrics({ metrics }: { metrics: LumenHeroMetric[] }) {
   return (
     <div className={styles.heroRow}>
@@ -24,11 +32,14 @@ export function HeroMetrics({ metrics }: { metrics: LumenHeroMetric[] }) {
           );
         }
 
+        const numeric = isNumericValue(m.value);
         return (
           <div key={m.key} className={styles.heroTile}>
             <div className={styles.heroCap}>{m.label}</div>
-            <div>
-              <span className={`${styles.heroBig} ${styles.num}`}>
+            <div className={styles.heroValueRow}>
+              <span
+                className={`${styles.heroBig} ${numeric ? styles.num : styles.heroBigText}`}
+              >
                 {m.value}
               </span>
               {m.sub && <span className={styles.heroSub}>{m.sub}</span>}

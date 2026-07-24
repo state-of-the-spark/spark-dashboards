@@ -1,18 +1,18 @@
 {
   "token": "ss-90772982",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-07-23",
+  "asOf": "2026-07-24",
   "cadence": "weekly",
   "business": {
     "name": "Superior Spray Service",
-    "category": "Pest control · Lakeland, FL",
+    "category": "Pest control · Central FL (Polk County)",
     "phone": "(863) 682-0700",
     "website": "https://www.superiorspray.com",
     "accentColor": "#22C55E",
     "initials": "SS",
     "serviceArea": true
   },
-  "healthScore": 74,
+  "healthScore": 71,
   "healthNote": "Supporting score — the reasons are the numbers above. Never the headline.",
   "heroMetrics": [
     {
@@ -26,12 +26,12 @@
     },
     {
       "key": "visibility",
-      "label": "Google rank · \"pest control Lakeland\"",
-      "value": "#3",
-      "sub": "880 searches/mo",
+      "label": "Local map pack · Polk County",
+      "value": "Not shown",
+      "sub": "you're #3 organically",
       "state": "live",
-      "delta": { "text": "map 3-pack tracking being added", "tone": "good" },
-      "note": "Strong on the core term. Not yet ranking for mosquito, lawn care, or termite terms."
+      "delta": { "text": "pin sits ~35 mi north", "tone": "bad" },
+      "note": "You don't appear in the Polk County map pack — your Google pin resolves ~35 mi north near Clermont, away from the customers you serve. Your #3 organic rank for \"pest control Lakeland\" is real strength, but the map pack is where most local clicks go."
     },
     {
       "key": "calls",
@@ -59,11 +59,11 @@
       "note": "Phone + click-to-call in the header, a free-estimate form, a clear primary CTA, valid SSL, fast server response. Only gap: full mobile PageSpeed not yet measured."
     },
     {
-      "name": "Local search visibility",
-      "score": 58,
+      "name": "Local map visibility",
+      "score": 48,
       "hero": false,
       "bar": "watch",
-      "note": "#3 for \"pest control Lakeland\" (880/mo) and #6 commercial — but absent for mosquito, lawn care, and termite \"Lakeland\" terms despite having those service pages."
+      "note": "Strong organically (#3 \"pest control Lakeland\") but absent from the Polk County map pack — the GBP pin resolves ~35 mi north near Clermont. Confirming the real office address is the highest-leverage local fix."
     }
   ],
   "hygiene": {
@@ -84,15 +84,16 @@
   },
   "lumenDid": [
     "Ran your first full marketing audit — Google Business Profile, website, and search visibility",
+    "Measured your true local map-pack position (not just organic) — your Google pin sits ~35 mi north of Polk County, likely keeping you out of the local pack where your customers search",
     "Connected Google Analytics — your web calls are now tracked (38 in the last 30 days)",
-    "Set up your live scorecard at this private link",
-    "Found 3 service pages (mosquito, lawn care, termite) that aren't ranking yet — queued for on-page work"
+    "Set up your live scorecard at this private link"
   ],
   "ledger": [
+    { "title": "Confirm your Central FL office address + fix your Google map pin", "state": "next", "detail": "Your GBP pin resolves ~35 mi north of Polk County (near Clermont). If it's mis-set, correcting it is your single biggest local-visibility win. If the office really is up there, we'll plan Polk coverage a different way." },
     { "title": "Rebuild review velocity — text recent customers", "state": "next", "detail": "Only 1 new review in 30 days, and your calls are down 42%. Fastest, cheapest lever you have." },
     { "title": "Resume Google Posts", "state": "next", "detail": "Quiet since June 8 — posting cadence feeds your local map rank." },
     { "title": "Add form-fill tracking to your site", "state": "next", "detail": "Your site isn't sending a form-submission event, so quote requests can't be counted yet. Quick fix, real visibility win." },
     { "title": "Target 3 missing money terms", "state": "next", "detail": "Mosquito, lawn care, termite \"Lakeland\" — you have the pages; they need on-page work to rank." }
   ],
-  "dataNotes": "All values pulled 2026-07-23/24. Reviews/GBP via Google Maps scrape; rank via SEMrush organic; site audit via live fetch; calls via GA4 property 299466800 (ClickToCall events). Form-fills not yet tracked on the site. Pillar scores are Lumen's weighted assessment (GBP + on-site conversion weighted highest). No historical series yet — trends begin from this baseline."
+  "dataNotes": "All values pulled 2026-07-23/24. Reviews/GBP via Google Maps scrape (exposed pin ~28.53,-81.82 = Clermont/Lake County, ~35 mi N of the Polk County market they serve); organic rank via SEMrush; local map-pack via geo-centered Maps check (absent from top-8 for pest/mosquito/termite/lawn Lakeland terms); site audit via live fetch; calls via GA4 property 299466800 (ClickToCall). Form-fills not tracked on the site. True Central FL office street address not on file — needed to confirm whether the pin is mis-set vs. an actual Lake County office. Pillar scores are Lumen's weighted assessment. No historical series yet — trends begin from this baseline."
 }
