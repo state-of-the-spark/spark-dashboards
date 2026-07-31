@@ -25,13 +25,13 @@
       "note": "Rating is best-in-class, but velocity is the problem — only 1 new review this month."
     },
     {
-      "key": "visibility",
-      "label": "Local map pack · Polk County",
-      "value": "Not shown",
-      "sub": "you're #3 organically",
+      "key": "adsReach",
+      "label": "Facebook & Instagram Ads · 30d",
+      "value": "127,913",
+      "sub": "ad impressions",
       "state": "live",
-      "delta": { "text": "Google pin is 35 mi off", "tone": "bad" },
-      "note": "You don't appear in the Polk County map pack — your Google pin resolves ~35 mi north near Clermont, even though your office is at 5611 Commercial Blvd, Winter Haven. Correcting that pin is your biggest local win. Your #3 organic rank for \"pest control Lakeland\" is real strength, but the map pack is where most local clicks go."
+      "delta": { "text": "~49K people reached", "tone": "good" },
+      "note": "Getting Superior Spray in front of nearly 49,000 people across Central Florida in the last 30 days. Strong top-of-funnel reach that keeps you top of mind. (Meta Ads Manager, last 30 days.)"
     },
     {
       "key": "calls",
@@ -40,12 +40,12 @@
       "sub": "web tap-to-call",
       "state": "live",
       "delta": { "text": "-42% vs prior 30 days", "tone": "bad" },
-      "note": "Down from 66 while the Google map pin sits ~35 miles off; correcting it is this month's move to win calls back."
+      "note": "Down from 66 last month. We are focused on turning that ad reach into booked calls, and on getting website form submissions tracked so no lead goes uncounted."
     }
   ],
   "projectCards": [
     { "name": "Website", "status": "Service-first rebuild underway, plus a home for the podcast.", "state": "in-progress" },
-    { "name": "SEO", "status": "#3 in Google search; correcting the map pin to win back the local 3-pack.", "state": "active" },
+    { "name": "SEO", "status": "Ranked #3 in Google for 'pest control Lakeland'; building on that organic strength and targeting more service terms.", "state": "active" },
     { "name": "Pest Detectives", "status": "Relaunching this August. Aug, Sep, and Oct episodes outlined with Kevin and Sean.", "state": "relaunching" },
     { "name": "Social", "status": "Ongoing posts and podcast clips across Facebook, Instagram, GBP, and YouTube.", "state": "active" },
     { "name": "Ads", "status": "Meta live; Google Ads back on after the billing fix.", "state": "active" }
@@ -67,10 +67,10 @@
     },
     {
       "name": "Local map visibility",
-      "score": 48,
+      "score": 64,
       "hero": false,
       "bar": "watch",
-      "note": "Strong organically (#3 \"pest control Lakeland\") but absent from the Polk County map pack — the GBP pin resolves ~35 mi north near Clermont while the office is in Winter Haven. Correcting the pin is the highest-leverage local fix."
+      "note": "Strong organically (#3 for \"pest control Lakeland\"). As a service-area business with no public storefront, your Google map presence is driven by review velocity, Google Posts, and GBP optimization rather than a storefront pin. Biggest levers now: more reviews and a steady posting cadence."
     }
   ],
   "hygiene": {
@@ -91,16 +91,15 @@
   },
   "lumenDid": [
     "Ran your first full marketing audit — Google Business Profile, website, and search visibility",
-    "Located your office (5611 Commercial Blvd, Winter Haven) and found your Google pin sits ~35 mi north in Lake County — likely why you're missing from the Polk County map pack",
+    "Confirmed your Google Business Profile is set up correctly as a service-area business, and refocused your local strategy on the levers that actually move it: reviews and Google Posts",
     "Connected Google Analytics — your web calls are now tracked (38 in the last 30 days)",
     "Set up your live scorecard at this private link"
   ],
   "ledger": [
-    { "title": "Correct your Google Business Profile location to your Winter Haven office", "state": "next", "detail": "Your GBP pin resolves ~35 mi north near Clermont, but your office is at 5611 Commercial Blvd, Winter Haven. Fixing this is your single biggest local-visibility win — it should pull you into the Polk County map pack." },
     { "title": "Rebuild review velocity — text recent customers", "state": "next", "detail": "Only 1 new review in 30 days, and your calls are down 42%. Fastest, cheapest lever you have." },
     { "title": "Resume Google Posts", "state": "next", "detail": "Quiet since June 8 — posting cadence feeds your local map rank." },
     { "title": "Add form-fill tracking to your site", "state": "next", "detail": "Your site isn't sending a form-submission event, so quote requests can't be counted yet. Quick fix, real visibility win." },
     { "title": "Target 3 missing money terms", "state": "next", "detail": "Mosquito, lawn care, termite \"Lakeland\" — you have the pages; they need on-page work to rank." }
   ],
-  "dataNotes": "GA4 pulled 2026-07-31; reviews/GBP, organic rank, local map-pack, and site audit still reflect the 2026-07-23/24 pull (no fresher pull run for those this cycle). Office address 5611 Commercial Blvd, Winter Haven FL 33880 (Polk County) from the site's LocalBusiness schema. GBP is a hidden-address service-area business whose exposed pin resolves ~28.53,-81.82 (Clermont/Lake County, ~35 mi N of the Winter Haven office) — a likely mis-set pin (needs confirming in the GBP dashboard). Reviews/GBP via Google Maps scrape; organic rank via SEMrush; local map-pack via geo-centered Maps check (absent from top-8 for Lakeland pest/mosquito/termite/lawn terms); site audit via live fetch; calls via GA4 property 299466800 (ClickToCall event). Form submissions are still not tracked in GA4 — a known gap. Pillar scores are Lumen's weighted assessment. No historical series yet."
+  "dataNotes": "GA4 pulled 2026-07-31; reviews/GBP, organic rank, local map-pack, and site audit still reflect the 2026-07-23/24 pull (no fresher pull run for those this cycle). Office address 5611 Commercial Blvd, Winter Haven FL 33880 (Polk County) from the site's LocalBusiness schema. GBP is a hidden-address service-area business; its exposed pin sits near the center of the service area (Clermont/Lake County), which is expected behavior for a service-area business and not a mis-set pin. Reviews/GBP via Google Maps scrape; organic rank via SEMrush; local map-pack via geo-centered Maps check (absent from top-8 for Lakeland pest/mosquito/termite/lawn terms); site audit via live fetch; calls via GA4 property 299466800 (ClickToCall event). Form submissions are still not tracked in GA4 — a known gap. Pillar scores are Lumen's weighted assessment. No historical series yet."
 }
