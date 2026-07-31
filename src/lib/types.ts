@@ -116,6 +116,12 @@ export interface LumenLedgerItem {
   detail: string;
 }
 
+export interface LumenProjectCard {
+  name: string;
+  status: string;
+  state: "active" | "in-progress" | "relaunching";
+}
+
 export interface LumenDashboard {
   token: string;
   model: string;
@@ -125,6 +131,7 @@ export interface LumenDashboard {
   healthScore: number;
   healthNote: string;
   heroMetrics: LumenHeroMetric[];
+  projectCards?: LumenProjectCard[];
   pillars: LumenPillar[];
   hygiene: LumenHygiene;
   reviewsGap: LumenReviewsGapEntry[];

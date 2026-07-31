@@ -247,6 +247,85 @@
   width: fit-content;
 }
 
+/* ---- project cards (what we're driving) ---- */
+.projectBlock {
+  padding: 22px 22px 4px;
+}
+
+.projectLabel {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 800;
+  color: var(--ink-soft);
+  margin-bottom: 12px;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.projectCard {
+  background: var(--surface);
+  border: 1px solid var(--hair);
+  border-radius: 12px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.projectName {
+  font-family: var(--font-display), Georgia, serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+}
+
+.projectStatus {
+  font-size: 12.5px;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  flex: 1;
+}
+
+.projectChip {
+  display: inline-block;
+  width: fit-content;
+  font-size: 10.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  padding: 3px 9px;
+  border-radius: 999px;
+  margin-top: 2px;
+}
+
+.chipActive {
+  color: var(--good);
+  background: var(--good-bg);
+}
+
+.chipInProgress {
+  color: var(--watch);
+  background: var(--watch-bg);
+}
+
+.chipRelaunching {
+  color: #fff;
+  background: var(--brand-gradient);
+}
+
+@media (max-width: 720px) {
+  .projectBlock {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 /* ---- supporting health chip ---- */
 .healthChip {
   display: flex;

@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getLumenTokens, getLumenDashboard, formatDateOnly } from "@/lib/data";
 import { HeroMetrics } from "@/components/lumen/hero-metrics";
+import { ProjectCards } from "@/components/lumen/project-cards";
 import { HealthChip } from "@/components/lumen/health-chip";
 import { PillarPanel } from "@/components/lumen/pillar-panel";
 import { ReviewsGap } from "@/components/lumen/reviews-gap";
@@ -64,6 +65,11 @@ export default async function LumenClientDashboard({
         <div className={styles.dash}>
           {/* Hero metrics */}
           <HeroMetrics metrics={dashboard.heroMetrics} />
+
+          {/* What we're driving */}
+          {dashboard.projectCards && (
+            <ProjectCards cards={dashboard.projectCards} />
+          )}
 
           {/* Supporting health score */}
           <HealthChip

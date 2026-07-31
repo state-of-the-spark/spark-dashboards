@@ -1,7 +1,7 @@
 {
   "token": "ss-90772982",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-07-24",
+  "asOf": "2026-07-31",
   "cadence": "weekly",
   "business": {
     "name": "Superior Spray Service",
@@ -40,8 +40,15 @@
       "sub": "web tap-to-call",
       "state": "live",
       "delta": { "text": "-42% vs prior 30 days", "tone": "bad" },
-      "note": "Genuine tap-to-call events (down from 66) — momentum is slipping. Form-fills aren't counted yet; your site isn't sending that event."
+      "note": "Down from 66 while the Google map pin sits ~35 miles off; correcting it is this month's move to win calls back."
     }
+  ],
+  "projectCards": [
+    { "name": "Website", "status": "Service-first rebuild underway, plus a home for the podcast.", "state": "in-progress" },
+    { "name": "SEO", "status": "#3 in Google search; correcting the map pin to win back the local 3-pack.", "state": "active" },
+    { "name": "Pest Detectives", "status": "Relaunching this August. Aug, Sep, and Oct episodes outlined with Kevin and Sean.", "state": "relaunching" },
+    { "name": "Social", "status": "Ongoing posts and podcast clips across Facebook, Instagram, GBP, and YouTube.", "state": "active" },
+    { "name": "Ads", "status": "Meta live; Google Ads back on after the billing fix.", "state": "active" }
   ],
   "pillars": [
     {
@@ -95,5 +102,5 @@
     { "title": "Add form-fill tracking to your site", "state": "next", "detail": "Your site isn't sending a form-submission event, so quote requests can't be counted yet. Quick fix, real visibility win." },
     { "title": "Target 3 missing money terms", "state": "next", "detail": "Mosquito, lawn care, termite \"Lakeland\" — you have the pages; they need on-page work to rank." }
   ],
-  "dataNotes": "All values pulled 2026-07-23/24. Office address 5611 Commercial Blvd, Winter Haven FL 33880 (Polk County) from the site's LocalBusiness schema. GBP is a hidden-address service-area business whose exposed pin resolves ~28.53,-81.82 (Clermont/Lake County, ~35 mi N of the Winter Haven office) — a likely mis-set pin (needs confirming in the GBP dashboard). Reviews/GBP via Google Maps scrape; organic rank via SEMrush; local map-pack via geo-centered Maps check (absent from top-8 for Lakeland pest/mosquito/termite/lawn terms); site audit via live fetch; calls via GA4 property 299466800 (ClickToCall). Form-fills not tracked on the site. Pillar scores are Lumen's weighted assessment. No historical series yet."
+  "dataNotes": "GA4 pulled 2026-07-31; reviews/GBP, organic rank, local map-pack, and site audit still reflect the 2026-07-23/24 pull (no fresher pull run for those this cycle). Office address 5611 Commercial Blvd, Winter Haven FL 33880 (Polk County) from the site's LocalBusiness schema. GBP is a hidden-address service-area business whose exposed pin resolves ~28.53,-81.82 (Clermont/Lake County, ~35 mi N of the Winter Haven office) — a likely mis-set pin (needs confirming in the GBP dashboard). Reviews/GBP via Google Maps scrape; organic rank via SEMrush; local map-pack via geo-centered Maps check (absent from top-8 for Lakeland pest/mosquito/termite/lawn terms); site audit via live fetch; calls via GA4 property 299466800 (ClickToCall event). Form submissions are still not tracked in GA4 — a known gap. Pillar scores are Lumen's weighted assessment. No historical series yet."
 }
