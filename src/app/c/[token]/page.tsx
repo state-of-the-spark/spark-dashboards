@@ -75,6 +75,7 @@ export default async function LumenClientDashboard({
           <HealthChip
             score={dashboard.healthScore}
             note={dashboard.healthNote}
+            source={dashboard.healthScoreSource}
           />
 
           {/* What's driving it + reviews comparison */}
@@ -83,7 +84,10 @@ export default async function LumenClientDashboard({
               pillars={dashboard.pillars}
               hygiene={dashboard.hygiene}
             />
-            <ReviewsGap entries={dashboard.reviewsGap} />
+            <ReviewsGap
+              entries={dashboard.reviewsGap}
+              source={dashboard.reviewsGapSource}
+            />
           </div>
 
           {/* This week's move */}

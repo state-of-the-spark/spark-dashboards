@@ -28,6 +28,7 @@ export function PillarPanel({
             />
           </div>
           <div className={styles.pillarNote}>{p.note}</div>
+          {p.source && <div className={styles.source}>{p.source}</div>}
         </div>
       ))}
 
@@ -39,6 +40,9 @@ export function PillarPanel({
           </span>
         </div>
         <p className={styles.hygieneNote}>{hygiene.note}</p>
+        {hygiene.source && (
+          <div className={styles.source}>{hygiene.source}</div>
+        )}
       </div>
     </div>
   );

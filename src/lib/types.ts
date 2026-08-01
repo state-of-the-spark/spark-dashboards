@@ -79,6 +79,8 @@ export interface LumenHeroMetric {
   /** Only present when state is "pending". */
   pendingLabel?: string;
   pendingSub?: string;
+  /** Where this number came from. Rendered as a small italic sub-line. */
+  source?: string;
 }
 
 export interface LumenPillar {
@@ -87,12 +89,16 @@ export interface LumenPillar {
   hero: boolean;
   bar: LumenTone;
   note: string;
+  /** Where this score came from. Rendered as a small italic sub-line. */
+  source?: string;
 }
 
 export interface LumenHygiene {
   seo: number;
   content: number;
   note: string;
+  /** Where these scores came from. Rendered as a small italic sub-line. */
+  source?: string;
 }
 
 export interface LumenReviewsGapEntry {
@@ -130,11 +136,15 @@ export interface LumenDashboard {
   business: LumenBusiness;
   healthScore: number;
   healthNote: string;
+  /** Where the supporting health score came from. Rendered as a small italic sub-line. */
+  healthScoreSource?: string;
   heroMetrics: LumenHeroMetric[];
   projectCards?: LumenProjectCard[];
   pillars: LumenPillar[];
   hygiene: LumenHygiene;
   reviewsGap: LumenReviewsGapEntry[];
+  /** Where the reviews-gap comparison came from. Rendered as a small italic sub-line under the panel. */
+  reviewsGapSource?: string;
   thisWeeksMove: LumenWeeksMove;
   lumenDid: string[];
   ledger: LumenLedgerItem[];

@@ -14,6 +14,7 @@
   },
   "healthScore": 71,
   "healthNote": "Supporting score — the reasons are the numbers above. Never the headline.",
+  "healthScoreSource": "Lumen weighted score",
   "heroMetrics": [
     {
       "key": "reviews",
@@ -22,7 +23,8 @@
       "sub": "4.9★",
       "state": "live",
       "delta": { "text": "+1 in 30 days", "tone": "watch" },
-      "note": "Rating is best-in-class, but velocity is the problem — only 1 new review this month."
+      "note": "Rating is best-in-class, but velocity is the problem — only 1 new review this month.",
+      "source": "Google Maps · as of Jul 24"
     },
     {
       "key": "adsReach",
@@ -31,7 +33,8 @@
       "sub": "ad impressions",
       "state": "live",
       "delta": { "text": "~49K people reached", "tone": "good" },
-      "note": "Getting Superior Spray in front of nearly 49,000 people across Central Florida in the last 30 days. Strong top-of-funnel reach that keeps you top of mind. (Meta Ads Manager, last 30 days.)"
+      "note": "Getting Superior Spray in front of nearly 49,000 people across Central Florida in the last 30 days. Strong top-of-funnel reach that keeps you top of mind. (Meta Ads Manager, last 30 days.)",
+      "source": "Meta Ads Manager · last 30 days"
     },
     {
       "key": "calls",
@@ -40,7 +43,8 @@
       "sub": "web tap-to-call",
       "state": "live",
       "delta": { "text": "-42% vs prior 30 days", "tone": "bad" },
-      "note": "Down from 66 last month. We are focused on turning that ad reach into booked calls, and on getting website form submissions tracked so no lead goes uncounted."
+      "note": "Down from 65 last month. We are focused on turning that ad reach into booked calls, and on getting website form submissions tracked so no lead goes uncounted.",
+      "source": "GA4 website tap-to-call · Jul 31"
     }
   ],
   "projectCards": [
@@ -56,27 +60,31 @@
       "score": 78,
       "hero": true,
       "bar": "watch",
-      "note": "4.9★, 449 reviews, 376 photos — a strong profile. Docked because only 1 new review landed in 30 days and Google Posts have been quiet since June 8."
+      "note": "4.9★, 449 reviews, 376 photos — a strong profile. Docked because only 1 new review landed in 30 days and Google Posts have been quiet since June 8.",
+      "source": "Lumen assessment · Google Maps + GBP"
     },
     {
       "name": "On-site conversion",
       "score": 84,
       "hero": true,
       "bar": "good",
-      "note": "Phone + click-to-call in the header, a free-estimate form, a clear primary CTA, valid SSL, fast server response. Only gap: full mobile PageSpeed not yet measured."
+      "note": "Phone + click-to-call in the header, a free-estimate form, a clear primary CTA, valid SSL, fast server response. Only gap: full mobile PageSpeed not yet measured.",
+      "source": "Lumen assessment · live site check"
     },
     {
       "name": "Local map visibility",
       "score": 64,
       "hero": false,
       "bar": "watch",
-      "note": "Strong organically (#3 for \"pest control Lakeland\"). As a service-area business with no public storefront, your Google map presence is driven by review velocity, Google Posts, and GBP optimization rather than a storefront pin. Biggest levers now: more reviews and a steady posting cadence."
+      "note": "Strong organically (#3 for \"pest control Lakeland\"). As a service-area business with no public storefront, your Google map presence is driven by review velocity, Google Posts, and GBP optimization rather than a storefront pin. Biggest levers now: more reviews and a steady posting cadence.",
+      "source": "Lumen assessment · SEMrush + Maps"
     }
   ],
   "hygiene": {
     "seo": 62,
     "content": 55,
-    "note": "Ranks well for the head term; service-specific pages need on-page work. Kept healthy in the background — not sold as what rings the phone."
+    "note": "Ranks well for the head term; service-specific pages need on-page work. Kept healthy in the background — not sold as what rings the phone.",
+    "source": "SEMrush + site audit"
   },
   "reviewsGap": [
     { "name": "Anti-Pesto Bug Killers", "rating": "5.0", "reviews": 551 },
@@ -84,6 +92,7 @@
     { "name": "Superior Spray Service", "rating": "4.9", "reviews": 449, "self": true },
     { "name": "Dave's Pest Control", "rating": "4.8", "reviews": 323 }
   ],
+  "reviewsGapSource": "Google Maps",
   "thisWeeksMove": {
     "label": "Rebuild your review velocity",
     "body": "You picked up just 1 new review in the last 30 days, and Anti-Pesto (551) and Country Boy (482) are pulling ahead on volume. Texting your recent customers for a review is the fastest lever you have — and let's restart Google Posts, which have been quiet since June 8.",

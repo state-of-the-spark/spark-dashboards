@@ -209,6 +209,15 @@
   font-style: italic;
 }
 
+/* ---- data-point source footnote (shared across hero tiles, pillars,
+   hygiene, reviews-gap panel, and the health score) ---- */
+.source {
+  font-size: 11px;
+  color: var(--ink-faint);
+  margin-top: 4px;
+  font-style: italic;
+}
+
 /* pending / "connect this" tile */
 .heroTilePending {
   background: var(--surface-2);
@@ -329,12 +338,16 @@
 /* ---- supporting health chip ---- */
 .healthChip {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 9px;
   font-size: 13px;
   color: var(--ink-soft);
   padding: 14px 22px;
   border-top: 1px solid var(--hair);
+}
+
+.healthChipBody {
+  padding-top: 1px;
 }
 
 .healthTag {
@@ -441,6 +454,10 @@
   font-size: 12px;
   color: var(--ink-soft);
   margin-top: 1px;
+}
+
+.pillar .source {
+  grid-column: 1 / -1;
 }
 
 /* ---- hygiene (dimmer, background) ---- */

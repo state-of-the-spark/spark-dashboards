@@ -1,7 +1,13 @@
 import type { LumenReviewsGapEntry } from "@/lib/types";
 import styles from "./lumen.module.css";
 
-export function ReviewsGap({ entries }: { entries: LumenReviewsGapEntry[] }) {
+export function ReviewsGap({
+  entries,
+  source,
+}: {
+  entries: LumenReviewsGapEntry[];
+  source?: string;
+}) {
   return (
     <div className={styles.panel}>
       <h3 className={styles.panelHeading}>How you compare on reviews</h3>
@@ -22,6 +28,7 @@ export function ReviewsGap({ entries }: { entries: LumenReviewsGapEntry[] }) {
           </div>
         </div>
       ))}
+      {source && <div className={styles.source}>{source}</div>}
     </div>
   );
 }

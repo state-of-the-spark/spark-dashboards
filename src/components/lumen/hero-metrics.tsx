@@ -50,6 +50,7 @@ export function HeroMetrics({ metrics }: { metrics: LumenHeroMetric[] }) {
               </div>
             )}
             {m.note && <div className={styles.heroNote}>{m.note}</div>}
+            {m.source && <div className={styles.source}>{m.source}</div>}
             <div className={styles.heroBaseline}>
               Baseline — history starts here
             </div>
