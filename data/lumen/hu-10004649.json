@@ -1,0 +1,111 @@
+{
+  "token": "hu-10004649",
+  "model": "lumen-marketing-engine-v1",
+  "asOf": "2026-08-04",
+  "cadence": "weekly (Tuesday Sync)",
+  "business": {
+    "name": "Humarian",
+    "category": "Probiotics · Shopify e-commerce",
+    "phone": "",
+    "website": "https://humarian.com",
+    "accentColor": "#DC4C89",
+    "initials": "HU",
+    "serviceArea": false
+  },
+  "healthScore": 68,
+  "healthNote": "Supporting score — the reasons are the numbers above. Never the headline.",
+  "healthScoreSource": "Lumen weighted score",
+  "heroMetrics": [
+    {
+      "key": "purchases",
+      "label": "Purchases · last 28 days",
+      "value": "77",
+      "sub": "~$4,874 revenue",
+      "state": "live",
+      "delta": { "text": "1.04 purchases per buyer", "tone": "good" },
+      "note": "The purchase pipeline itself is clean end-to-end — orders and revenue are being counted correctly. What is broken is attribution back to Meta, which reads $0 in GA4 because client_id drops on the Meta in-app-browser to Safari hop. That is a known tracking bug being fixed, not a Meta failure.",
+      "source": "GA4 property 255641365 · last 28 days"
+    },
+    {
+      "key": "adsReach",
+      "label": "Meta Ads reach · 30d",
+      "value": null,
+      "state": "pending",
+      "pendingLabel": "Refreshing Supermetrics pull",
+      "pendingSub": "trailing 3-month bar charts now live in the Tuesday Sync email",
+      "note": "Brand Awareness (180-day) and DPA Retargeting campaigns are both live. Reporting was overhauled 7/9 to show trailing 3-month spend, landing page views, and cost per result in the Tuesday Sync email. Current 30-day pull will land here on the next refresh.",
+      "source": "Meta Ads Manager via Supermetrics"
+    },
+    {
+      "key": "reviews",
+      "label": "Smile Guard reviews (Judge.me)",
+      "value": "549",
+      "sub": "4.76★ · product-level",
+      "state": "live",
+      "delta": { "text": "confirmed live on new landing page", "tone": "good" },
+      "note": "Product-level social proof pulling in on the new Smile Guard landing page. Store-wide review aggregate will land here once the Judge.me store roll-up is wired.",
+      "source": "Judge.me · Smile Guard product · Aug 2"
+    }
+  ],
+  "projectCards": [
+    { "name": "Product Landing Pages", "status": "Smile Guard and Cat Probonix shipped as Shopify theme templates. Same 11-section system rolls out to more products next.", "state": "active" },
+    { "name": "Meta Ads", "status": "Brand Awareness (180-day) and DPA Retargeting live. Reporting rebuilt around trailing 3-month spend, landing page views, and cost per result.", "state": "active" },
+    { "name": "Attribution & Tracking", "status": "Server-side GA4 + Meta buildout is ready in GTM. Waiting on E2M to publish so Meta and Google Ads conversions attribute correctly.", "state": "in-progress" },
+    { "name": "Weekly Reporting", "status": "Humarian Tuesday Sync email lands every Tuesday 7am with Meta bar charts, active-ads breakdown, and a written pulse narrative.", "state": "active" }
+  ],
+  "pillars": [
+    {
+      "name": "Shopify store conversion",
+      "score": 76,
+      "hero": true,
+      "bar": "good",
+      "note": "Custom theme-template landing pages (Women's, Smile Guard, Cat Probonix) on 'Be Yours' v7.2.2 with a shared humarian-lp-* section family. Buy-boxes, comparison highlights, Judge.me carousels, and FAQ all render correctly on preview. Purchase pipeline confirmed clean in GA4.",
+      "source": "Lumen assessment · theme + live GA4"
+    },
+    {
+      "name": "Attribution & tracking",
+      "score": 48,
+      "hero": true,
+      "bar": "watch",
+      "note": "GA4 sees purchases but source attribution is silently lost. E2M's full server-side buildout — 70 tags including GA4 Base, GADS AddToCart/BeginCheckout/Purchase, Meta CAPI, Conversion Linker — has been sitting unpublished in GTM Default Workspace for ~6 weeks. Publishing it is the single biggest unlock right now.",
+      "source": "Lumen assessment · GTM server container GTM-KKTG8V8M"
+    },
+    {
+      "name": "Ad program",
+      "score": 70,
+      "hero": false,
+      "bar": "watch",
+      "note": "Meta ads are running (Brand Awareness + DPA Retargeting). Reporting cadence is solid via the Tuesday Sync. The score is docked because real ROAS is unreadable until attribution is republished.",
+      "source": "Lumen assessment · Meta Ads Manager + Tuesday Sync"
+    }
+  ],
+  "hygiene": {
+    "seo": 60,
+    "content": 65,
+    "note": "Product landing pages carry the on-page weight. Broader site SEO and content are healthy but not the current focus — landing pages and attribution are ahead in the queue.",
+    "source": "Lumen assessment"
+  },
+  "reviewsGap": [
+    { "name": "Smile Guard (Judge.me)", "rating": "4.76", "reviews": 549, "self": true }
+  ],
+  "reviewsGapSource": "Judge.me · product-level. Store-wide roll-up and probiotic peer comparison to be wired next cycle.",
+  "thisWeeksMove": {
+    "label": "Publish the server-side GTM buildout",
+    "body": "The single biggest unlock is getting E2M to publish the 70-change Default Workspace in GTM-KKTG8V8M. That switches Meta and Google Ads conversions from $0 to real numbers and closes the client_id loss on checkout. Priyal (E2M) has the ball as of Grant's 7/30 nudge.",
+    "cta": "Confirm publish + test purchase"
+  },
+  "lumenDid": [
+    "Shipped two new Shopify landing pages (Smile Guard, Cat Probonix) as reusable theme templates, plus a written protocol so this rolls out to any Humarian product next",
+    "Diagnosed the attribution severance mechanism (client_id lost on the Meta in-app-browser to Safari checkout hop) and found E2M's full server-side buildout sitting unpublished in GTM for ~6 weeks",
+    "Overhauled the Tuesday Sync report — Meta now renders as trailing 3-month bar charts (spend, landing page views, cost per result) plus an active-ads breakdown",
+    "Set up your live scorecard at this private link"
+  ],
+  "ledger": [
+    { "title": "Publish E2M's server-side GTM workspace", "state": "in-progress", "detail": "70 tags ready in GTM-KKTG8V8M Default Workspace, unpublished ~6 weeks. Priyal at E2M has the ball as of Grant's 7/30 nudge." },
+    { "title": "Fix cross-domain for secure.humarian.com", "state": "next", "detail": "3,533 sessions are minting phantom Direct sessions with 0 events on every hop because the payment domain is not cross-domain-linked in GA4." },
+    { "title": "Ship the next product landing page", "state": "next", "detail": "Smile Guard and Cat Probonix are live-preview verified. The theme-template system is documented and repeats cleanly — pick the next product and clone." },
+    { "title": "Resolve Smile Guard dosing conflict", "state": "next", "detail": "Label vs A+ content disagree on schedule; Shawn at Humarian was emailed 8/2 for the authoritative answer." },
+    { "title": "Roll up store-wide Judge.me reviews", "state": "next", "detail": "Product-level rating shows on landing pages; store-wide aggregate not yet wired to the dashboard." }
+  ],
+  "dataNotes": "Purchases and revenue: GA4 property 255641365, last 28 days, pulled 2026-07-30. Judge.me reviews: Smile Guard product page as of 2026-08-02. Meta ad reach pending next Supermetrics refresh; Brand Awareness and DPA Retargeting campaigns confirmed live via the Tuesday Sync trailing 3-month view. Attribution diagnosis and unpublished GTM state verified 2026-07-30 via live inspection of GTM-KKTG8V8M server container + Grant's session on the GTM internal workspaces API (Version 6 live, no Version 7 exists). Pillar scores are Lumen's weighted assessment. Reviews-gap panel currently shows product-level Judge.me only; probiotic-peer comparison will be added once a public data source is agreed on."
+}
