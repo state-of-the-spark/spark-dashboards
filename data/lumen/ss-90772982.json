@@ -1,7 +1,7 @@
 {
   "token": "ss-90772982",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-07-31",
+  "asOf": "2026-08-18",
   "cadence": "weekly",
   "business": {
     "name": "Superior Spray Service",
@@ -12,7 +12,7 @@
     "initials": "SS",
     "serviceArea": true
   },
-  "healthScore": 71,
+  "healthScore": 74,
   "healthNote": "Supporting score — the reasons are the numbers above. Never the headline.",
   "healthScoreSource": "Lumen weighted score",
   "heroMetrics": [
@@ -22,37 +22,37 @@
       "value": "449",
       "sub": "4.9★",
       "state": "live",
-      "delta": { "text": "+1 in 30 days", "tone": "watch" },
-      "note": "Rating is best-in-class, but velocity is the problem — only 1 new review this month.",
-      "source": "Google Maps · as of Jul 24"
+      "delta": { "text": "+0 in 30 days", "tone": "bad" },
+      "note": "Your 4.9★ rating is best-in-class. The problem is velocity: zero new reviews in the last 30 days, while three local competitors all added reviews in the same window. This is the fastest lever you have.",
+      "source": "Google Maps · as of Aug 18"
     },
     {
       "key": "adsReach",
       "label": "Facebook & Instagram Ads · 30d",
-      "value": "127,913",
-      "sub": "ad impressions",
+      "value": "51,379",
+      "sub": "people reached",
       "state": "live",
-      "delta": { "text": "~49K people reached", "tone": "good" },
-      "note": "Getting Superior Spray in front of nearly 49,000 people across Central Florida in the last 30 days. Strong top-of-funnel reach that keeps you top of mind. (Meta Ads Manager, last 30 days.)",
+      "delta": { "text": "111,139 impressions", "tone": "good" },
+      "note": "Superior Spray was put in front of 51,379 people across Central Florida in the last 30 days (up from ~49K) on $1,126 of ad spend. Strong top-of-funnel reach that keeps you top of mind — we just turned off the low-quality 'Audience Network' placements so more of that spend now reaches real prospects.",
       "source": "Meta Ads Manager · last 30 days"
     },
     {
       "key": "calls",
       "label": "Calls · 30d",
-      "value": "38",
+      "value": "37",
       "sub": "web tap-to-call",
       "state": "live",
-      "delta": { "text": "-42% vs prior 30 days", "tone": "bad" },
-      "note": "Down from 65 last month. We are focused on turning that ad reach into booked calls, and on getting website form submissions tracked so no lead goes uncounted.",
-      "source": "GA4 website tap-to-call · Jul 31"
+      "delta": { "text": "≈ flat vs prior 30d (was 40)", "tone": "watch" },
+      "note": "Web calls have stabilized at 37 (from 40 the prior month) — the sharp earlier drop has leveled off now that conversion tracking is cleaned up and counting real calls only. Next focus: turn that ad reach into booked calls and get website form submissions tracked so no lead goes uncounted.",
+      "source": "GA4 website tap-to-call · Aug 18"
     }
   ],
   "projectCards": [
     { "name": "Website", "status": "Service-first rebuild underway, plus a home for the podcast.", "state": "in-progress" },
-    { "name": "SEO", "status": "Ranked #3 in Google for 'pest control Lakeland'; building on that organic strength and targeting more service terms.", "state": "active" },
-    { "name": "Pest Detectives", "status": "Relaunching this August. Aug, Sep, and Oct episodes outlined with Kevin and Sean.", "state": "relaunching" },
+    { "name": "SEO", "status": "Still ranked #3 in Google for 'pest control Lakeland' across 1,798 organic keywords; building on that organic strength and targeting more service terms.", "state": "active" },
+    { "name": "Pest Detectives", "status": "Relaunching this August. Three shoot dates now locked with Kevin & Sean: Aug 26, Sep 23, Oct 21.", "state": "relaunching" },
     { "name": "Social", "status": "Ongoing posts and podcast clips across Facebook, Instagram, GBP, and YouTube.", "state": "active" },
-    { "name": "Ads", "status": "Meta live; Google Ads back on after the billing fix.", "state": "active" }
+    { "name": "Ads", "status": "Rebuilt this month: Google Ads strength lifted Poor→Good, Search split into focused General + Termite ad groups, targeting trimmed to your 4 core counties. Meta 'Audience Network' junk placements turned off.", "state": "active" }
   ],
   "pillars": [
     {
@@ -60,7 +60,7 @@
       "score": 78,
       "hero": true,
       "bar": "watch",
-      "note": "4.9★, 449 reviews, 376 photos — a strong profile. Docked because only 1 new review landed in 30 days and Google Posts have been quiet since June 8.",
+      "note": "4.9★, 449 reviews, 376+ photos — a strong profile. Docked because zero new reviews landed in 30 days (competitors added 3–13 each in the same window) and Google Posts have been quiet since June 8.",
       "source": "Lumen assessment · Google Maps + GBP"
     },
     {
@@ -68,7 +68,7 @@
       "score": 84,
       "hero": true,
       "bar": "good",
-      "note": "Phone + click-to-call in the header, a free-estimate form, a clear primary CTA, valid SSL, fast server response. Only gap: full mobile PageSpeed not yet measured.",
+      "note": "Phone + click-to-call in the header, a free-estimate form, a clear primary CTA, valid SSL, fast server response. Only gaps: the site's form-submit isn't firing a tracked event yet, and full mobile PageSpeed not yet measured.",
       "source": "Lumen assessment · live site check"
     },
     {
@@ -87,28 +87,28 @@
     "source": "SEMrush + site audit"
   },
   "reviewsGap": [
-    { "name": "Anti-Pesto Bug Killers", "rating": "5.0", "reviews": 551 },
-    { "name": "Country Boy Pest Control", "rating": "4.8", "reviews": 482 },
+    { "name": "Anti-Pesto Bug Killers", "rating": "5.0", "reviews": 556 },
+    { "name": "Country Boy Pest Control", "rating": "4.8", "reviews": 485 },
     { "name": "Superior Spray Service", "rating": "4.9", "reviews": 449, "self": true },
-    { "name": "Dave's Pest Control", "rating": "4.8", "reviews": 323 }
+    { "name": "Dave's Pest Control", "rating": "4.8", "reviews": 336 }
   ],
-  "reviewsGapSource": "Google Maps",
+  "reviewsGapSource": "Google Maps · Aug 18",
   "thisWeeksMove": {
     "label": "Rebuild your review velocity",
-    "body": "You picked up just 1 new review in the last 30 days, and Anti-Pesto (551) and Country Boy (482) are pulling ahead on volume. Texting your recent customers for a review is the fastest lever you have — and let's restart Google Posts, which have been quiet since June 8.",
+    "body": "You added 0 new reviews in the last 30 days while Anti-Pesto (556, +5), Country Boy (485, +3), and Dave's (336, +13) all pulled further ahead. Texting your recent customers for a review is the fastest, cheapest lever you have — and let's restart Google Posts, which have been quiet since June 8.",
     "cta": "Send 10 review requests"
   },
   "lumenDid": [
-    "Ran your first full marketing audit — Google Business Profile, website, and search visibility",
-    "Confirmed your Google Business Profile is set up correctly as a service-area business, and refocused your local strategy on the levers that actually move it: reviews and Google Posts",
-    "Connected Google Analytics — your web calls are now tracked (38 in the last 30 days)",
-    "Set up your live scorecard at this private link"
+    "Rebuilt your Google Ads: lifted Ad Strength from Poor to Good, split Search into focused General Pest Control + Termite ad groups, and trimmed targeting to your 4 core counties (Polk, Orange, Brevard, Hillsborough) so you stop paying for Tampa/Orlando clicks",
+    "Turned off the Meta 'Audience Network' placements that were driving low-quality clicks, so more of your ad spend reaches real Central Florida prospects",
+    "Cleaned up your conversion tracking — GA4 now counts real phone calls (37 in the last 30 days), not inflated page views",
+    "Locked three Pest Detectives podcast shoot dates with Kevin & Sean (Aug 26, Sep 23, Oct 21) and scheduled an August newsletter resend to 6,182 subscribers who hadn't opened yet"
   ],
   "ledger": [
-    { "title": "Rebuild review velocity — text recent customers", "state": "next", "detail": "Only 1 new review in 30 days, and your calls are down 42%. Fastest, cheapest lever you have." },
+    { "title": "Rebuild review velocity — text recent customers", "state": "next", "detail": "0 new reviews in 30 days while all three local competitors gained. Fastest, cheapest lever you have." },
     { "title": "Resume Google Posts", "state": "next", "detail": "Quiet since June 8 — posting cadence feeds your local map rank." },
     { "title": "Add form-fill tracking to your site", "state": "next", "detail": "Your site isn't sending a form-submission event, so quote requests can't be counted yet. Quick fix, real visibility win." },
-    { "title": "Target 3 missing money terms", "state": "next", "detail": "Mosquito, lawn care, termite \"Lakeland\" — you have the pages; they need on-page work to rank." }
+    { "title": "Finish the Google Ads rebuild", "state": "next", "detail": "Deep-clean the General keyword list and build Specific Pests + Lawn ad groups — the lever for a lower cost-per-click and 'Strong' ad rating." }
   ],
-  "dataNotes": "GA4 pulled 2026-07-31; reviews/GBP, organic rank, local map-pack, and site audit still reflect the 2026-07-23/24 pull (no fresher pull run for those this cycle). Office address 5611 Commercial Blvd, Winter Haven FL 33880 (Polk County) from the site's LocalBusiness schema. GBP is a hidden-address service-area business; its exposed pin sits near the center of the service area (Clermont/Lake County), which is expected behavior for a service-area business and not a mis-set pin. Reviews/GBP via Google Maps scrape; organic rank via SEMrush; local map-pack via geo-centered Maps check (absent from top-8 for Lakeland pest/mosquito/termite/lawn terms); site audit via live fetch; calls via GA4 property 299466800 (ClickToCall event). Form submissions are still not tracked in GA4 — a known gap. Pillar scores are Lumen's weighted assessment. No historical series yet."
+  "dataNotes": "GA4 (calls) pulled 2026-08-18 via property 299466800 (ClickToCall event); prior-30-day calls were 40. Meta reach/impressions/spend pulled 2026-08-18 via the Meta Ads account (last 30 days). Google reviews (self + competitors) and GBP re-scraped from Google Maps 2026-08-18. Organic rank (#3 'pest control Lakeland', 1,798 keywords) confirmed via SEMrush 2026-08-18. Office address 5611 Commercial Blvd, Winter Haven FL 33880 (Polk County) from the site's LocalBusiness schema. GBP is a hidden-address service-area business; its exposed pin sits near the center of the service area, which is expected behavior and not a mis-set pin. Site audit via live fetch; local map-pack via geo-centered Maps check. Form submissions are still not tracked in GA4 — a known gap being fixed. Pillar scores are Lumen's weighted assessment. No historical series yet."
 }
