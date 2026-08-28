@@ -1,7 +1,7 @@
 {
   "token": "ss-90772982",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-08-18",
+  "asOf": "2026-08-28",
   "cadence": "weekly",
   "business": {
     "name": "Superior Spray Service",
@@ -28,13 +28,13 @@
     },
     {
       "key": "adsReach",
-      "label": "Facebook & Instagram Ads · 30d",
-      "value": "51,379",
-      "sub": "people reached",
+      "label": "Facebook & Instagram Ads · last 7 days",
+      "value": "10,185",
+      "sub": "people reached (vs 9,942 the prior 7 days)",
       "state": "live",
-      "delta": { "text": "111,139 impressions", "tone": "good" },
-      "note": "Superior Spray was put in front of 51,379 people across Central Florida in the last 30 days (up from ~49K) on $1,126 of ad spend. Strong top-of-funnel reach that keeps you top of mind — we just turned off the low-quality 'Audience Network' placements so more of that spend now reaches real prospects.",
-      "source": "Meta Ads Manager · last 30 days"
+      "delta": { "text": "click-through rate up from 5.35% to 5.91%", "tone": "good" },
+      "note": "Meta spend held steady at $141.46 (vs $146.18 the prior week) while reach and click-through both improved - the 'Audience Network' cleanup is paying off with more efficient spend, not just more of it. Google Ads is also running more efficiently this week: cost-per-click down 20.9% to $0.42 with clicks up 17.1% (322 vs 275) and conversions up to 31.",
+      "source": "Supermetrics pull 2026-08-28, last 7 days vs prior 7 days"
     },
     {
       "key": "calls",
@@ -48,11 +48,12 @@
     }
   ],
   "projectCards": [
-    { "name": "Website", "status": "Service-first rebuild underway, plus a home for the podcast.", "state": "in-progress" },
-    { "name": "SEO", "status": "Still ranked #3 in Google for 'pest control Lakeland' across 1,798 organic keywords; building on that organic strength and targeting more service terms.", "state": "active" },
+    { "name": "Website", "status": "Service-first rebuild underway, plus a home for the podcast. The Lakeland GBP verification video remains the oldest open ask - outstanding since May 2025 - and was chased again this week; a WordPress test site and podcast findability work are queued behind it.", "state": "in-progress" },
+    { "name": "SEO", "status": "Still ranked #3 in Google for 'pest control Lakeland' across 1,798 organic keywords. The SEO questionnaire, outstanding since May 2025, was chased again this week; an AI SEO audit and local map work are queued for a priority call.", "state": "active" },
     { "name": "Pest Detectives", "status": "Relaunching this August. Three shoot dates now locked with Kevin & Sean: Aug 26, Sep 23, Oct 21.", "state": "relaunching" },
-    { "name": "Social", "status": "Ongoing posts and podcast clips across Facebook, Instagram, GBP, and YouTube.", "state": "active" },
-    { "name": "Ads", "status": "Rebuilt this month: Google Ads strength lifted Poor→Good, Search split into focused General + Termite ad groups, targeting trimmed to your 4 core counties. Meta 'Audience Network' junk placements turned off.", "state": "active" }
+    { "name": "Social", "status": "Ongoing posts and podcast clips across Facebook, Instagram, GBP, and YouTube. A monthly check-in cadence is being added this cycle to keep this line fully tracked.", "state": "active" },
+    { "name": "Ads", "status": "Rebuilt this month: Google Ads strength lifted Poor→Good, Search split into focused General + Termite ad groups, targeting trimmed to your 4 core counties. Meta 'Audience Network' junk placements turned off. This week: Google Ads CPC down 20.9% to $0.42 with clicks up 17.1% (322 vs 275) and conversions up to 31; Meta CPC down 10.2% with CTR up from 5.35% to 5.91%.", "state": "active" },
+    { "name": "Newsletter", "status": "A monthly newsletter goes out automatically to your subscriber list via its own automation - nothing manual needed on our end to keep it running.", "state": "active" }
   ],
   "pillars": [
     {
@@ -103,13 +104,17 @@
     "Rebuilt your Google Ads: lifted Ad Strength from Poor to Good, split Search into focused General Pest Control + Termite ad groups, and trimmed targeting to your 4 core counties (Polk, Orange, Brevard, Hillsborough) so you stop paying for Tampa/Orlando clicks",
     "Turned off the Meta 'Audience Network' placements that were driving low-quality clicks, so more of your ad spend reaches real Central Florida prospects",
     "Cleaned up your conversion tracking — GA4 now counts real phone calls (37 in the last 30 days), not inflated page views",
-    "Locked three Pest Detectives podcast shoot dates with Kevin & Sean (Aug 26, Sep 23, Oct 21) and scheduled an August newsletter resend to 6,182 subscribers who hadn't opened yet"
+    "Locked three Pest Detectives podcast shoot dates with Kevin & Sean (Aug 26, Sep 23, Oct 21) and scheduled an August newsletter resend to 6,182 subscribers who hadn't opened yet",
+    "Pulled a fresh week-over-week performance read on Google Ads and Meta: both ran more efficiently, with Google Ads clicks up 17% and cost-per-click down, and Meta's click-through rate up from 5.35% to 5.91%",
+    "Chased the two oldest open asks - the SEO questionnaire and the Lakeland GBP verification video, both outstanding since May 2025 - again this week"
   ],
   "ledger": [
     { "title": "Rebuild review velocity — text recent customers", "state": "next", "detail": "0 new reviews in 30 days while all three local competitors gained. Fastest, cheapest lever you have." },
     { "title": "Resume Google Posts", "state": "next", "detail": "Quiet since June 8 — posting cadence feeds your local map rank." },
     { "title": "Add form-fill tracking to your site", "state": "next", "detail": "Your site isn't sending a form-submission event, so quote requests can't be counted yet. Quick fix, real visibility win." },
-    { "title": "Finish the Google Ads rebuild", "state": "next", "detail": "Deep-clean the General keyword list and build Specific Pests + Lawn ad groups — the lever for a lower cost-per-click and 'Strong' ad rating." }
+    { "title": "Finish the Google Ads rebuild", "state": "next", "detail": "Deep-clean the General keyword list and build Specific Pests + Lawn ad groups — the lever for a lower cost-per-click and 'Strong' ad rating." },
+    { "title": "Send the SEO questionnaire + film the Lakeland GBP verification video", "state": "next", "detail": "Both have been outstanding since May 2025 and are the oldest open asks on the account; getting these in unlocks the next phase of local SEO and map-pack work." },
+    { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Pulled the first live Google Ads + Meta week-over-week read (both more efficient) and re-flagged the SEO questionnaire and Lakeland GBP video as the oldest open asks, both outstanding since May 2025." }
   ],
-  "dataNotes": "GA4 (calls) pulled 2026-08-18 via property 299466800 (ClickToCall event); prior-30-day calls were 40. Meta reach/impressions/spend pulled 2026-08-18 via the Meta Ads account (last 30 days). Google reviews (self + competitors) and GBP re-scraped from Google Maps 2026-08-18. Organic rank (#3 'pest control Lakeland', 1,798 keywords) confirmed via SEMrush 2026-08-18. Office address 5611 Commercial Blvd, Winter Haven FL 33880 (Polk County) from the site's LocalBusiness schema. GBP is a hidden-address service-area business; its exposed pin sits near the center of the service area, which is expected behavior and not a mis-set pin. Site audit via live fetch; local map-pack via geo-centered Maps check. Form submissions are still not tracked in GA4 — a known gap being fixed. FieldRoutes lead-source review (last 30 days) points to Google search as the primary attributable lead driver, with negligible directly-attributed Facebook leads (a portion logged as N/A or phone call-ins), reinforcing the Google Ads + website focus. Pillar scores are Lumen's weighted assessment. No historical series yet."
+  "dataNotes": "GA4 (calls) pulled 2026-08-18 via property 299466800 (ClickToCall event); prior-30-day calls were 40. Meta reach/impressions/spend pulled 2026-08-18 via the Meta Ads account (last 30 days). Google reviews (self + competitors) and GBP re-scraped from Google Maps 2026-08-18. Organic rank (#3 'pest control Lakeland', 1,798 keywords) confirmed via SEMrush 2026-08-18. Office address 5611 Commercial Blvd, Winter Haven FL 33880 (Polk County) from the site's LocalBusiness schema. GBP is a hidden-address service-area business; its exposed pin sits near the center of the service area, which is expected behavior and not a mis-set pin. Site audit via live fetch; local map-pack via geo-centered Maps check. Form submissions are still not tracked in GA4 — a known gap being fixed. FieldRoutes lead-source review (last 30 days) points to Google search as the primary attributable lead driver, with negligible directly-attributed Facebook leads (a portion logged as N/A or phone call-ins), reinforcing the Google Ads + website focus. Pillar scores are Lumen's weighted assessment. Google Ads and Meta week-over-week figures (Google Ads spend $134.07 vs $144.69, clicks 322 vs 275, CPC $0.42 vs $0.53, conversions 31 vs 28; Meta spend $141.46 vs $146.18, reach 10,185 vs 9,942, CTR 5.91% vs 5.35%) pulled via Supermetrics 2026-08-28, last 7 days vs prior 7 days. GA4 pull for this cycle is pending - the roster's GA4 property id (299466800) was not found among connected Supermetrics accounts."
 }

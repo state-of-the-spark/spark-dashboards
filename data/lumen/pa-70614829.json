@@ -49,11 +49,11 @@
   ],
   "projectCards": [
     { "name": "Product messaging kits", "status": "Messaging kits for Asta Powerproject and Schedule Validator are complete and already driving the landing page and ad copy.", "state": "active" },
-    { "name": "Email sequences in Salesforce", "status": "Drip copy approved by Mary; building the sequence in Salesforce now, targeting a live send by Sep 1.", "state": "in-progress" },
-    { "name": "Google Ads (CID 711-790-3651)", "status": "Both product campaigns are built to launch together Sep 1, ramping $100-200/mo off Mary's existing ~$500/mo budget until a conversion baseline exists.", "state": "in-progress" },
-    { "name": "Landing / demo pages", "status": "Both pages are built. Noindex comes off and every \"construction grade\" phrase gets trimmed to \"construction\" before the Sep 1 go-live.", "state": "in-progress" },
-    { "name": "Analytics + reporting dashboard", "status": "This dashboard is the reporting layer - cost per form fill becomes a real, live number here once Ads and forms go live Sep 1.", "state": "in-progress" },
-    { "name": "Monthly campaign management", "status": "Ongoing management starts Sep 1; budget shifts week to week toward whichever product campaign is converting.", "state": "in-progress" }
+    { "name": "Email sequences in Salesforce", "status": "Drip copy approved by Mary. Building the sequence is currently blocked on Salesforce, Meta, LinkedIn, and YouTube access from Mary and Alan; still targeting a live send by Sep 1 once access lands.", "state": "in-progress" },
+    { "name": "Google Ads (CID 711-790-3651)", "status": "Both product campaigns are built to launch together Sep 1, ramping $100-200/mo off Mary's existing ~$500/mo budget. Ads are already running in a limited capacity ahead of the MCC manager-link approval: $156.04 spent, 29 clicks, and 139 impressions this week.", "state": "in-progress" },
+    { "name": "Landing / demo pages", "status": "Both pages are built. The two remaining fixes, trimming every \"construction grade\" phrase to \"construction\" and correcting a blue-panel form overlap, are due Aug 30 and on track for the Sep 1 launch; noindex comes off at go-live.", "state": "active" },
+    { "name": "Analytics + reporting dashboard", "status": "This dashboard is the reporting layer - cost per form fill becomes a real, live number here once Ads and forms go live Sep 1. Still waiting on GA4 access from Alan to wire it up.", "state": "in-progress" },
+    { "name": "Monthly campaign management", "status": "Ongoing management starts Sep 1; budget shifts week to week toward whichever product campaign is converting. First report is due Sep 30.", "state": "in-progress" }
   ],
   "pillars": [
     {
@@ -91,15 +91,17 @@
   "reviewsGapSource": "Projects Analytics sells direct to enterprise scheduling teams - there is no public review or map-pack program to compare against. Not applicable for this account.",
   "thisWeeksMove": {
     "label": "Land the Sep 1 launch",
-    "body": "Seven Grant-owned subtasks stand between now and go-live: strip \"construction grade\" from the copy, fix the form overlap, verify the spam filter, build the Salesforce drip, import the 2,000-contact list, resolve GA4, and flip noindex/ads/drip live. All are tracked under ClickUp hub 868h68fty.",
-    "cta": "Clear all 7 launch subtasks by Monday 8/31 EOD"
+    "body": "Landing-page fixes are on track for the Aug 30 deadline, and Google Ads is already live in a limited capacity ahead of MCC approval ($156.04 spent this week). Four days out from the Sep 1 launch, three access approvals are still open and unmoved this week: Salesforce/Meta/LinkedIn/YouTube access, the Google Ads MCC manager-link, and GA4 access.",
+    "cta": "Grant these 3 accesses today so the Sep 1 launch isn't at risk"
   },
   "lumenDid": [
     "Ran the Aug 27 launch call with Mary and Alan Williams; locked go-live for both products to Tuesday Sep 1, with cost per form fill as the first success metric",
     "Moved the ClickUp hub (868h68fty) into Production > Paid Ads and built out the 7-item Grant-owned launch checklist",
     "Landed the copy fix: strip \"grade\" from every \"construction grade\" phrase on both landing pages and the long-form ad",
     "Set the Ads ramp plan - $100-200/mo off the existing ~$500/mo budget until a real conversion baseline exists, then split spend toward whichever product wins",
-    "Passed on the $10/lead Reach Marketing offer for now - establish our own cost per form fill and own the funnel before buying leads"
+    "Passed on the $10/lead Reach Marketing offer for now - establish our own cost per form fill and own the funnel before buying leads",
+    "Flagged the 3 outstanding access approvals (Salesforce/Meta/LinkedIn/YouTube, Google Ads MCC manager-link, GA4) as the real risk to the Sep 1 launch",
+    "Pulled live Google Ads numbers and found spend already flowing ahead of the MCC approval gate: $156.04 spent, 29 clicks, 139 impressions this week"
   ],
   "ledger": [
     { "title": "Strip \"construction grade\" from landing pages + ad copy", "state": "next", "detail": "Due 8/28. Grant: \"If it raises questions in you, it'll raise questions in them.\"" },
@@ -108,7 +110,8 @@
     { "title": "Build the Salesforce email drip", "state": "next", "detail": "Due 9/1. Mary already approved the copy." },
     { "title": "Import the 2,000-contact Primavera P6 list + Asta customer list", "state": "next", "detail": "Due 9/1, cc Amber. Gated on Mary sending both lists." },
     { "title": "Resolve GA4 ownership", "state": "next", "detail": "Alan is doing one more search for the legacy property owner; if nothing turns up, stand up a fresh GA4 property under their control with us as admin. Due 9/1." },
-    { "title": "Flip the launch switch", "state": "next", "detail": "Noindex off, forms live, drip ready, Ads ramp at $100-200/mo. Due 9/1." }
+    { "title": "Flip the launch switch", "state": "next", "detail": "Noindex off, forms live, drip ready, Ads ramp at $100-200/mo. Due 9/1." },
+    { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Confirmed Google Ads is already spending in a limited capacity ahead of MCC approval and re-flagged the 3 open access approvals as the real risk to the Sep 1 launch." }
   ],
-  "dataNotes": "Launch date, budget figures, contact-list size, and every decision above: Aug 27 launch-call transcript, doc 1b3KvaVSYqLhSIoDmzwAJ5P6_h0icm4De-iOjrF65orY (Gemini Notes, 39 min, read in full). Cost per form fill is intentionally pending - no ads or forms are live yet as of this dashboard's asOf date. Accent color #052D6D pulled live from the site's Divi theme CSS Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment."
+  "dataNotes": "Launch date, budget figures, contact-list size, and every decision above: Aug 27 launch-call transcript, doc 1b3KvaVSYqLhSIoDmzwAJ5P6_h0icm4De-iOjrF65orY (Gemini Notes, 39 min, read in full). Cost per form fill is intentionally pending - no ads or forms are live yet as of this dashboard's asOf date. Accent color #052D6D pulled live from the site's Divi theme CSS Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment. VIP Steward pass (Aug 28): Google Ads live figures ($156.04 spend, 29 clicks, 139 impressions, Aug 21-27) pulled via Supermetrics, confirming spend is already flowing ahead of the MCC manager-link approval. Three access approvals remain open: Salesforce/Meta/LinkedIn/YouTube, Google Ads MCC manager-link, and GA4."
 }

@@ -1,7 +1,7 @@
 {
   "token": "hu-10004649",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-08-04",
+  "asOf": "2026-08-28",
   "cadence": "weekly (Tuesday Sync)",
   "business": {
     "name": "Humarian",
@@ -18,13 +18,13 @@
   "heroMetrics": [
     {
       "key": "purchases",
-      "label": "Purchases · last 28 days",
-      "value": "77",
-      "sub": "~$4,874 revenue",
+      "label": "Purchases · last 7 days",
+      "value": "20",
+      "sub": "vs 21 the prior 7 days",
       "state": "live",
-      "delta": { "text": "1.04 purchases per buyer", "tone": "good" },
-      "note": "The purchase pipeline itself is clean end-to-end — orders and revenue are being counted correctly. What is broken is attribution back to Meta, which reads $0 in GA4 because client_id drops on the Meta in-app-browser to Safari hop. That is a known tracking bug being fixed, not a Meta failure.",
-      "source": "GA4 property 255641365 · last 28 days"
+      "delta": { "text": "sessions down 15.6% (2,805 vs 3,325), users down 13.5% (2,615 vs 3,024)", "tone": "watch" },
+      "note": "The purchase pipeline itself is clean end-to-end — orders and revenue are being counted correctly. What is broken is attribution back to Meta, which reads $0 in GA4 because client_id drops on the Meta in-app-browser to Safari hop. That is a known tracking bug being fixed, not a Meta failure. This week's session and purchase dip lines up with the Shopify sales decline the team is tracking - the sg./secure./smile.humarian.com landing build is the named fix.",
+      "source": "Supermetrics pull 2026-08-28, last 7 days vs prior 7 days"
     },
     {
       "key": "adsReach",
@@ -48,10 +48,13 @@
     }
   ],
   "projectCards": [
-    { "name": "Product Landing Pages", "status": "Smile Guard and Cat Probonix shipped as Shopify theme templates. Same 11-section system rolls out to more products next.", "state": "active" },
-    { "name": "Meta Ads", "status": "Brand Awareness (180-day) and DPA Retargeting live. Reporting rebuilt around trailing 3-month spend, landing page views, and cost per result.", "state": "active" },
+    { "name": "Product Landing Pages", "status": "Smile Guard and Cat Probonix shipped as Shopify theme templates. Next up: the sg./secure./smile.humarian.com landing build, due Sep 2, is the named fix for the recent Shopify sales dip, and 3 tracking subtasks were added this week to make sure it lands on time.", "state": "in-progress" },
+    { "name": "Meta Ads", "status": "Brand Awareness (180-day) and DPA Retargeting live. Meta CAPI dedup fix confirmed Aug 24; UTM standard and Google Ads report-cycle fixes are in progress. One item is blocked pending Google Ads access.", "state": "active" },
     { "name": "Attribution & Tracking", "status": "Server-side GA4 + Meta buildout is ready in GTM. Waiting on E2M to publish so Meta and Google Ads conversions attribute correctly.", "state": "in-progress" },
-    { "name": "Weekly Reporting", "status": "Humarian Tuesday Sync email lands every Tuesday 7am with Meta bar charts, active-ads breakdown, and a written pulse narrative.", "state": "active" }
+    { "name": "Weekly Reporting", "status": "Humarian Tuesday Sync email lands every Tuesday 7am with Meta bar charts, active-ads breakdown, and a written pulse narrative.", "state": "active" },
+    { "name": "SEO / AIO", "status": "All 3 tracked deliverables are moving this week. Organic traffic is still 96.76% concentrated in a single blog post - flagged for a real diversification plan, not just a note.", "state": "active" },
+    { "name": "Social Media Management", "status": "1 of 4 deliverables done. 3 have been stalled since March - a demo video, a video format spec, and an approved influencer collab that never started - and are being reviewed for a revive-or-archive call.", "state": "in-progress" },
+    { "name": "Influencer / UGC", "status": "1 open deliverable in progress: seasonal header copy for 2 website slides.", "state": "active" }
   ],
   "pillars": [
     {
@@ -98,14 +101,18 @@
     "Shipped two new Shopify landing pages (Smile Guard, Cat Probonix) as reusable theme templates, plus a written protocol so this rolls out to any Humarian product next",
     "Diagnosed the attribution severance mechanism (client_id lost on the Meta in-app-browser to Safari checkout hop) and found E2M's full server-side buildout sitting unpublished in GTM for ~6 weeks",
     "Overhauled the Tuesday Sync report — Meta now renders as trailing 3-month bar charts (spend, landing page views, cost per result) plus an active-ads breakdown",
-    "Set up your live scorecard at this private link"
+    "Set up your live scorecard at this private link",
+    "Pulled a fresh GA4 baseline (last 7 days vs the prior 7) and flagged the session and purchase decline against your Shopify sales trend",
+    "Flagged that the sg./secure./smile.humarian.com landing page build, the fix for the recent Shopify sales dip, had no tracking against its Sep 2 deadline, and got that tracking in place",
+    "Reviewed the stalled social deliverables (a demo video, a video format spec, and the approved influencer collab) for a revive-or-archive decision"
   ],
   "ledger": [
     { "title": "Publish E2M's server-side GTM workspace", "state": "in-progress", "detail": "70 tags ready in GTM-KKTG8V8M Default Workspace, unpublished ~6 weeks. Priyal at E2M has the ball as of Grant's 7/30 nudge." },
     { "title": "Fix cross-domain for secure.humarian.com", "state": "next", "detail": "3,533 sessions are minting phantom Direct sessions with 0 events on every hop because the payment domain is not cross-domain-linked in GA4." },
     { "title": "Ship the next product landing page", "state": "next", "detail": "Smile Guard and Cat Probonix are live-preview verified. The theme-template system is documented and repeats cleanly — pick the next product and clone." },
     { "title": "Resolve Smile Guard dosing conflict", "state": "next", "detail": "Label vs A+ content disagree on schedule; Shawn at Humarian was emailed 8/2 for the authoritative answer." },
-    { "title": "Roll up store-wide Judge.me reviews", "state": "next", "detail": "Product-level rating shows on landing pages; store-wide aggregate not yet wired to the dashboard." }
+    { "title": "Roll up store-wide Judge.me reviews", "state": "next", "detail": "Product-level rating shows on landing pages; store-wide aggregate not yet wired to the dashboard." },
+    { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Pulled a first GA4 week-over-week baseline, flagged that the Sep 2 landing-page build had zero tracking despite being the fix for the recent sales dip, and reviewed the stalled social deliverables for a revive-or-archive call." }
   ],
-  "dataNotes": "Purchases and revenue: GA4 property 255641365, last 28 days, pulled 2026-07-30. Judge.me reviews: Smile Guard product page as of 2026-08-02. Meta ad reach pending next Supermetrics refresh; Brand Awareness and DPA Retargeting campaigns confirmed live via the Tuesday Sync trailing 3-month view. Attribution diagnosis and unpublished GTM state verified 2026-07-30 via live inspection of GTM-KKTG8V8M server container + Grant's session on the GTM internal workspaces API (Version 6 live, no Version 7 exists). Pillar scores are Lumen's weighted assessment. Reviews-gap panel currently shows product-level Judge.me only; probiotic-peer comparison will be added once a public data source is agreed on."
+  "dataNotes": "Purchases and revenue: GA4 property 255641365, last 28 days, pulled 2026-07-30. Judge.me reviews: Smile Guard product page as of 2026-08-02. Meta ad reach pending next Supermetrics refresh; Brand Awareness and DPA Retargeting campaigns confirmed live via the Tuesday Sync trailing 3-month view. Attribution diagnosis and unpublished GTM state verified 2026-07-30 via live inspection of GTM-KKTG8V8M server container + Grant's session on the GTM internal workspaces API (Version 6 live, no Version 7 exists). Pillar scores are Lumen's weighted assessment. Reviews-gap panel currently shows product-level Judge.me only; probiotic-peer comparison will be added once a public data source is agreed on. GA4 week-over-week baseline (sessions 2,805 vs 3,325, users 2,615 vs 3,024, purchases 20 vs 21) pulled via Supermetrics 2026-08-28, last 7 days vs prior 7 days."
 }

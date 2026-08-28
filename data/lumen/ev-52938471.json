@@ -48,10 +48,10 @@
     }
   ],
   "projectCards": [
-    { "name": "Website Rescue + Hosting", "status": "NAP phone fixed sitewide (14 occurrences incl. the invisible Rank Math schema), a broken footer email corrected, homepage decluttered edge-to-edge, and 2 new SEO landing pages published.", "state": "active" },
-    { "name": "Paid Ads / Lead Velocity", "status": "2 Google Search campaigns live since Aug 22 on CID 992-297-7178 (~$502/mo). LSA / Google Guaranteed application is next, pending Doug's FL license + COI.", "state": "active" },
+    { "name": "Website Rescue + Hosting", "status": "NAP phone fixed sitewide (14 occurrences incl. the invisible Rank Math schema), a broken footer email corrected, homepage decluttered edge-to-edge, and 2 new SEO landing pages published. Bluehost/DNS access confirmed Aug 23; a further homepage simplification design is ready pending a go-ahead. The email deliverability audit also flagged a missing DMARC record alongside the known SPF/DKIM issues.", "state": "active" },
+    { "name": "Paid Ads / Lead Velocity", "status": "2 Google Search campaigns live since Aug 22 on CID 992-297-7178 (~$502/mo). Setup audit closed Aug 23; performance reporting is still pending, the account isn't connected to Supermetrics yet. LSA / Google Guaranteed application is next, pending Doug's FL license + COI.", "state": "active" },
     { "name": "SEO / AIO", "status": "SEO Ignition (NAP + schema + heading cleanup) done Aug 24. Local SEO Care ongoing. Review Accelerator plan finalized, launch blocked on the GBP claim.", "state": "in-progress" },
-    { "name": "Social Media Management", "status": "Audit found an NAP break on Facebook/Instagram/BBB and a duplicate FB page. Cleanup + posting cadence wait on the Meta admin access requested Aug 23.", "state": "in-progress" }
+    { "name": "Social Media Management", "status": "Audit found an NAP break on Facebook/Instagram/BBB and a duplicate FB page. Cleanup + posting cadence wait on the Meta admin access requested Aug 23. No tracked work has started yet on this line ($897 setup + $497/mo); 3 starter deliverables are being scoped to kick it off once access lands.", "state": "in-progress" }
   ],
   "pillars": [
     {
@@ -97,14 +97,16 @@
     "Corrected a broken footer email address that displayed one address and mailed a different, wrong one (Aug 24)",
     "Published two new SEO landing pages, bathroom remodeling and general contractor, closing the two biggest content gaps found in the Aug 19 audit (Aug 19)",
     "Built and launched 2 Google Search campaigns - Kitchen Remodeling and Home Additions & MIL Suites - live on CID 992-297-7178 since Aug 22, ~$502/mo combined",
-    "Finalized the Review Accelerator email/SMS sequence and sent the Aug 24 needs-list email asking Doug and Shannon for GBP, directory logins, Shannon's mailbox password, license/insurance docs, and real job photos"
+    "Finalized the Review Accelerator email/SMS sequence and sent the Aug 24 needs-list email asking Doug and Shannon for GBP, directory logins, Shannon's mailbox password, license/insurance docs, and real job photos",
+    "Confirmed Bluehost/DNS access and got a further homepage simplification design ready for a go-ahead"
   ],
   "ledger": [
     { "title": "Get the GBP login", "state": "next", "detail": "Blocks the Review Accelerator launch and a GBP-verified review count. Asked Aug 24, awaiting reply." },
     { "title": "Get directory logins (Yelp, Angi, HomeAdvisor, BBB, Facebook, Nextdoor)", "state": "next", "detail": "The old 863-617-7700 number is still live - and PRIMARY - on BBB, plus Nextdoor, BuildZoom, and likely the Chamber of Commerce." },
     { "title": "Get Meta Business admin access", "state": "next", "detail": "Requested from Doug/Shannon Aug 23 to unblock the social cleanup task; not yet granted." },
     { "title": "LSA / Google Guaranteed application", "state": "next", "detail": "Needs Doug's FL license plus $500K-1M GL insurance and a COI before the 2-5 week screening can start." },
-    { "title": "Fix evangelistoconstruction.com email deliverability (SPF/DKIM)", "state": "in-progress", "detail": "Domain SPF still points at the dead Hostinger host and DKIM is missing; fix is copying the cPanel Email-Deliverability records into Cloudflare." }
+    { "title": "Fix evangelistoconstruction.com email deliverability (SPF/DKIM)", "state": "in-progress", "detail": "Domain SPF still points at the dead Hostinger host and DKIM is missing; fix is copying the cPanel Email-Deliverability records into Cloudflare. A missing DMARC record (p=none) was also flagged this cycle." },
+    { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Confirmed Bluehost/DNS access, flagged a missing DMARC record alongside the known SPF/DKIM fix, and got the homepage simplification design ready pending a go-ahead." }
   ],
-  "dataNotes": "Organic keyword count and visits: SEMrush site audit, Aug 19, 2026. ~35 Google reviews figure: same Aug 19 audit, a third-party estimate - not GBP-verified, hence the reviews hero metric and reviews-gap panel are both pending. Google Ads CID, budget, geo, and live-date: verified directly in Google Ads Manager Aug 22-23, 2026. NAP and schema fixes: verified live via Claude in Chrome screenshots and a full-page DOM scan Aug 24, 2026 (0 remaining instances of the old number). Accent color pulled live from evangelistoconstruction.com's homepage CTA styling Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment."
+  "dataNotes": "Organic keyword count and visits: SEMrush site audit, Aug 19, 2026. ~35 Google reviews figure: same Aug 19 audit, a third-party estimate - not GBP-verified, hence the reviews hero metric and reviews-gap panel are both pending. Google Ads CID, budget, geo, and live-date: verified directly in Google Ads Manager Aug 22-23, 2026. NAP and schema fixes: verified live via Claude in Chrome screenshots and a full-page DOM scan Aug 24, 2026 (0 remaining instances of the old number). Accent color pulled live from evangelistoconstruction.com's homepage CTA styling Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment. VIP Steward pass (Aug 28) confirmed Bluehost/DNS access and flagged a missing DMARC record (p=none) alongside the known SPF/DKIM issue; also noted Paid Ads performance reporting is pending Supermetrics connection for CID 992-297-7178."
 }

@@ -42,7 +42,7 @@
       "value": null,
       "state": "pending",
       "pendingLabel": "Awaiting GBP verification",
-      "pendingSub": "Pending on Domingo since Aug 10",
+      "pendingSub": "Pending on Domingo since Aug 10 (18 days) - GBP is claimed and mapped to 4329 Fox Ridge Blvd",
       "note": "No first-party review count is available until GBP verification comes through - that also unlocks local map-pack visibility.",
       "source": "Google Business Profile (unverified)"
     }
@@ -50,7 +50,7 @@
   "projectCards": [
     { "name": "Google Ads", "status": "CID 140-624-4786 live since Aug 27, $500/mo Search-only in a 30-mile Tampa radius, running on Spark's card for week 1 while Domingo's billing card gets swapped in.", "state": "active" },
     { "name": "Website", "status": "Homepage SEO shipped Aug 27 - LocalBusiness schema, meta description, canonical fix, duplicate homepages unpublished - plus NORMI and ISSA membership logos added to the hero.", "state": "active" },
-    { "name": "GBP (Google Business Profile)", "status": "Verification has been pending on Domingo since Aug 10; blocks the reviews read and local map-pack visibility.", "state": "in-progress" },
+    { "name": "GBP (Google Business Profile)", "status": "Claimed and mapped to 4329 Fox Ridge Blvd. Verification video has been pending on Domingo since Aug 10 (18 days now) - the oldest open ask on this account, and it blocks the reviews read and local map-pack visibility.", "state": "in-progress" },
     { "name": "Facebook page access", "status": "Confirmed Aug 27 the page is real but not under any of our admin accounts. Access request sent to Domingo the same day, due Sep 3.", "state": "in-progress" }
   ],
   "pillars": [
@@ -89,7 +89,7 @@
   "reviewsGapSource": "GBP verification has been pending on Domingo since Aug 10 - no first-party review count or competitor comparison is available yet. Populates once GBP access is granted.",
   "thisWeeksMove": {
     "label": "Get Domingo's billing card, GBP, and Facebook access",
-    "body": "Three asks went out in the Aug 27 email: swap Google Ads billing off Spark's card (due Aug 29), verify GBP (pending since Aug 10), and grant Facebook Page admin access (due Sep 3). All three unlock real reporting and local visibility that this dashboard can't show yet.",
+    "body": "Three asks went out in the Aug 27 email: verify GBP (the verification video has been pending since Aug 10, now 18 days and the biggest lever right now), swap Google Ads billing off Spark's card (due Aug 29), and grant Facebook Page admin access (due Sep 3). All three unlock real reporting and local visibility that this dashboard can't show yet.",
     "cta": "Follow up on the Aug 27 email if no reply lands soon"
   },
   "lumenDid": [
@@ -98,14 +98,16 @@
     "Added NORMI and ISSA membership trust logos to the hero",
     "Fixed a Divi Theme Builder footer CSS bug that had the \"Schedule a Free Inspection\" subtitle overlapping the section break",
     "Confirmed definitively that AIM's Facebook page is real but not under any of our admin accounts, and requested access from Domingo",
-    "Sent Domingo the full status-plus-ask email Aug 27: billing card, GBP verification, Facebook admin access, 5-10 team/job photos, and phone/service-area confirmation"
+    "Sent Domingo the full status-plus-ask email Aug 27: billing card, GBP verification, Facebook admin access, 5-10 team/job photos, and phone/service-area confirmation",
+    "Confirmed GBP is claimed and mapped to your business address, and flagged the verification-video ask (pending since Aug 10, now 18 days) as the top blocker on the account"
   ],
   "ledger": [
     { "title": "Swap Google Ads billing to Domingo's card", "state": "next", "detail": "Urgent, due Aug 29. Running on Spark's card for week 1 only." },
     { "title": "Get GBP verification", "state": "next", "detail": "Pending on Domingo since Aug 10 - blocks the reviews read and local map-pack visibility." },
     { "title": "Get Facebook Page admin access", "state": "next", "detail": "Requested Aug 27, due Sep 3." },
     { "title": "Add the 14 staged keywords once the account unlocks", "state": "next", "detail": "A new-account read-only review lock is blocking keyword edits post-publish." },
-    { "title": "Get 5-10 team/job photos from Domingo", "state": "next", "detail": "Asked in the Aug 27 email; needed for the site and future ad creative." }
+    { "title": "Get 5-10 team/job photos from Domingo", "state": "next", "detail": "Asked in the Aug 27 email; needed for the site and future ad creative." },
+    { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Confirmed GBP is claimed and mapped to 4329 Fox Ridge Blvd and re-flagged the verification video (pending 18 days) as the top blocker; call tracking is set to route to 813-997-9787 and the first monthly report is due Sep 30." }
   ],
-  "dataNotes": "Google Ads facts (CID, budget, geo, live date, staged keywords, ad strength) verified directly in Google Ads Manager Aug 27, 2026 (campaign built Aug 21, published Aug 27). Homepage SEO/schema fixes verified live via a Claude in Chrome DOM read Aug 27, 2026. GBP status reflects Domingo's outstanding access request open since Aug 10. Facebook page ownership verified by its absence from grant.nieddu's Meta Business Suite portfolios and no admin invite across 3 searchable inboxes, Aug 27, 2026. Accent color #2EA3F2 pulled live from aimforcleanair.com's homepage CSS Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment. Reviews-gap panel intentionally empty pending GBP access."
+  "dataNotes": "Google Ads facts (CID, budget, geo, live date, staged keywords, ad strength) verified directly in Google Ads Manager Aug 27, 2026 (campaign built Aug 21, published Aug 27). Homepage SEO/schema fixes verified live via a Claude in Chrome DOM read Aug 27, 2026. GBP status reflects Domingo's outstanding access request open since Aug 10. Facebook page ownership verified by its absence from grant.nieddu's Meta Business Suite portfolios and no admin invite across 3 searchable inboxes, Aug 27, 2026. Accent color #2EA3F2 pulled live from aimforcleanair.com's homepage CSS Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment. Reviews-gap panel intentionally empty pending GBP access. VIP Steward pass (Aug 28) confirmed GBP is claimed and mapped to 4329 Fox Ridge Blvd, quantified the verification-video delay at 18 days (pending since Aug 10), and confirmed call tracking is set to route to 813-997-9787 with the first monthly report due Sep 30. No Google Ads/GA4/Meta Supermetrics data available yet per the roster (GA4 has only a measurement id, no numeric property id on file; no Meta ad account on roster)."
 }
