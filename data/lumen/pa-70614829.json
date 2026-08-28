@@ -1,0 +1,114 @@
+{
+  "token": "pa-70614829",
+  "model": "lumen-marketing-engine-v1",
+  "asOf": "2026-08-28",
+  "cadence": "Mon / Wed / Fri (VIP Steward)",
+  "business": {
+    "name": "Projects Analytics",
+    "category": "Construction scheduling software - B2B SaaS",
+    "phone": "",
+    "website": "https://www.projectsanalytics.com",
+    "accentColor": "#052D6D",
+    "initials": "PA",
+    "serviceArea": false
+  },
+  "healthScore": 50,
+  "healthNote": "Supporting score - the reasons are the numbers above. Never the headline.",
+  "healthScoreSource": "Lumen weighted score",
+  "heroMetrics": [
+    {
+      "key": "costPerFormFill",
+      "label": "Cost per form fill",
+      "value": null,
+      "state": "pending",
+      "pendingLabel": "Launches Tue Sep 1",
+      "pendingSub": "First read once Google Ads + both landing pages go live",
+      "note": "This is the metric Mary and Alan agreed to run the whole launch on - Asta Powerproject and Schedule Validator campaigns run at the same time, and budget shifts toward whichever converts cheaper.",
+      "source": "Google Ads CID 711-790-3651 (launch pending)"
+    },
+    {
+      "key": "adBudgetRamp",
+      "label": "Google Ads launch ramp",
+      "value": "$100-200",
+      "sub": "per month, ramping off an existing ~$500/mo budget",
+      "state": "live",
+      "delta": { "text": "Launches Sep 1", "tone": "watch" },
+      "note": "Deliberately conservative: hold spend down until a real conversion baseline exists off actual form-fill data, then scale the budget toward whichever product is converting.",
+      "source": "Aug 27 launch call"
+    },
+    {
+      "key": "contactsQueued",
+      "label": "Contacts queued for email drip",
+      "value": "2,000",
+      "sub": "purchased Primavera P6 list, plus the Asta customer list",
+      "state": "live",
+      "delta": { "text": "Import gated on Mary sending both lists", "tone": "watch" },
+      "note": "Both lists import into Salesforce (cc Amber) ahead of the Sep 1 drip send. Mary approved the email copy on the call.",
+      "source": "Aug 27 launch call"
+    }
+  ],
+  "projectCards": [
+    { "name": "Product messaging kits", "status": "Messaging kits for Asta Powerproject and Schedule Validator are complete and already driving the landing page and ad copy.", "state": "active" },
+    { "name": "Email sequences in Salesforce", "status": "Drip copy approved by Mary; building the sequence in Salesforce now, targeting a live send by Sep 1.", "state": "in-progress" },
+    { "name": "Google Ads (CID 711-790-3651)", "status": "Both product campaigns are built to launch together Sep 1, ramping $100-200/mo off Mary's existing ~$500/mo budget until a conversion baseline exists.", "state": "in-progress" },
+    { "name": "Landing / demo pages", "status": "Both pages are built. Noindex comes off and every \"construction grade\" phrase gets trimmed to \"construction\" before the Sep 1 go-live.", "state": "in-progress" },
+    { "name": "Analytics + reporting dashboard", "status": "This dashboard is the reporting layer - cost per form fill becomes a real, live number here once Ads and forms go live Sep 1.", "state": "in-progress" },
+    { "name": "Monthly campaign management", "status": "Ongoing management starts Sep 1; budget shifts week to week toward whichever product campaign is converting.", "state": "in-progress" }
+  ],
+  "pillars": [
+    {
+      "name": "Demand capture",
+      "score": 55,
+      "hero": true,
+      "bar": "watch",
+      "note": "Two products, two campaigns, launching together at a deliberately modest $100-200/mo ramp Sep 1. A purchased 2,000-contact Primavera P6 list plus the Asta customer list are about to seed the Salesforce drip - real top-of-funnel volume starts next week, nothing measurable yet.",
+      "source": "Lumen assessment - Aug 27 launch call"
+    },
+    {
+      "name": "Conversion path",
+      "score": 58,
+      "hero": true,
+      "bar": "watch",
+      "note": "Both landing pages are built. Before launch: strip \"construction grade\" from the copy (client's call, due 8/28), fix a blue-panel overlap at the bottom of both forms into a full-width testimonial band (due 8/31), and verify the not-a-robot test against real spam fills Mary is forwarding.",
+      "source": "Lumen assessment - Aug 27 launch call"
+    },
+    {
+      "name": "Tracking & attribution",
+      "score": 40,
+      "hero": false,
+      "bar": "bad",
+      "note": "GA4 ownership for the legacy property is still unresolved - Tanya says it isn't hers, Alan is doing one more search. If nobody surfaces as the owner, a fresh GA4 property gets stood up under the client's control with us as admin, ahead of the Sep 1 launch.",
+      "source": "Lumen assessment - Aug 27 launch call"
+    }
+  ],
+  "hygiene": {
+    "seo": 50,
+    "content": 55,
+    "note": "The two product landing pages carry the on-page weight. Google Business Profile is shelved - the old listing sits on a virtual-office address Google no longer accepts, and it isn't worth chasing for a B2B software seller. Paid demand and the email drip are the real levers here, not local SEO.",
+    "source": "Aug 27 launch call"
+  },
+  "reviewsGap": [],
+  "reviewsGapSource": "Projects Analytics sells direct to enterprise scheduling teams - there is no public review or map-pack program to compare against. Not applicable for this account.",
+  "thisWeeksMove": {
+    "label": "Land the Sep 1 launch",
+    "body": "Seven Grant-owned subtasks stand between now and go-live: strip \"construction grade\" from the copy, fix the form overlap, verify the spam filter, build the Salesforce drip, import the 2,000-contact list, resolve GA4, and flip noindex/ads/drip live. All are tracked under ClickUp hub 868h68fty.",
+    "cta": "Clear all 7 launch subtasks by Monday 8/31 EOD"
+  },
+  "lumenDid": [
+    "Ran the Aug 27 launch call with Mary and Alan Williams; locked go-live for both products to Tuesday Sep 1, with cost per form fill as the first success metric",
+    "Moved the ClickUp hub (868h68fty) into Production > Paid Ads and built out the 7-item Grant-owned launch checklist",
+    "Landed the copy fix: strip \"grade\" from every \"construction grade\" phrase on both landing pages and the long-form ad",
+    "Set the Ads ramp plan - $100-200/mo off the existing ~$500/mo budget until a real conversion baseline exists, then split spend toward whichever product wins",
+    "Passed on the $10/lead Reach Marketing offer for now - establish our own cost per form fill and own the funnel before buying leads"
+  ],
+  "ledger": [
+    { "title": "Strip \"construction grade\" from landing pages + ad copy", "state": "next", "detail": "Due 8/28. Grant: \"If it raises questions in you, it'll raise questions in them.\"" },
+    { "title": "Fix the blue-panel form overlap on both landing pages", "state": "next", "detail": "Due 8/31. Full-width testimonial band plus construction/scheduling imagery, without over-designing." },
+    { "title": "Verify the not-a-robot test + trace the spam-fill source", "state": "next", "detail": "Due 8/31, gated on Mary forwarding the spam examples she's getting in Salesforce." },
+    { "title": "Build the Salesforce email drip", "state": "next", "detail": "Due 9/1. Mary already approved the copy." },
+    { "title": "Import the 2,000-contact Primavera P6 list + Asta customer list", "state": "next", "detail": "Due 9/1, cc Amber. Gated on Mary sending both lists." },
+    { "title": "Resolve GA4 ownership", "state": "next", "detail": "Alan is doing one more search for the legacy property owner; if nothing turns up, stand up a fresh GA4 property under their control with us as admin. Due 9/1." },
+    { "title": "Flip the launch switch", "state": "next", "detail": "Noindex off, forms live, drip ready, Ads ramp at $100-200/mo. Due 9/1." }
+  ],
+  "dataNotes": "Launch date, budget figures, contact-list size, and every decision above: Aug 27 launch-call transcript, doc 1b3KvaVSYqLhSIoDmzwAJ5P6_h0icm4De-iOjrF65orY (Gemini Notes, 39 min, read in full). Cost per form fill is intentionally pending - no ads or forms are live yet as of this dashboard's asOf date. Accent color #052D6D pulled live from the site's Divi theme CSS Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment."
+}
