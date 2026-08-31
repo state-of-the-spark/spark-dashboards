@@ -51,10 +51,10 @@
       "label": "Website visits & leads (Google Analytics)",
       "value": null,
       "state": "pending",
-      "pendingLabel": "Data collecting - access pending",
-      "pendingSub": "GA4 has tracked the site since June 2024, including lead-form events",
-      "note": "The site's Google Analytics (property 448063129) is recording visits and generate_lead events right now, but the only working access belonged to the previous agency - their connection was severed in the site migration. Once access is restored (a JABstract/client ask now on the list), monthly visits and leads land here as the site's scoreboard.",
-      "source": "GA4 G-DYTEM1QQ1J - verified collecting Aug 31, 2026; access pending"
+      "pendingLabel": "LIVE Aug 31 - first numbers land within 48h",
+      "pendingSub": "A brand-new Google Analytics, owned by YOUR Google account - not the old agency's",
+      "note": "The previous agency's Analytics was orphaned in the handoff - data collected but nobody could read it. On Aug 31 we set up a fresh Google Analytics account owned by Evangelisto's own Google login, wired it to the site through Google's Site Kit, and verified the tag is live for visitors (with enhanced measurement, so form submissions count automatically). Monthly visits and leads land here as the site's scoreboard from now on - and you hold the keys.",
+      "source": "GA4 property 552236127 (G-ZM9WB81RST) - created + tag verified live Aug 31, 2026"
     }
   ],
   "projectCards": [
@@ -120,7 +120,7 @@
     { "title": "Move DNS off Bluehost", "state": "in-progress", "detail": "The last piece of the hosting migration - repointing the domain's DNS away from Bluehost. Queued on our side; no client action needed." },
     { "title": "Connect Google Ads to performance reporting", "state": "in-progress", "detail": "CID 992-297-7178 still needs wiring into our reporting stack (Supermetrics) so real ad numbers land on this dashboard. Our side." },
     { "title": "LSA / Google Guaranteed application", "state": "next", "detail": "Needs Doug's FL license plus $500K-1M GL insurance and a COI before the 2-5 week screening can start." },
-    { "title": "Restore Google Analytics access", "state": "next", "detail": "Your GA4 has collected visit and lead data since June 2024, but the previous agency's Google account holds the only key and their connection broke in the migration. Ask JABstract (Josh) to add grant@stateofthespark.com to the Analytics account - or we reconnect it fresh on our side." },
+    { "title": "Google Analytics - rebuilt and client-owned", "state": "done", "detail": "The old agency's Analytics was orphaned (data locked away). Aug 31: new Analytics account created under YOUR Google login, wired to the site via Site Kit, tag verified live. History starts fresh Aug 31; the old locked data stays retrievable later if JABstract ever grants access." },
     { "title": "Fix evangelistoconstruction.com email deliverability (SPF/DKIM)", "state": "in-progress", "detail": "Domain SPF still points at the dead Hostinger host and DKIM is missing; fix is copying the cPanel Email-Deliverability records into Cloudflare. A missing DMARC record (p=none) was also flagged this cycle." },
     { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Confirmed Bluehost/DNS access, flagged a missing DMARC record alongside the known SPF/DKIM fix, and got the homepage simplification design ready pending a go-ahead." }
   ],
