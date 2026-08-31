@@ -1,7 +1,7 @@
 {
   "token": "ev-52938471",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-08-28",
+  "asOf": "2026-08-31",
   "cadence": "Mon / Wed / Fri (VIP Steward)",
   "business": {
     "name": "Evangelisto Construction",
@@ -43,15 +43,15 @@
       "state": "pending",
       "pendingLabel": "Awaiting GBP access",
       "pendingSub": "~35 reviews per the Aug 19 audit (third-party, not GBP-verified)",
-      "note": "GBP login was asked for in the Aug 24 needs-list email to Doug and Shannon; a first-party count and the Review Accelerator launch both wait on that reply.",
+      "note": "GBP login was asked for in the Aug 24 needs-list email to Doug and Shannon; a week on, that reply is still open, and a first-party count and the Review Accelerator launch both wait on it.",
       "source": "Google Business Profile (unclaimed)"
     }
   ],
   "projectCards": [
-    { "name": "Website Rescue + Hosting", "status": "NAP phone fixed sitewide (14 occurrences incl. the invisible Rank Math schema), a broken footer email corrected, homepage decluttered edge-to-edge, and 2 new SEO landing pages published. Bluehost/DNS access confirmed Aug 23; a further homepage simplification design is ready pending a go-ahead. The email deliverability audit also flagged a missing DMARC record alongside the known SPF/DKIM issues.", "state": "active" },
+    { "name": "Website Rescue + Hosting", "status": "NAP phone fixed sitewide (14 occurrences incl. the invisible Rank Math schema), a broken footer email corrected, homepage decluttered edge-to-edge, and 2 new SEO landing pages published. The Aug 31 pass confirmed the legacy lakelandflcabinets.com consolidation is clean. Next up on our side: moving the domain's DNS off Bluehost to finish the hosting migration; a further homepage simplification design is ready pending a go-ahead. The email deliverability audit also flagged a missing DMARC record alongside the known SPF/DKIM issues.", "state": "active" },
     { "name": "Paid Ads / Lead Velocity", "status": "2 Google Search campaigns live since Aug 22 on CID 992-297-7178 (~$502/mo). Setup audit closed Aug 23; performance reporting is still pending, the account isn't connected to Supermetrics yet. LSA / Google Guaranteed application is next, pending Doug's FL license + COI.", "state": "active" },
     { "name": "SEO / AIO", "status": "SEO Ignition (NAP + schema + heading cleanup) done Aug 24. Local SEO Care ongoing. Review Accelerator plan finalized, launch blocked on the GBP claim.", "state": "in-progress" },
-    { "name": "Social Media Management", "status": "Audit found an NAP break on Facebook/Instagram/BBB and a duplicate FB page. Cleanup + posting cadence wait on the Meta admin access requested Aug 23. No tracked work has started yet on this line ($897 setup + $497/mo); 3 starter deliverables are being scoped to kick it off once access lands.", "state": "in-progress" }
+    { "name": "Social Media Management", "status": "Meta admin access GRANTED - Shannon sent the full-access Business invitation Aug 24, so the Facebook/Instagram cleanup (NAP break, duplicate FB page) is now unblocked on our side. Starter deliverables and the posting cadence are being scoped to kick off this line ($897 setup + $497/mo).", "state": "in-progress" }
   ],
   "pillars": [
     {
@@ -89,7 +89,7 @@
   "reviewsGapSource": "GBP access has been asked for since the Aug 24 needs-list email and hasn't come back yet. The Aug 19 audit put Evangelisto at roughly 35 reviews, but that's a third-party estimate, not a GBP-verified count, so no comparison table is shown until the login lands.",
   "thisWeeksMove": {
     "label": "Get the GBP login from Doug and Shannon",
-    "body": "One login unblocks three things at once: an accurate review count for this dashboard, the Review Accelerator launch (the plan is finalized and ready), and the off-site citation fixes (BBB, Yelp, Nextdoor, BuildZoom all still show the dead number). It was asked for in the Aug 24 needs-list email alongside directory logins, Shannon's mailbox password, license/insurance docs, and job photos.",
+    "body": "One login unblocks three things at once: an accurate review count for this dashboard, the Review Accelerator launch (the plan is finalized and ready), and the off-site citation fixes (BBB, Yelp, Nextdoor, BuildZoom all still show the dead number). It was asked for in the Aug 24 needs-list email alongside directory logins, Shannon's mailbox password, license/insurance docs, and job photos - a full week without a reply as of Aug 31. Bright spot: Doug forwarded the BBB verification code Aug 27, so the highest-priority citation fix is already in motion.",
     "cta": "Follow up on the Aug 24 needs-list email"
   },
   "lumenDid": [
@@ -98,15 +98,19 @@
     "Published two new SEO landing pages, bathroom remodeling and general contractor, closing the two biggest content gaps found in the Aug 19 audit (Aug 19)",
     "Built and launched 2 Google Search campaigns - Kitchen Remodeling and Home Additions & MIL Suites - live on CID 992-297-7178 since Aug 22, ~$502/mo combined",
     "Finalized the Review Accelerator email/SMS sequence and sent the Aug 24 needs-list email asking Doug and Shannon for GBP, directory logins, Shannon's mailbox password, license/insurance docs, and real job photos",
-    "Confirmed Bluehost/DNS access and got a further homepage simplification design ready for a go-ahead"
+    "Confirmed Bluehost/DNS access and got a further homepage simplification design ready for a go-ahead",
+    "Verified the legacy lakelandflcabinets.com domain consolidation is clean in SEMrush - no stray rankings or duplicate-content drag left behind (Aug 31)",
+    "Advised on the Polk County Business Hub directory listing Shannon asked about - worth the $75 with a UTM-tagged backlink so the traffic it sends is measurable; Shannon signed up Aug 28"
   ],
   "ledger": [
     { "title": "Get the GBP login", "state": "next", "detail": "Blocks the Review Accelerator launch and a GBP-verified review count. Asked Aug 24, awaiting reply." },
-    { "title": "Get directory logins (Yelp, Angi, HomeAdvisor, BBB, Facebook, Nextdoor)", "state": "next", "detail": "The old 863-617-7700 number is still live - and PRIMARY - on BBB, plus Nextdoor, BuildZoom, and likely the Chamber of Commerce." },
-    { "title": "Get Meta Business admin access", "state": "next", "detail": "Requested from Doug/Shannon Aug 23 to unblock the social cleanup task; not yet granted." },
+    { "title": "Get directory logins (Yelp, Angi, HomeAdvisor, Facebook, Nextdoor)", "state": "next", "detail": "The old 863-617-7700 number is still live on Nextdoor, BuildZoom, and likely the Chamber of Commerce. BBB - where the dead number is PRIMARY - is already in motion: Doug forwarded the BBB verification code Aug 27." },
+    { "title": "Get Meta Business admin access", "state": "done", "detail": "Shannon sent the full-access Meta Business invitation Aug 24 - social cleanup and posting are now unblocked on our side." },
+    { "title": "Move DNS off Bluehost", "state": "in-progress", "detail": "The last piece of the hosting migration - repointing the domain's DNS away from Bluehost. Queued on our side; no client action needed." },
+    { "title": "Connect Google Ads to performance reporting", "state": "in-progress", "detail": "CID 992-297-7178 still needs wiring into our reporting stack (Supermetrics) so real ad numbers land on this dashboard. Our side." },
     { "title": "LSA / Google Guaranteed application", "state": "next", "detail": "Needs Doug's FL license plus $500K-1M GL insurance and a COI before the 2-5 week screening can start." },
     { "title": "Fix evangelistoconstruction.com email deliverability (SPF/DKIM)", "state": "in-progress", "detail": "Domain SPF still points at the dead Hostinger host and DKIM is missing; fix is copying the cPanel Email-Deliverability records into Cloudflare. A missing DMARC record (p=none) was also flagged this cycle." },
     { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Confirmed Bluehost/DNS access, flagged a missing DMARC record alongside the known SPF/DKIM fix, and got the homepage simplification design ready pending a go-ahead." }
   ],
-  "dataNotes": "Organic keyword count and visits: SEMrush site audit, Aug 19, 2026. ~35 Google reviews figure: same Aug 19 audit, a third-party estimate - not GBP-verified, hence the reviews hero metric and reviews-gap panel are both pending. Google Ads CID, budget, geo, and live-date: verified directly in Google Ads Manager Aug 22-23, 2026. NAP and schema fixes: verified live via Claude in Chrome screenshots and a full-page DOM scan Aug 24, 2026 (0 remaining instances of the old number). Accent color pulled live from evangelistoconstruction.com's homepage CTA styling Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment. VIP Steward pass (Aug 28) confirmed Bluehost/DNS access and flagged a missing DMARC record (p=none) alongside the known SPF/DKIM issue; also noted Paid Ads performance reporting is pending Supermetrics connection for CID 992-297-7178."
+  "dataNotes": "Organic keyword count and visits: SEMrush site audit, Aug 19, 2026. ~35 Google reviews figure: same Aug 19 audit, a third-party estimate - not GBP-verified, hence the reviews hero metric and reviews-gap panel are both pending. Google Ads CID, budget, geo, and live-date: verified directly in Google Ads Manager Aug 22-23, 2026. NAP and schema fixes: verified live via Claude in Chrome screenshots and a full-page DOM scan Aug 24, 2026 (0 remaining instances of the old number). Accent color pulled live from evangelistoconstruction.com's homepage CTA styling Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment. VIP Steward pass (Aug 31) confirmed the legacy-domain consolidation is clean in SEMrush and re-flagged the Supermetrics connection for CID 992-297-7178 as the gate on real ad-performance numbers. Meta access status, BBB verification progress, and needs-list reply status verified against the actual Gmail threads Aug 31, 2026."
 }
