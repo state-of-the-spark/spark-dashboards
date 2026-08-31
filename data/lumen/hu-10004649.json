@@ -1,7 +1,7 @@
 {
   "token": "hu-10004649",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-08-28",
+  "asOf": "2026-08-31",
   "cadence": "weekly (Tuesday Sync)",
   "business": {
     "name": "Humarian",
@@ -45,6 +45,16 @@
       "delta": { "text": "confirmed live on new landing page", "tone": "good" },
       "note": "Product-level social proof pulling in on the new Smile Guard landing page. Store-wide review aggregate will land here once the Judge.me store roll-up is wired.",
       "source": "Judge.me · Smile Guard product · Aug 2"
+    },
+    {
+      "key": "ga4Traffic",
+      "label": "Website sessions · last 30 days",
+      "value": "13,013",
+      "sub": "119 purchases tracked in GA4",
+      "state": "live",
+      "delta": { "text": "down 31.5% vs the prior 30 days (19,000)", "tone": "watch" },
+      "note": "The traffic dip tracks the Shopify sales decline the team is already working - the sg./secure./smile landing build due Sep 2 is the named fix. Purchase and add-to-cart tracking in GA4 is counting cleanly, so this number is a true read, not a tracking artifact.",
+      "source": "GA4 property 255641365 - Aug 1-30 vs Jul 2-Aug 1, pulled Aug 31, 2026"
     }
   ],
   "projectCards": [

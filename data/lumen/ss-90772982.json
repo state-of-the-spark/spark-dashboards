@@ -1,7 +1,7 @@
 {
   "token": "ss-90772982",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-08-28",
+  "asOf": "2026-08-31",
   "cadence": "weekly",
   "business": {
     "name": "Superior Spray Service",
@@ -37,14 +37,14 @@
       "source": "Supermetrics pull 2026-08-28, last 7 days vs prior 7 days"
     },
     {
-      "key": "calls",
-      "label": "Calls · 30d",
-      "value": "37",
-      "sub": "web tap-to-call",
+      "key": "ga4Leads",
+      "label": "Leads tracked · last 30 days",
+      "value": "91",
+      "sub": "62 form submissions + 29 web tap-to-calls",
       "state": "live",
-      "delta": { "text": "≈ flat vs prior 30d (was 40)", "tone": "watch" },
-      "note": "Web calls have stabilized at 37 (from 40 the prior month) — the sharp earlier drop has leveled off now that conversion tracking is cleaned up and counting real calls only. Next focus: turn that ad reach into booked calls and get website form submissions tracked so no lead goes uncounted.",
-      "source": "GA4 website tap-to-call · Aug 18"
+      "delta": { "text": "form-submission tracking now reporting - forms were previously uncounted", "tone": "good" },
+      "note": "The 'get form submissions tracked so no lead goes uncounted' goal from earlier this month is done: GA4 now counts both lead paths, and 62 of the 91 leads this month came through forms - leads the old call-only view would have missed. Tap-to-calls came in at 29 (vs 36 the prior month). One cleanup queued on our side: GA4 is also flagging generic page views as 'key events,' which inflates raw conversion counts - we're stripping that so only real lead actions ever count here.",
+      "source": "GA4 property 299466800 - Aug 1-30, pulled Aug 31, 2026"
     }
   ],
   "projectCards": [
