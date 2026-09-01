@@ -1,7 +1,7 @@
 {
   "token": "hu-10004649",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-08-31",
+  "asOf": "2026-09-01",
   "cadence": "weekly (Tuesday Sync)",
   "business": {
     "name": "Humarian",
@@ -19,22 +19,22 @@
     {
       "key": "purchases",
       "label": "Purchases · last 7 days",
-      "value": "20",
-      "sub": "vs 21 the prior 7 days",
+      "value": "16",
+      "sub": "vs 24 the prior 7 days",
       "state": "live",
-      "delta": { "text": "sessions down 15.6% (2,805 vs 3,325), users down 13.5% (2,615 vs 3,024)", "tone": "watch" },
-      "note": "The purchase pipeline itself is clean end-to-end — orders and revenue are being counted correctly. What is broken is attribution back to Meta, which reads $0 in GA4 because client_id drops on the Meta in-app-browser to Safari hop. That is a known tracking bug being fixed, not a Meta failure. This week's session and purchase dip lines up with the Shopify sales decline the team is tracking - the sg./secure./smile.humarian.com landing build is the named fix.",
-      "source": "Supermetrics pull 2026-08-28, last 7 days vs prior 7 days"
+      "delta": { "text": "sessions down 31.9% (2,150 vs 3,159), users down 31.6% (1,947 vs 2,845)", "tone": "watch" },
+      "note": "The purchase pipeline itself is clean end-to-end — orders and revenue are being counted correctly, and GA4 channel attribution is now healthy (Unassigned sessions down 88% after the cleanup). This week's dip has two named drivers: the end-of-summer sale window closed and Google Ads spend fell to near zero — restoring that budget is on this week's agenda, alongside the Labor Day sale (Sept 5-7).",
+      "source": "GA4 property 255641365 · Aug 25-31 vs Aug 18-24, pulled Sept 1, 2026"
     },
     {
       "key": "adsReach",
       "label": "Meta Ads reach · 30d",
-      "value": null,
-      "state": "pending",
-      "pendingLabel": "Refreshing Supermetrics pull",
-      "pendingSub": "trailing 3-month bar charts now live in the Tuesday Sync email",
-      "note": "Brand Awareness (180-day) and DPA Retargeting campaigns are both live. Reporting was overhauled 7/9 to show trailing 3-month spend, landing page views, and cost per result in the Tuesday Sync email. Current 30-day pull will land here on the next refresh.",
-      "source": "Meta Ads Manager via Supermetrics"
+      "value": "91,670",
+      "sub": "127,283 impressions · $1,231.50 spend",
+      "state": "live",
+      "delta": { "text": "9 active ads across 5 campaigns, incl. the new Add-to-Cart test", "tone": "good" },
+      "note": "Five campaigns live including the Women's Probonix Add-to-Cart test launched late August. Labor Day sale creative (20% off sitewide, Sept 5-7) is drafted and in review for a Saturday launch.",
+      "source": "Meta Ads via Supermetrics · Aug 2-31, pulled Sept 1, 2026"
     },
     {
       "key": "reviews",
@@ -59,8 +59,8 @@
   ],
   "projectCards": [
     { "name": "Product Landing Pages", "status": "Smile Guard and Cat Probonix shipped as Shopify theme templates. Next up: the sg./secure./smile.humarian.com landing build, due Sep 2, is the named fix for the recent Shopify sales dip, and 3 tracking subtasks were added this week to make sure it lands on time.", "state": "in-progress" },
-    { "name": "Meta Ads", "status": "Brand Awareness (180-day) and DPA Retargeting live. Meta CAPI dedup fix confirmed Aug 24; UTM standard and Google Ads report-cycle fixes are in progress. One item is blocked pending Google Ads access.", "state": "active" },
-    { "name": "Attribution & Tracking", "status": "Server-side GA4 + Meta buildout is ready in GTM. Waiting on E2M to publish so Meta and Google Ads conversions attribute correctly.", "state": "in-progress" },
+    { "name": "Meta Ads", "status": "9 active ads across 5 campaigns, including the new Women's Probonix Add-to-Cart test. Labor Day sale ads (20% off sitewide, LABORDAY26) drafted, compliance-reviewed, and set for a Saturday Sept 5 launch.", "state": "active" },
+    { "name": "Attribution & Tracking", "status": "Major milestone Aug 24: the Meta Conversions API had been silently failing on every event for months (dead auth token) - found, fixed, and verified live. Funnel events now reach Meta with strong match quality. GA4 attribution cleanup is holding (Unassigned sessions down 88%). Remaining gap: purchase events complete on checkout systems outside web tracking - a server-side feed is the next build.", "state": "active" },
     { "name": "Weekly Reporting", "status": "Humarian Tuesday Sync email lands every Tuesday 7am with Meta bar charts, active-ads breakdown, and a written pulse narrative.", "state": "active" },
     { "name": "SEO / AIO", "status": "All 3 tracked deliverables are moving this week. Organic traffic is still 96.76% concentrated in a single blog post - flagged for a real diversification plan, not just a note.", "state": "active" },
     { "name": "Social Media Management", "status": "1 of 4 deliverables done. 3 have been stalled since March - a demo video, a video format spec, and an approved influencer collab that never started - and are being reviewed for a revive-or-archive call.", "state": "in-progress" },
@@ -77,11 +77,11 @@
     },
     {
       "name": "Attribution & tracking",
-      "score": 48,
+      "score": 58,
       "hero": true,
       "bar": "watch",
-      "note": "GA4 sees purchases but source attribution is silently lost. E2M's full server-side buildout — 70 tags including GA4 Base, GADS AddToCart/BeginCheckout/Purchase, Meta CAPI, Conversion Linker — has been sitting unpublished in GTM Default Workspace for ~6 weeks. Publishing it is the single biggest unlock right now.",
-      "source": "Lumen assessment · GTM server container GTM-KKTG8V8M"
+      "note": "GA4 is now healthy: purchases count cleanly and channel credit is accurate after the cleanup (Unassigned sessions down 88% week-over-week). The Meta Conversions API is live for the first time after the Aug 24 dead-token fix - add-to-cart and checkout events reach Meta with strong match quality. Score is held below green because purchase events still complete on checkout systems outside web tracking; the server-side purchase feed is the remaining build.",
+      "source": "Lumen assessment · verified Sept 1: GA4 property 255641365 + Meta Events Manager"
     },
     {
       "name": "Ad program",
@@ -103,11 +103,14 @@
   ],
   "reviewsGapSource": "Judge.me · product-level. Store-wide roll-up and probiotic peer comparison to be wired next cycle.",
   "thisWeeksMove": {
-    "label": "Publish the server-side GTM buildout",
-    "body": "The single biggest unlock is getting E2M to publish the 70-change Default Workspace in GTM-KKTG8V8M. That switches Meta and Google Ads conversions from $0 to real numbers and closes the client_id loss on checkout. Priyal (E2M) has the ball as of Grant's 7/30 nudge.",
-    "cta": "Confirm publish + test purchase"
+    "label": "Launch the Labor Day sale + restore Google Ads budget",
+    "body": "20% off sitewide with LABORDAY26, Saturday Sept 5 through midnight Monday Sept 7. Ad creative is drafted and compliance-reviewed, pointed at the auto-applying discount link, launching to retargeting and engaged audiences. Alongside it: Google Ads spend collapsed to under $5 last week and is dragging traffic - restoring budget with a lean into Branded Search is the second lever.",
+    "cta": "Approve creative by Thursday · sale live Saturday"
   },
   "lumenDid": [
+    "Found and fixed the dead Meta Conversions API auth token (Aug 24) - server-side events had been silently rejected for months; verified live delivery and match quality in Meta Events Manager",
+    "Verified the GA4 attribution cleanup is holding: Unassigned sessions down 88% week-over-week, channel credit now accurate",
+    "Drafted the Labor Day sale ad batch (3 concepts, LABORDAY26), ran it through a 4-lens compliance review, and verified every product claim against the live store",
     "Shipped two new Shopify landing pages (Smile Guard, Cat Probonix) as reusable theme templates, plus a written protocol so this rolls out to any Humarian product next",
     "Diagnosed the attribution severance mechanism (client_id lost on the Meta in-app-browser to Safari checkout hop) and found E2M's full server-side buildout sitting unpublished in GTM for ~6 weeks",
     "Overhauled the Tuesday Sync report — Meta now renders as trailing 3-month bar charts (spend, landing page views, cost per result) plus an active-ads breakdown",
@@ -117,12 +120,14 @@
     "Reviewed the stalled social deliverables (a demo video, a video format spec, and the approved influencer collab) for a revive-or-archive decision"
   ],
   "ledger": [
-    { "title": "Publish E2M's server-side GTM workspace", "state": "in-progress", "detail": "70 tags ready in GTM-KKTG8V8M Default Workspace, unpublished ~6 weeks. Priyal at E2M has the ball as of Grant's 7/30 nudge." },
+    { "title": "Meta Conversions API live", "state": "done", "detail": "The server-side buildout was published, but its auth token was a dead placeholder - every event rejected for months. Found and fixed Aug 24; add-to-cart and checkout events now reach Meta with strong match quality." },
+    { "title": "Labor Day sale launch (LABORDAY26)", "state": "in-progress", "detail": "20% off sitewide Sept 5-7. Three ad concepts drafted and compliance-reviewed Sept 1; creative lock Thursday, live Saturday." },
+    { "title": "Server-side purchase feed to Meta", "state": "next", "detail": "Purchases complete on checkout systems the web pixel never sees, so Meta receives no purchase events. A Shopify-webhook-to-Conversions-API feed is the remaining build for true purchase attribution." },
     { "title": "Fix cross-domain for secure.humarian.com", "state": "next", "detail": "3,533 sessions are minting phantom Direct sessions with 0 events on every hop because the payment domain is not cross-domain-linked in GA4." },
     { "title": "Ship the next product landing page", "state": "next", "detail": "Smile Guard and Cat Probonix are live-preview verified. The theme-template system is documented and repeats cleanly — pick the next product and clone." },
     { "title": "Resolve Smile Guard dosing conflict", "state": "next", "detail": "Label vs A+ content disagree on schedule; Shawn at Humarian was emailed 8/2 for the authoritative answer." },
     { "title": "Roll up store-wide Judge.me reviews", "state": "next", "detail": "Product-level rating shows on landing pages; store-wide aggregate not yet wired to the dashboard." },
     { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Pulled a first GA4 week-over-week baseline, flagged that the Sep 2 landing-page build had zero tracking despite being the fix for the recent sales dip, and reviewed the stalled social deliverables for a revive-or-archive call." }
   ],
-  "dataNotes": "Purchases and revenue: GA4 property 255641365, last 28 days, pulled 2026-07-30. Judge.me reviews: Smile Guard product page as of 2026-08-02. Meta ad reach pending next Supermetrics refresh; Brand Awareness and DPA Retargeting campaigns confirmed live via the Tuesday Sync trailing 3-month view. Attribution diagnosis and unpublished GTM state verified 2026-07-30 via live inspection of GTM-KKTG8V8M server container + Grant's session on the GTM internal workspaces API (Version 6 live, no Version 7 exists). Pillar scores are Lumen's weighted assessment. Reviews-gap panel currently shows product-level Judge.me only; probiotic-peer comparison will be added once a public data source is agreed on. GA4 week-over-week baseline (sessions 2,805 vs 3,325, users 2,615 vs 3,024, purchases 20 vs 21) pulled via Supermetrics 2026-08-28, last 7 days vs prior 7 days."
+  "dataNotes": "Purchases, sessions, users: GA4 property 255641365, Aug 25-31 vs Aug 18-24, pulled Sept 1, 2026. Meta reach/impressions/spend: Supermetrics, Aug 2-31, pulled Sept 1, 2026. CAPI status and event delivery verified Sept 1 in Meta Events Manager (pixel 375810672756468). Judge.me reviews: Smile Guard product page as of 2026-08-02. Pillar scores are Lumen's weighted assessment. Reviews-gap panel currently shows product-level Judge.me only; probiotic-peer comparison will be added once a public data source is agreed on."
 }
