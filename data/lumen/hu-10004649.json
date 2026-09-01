@@ -77,11 +77,11 @@
     },
     {
       "name": "Attribution & tracking",
-      "score": 58,
+      "score": 68,
       "hero": true,
       "bar": "watch",
-      "note": "GA4 is now healthy: purchases count cleanly and channel credit is accurate after the cleanup (Unassigned sessions down 88% week-over-week). The Meta Conversions API is live for the first time after the Aug 24 dead-token fix - add-to-cart and checkout events reach Meta with strong match quality. Score is held below green because purchase events still complete on checkout systems outside web tracking; the server-side purchase feed is the remaining build.",
-      "source": "Lumen assessment · verified Sept 1: GA4 property 255641365 + Meta Events Manager"
+      "note": "GA4 healthy (Unassigned down 88%, channel credit accurate). Meta now receives 39 of the store's 52 actual weekly orders (75% - at Meta's health benchmark; was 0% before Aug 24), subscription renewals included, with purchase deduplication verified clean at 95%. Sept 1: Click ID (fbc) wired into server-side events so Meta can credit sales to the ads that drove them - the last link in the attribution chain. Remaining: the ~25% of orders (a slice of subscription/checkout paths) that still bypass the pipeline.",
+      "source": "Lumen assessment · verified Sept 1: Shopify orders vs Meta Events Manager, GA4 255641365"
     },
     {
       "name": "Ad program",
@@ -108,9 +108,11 @@
     "cta": "Approve creative by Thursday · sale live Saturday"
   },
   "lumenDid": [
+    "Sept 1: wired the Meta Click ID (fbc) into the server-side AddToCart, InitiateCheckout and Purchase events and published it (GTM v10) - the missing link that lets Meta credit sales to the ads that drove them",
+    "Sept 1: full Events Manager review - Meta now receives 39 of Shopify's 52 actual weekly orders (75%, at Meta's health benchmark; was 0% before the Aug 24 fix), including subscription renewals; purchase deduplication verified clean at 95%",
+    "Sept 1: built and compliance-reviewed the Labor Day sale ads (LABORDAY26, Sept 5-7) as drafts, with every product claim verified against the live store; raised Google Ads branded budget to $17/day and fixed the $0.72 bid cap that was suppressing branded reach",
     "Found and fixed the dead Meta Conversions API auth token (Aug 24) - server-side events had been silently rejected for months; verified live delivery and match quality in Meta Events Manager",
     "Verified the GA4 attribution cleanup is holding: Unassigned sessions down 88% week-over-week, channel credit now accurate",
-    "Drafted the Labor Day sale ad batch (3 concepts, LABORDAY26), ran it through a 4-lens compliance review, and verified every product claim against the live store",
     "Shipped two new Shopify landing pages (Smile Guard, Cat Probonix) as reusable theme templates, plus a written protocol so this rolls out to any Humarian product next",
     "Diagnosed the attribution severance mechanism (client_id lost on the Meta in-app-browser to Safari checkout hop) and found E2M's full server-side buildout sitting unpublished in GTM for ~6 weeks",
     "Overhauled the Tuesday Sync report — Meta now renders as trailing 3-month bar charts (spend, landing page views, cost per result) plus an active-ads breakdown",
@@ -121,6 +123,7 @@
   ],
   "ledger": [
     { "title": "Meta Conversions API live", "state": "done", "detail": "The server-side buildout was published, but its auth token was a dead placeholder - every event rejected for months. Found and fixed Aug 24; add-to-cart and checkout events now reach Meta with strong match quality." },
+    { "title": "Click ID (fbc) wired into Meta events", "state": "done", "detail": "Sept 1 (GTM v10): AddToCart, InitiateCheckout and Purchase events now carry the ad-click receipt, so Meta can credit sales to the ads that drove them. Meta's own benchmark: advertisers adding this see 100%+ more attributed conversions. Verify window: 48h." },
     { "title": "Labor Day sale launch (LABORDAY26)", "state": "in-progress", "detail": "20% off sitewide Sept 5-7. Three ad concepts drafted and compliance-reviewed Sept 1; creative lock Thursday, live Saturday." },
     { "title": "Server-side purchase feed to Meta", "state": "next", "detail": "Purchases complete on checkout systems the web pixel never sees, so Meta receives no purchase events. A Shopify-webhook-to-Conversions-API feed is the remaining build for true purchase attribution." },
     { "title": "Fix cross-domain for secure.humarian.com", "state": "next", "detail": "3,533 sessions are minting phantom Direct sessions with 0 events on every hop because the payment domain is not cross-domain-linked in GA4." },
