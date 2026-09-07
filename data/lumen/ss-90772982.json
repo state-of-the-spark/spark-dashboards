@@ -1,7 +1,7 @@
 {
   "token": "ss-90772982",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-08-31",
+  "asOf": "2026-09-07",
   "cadence": "weekly",
   "business": {
     "name": "Superior Spray Service",
@@ -33,8 +33,8 @@
       "sub": "people reached (vs 9,942 the prior 7 days)",
       "state": "live",
       "delta": { "text": "click-through rate up from 5.35% to 5.91%", "tone": "good" },
-      "note": "Meta spend held steady at $141.46 (vs $146.18 the prior week) while reach and click-through both improved - the 'Audience Network' cleanup is paying off with more efficient spend, not just more of it. Google Ads is also running more efficiently this week: cost-per-click down 20.9% to $0.42 with clicks up 17.1% (322 vs 275) and conversions up to 31.",
-      "source": "Supermetrics pull 2026-08-28, last 7 days vs prior 7 days"
+      "note": "Meta spend held steady at $141.46 (vs $146.18 the prior week) while reach and click-through both improved - the 'Audience Network' cleanup is paying off with more efficient spend, not just more of it. Google Ads is also running more efficiently this week: cost-per-click down 20.9% to $0.42 with clicks up 17.1% (322 vs 275) and conversions up to 31. Sept 6 refresh (CID 5027105186, 7d vs prior 7d): impressions up 42.9% (10,259 vs 7,181), clicks up 14.7% (351 vs 306), spend up 17.2% ($143.99 vs $122.86), but conversions down 31.3% (22 vs 32) - the N. FL $500/mo ramp is moving spend and clicks faster than it's converting. Meta's website-leads count also jumped 241% (1,340 vs 393) on essentially flat spend and clicks - flagged as a likely pixel/attribution artifact, not a real 3.4x lead increase, pending a human check in Events Manager. No new pull as of Sept 7 (no metric changes reported).",
+      "source": "Supermetrics pull 2026-08-28 (Meta reach), refreshed 2026-09-06 (Google Ads + Meta 7d vs prior 7d)"
     },
     {
       "key": "ga4Leads",
@@ -43,17 +43,17 @@
       "sub": "62 form submissions + 29 web tap-to-calls",
       "state": "live",
       "delta": { "text": "form-submission tracking now reporting - forms were previously uncounted", "tone": "good" },
-      "note": "The 'get form submissions tracked so no lead goes uncounted' goal from earlier this month is done: GA4 now counts both lead paths, and 62 of the 91 leads this month came through forms - leads the old call-only view would have missed. Tap-to-calls came in at 29 (vs 36 the prior month). One cleanup queued on our side: GA4 is also flagging generic page views as 'key events,' which inflates raw conversion counts - we're stripping that so only real lead actions ever count here.",
-      "source": "GA4 property 299466800 - Aug 1-30, pulled Aug 31, 2026"
+      "note": "The 'get form submissions tracked so no lead goes uncounted' goal from earlier this month is done: GA4 now counts both lead paths, and 62 of the 91 leads this month came through forms - leads the old call-only view would have missed. Tap-to-calls came in at 29 (vs 36 the prior month). One cleanup queued on our side: GA4 is also flagging generic page views as 'key events,' which inflates raw conversion counts - we're stripping that so only real lead actions ever count here. GA4 property 299466800 has now been re-tested against Supermetrics on Sept 5, 6, and 7 and still isn't connected - the figures above are the last live pull; a schema-fix Rail-3 handoff was opened Sept 7 to close this gap.",
+      "source": "GA4 property 299466800 - Aug 1-30, pulled Aug 31, 2026; re-tested (still not connected) Sept 5-7, 2026"
     }
   ],
   "projectCards": [
-    { "name": "Website", "status": "Service-first rebuild underway, plus a home for the podcast. The Lakeland GBP verification video remains the oldest open ask - outstanding since May 2025 - and was chased again this week; a WordPress test site and podcast findability work are queued behind it.", "state": "in-progress" },
-    { "name": "SEO", "status": "Still ranked #3 in Google for 'pest control Lakeland' across 1,798 organic keywords. The SEO questionnaire, outstanding since May 2025, was chased again this week; an AI SEO audit and local map work are queued for a priority call.", "state": "active" },
+    { "name": "Website", "status": "September content topic set (rain-triggered termite swarms). Lakeland location page already ranking (5 keywords top-15) - proposed for close-out, awaiting sign-off. GA4 key-event cleanup and podcast findability fix both need browser access; the Lakeland GBP verification video remains the oldest open ask, outstanding since May 2025.", "state": "in-progress" },
+    { "name": "SEO", "status": "Still ranked #3 in Google for 'pest control Lakeland' across 1,798 organic keywords. The SEO questionnaire has now been answered from live account data; schema (LocalBusiness+Service) and GBP video verification remain open browser-only fixes, and the Google Business Automation build is still unscoped.", "state": "active" },
     { "name": "Pest Detectives", "status": "Relaunching this August. Three shoot dates now locked with Kevin & Sean: Aug 26, Sep 23, Oct 21.", "state": "relaunching" },
-    { "name": "Social", "status": "Ongoing posts and podcast clips across Facebook, Instagram, GBP, and YouTube. A monthly check-in cadence is being added this cycle to keep this line fully tracked.", "state": "active" },
-    { "name": "Ads", "status": "Rebuilt this month: Google Ads strength lifted Poor→Good, Search split into focused General + Termite ad groups, targeting trimmed to your 4 core counties. Meta 'Audience Network' junk placements turned off. This week: Google Ads CPC down 20.9% to $0.42 with clicks up 17.1% (322 vs 275) and conversions up to 31; Meta CPC down 10.2% with CTR up from 5.35% to 5.91%.", "state": "active" },
-    { "name": "Newsletter", "status": "A monthly newsletter goes out automatically to your subscriber list via its own automation - nothing manual needed on our end to keep it running.", "state": "active" }
+    { "name": "Social", "status": "New uniforms in; waiting on Ashley's team-photo shoot and a Day in the Life ride-along before the next post batch across Facebook, Instagram, GBP, and YouTube.", "state": "active" },
+    { "name": "Ads", "status": "N. FL Google Ads ramp to $500/mo is moving (impressions +42.9%, clicks +14.7%, spend +17.2% wk/wk) but conversions are down 31.3%, and the campaign build is still blocked on a Google 2FA wall. RP Funding Center geofenced ads are blocked on Kevin sending event dates. Meta's website-leads count spiked 241% on flat spend - flagged as a likely tracking artifact, not acted on as a real result.", "state": "active" },
+    { "name": "Newsletter", "status": "September topic proposed (rain-triggered termite swarms, ties to May's Termatrac issue). August issue send status still unconfirmed - needs Mailchimp access.", "state": "active" }
   ],
   "pillars": [
     {
@@ -95,9 +95,9 @@
   ],
   "reviewsGapSource": "Google Maps · Aug 18",
   "thisWeeksMove": {
-    "label": "Rebuild your review velocity",
-    "body": "You added 0 new reviews in the last 30 days while Anti-Pesto (556, +5), Country Boy (485, +3), and Dave's (336, +13) all pulled further ahead. Texting your recent customers for a review is the fastest, cheapest lever you have — and let's restart Google Posts, which have been quiet since June 8.",
-    "cta": "Send 10 review requests"
+    "label": "N. FL Google Ads ramp + RP Funding Center geofenced campaigns",
+    "body": "Both live moves are partially blocked: the N. FL $500/mo ramp is moving (spend +17.2%, clicks +14.7% wk/wk) but the campaign build itself is stuck behind a Google 2FA wall, and the RP Funding Center geofenced ads are waiting on Kevin to send event dates. Review velocity is still the other open lever - 0 new reviews in 30 days while local competitors keep adding them.",
+    "cta": "Clear the 2FA wall on the Ads account; send 10 review requests"
   },
   "lumenDid": [
     "Reviewed your FieldRoutes lead sources for the last 30 days: Google search is driving your bookable leads, while Facebook shows next to none we can directly attribute (a portion come in as N/A or phone call-ins). That is exactly why we are doubling down on Google Ads and the website — Facebook earns its keep as top-of-funnel awareness, but search is what rings the phone",
@@ -106,7 +106,10 @@
     "Cleaned up your conversion tracking — GA4 now counts real phone calls (37 in the last 30 days), not inflated page views",
     "Locked three Pest Detectives podcast shoot dates with Kevin & Sean (Aug 26, Sep 23, Oct 21) and scheduled an August newsletter resend to 6,182 subscribers who hadn't opened yet",
     "Pulled a fresh week-over-week performance read on Google Ads and Meta: both ran more efficiently, with Google Ads clicks up 17% and cost-per-click down, and Meta's click-through rate up from 5.35% to 5.91%",
-    "Chased the two oldest open asks - the SEO questionnaire and the Lakeland GBP verification video, both outstanding since May 2025 - again this week"
+    "Chased the two oldest open asks - the SEO questionnaire and the Lakeland GBP verification video, both outstanding since May 2025 - again this week",
+    "Sept 6: pulled live Semrush Lakeland-keyword data (5 terms already top-15) to ground the new-resident/relocation ad targeting task, and a fresh 7d-vs-prior-7d Google Ads + Meta performance read via Supermetrics",
+    "Sept 6: re-tested the GA4 Supermetrics connection for property 299466800 - still not connected; filed handoffs for GA4 key-event cleanup and Google Business Automation scoping, and posted state-of-play comments on all 6 service hubs",
+    "Sept 7: re-tested GA4 again (still not connected, same roster gap) and opened a new schema-fix Rail-3 handoff; no metric changes to report this run"
   ],
   "ledger": [
     { "title": "Rebuild review velocity — text recent customers", "state": "next", "detail": "0 new reviews in 30 days while all three local competitors gained. Fastest, cheapest lever you have." },
@@ -114,7 +117,9 @@
     { "title": "Add form-fill tracking to your site", "state": "next", "detail": "Your site isn't sending a form-submission event, so quote requests can't be counted yet. Quick fix, real visibility win." },
     { "title": "Finish the Google Ads rebuild", "state": "next", "detail": "Deep-clean the General keyword list and build Specific Pests + Lawn ad groups — the lever for a lower cost-per-click and 'Strong' ad rating." },
     { "title": "Send the SEO questionnaire + film the Lakeland GBP verification video", "state": "next", "detail": "Both have been outstanding since May 2025 and are the oldest open asks on the account; getting these in unlocks the next phase of local SEO and map-pack work." },
-    { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Pulled the first live Google Ads + Meta week-over-week read (both more efficient) and re-flagged the SEO questionnaire and Lakeland GBP video as the oldest open asks, both outstanding since May 2025." }
+    { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Pulled the first live Google Ads + Meta week-over-week read (both more efficient) and re-flagged the SEO questionnaire and Lakeland GBP video as the oldest open asks, both outstanding since May 2025." },
+    { "title": "Sanity-check the Meta website-leads spike (241%)", "state": "next", "detail": "1,340 leads vs 393 the prior week on essentially flat spend and clicks - disproportionate enough to flag as a likely pixel/attribution artifact rather than a real 3.4x increase. Needs a human check in Events Manager before it's trusted." },
+    { "title": "VIP Steward daily pass (Sept 6-7)", "state": "done", "detail": "Refreshed 7d Google Ads + Meta performance (conversions down 21-31% wk/wk despite rising spend/clicks), re-confirmed GA4 property 299466800 still isn't connected in Supermetrics (re-tested 3 straight days), and opened a schema-fix Rail-3 handoff Sept 7." }
   ],
-  "dataNotes": "GA4 (calls) pulled 2026-08-18 via property 299466800 (ClickToCall event); prior-30-day calls were 40. Meta reach/impressions/spend pulled 2026-08-18 via the Meta Ads account (last 30 days). Google reviews (self + competitors) and GBP re-scraped from Google Maps 2026-08-18. Organic rank (#3 'pest control Lakeland', 1,798 keywords) confirmed via SEMrush 2026-08-18. Office address 5611 Commercial Blvd, Winter Haven FL 33880 (Polk County) from the site's LocalBusiness schema. GBP is a hidden-address service-area business; its exposed pin sits near the center of the service area, which is expected behavior and not a mis-set pin. Site audit via live fetch; local map-pack via geo-centered Maps check. Form submissions are still not tracked in GA4 — a known gap being fixed. FieldRoutes lead-source review (last 30 days) points to Google search as the primary attributable lead driver, with negligible directly-attributed Facebook leads (a portion logged as N/A or phone call-ins), reinforcing the Google Ads + website focus. Pillar scores are Lumen's weighted assessment. Google Ads and Meta week-over-week figures (Google Ads spend $134.07 vs $144.69, clicks 322 vs 275, CPC $0.42 vs $0.53, conversions 31 vs 28; Meta spend $141.46 vs $146.18, reach 10,185 vs 9,942, CTR 5.91% vs 5.35%) pulled via Supermetrics 2026-08-28, last 7 days vs prior 7 days. GA4 pull for this cycle is pending - the roster's GA4 property id (299466800) was not found among connected Supermetrics accounts."
+  "dataNotes": "GA4 (calls) pulled 2026-08-18 via property 299466800 (ClickToCall event); prior-30-day calls were 40. Meta reach/impressions/spend pulled 2026-08-18 via the Meta Ads account (last 30 days). Google reviews (self + competitors) and GBP re-scraped from Google Maps 2026-08-18. Organic rank (#3 'pest control Lakeland', 1,798 keywords) confirmed via SEMrush 2026-08-18. Office address 5611 Commercial Blvd, Winter Haven FL 33880 (Polk County) from the site's LocalBusiness schema. GBP is a hidden-address service-area business; its exposed pin sits near the center of the service area, which is expected behavior and not a mis-set pin. Site audit via live fetch; local map-pack via geo-centered Maps check. Form submissions are still not tracked in GA4 — a known gap being fixed. FieldRoutes lead-source review (last 30 days) points to Google search as the primary attributable lead driver, with negligible directly-attributed Facebook leads (a portion logged as N/A or phone call-ins), reinforcing the Google Ads + website focus. Pillar scores are Lumen's weighted assessment. Google Ads and Meta week-over-week figures (Google Ads spend $134.07 vs $144.69, clicks 322 vs 275, CPC $0.42 vs $0.53, conversions 31 vs 28; Meta spend $141.46 vs $146.18, reach 10,185 vs 9,942, CTR 5.91% vs 5.35%) pulled via Supermetrics 2026-08-28, last 7 days vs prior 7 days. GA4 pull for this cycle is pending - the roster's GA4 property id (299466800) was not found among connected Supermetrics accounts. Sept 6 refresh: Google Ads CID 5027105186 and Meta act_751457483444702, 7 days vs prior 7 days via Supermetrics (Google Ads impressions 10,259 vs 7,181 +42.9%, clicks 351 vs 306 +14.7%, spend $143.99 vs $122.86 +17.2%, conversions 22 vs 32 -31.3%; Meta impressions 13,738 vs 13,479 +1.9%, clicks 1,582 vs 745 +112.3%, spend $139.85 vs $139.76 +0.1%, website leads 1,340 vs 393 +241% - flagged as a likely pixel/attribution artifact, not a real result, pending a human check in Meta Events Manager). GA4 property 299466800 re-tested via Supermetrics accounts_discovery Sept 5, 6, and 7 - still not connected each time; a schema-fix Rail-3 handoff was opened Sept 7 to resolve it. Sept 7 run reported no metric changes since Sept 6 (roster gap carried forward)."
 }

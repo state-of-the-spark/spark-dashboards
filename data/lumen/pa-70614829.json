@@ -1,7 +1,7 @@
 {
   "token": "pa-70614829",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-08-28",
+  "asOf": "2026-09-07",
   "cadence": "Mon / Wed / Fri (VIP Steward)",
   "business": {
     "name": "Projects Analytics",
@@ -19,12 +19,12 @@
     {
       "key": "costPerFormFill",
       "label": "Cost per form fill",
-      "value": null,
-      "state": "pending",
-      "pendingLabel": "Launches Tue Sep 1",
-      "pendingSub": "First read once Google Ads + both landing pages go live",
-      "note": "This is the metric Mary and Alan agreed to run the whole launch on - Asta Powerproject and Schedule Validator campaigns run at the same time, and budget shifts toward whichever converts cheaper.",
-      "source": "Google Ads CID 711-790-3651 (launch pending)"
+      "value": "$196.36",
+      "sub": "1 tracked form fill this week (Schedule Validator) - first since the Sept 1 launch",
+      "state": "live",
+      "delta": { "text": "First tracked conversion since launch; spend growth moderated to +12.5% wk/wk (vs +37% flagged Sept 5), clicks +15.6%", "tone": "watch" },
+      "note": "This is the metric Mary and Alan agreed to run the whole launch on - Asta Powerproject and Schedule Validator campaigns run at the same time, and budget shifts toward whichever converts cheaper. Still a thin sample, day 5-6 post-launch; no new pull as of Sept 7 (Google Ads not re-queried this run, no change from Sept 6).",
+      "source": "Google Ads CID 711-790-3651 via Supermetrics - last 7 days vs prior 7 days, pulled Sept 6, 2026"
     },
     {
       "key": "adBudgetRamp",
@@ -32,9 +32,9 @@
       "value": "$100-200",
       "sub": "per month, ramping off an existing ~$500/mo budget",
       "state": "live",
-      "delta": { "text": "Launches Sep 1", "tone": "watch" },
-      "note": "Deliberately conservative: hold spend down until a real conversion baseline exists off actual form-fill data, then scale the budget toward whichever product is converting.",
-      "source": "Aug 27 launch call"
+      "delta": { "text": "Launched Sept 1; spent $196.36 this week (37 clicks, 194 impressions, 1 conversion) - inside the planned ramp band", "tone": "good" },
+      "note": "Deliberately conservative: hold spend down until a real conversion baseline exists off actual form-fill data, then scale the budget toward whichever product is converting. This week's actuals: $196.36 spend (+12.5% wk/wk vs $174.60), 37 clicks (+15.6% vs 32), 194 impressions (+32% vs 147), 1 conversion (vs 0 the prior week).",
+      "source": "Google Ads CID 711-790-3651 via Supermetrics, pulled Sept 6, 2026"
     },
     {
       "key": "contactsQueued",
@@ -42,18 +42,18 @@
       "value": "2,000",
       "sub": "purchased Primavera P6 list, plus the Asta customer list",
       "state": "live",
-      "delta": { "text": "Import gated on Mary sending both lists", "tone": "watch" },
-      "note": "Both lists import into Salesforce (cc Amber) ahead of the Sep 1 drip send. Mary approved the email copy on the call.",
-      "source": "Aug 27 launch call"
+      "delta": { "text": "Ownership flipped Sept 6: import is now stalled on us (Rail 3), not gated on Mary anymore", "tone": "watch" },
+      "note": "Both lists still import into Salesforce (cc Amber) ahead of the drip send. Mary approved the email copy on the call. As of Sept 6, the list itself is ready and the import is tracked as stalled on our side (Grant, Rail 3) via Bus ticket 868m1xtf2.",
+      "source": "Aug 27 launch call; ownership updated Sept 6, 2026"
     }
   ],
   "projectCards": [
     { "name": "Product messaging kits", "status": "Messaging kits for Asta Powerproject and Schedule Validator are complete and already driving the landing page and ad copy.", "state": "active" },
-    { "name": "Email sequences in Salesforce", "status": "Drip copy approved by Mary. Building the sequence is currently blocked on Salesforce, Meta, LinkedIn, and YouTube access from Mary and Alan; still targeting a live send by Sep 1 once access lands.", "state": "in-progress" },
-    { "name": "Google Ads (CID 711-790-3651)", "status": "Both product campaigns are built to launch together Sep 1, ramping $100-200/mo off Mary's existing ~$500/mo budget. Ads are already running in a limited capacity ahead of the MCC manager-link approval: $156.04 spent, 29 clicks, and 139 impressions this week.", "state": "in-progress" },
-    { "name": "Landing / demo pages", "status": "Both pages are built. The two remaining fixes, trimming every \"construction grade\" phrase to \"construction\" and correcting a blue-panel form overlap, are due Aug 30 and on track for the Sep 1 launch; noindex comes off at go-live.", "state": "active" },
-    { "name": "Analytics + reporting dashboard", "status": "This dashboard is the reporting layer - cost per form fill becomes a real, live number here once Ads and forms go live Sep 1. Still waiting on GA4 access from Alan to wire it up.", "state": "in-progress" },
-    { "name": "Monthly campaign management", "status": "Ongoing management starts Sep 1; budget shifts week to week toward whichever product campaign is converting. First report is due Sep 30.", "state": "in-progress" }
+    { "name": "Email sequences in Salesforce", "status": "Drip copy approved by Mary. Building the sequence remains blocked on the Salesforce Connected App / 10-minute sign-in window (owner: Mary + Grant) - not yet live.", "state": "in-progress" },
+    { "name": "Google Ads (CID 711-790-3651)", "status": "Launched Sept 1. This week: 37 clicks, $196.36 spend, 194 impressions, 1 conversion (Schedule Validator form fill) - the first tracked conversion since launch. Spend growth has moderated to +12.5% wk/wk (vs the +37% flagged Sept 5), clicks +15.6%. Still a thin sample, day 5-6 post-launch.", "state": "active" },
+    { "name": "Landing / demo pages", "status": "Both pages shipped for the Sept 1 launch (construction-grade copy trimmed, blue-panel form overlap fixed); noindex removed at go-live.", "state": "active" },
+    { "name": "Analytics + reporting dashboard", "status": "Cost per form fill is now a live number ($196.36, first tracked conversion Sept 1-6). GA4 property id is still blank in the roster - still waiting on access from Alan; Meta ad account id also blank.", "state": "in-progress" },
+    { "name": "Monthly campaign management", "status": "Ongoing management underway since Sept 1; budget shifts week to week toward whichever product campaign is converting. First report due Sep 30.", "state": "in-progress" }
   ],
   "pillars": [
     {
@@ -61,24 +61,24 @@
       "score": 55,
       "hero": true,
       "bar": "watch",
-      "note": "Two products, two campaigns, launching together at a deliberately modest $100-200/mo ramp Sep 1. A purchased 2,000-contact Primavera P6 list plus the Asta customer list are about to seed the Salesforce drip - real top-of-funnel volume starts next week, nothing measurable yet.",
-      "source": "Lumen assessment - Aug 27 launch call"
+      "note": "Both campaigns launched together Sept 1 at the planned $100-200/mo ramp; this week's actuals landed at $196.36 spend, 37 clicks, and the first tracked conversion. The 2,000-contact Primavera P6 list plus the Asta customer list are ready to seed the Salesforce drip, but the import is now stalled on our side (Rail 3) rather than gated on Mary.",
+      "source": "Lumen assessment - Aug 27 launch call; Sept 6 Google Ads refresh"
     },
     {
       "name": "Conversion path",
       "score": 58,
       "hero": true,
       "bar": "watch",
-      "note": "Both landing pages are built. Before launch: strip \"construction grade\" from the copy (client's call, due 8/28), fix a blue-panel overlap at the bottom of both forms into a full-width testimonial band (due 8/31), and verify the not-a-robot test against real spam fills Mary is forwarding.",
-      "source": "Lumen assessment - Aug 27 launch call"
+      "note": "Both landing pages shipped for the Sept 1 launch, copy and form-overlap fixes included. First tracked form fill (Schedule Validator) landed this week - the funnel is proven end to end, still on a thin sample.",
+      "source": "Lumen assessment - Aug 27 launch call; Sept 6 status"
     },
     {
       "name": "Tracking & attribution",
       "score": 40,
       "hero": false,
       "bar": "bad",
-      "note": "GA4 ownership for the legacy property is still unresolved - Tanya says it isn't hers, Alan is doing one more search. If nobody surfaces as the owner, a fresh GA4 property gets stood up under the client's control with us as admin, ahead of the Sep 1 launch.",
-      "source": "Lumen assessment - Aug 27 launch call"
+      "note": "GA4 ownership is still unresolved - the roster's ga4_property_id remains blank, still waiting on access from Alan. Meta ad account id is also blank. Google Ads is tracked cleanly via Supermetrics in the meantime.",
+      "source": "Lumen assessment - Aug 27 launch call; Sept 6 roster check"
     }
   ],
   "hygiene": {
@@ -90,9 +90,9 @@
   "reviewsGap": [],
   "reviewsGapSource": "Projects Analytics sells direct to enterprise scheduling teams - there is no public review or map-pack program to compare against. Not applicable for this account.",
   "thisWeeksMove": {
-    "label": "Land the Sep 1 launch",
-    "body": "Landing-page fixes are on track for the Aug 30 deadline, and Google Ads is already live in a limited capacity ahead of MCC approval ($156.04 spent this week). Four days out from the Sep 1 launch, three access approvals are still open and unmoved this week: Salesforce/Meta/LinkedIn/YouTube access, the Google Ads MCC manager-link, and GA4 access.",
-    "cta": "Grant these 3 accesses today so the Sep 1 launch isn't at risk"
+    "label": "First tracked form fill since the Sept 1 launch",
+    "body": "The Schedule Validator campaign landed its first tracked conversion this week: $196.36 cost per form fill, on 37 clicks and $196.36 spend (+12.5% wk/wk vs the +37% flagged Sept 5). Still a thin sample, day 5-6 post-launch. Access approvals remain the real risk: the Salesforce Connected App sign-in window, the Google Ads MCC manager-link, and GA4 access from Alan are all still open.",
+    "cta": "Close the Salesforce, MCC, and GA4 access gaps"
   },
   "lumenDid": [
     "Ran the Aug 27 launch call with Mary and Alan Williams; locked go-live for both products to Tuesday Sep 1, with cost per form fill as the first success metric",
@@ -101,7 +101,10 @@
     "Set the Ads ramp plan - $100-200/mo off the existing ~$500/mo budget until a real conversion baseline exists, then split spend toward whichever product wins",
     "Passed on the $10/lead Reach Marketing offer for now - establish our own cost per form fill and own the funnel before buying leads",
     "Flagged the 3 outstanding access approvals (Salesforce/Meta/LinkedIn/YouTube, Google Ads MCC manager-link, GA4) as the real risk to the Sep 1 launch",
-    "Pulled live Google Ads numbers and found spend already flowing ahead of the MCC approval gate: $156.04 spent, 29 clicks, 139 impressions this week"
+    "Pulled live Google Ads numbers and found spend already flowing ahead of the MCC approval gate: $156.04 spent, 29 clicks, 139 impressions this week",
+    "Sept 6: refreshed Google Ads CID 711-790-3651 (7-day vs prior-7) via Supermetrics - GREEN fix, no spend/bid/status changes; first tracked form fill landed ($196.36 cost per form fill)",
+    "Sept 6: posted an Output A hub status comment on 868h68fty covering all open/closed deliverables; flagged 3 subtasks (868kuf70v, 868kxj985, 868kxj9jz) as appearing complete per history and recommended Grant close them (no status change made, probation mode)",
+    "Sept 7: no GA4 (roster ga4_property_id still blank) and Google Ads CID 711-790-3651 not re-pulled this run; flagged stale-subtask housekeeping proposals (D2/D3/D4/D6 trackers appear superseded by shipped work) in the hub comment"
   ],
   "ledger": [
     { "title": "Strip \"construction grade\" from landing pages + ad copy", "state": "next", "detail": "Due 8/28. Grant: \"If it raises questions in you, it'll raise questions in them.\"" },
@@ -111,7 +114,13 @@
     { "title": "Import the 2,000-contact Primavera P6 list + Asta customer list", "state": "next", "detail": "Due 9/1, cc Amber. Gated on Mary sending both lists." },
     { "title": "Resolve GA4 ownership", "state": "next", "detail": "Alan is doing one more search for the legacy property owner; if nothing turns up, stand up a fresh GA4 property under their control with us as admin. Due 9/1." },
     { "title": "Flip the launch switch", "state": "next", "detail": "Noindex off, forms live, drip ready, Ads ramp at $100-200/mo. Due 9/1." },
-    { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Confirmed Google Ads is already spending in a limited capacity ahead of MCC approval and re-flagged the 3 open access approvals as the real risk to the Sep 1 launch." }
+    { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Confirmed Google Ads is already spending in a limited capacity ahead of MCC approval and re-flagged the 3 open access approvals as the real risk to the Sep 1 launch." },
+    { "title": "Import the Primavera + Asta lists (now stalled on us)", "state": "next", "detail": "The list is ready; ownership flipped Sept 6 from blocked-on-Mary to stalled-on-us (Rail 3). Tracked via Bus ticket 868m1xtf2." },
+    { "title": "Trace Google Ads Search Terms spam vs Salesforce timestamps", "state": "next", "detail": "Stalled on us (Rail 3), owner Grant. Tracked via Bus ticket 868m1xtf1." },
+    { "title": "Close the Salesforce Connected App sign-in window", "state": "next", "detail": "Blocked on client - owner Mary + Grant, a 10-minute joint sign-in session is needed to finish the Connected App setup." },
+    { "title": "MCC manager-link approval + spend disclosure", "state": "next", "detail": "Blocked on client - owner Alan/Mary." },
+    { "title": "GBP verification start", "state": "next", "detail": "Blocked on client - Alan starts verification, Mary confirms hours/founding year." },
+    { "title": "VIP Steward launch-week pass (Sept 6-7)", "state": "done", "detail": "Confirmed the first tracked form fill since the Sept 1 launch ($196.36 cost per form fill) and that ad spend growth has moderated to +12.5% wk/wk. Flagged 3 subtasks as appearing complete and proposed stale-subtask housekeeping. Sept 7: no new pull, roster gaps (ga4_property_id, meta_ad_account_id) carried forward." }
   ],
-  "dataNotes": "Launch date, budget figures, contact-list size, and every decision above: Aug 27 launch-call transcript, doc 1b3KvaVSYqLhSIoDmzwAJ5P6_h0icm4De-iOjrF65orY (Gemini Notes, 39 min, read in full). Cost per form fill is intentionally pending - no ads or forms are live yet as of this dashboard's asOf date. Accent color #052D6D pulled live from the site's Divi theme CSS Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment. VIP Steward pass (Aug 28): Google Ads live figures ($156.04 spend, 29 clicks, 139 impressions, Aug 21-27) pulled via Supermetrics, confirming spend is already flowing ahead of the MCC manager-link approval. Three access approvals remain open: Salesforce/Meta/LinkedIn/YouTube, Google Ads MCC manager-link, and GA4."
+  "dataNotes": "Launch date, budget figures, contact-list size, and every decision above: Aug 27 launch-call transcript, doc 1b3KvaVSYqLhSIoDmzwAJ5P6_h0icm4De-iOjrF65orY (Gemini Notes, 39 min, read in full). Accent color #052D6D pulled live from the site's Divi theme CSS Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment. VIP Steward pass (Aug 28): Google Ads live figures ($156.04 spend, 29 clicks, 139 impressions, Aug 21-27) pulled via Supermetrics, confirming spend is already flowing ahead of the MCC manager-link approval. VIP Steward pass (Sept 6): fresh Google Ads CID 711-790-3651, 7-day vs prior-7-day pull via Supermetrics (this week: 37 clicks, $196.36 cost, 194 impressions, 1 conversion; prior week: 32 clicks, $174.60 cost, 147 impressions, 0 conversions) - the first tracked form fill (cost per form fill $196.36) since the Sept 1 launch. Roster gaps as of Sept 6-7: ga4_property_id blank, meta_ad_account_id blank. Open access approvals: Salesforce Connected App / 10-min sign-in window (Mary + Grant, blocked on client), Google Ads Search Terms spam-trace vs Salesforce timestamps (Grant, Rail 3, Bus ticket 868m1xtf1), Primavera + Asta list import (Grant, Rail 3, Bus ticket 868m1xtf2), GA4 access (Alan, blocked on client), MCC manager-link + spend disclosure (Alan/Mary, blocked on client), GBP verification (Alan/Mary, blocked on client). Sept 7 run: no new GA4/Ads pull, all gaps carried forward."
 }

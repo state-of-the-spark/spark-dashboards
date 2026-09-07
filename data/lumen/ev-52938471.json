@@ -1,7 +1,7 @@
 {
   "token": "ev-52938471",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-08-31",
+  "asOf": "2026-09-07",
   "cadence": "Mon / Wed / Fri (VIP Steward)",
   "business": {
     "name": "Evangelisto Construction",
@@ -23,18 +23,18 @@
       "sub": "2 Search campaigns live - raised Aug 31",
       "state": "live",
       "delta": { "text": "First conversion landed + budgets raised Aug 31", "tone": "good" },
-      "note": "Kitchen Remodeling ($10.00/day) and Home Additions & MIL Suites ($8.50/day), geo-targeted to Clermont, Eagle Lake, and Lakeland, bidding on Maximize Conversions against the existing GTM contact/lead-form goals. The Kitchen campaign logged its first lead conversion in week one; budgets were raised Aug 31 with the Mother-in-Law-Suites offer now the lead focus.",
-      "source": "Google Ads CID 992-297-7178 - live Aug 22, budgets verified in-account Aug 31, 2026"
+      "note": "Kitchen Remodeling ($10.00/day) and Home Additions & MIL Suites ($8.50/day), geo-targeted to Clermont, Eagle Lake, and Lakeland, bidding on Maximize Conversions against the existing GTM contact/lead-form goals. The Kitchen campaign logged its first lead conversion in week one; budgets were raised Aug 31 with the Mother-in-Law-Suites offer now the lead focus. CID 992-297-7178 is not yet listed under our connected Supermetrics login (checked live Sept 6, zero matching accounts) - Doug needs to add grant.nieddu@gmail.com as Admin in Google Ads so we can report and manage without identity-check friction.",
+      "source": "Google Ads CID 992-297-7178 - live Aug 22, budgets verified in-account Aug 31, 2026; Supermetrics access re-checked Sept 6, 2026 (still pending)"
     },
     {
       "key": "organicKeywords",
       "label": "Organic keywords ranking",
-      "value": "108",
-      "sub": "~154 visits/mo - Authority Score 15",
+      "value": "101",
+      "sub": "~136 visits/mo - down slightly from June",
       "state": "live",
-      "delta": { "text": "2 new SEO landing pages published Aug 19", "tone": "good" },
-      "note": "The bathroom-remodeling and general-contractor pages closed the two biggest content gaps the SEO audit found - bathroom had no page at all, and \"general contractor lakeland fl\" wasn't ranking. Kitchen terms already rank #2-3.",
-      "source": "SEMrush site audit - Aug 19, 2026"
+      "delta": { "text": "2 new SEO landing pages published Aug 19", "tone": "watch" },
+      "note": "The bathroom-remodeling and general-contractor pages closed the two biggest content gaps the SEO audit found - bathroom had no page at all, and \"general contractor lakeland fl\" wasn't ranking. Kitchen terms already rank #2-3. Sept 6 re-check: keyword count and estimated traffic have drifted down slightly from June's 122 keywords / 229 visits - the 8/24 needs-list follow-up nudge to Doug and Shannon is still owed and is queued for the next client-email pass.",
+      "source": "SEMrush site audit - Aug 19, 2026; re-checked Sept 6, 2026"
     },
     {
       "key": "reviews",
@@ -51,17 +51,17 @@
       "label": "Website visits & leads (Google Analytics)",
       "value": null,
       "state": "pending",
-      "pendingLabel": "LIVE Aug 31 - first numbers land within 48h",
+      "pendingLabel": "Live and tagging - not yet accessible to us for reporting",
       "pendingSub": "A brand-new Google Analytics, owned by YOUR Google account - not the old agency's",
-      "note": "The previous agency's Analytics was orphaned in the handoff - data collected but nobody could read it. On Aug 31 we set up a fresh Google Analytics account owned by Evangelisto's own Google login, wired it to the site through Google's Site Kit, and verified the tag is live for visitors (with enhanced measurement, so form submissions count automatically). Monthly visits and leads land here as the site's scoreboard from now on - and you hold the keys.",
-      "source": "GA4 property 552236127 (G-ZM9WB81RST) - created + tag verified live Aug 31, 2026"
+      "note": "The previous agency's Analytics was orphaned in the handoff - data collected but nobody could read it. On Aug 31 we set up a fresh Google Analytics account owned by Evangelisto's own Google login, wired it to the site through Google's Site Kit, and verified the tag is live for visitors (with enhanced measurement, so form submissions count automatically). The property (created under devangelisto6@gmail.com) is not yet linked to our reporting login (grant.nieddu@gmail.com) - checked live via Supermetrics accounts_discovery Sept 6 and again Sept 7, zero matching properties returned both times. Monthly visits and leads land here as the site's scoreboard once Doug adds us as Editor.",
+      "source": "GA4 property 552236127 (G-ZM9WB81RST) - created + tag verified live Aug 31, 2026; access re-checked Sept 6-7, 2026 (still pending)"
     }
   ],
   "projectCards": [
-    { "name": "Website Rescue + Hosting", "status": "NAP phone fixed sitewide (14 occurrences incl. the invisible Rank Math schema), a broken footer email corrected, homepage decluttered edge-to-edge, and 2 new SEO landing pages published. The Aug 31 pass confirmed the legacy lakelandflcabinets.com consolidation is clean. Next up on our side: moving the domain's DNS off Bluehost to finish the hosting migration; a further homepage simplification design is ready pending a go-ahead. The email deliverability audit also flagged a missing DMARC record alongside the known SPF/DKIM issues.", "state": "active" },
-    { "name": "Paid Ads / Lead Velocity", "status": "2 Google Search campaigns live since Aug 22 on CID 992-297-7178. First lead conversion landed in week one (Kitchen campaign, 7.7% conversion rate on clicks). Budgets raised Aug 31 to ~$563/mo with Mother-in-Law Suites as the lead offer (MIL $8.50/day, Kitchen $10/day); MIL ad copy and keyword work is next. Performance reporting still pending the Supermetrics connection. LSA / Google Guaranteed application next, pending Doug's FL license + COI.", "state": "active" },
-    { "name": "SEO / AIO", "status": "SEO Ignition (NAP + schema + heading cleanup) done Aug 24. Local SEO Care ongoing. Review Accelerator plan finalized, launch blocked on the GBP claim.", "state": "in-progress" },
-    { "name": "Social Media Management", "status": "Meta admin access GRANTED - Shannon sent the full-access Business invitation Aug 24, so the Facebook/Instagram cleanup (NAP break, duplicate FB page) is now unblocked on our side. Starter deliverables and the posting cadence are being scoped to kick off this line ($897 setup + $497/mo).", "state": "in-progress" }
+    { "name": "Website Rescue + Hosting", "status": "Ad-landing 404s, the dead phone number, and a footer CTA regression were already fixed live in prior sessions; the Aug 31 pass confirmed the legacy lakelandflcabinets.com consolidation is clean. Two items handed to Lumen Sept 6: the SPF/DKIM email-deliverability fix (cPanel 2FA + Cloudflare DNS) and a mobile/full-scroll visual verification pass. MIL Suites content capture is on track for the week of Sept 7.", "state": "active" },
+    { "name": "Paid Ads / Lead Velocity", "status": "2 Google Search campaigns live since Aug 22 on CID 992-297-7178. First lead conversion landed in week one (Kitchen campaign, 7.7% conversion rate on clicks). Budgets raised Aug 31 to ~$563/mo with Mother-in-Law Suites as the lead offer (MIL $8.50/day, Kitchen $10/day). Blocked on client: Doug needs to add grant.nieddu@gmail.com as Admin so we can report/manage without identity-check friction - reporting stays pending the Supermetrics connection until then. LSA / Google Guaranteed application next, pending Doug's FL license + COI.", "state": "active" },
+    { "name": "SEO / AIO", "status": "SEO Ignition (NAP + schema + heading cleanup) done Aug 24. Organic keywords sit at 101 (~136 visits/mo, Semrush), down slightly from June. GA4 property 552236127 not yet accessible to us - needs Doug to add grant.nieddu@gmail.com as Editor. Review Accelerator plan finalized, launch blocked on the GBP claim; the Aug 24 needs-list follow-up nudge is still owed.", "state": "in-progress" },
+    { "name": "Social Media Management", "status": "Meta admin access GRANTED - Shannon sent the full-access Business invitation Aug 24, so the Facebook/Instagram cleanup (NAP break, duplicate FB page) is now unblocked on our side. Setup deliverables (Social Presence $897: Houzz, Nextdoor, Alignable, FB page dedupe) not yet broken into tracked subtasks. Meta ad account id is blank in our roster, so Meta metrics reporting is also pending.", "state": "in-progress" }
   ],
   "pillars": [
     {
@@ -98,9 +98,9 @@
   "reviewsGap": [],
   "reviewsGapSource": "GBP access has been asked for since the Aug 24 needs-list email and hasn't come back yet. The Aug 19 audit put Evangelisto at roughly 35 reviews, but that's a third-party estimate, not a GBP-verified count, so no comparison table is shown until the login lands.",
   "thisWeeksMove": {
-    "label": "Get the GBP login from Doug and Shannon",
-    "body": "One login unblocks three things at once: an accurate review count for this dashboard, the Review Accelerator launch (the plan is finalized and ready), and the off-site citation fixes (BBB, Yelp, Nextdoor, BuildZoom all still show the dead number). It was asked for in the Aug 24 needs-list email alongside directory logins, Shannon's mailbox password, license/insurance docs, and job photos - a full week without a reply as of Aug 31. Bright spot: Doug forwarded the BBB verification code Aug 27, so the highest-priority citation fix is already in motion.",
-    "cta": "Follow up on the Aug 24 needs-list email"
+    "label": "Get the GBP login, plus GA4 and Google Ads access, from Doug",
+    "body": "Two Rail-3 handoffs are queued for Lumen: fix stale SPF and missing DKIM on evangelistoconstruction.com (blocks safe email marketing), and finish the mobile/full-scroll visual verification on the rebuilt site. On the access side, the GBP login still unblocks an accurate review count, the Review Accelerator launch, and off-site citation fixes; the ask to add grant.nieddu@gmail.com to Google Ads and GA4 was sent again Sept 6 so reporting stops being pending. Bright spot: Doug forwarded the BBB verification code Aug 27, so the highest-priority citation fix is already in motion.",
+    "cta": "Follow up again on GBP, GA4, and Google Ads access"
   },
   "lumenDid": [
     "Fixed the dead phone number (863-617-7700 to 863-409-6985) across roughly 14 occurrences sitewide - header, footer, homepage CTAs, and the invisible Rank Math LocalBusiness schema Google reads for the Knowledge Graph (Aug 24)",
@@ -111,7 +111,10 @@
     "Confirmed Bluehost/DNS access and got a further homepage simplification design ready for a go-ahead",
     "Verified the legacy lakelandflcabinets.com domain consolidation is clean in SEMrush - no stray rankings or duplicate-content drag left behind (Aug 31)",
     "Advised on the Polk County Business Hub directory listing Shannon asked about - worth the $75 with a UTM-tagged backlink so the traffic it sends is measurable; Shannon signed up Aug 28",
-    "Audited the live ad account with Grant, caught the MIL Suites campaign under-serving, and raised budgets Aug 31 - Kitchen to $10/day, MIL Suites to $8.50/day - putting the Mother-in-Law Suites offer in the lead (Aug 31)"
+    "Audited the live ad account with Grant, caught the MIL Suites campaign under-serving, and raised budgets Aug 31 - Kitchen to $10/day, MIL Suites to $8.50/day - putting the Mother-in-Law Suites offer in the lead (Aug 31)",
+    "Sept 6: reviewed all 4 hub tasks and posted a classification comment on each; pulled live Semrush organic data (101 keywords, ~136 est. monthly visits, down from 122/229 in June); verified live via Supermetrics accounts_discovery that neither GA4 property 552236127 nor Google Ads CID 992-297-7178 is yet connected under our login, and kept both honestly pending rather than inventing numbers",
+    "Sept 6: queued 2 Rail-3 handoffs (SPF/DKIM email-deliverability fix; mobile/full-scroll visual verification pass) and re-sent the access ask for Doug to add grant.nieddu@gmail.com to Google Ads and GA4",
+    "Sept 7: no new GA4/Ads data pull this run (same roster gap carried forward) - GA4 and Google Ads access both still pending from Doug"
   ],
   "ledger": [
     { "title": "Get the GBP login", "state": "next", "detail": "Blocks the Review Accelerator launch and a GBP-verified review count. Asked Aug 24, awaiting reply." },
@@ -122,7 +125,9 @@
     { "title": "LSA / Google Guaranteed application", "state": "next", "detail": "Needs Doug's FL license plus $500K-1M GL insurance and a COI before the 2-5 week screening can start." },
     { "title": "Google Analytics - rebuilt and client-owned", "state": "done", "detail": "The old agency's Analytics was orphaned (data locked away). Aug 31: new Analytics account created under YOUR Google login, wired to the site via Site Kit, tag verified live. History starts fresh Aug 31; the old locked data stays retrievable later if JABstract ever grants access." },
     { "title": "Fix evangelistoconstruction.com email deliverability (SPF/DKIM)", "state": "in-progress", "detail": "Domain SPF still points at the dead Hostinger host and DKIM is missing; fix is copying the cPanel Email-Deliverability records into Cloudflare. A missing DMARC record (p=none) was also flagged this cycle." },
-    { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Confirmed Bluehost/DNS access, flagged a missing DMARC record alongside the known SPF/DKIM fix, and got the homepage simplification design ready pending a go-ahead." }
+    { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Confirmed Bluehost/DNS access, flagged a missing DMARC record alongside the known SPF/DKIM fix, and got the homepage simplification design ready pending a go-ahead." },
+    { "title": "Mobile/full-scroll visual verification pass", "state": "next", "detail": "Queued as a Rail-3 handoff Sept 6 - confirm the rebuilt site renders cleanly edge-to-edge on mobile." },
+    { "title": "VIP Steward working run (Sept 6-7)", "state": "done", "detail": "Confirmed live via Supermetrics that GA4 property 552236127 and Google Ads CID 992-297-7178 are still not connected under our login; re-checked organic (101 keywords, ~136 visits/mo, down slightly from June); Sept 7 run reported no metric changes, same roster/access gaps carried forward." }
   ],
-  "dataNotes": "Organic keyword count and visits: SEMrush site audit, Aug 19, 2026. ~35 Google reviews figure: same Aug 19 audit, a third-party estimate - not GBP-verified, hence the reviews hero metric and reviews-gap panel are both pending. Google Ads CID, budget, geo, and live-date: verified directly in Google Ads Manager Aug 22-23, 2026. NAP and schema fixes: verified live via Claude in Chrome screenshots and a full-page DOM scan Aug 24, 2026 (0 remaining instances of the old number). Accent color pulled live from evangelistoconstruction.com's homepage CTA styling Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment. VIP Steward pass (Aug 31) confirmed the legacy-domain consolidation is clean in SEMrush and re-flagged the Supermetrics connection for CID 992-297-7178 as the gate on real ad-performance numbers. Meta access status, BBB verification progress, and needs-list reply status verified against the actual Gmail threads Aug 31, 2026. Ad budgets and week-one performance (first Kitchen conversion; MIL under-serving) verified directly in Google Ads Manager Aug 31, 2026, and budgets raised the same day to $18.50/day total."
+  "dataNotes": "Organic keyword count and visits: SEMrush site audit, Aug 19, 2026. ~35 Google reviews figure: same Aug 19 audit, a third-party estimate - not GBP-verified, hence the reviews hero metric and reviews-gap panel are both pending. Google Ads CID, budget, geo, and live-date: verified directly in Google Ads Manager Aug 22-23, 2026. NAP and schema fixes: verified live via Claude in Chrome screenshots and a full-page DOM scan Aug 24, 2026 (0 remaining instances of the old number). Accent color pulled live from evangelistoconstruction.com's homepage CTA styling Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment. VIP Steward pass (Aug 31) confirmed the legacy-domain consolidation is clean in SEMrush and re-flagged the Supermetrics connection for CID 992-297-7178 as the gate on real ad-performance numbers. Meta access status, BBB verification progress, and needs-list reply status verified against the actual Gmail threads Aug 31, 2026. Ad budgets and week-one performance (first Kitchen conversion; MIL under-serving) verified directly in Google Ads Manager Aug 31, 2026, and budgets raised the same day to $18.50/day total. VIP Steward Sept 6 pass: re-checked organic via Semrush (101 keywords, ~136 est. visits/mo, down from 122/229 in June) and confirmed live via Supermetrics accounts_discovery that neither GA4 property 552236127 nor Google Ads CID 992-297-7178 is connected under our login (grant.nieddu@gmail.com) - both accounts currently list only devangelisto6@gmail.com and awcwebservices@gmail.com as admins. Meta ad account id is blank in roster.json (roster gap, not a pull failure). Sept 7 run: no new data pull, same gaps carried forward."
 }

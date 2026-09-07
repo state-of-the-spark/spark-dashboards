@@ -1,7 +1,7 @@
 {
   "token": "hu-10004649",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-09-01",
+  "asOf": "2026-09-07",
   "cadence": "weekly (Tuesday Sync)",
   "business": {
     "name": "Humarian",
@@ -49,22 +49,22 @@
     {
       "key": "ga4Traffic",
       "label": "Website sessions · last 30 days",
-      "value": "13,013",
-      "sub": "119 purchases tracked in GA4",
+      "value": "11,714",
+      "sub": "130 purchases tracked in GA4",
       "state": "live",
-      "delta": { "text": "down 31.5% vs the prior 30 days (19,000)", "tone": "watch" },
-      "note": "The traffic dip tracks the Shopify sales decline the team is already working - the sg./secure./smile landing build due Sep 2 is the named fix. Purchase and add-to-cart tracking in GA4 is counting cleanly, so this number is a true read, not a tracking artifact.",
-      "source": "GA4 property 255641365 - Aug 1-30 vs Jul 2-Aug 1, pulled Aug 31, 2026"
+      "delta": { "text": "down 31.75% vs the prior 30 days - a continuation of the trend flagged Sept 6, no new root cause identified since", "tone": "watch" },
+      "note": "The traffic decline continues (sessions down 31.75% over the trailing 30 days). Add-to-cart (876) vs purchase (130) sits at a 6.7:1 ratio - the purchase pipeline itself is healthy; the top-of-funnel session dip is the thing to watch. google_ads_cid and meta_ad_account_id are still blank in the automation roster, so the VIP Steward's daily runs can't yet auto-pull fresh Ads-side numbers.",
+      "source": "GA4 property 255641365 via Supermetrics - last 30 days vs prior 30 days, pulled Sept 7, 2026"
     }
   ],
   "projectCards": [
-    { "name": "Product Landing Pages", "status": "Smile Guard and Cat Probonix shipped as Shopify theme templates. Next up: the sg./secure./smile.humarian.com landing build, due Sep 2, is the named fix for the recent Shopify sales dip, and 3 tracking subtasks were added this week to make sure it lands on time.", "state": "in-progress" },
+    { "name": "Product Landing Pages", "status": "Landing Pages hub closed Sept 4 - Smile Guard and Cat Probonix shipped as Shopify theme templates, the sg./secure./smile.humarian.com build landed on schedule, no open deliverables remain on this line.", "state": "active" },
     { "name": "Meta Ads", "status": "9 active ads across 5 campaigns, including the new Women's Probonix Add-to-Cart test. Labor Day sale ads (20% off sitewide, LABORDAY26) drafted, compliance-reviewed, and set for a Saturday Sept 5 launch.", "state": "active" },
     { "name": "Attribution & Tracking", "status": "Major milestone Aug 24: the Meta Conversions API had been silently failing on every event for months (dead auth token) - found, fixed, and verified live. Funnel events now reach Meta with strong match quality. GA4 attribution cleanup is holding (Unassigned sessions down 88%). Remaining gap: purchase events complete on checkout systems outside web tracking - a server-side feed is the next build.", "state": "active" },
     { "name": "Weekly Reporting", "status": "Humarian Tuesday Sync email lands every Tuesday 7am with Meta bar charts, active-ads breakdown, and a written pulse narrative.", "state": "active" },
     { "name": "SEO / AIO", "status": "All 3 tracked deliverables are moving this week. Organic traffic is still 96.76% concentrated in a single blog post - flagged for a real diversification plan, not just a note.", "state": "active" },
     { "name": "Social Media Management", "status": "1 of 4 deliverables done. 3 have been stalled since March - a demo video, a video format spec, and an approved influencer collab that never started - and are being reviewed for a revive-or-archive call.", "state": "in-progress" },
-    { "name": "Influencer / UGC", "status": "1 open deliverable in progress: seasonal header copy for 2 website slides.", "state": "active" }
+    { "name": "Influencer / UGC", "status": "Seasonal fall header copy for 2 website slides drafted Sept 4, awaiting Amber/Nicole placement and Sean/Shawn sign-off.", "state": "active" }
   ],
   "pillars": [
     {
@@ -103,9 +103,9 @@
   ],
   "reviewsGapSource": "Judge.me · product-level. Store-wide roll-up and probiotic peer comparison to be wired next cycle.",
   "thisWeeksMove": {
-    "label": "Launch the Labor Day sale + restore Google Ads budget",
-    "body": "20% off sitewide with LABORDAY26, Saturday Sept 5 through midnight Monday Sept 7. Ad creative is drafted and compliance-reviewed, pointed at the auto-applying discount link, launching to retargeting and engaged audiences. Alongside it: Google Ads spend collapsed to under $5 last week and is dragging traffic - restoring budget with a lean into Branded Search is the second lever.",
-    "cta": "Approve creative by Thursday · sale live Saturday"
+    "label": "Labor Day sale closes out today - hold the line on the session decline",
+    "body": "The LABORDAY26 sale (20% off sitewide) runs through midnight tonight, Sept 7. Sessions are still down 31.75% over the trailing 30 days - the same trend flagged Sept 6, with no new root cause identified since - while add-to-cart (876) vs purchase (130) holds a healthy 6.7:1 ratio, so the purchase pipeline itself isn't the problem. Restoring Google Ads budget remains the next lever once the sale wraps.",
+    "cta": "Watch post-sale session recovery this week"
   },
   "lumenDid": [
     "Sept 1: wired the Meta Click ID (fbc) into the server-side AddToCart, InitiateCheckout and Purchase events and published it (GTM v10) - the missing link that lets Meta credit sales to the ads that drove them",
@@ -119,7 +119,9 @@
     "Set up your live scorecard at this private link",
     "Pulled a fresh GA4 baseline (last 7 days vs the prior 7) and flagged the session and purchase decline against your Shopify sales trend",
     "Flagged that the sg./secure./smile.humarian.com landing page build, the fix for the recent Shopify sales dip, had no tracking against its Sep 2 deadline, and got that tracking in place",
-    "Reviewed the stalled social deliverables (a demo video, a video format spec, and the approved influencer collab) for a revive-or-archive decision"
+    "Reviewed the stalled social deliverables (a demo video, a video format spec, and the approved influencer collab) for a revive-or-archive decision",
+    "Sept 6: Verified the Aug 24 Meta CAPI dedup fix is holding via a 20-day GA4 daily Purchase trend (no sustained doubling; one Sept 5 outlier flagged for a manual look) and re-checked the Women's Probiotic Page ranking - /pages/ version still ranks for zero keywords, /products/ carries all organic value (top term rank #5)",
+    "Sept 6-7: ran the VIP Steward's daily classification pass across all 5 client hubs, opened a Rail-3 schema-fix handoff for Superior Spray, and resolved the AIM Mold GA4 numeric property id roster gap"
   ],
   "ledger": [
     { "title": "Meta Conversions API live", "state": "done", "detail": "The server-side buildout was published, but its auth token was a dead placeholder - every event rejected for months. Found and fixed Aug 24; add-to-cart and checkout events now reach Meta with strong match quality." },
@@ -130,7 +132,8 @@
     { "title": "Ship the next product landing page", "state": "next", "detail": "Smile Guard and Cat Probonix are live-preview verified. The theme-template system is documented and repeats cleanly — pick the next product and clone." },
     { "title": "Resolve Smile Guard dosing conflict", "state": "next", "detail": "Label vs A+ content disagree on schedule; Shawn at Humarian was emailed 8/2 for the authoritative answer." },
     { "title": "Roll up store-wide Judge.me reviews", "state": "next", "detail": "Product-level rating shows on landing pages; store-wide aggregate not yet wired to the dashboard." },
-    { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Pulled a first GA4 week-over-week baseline, flagged that the Sep 2 landing-page build had zero tracking despite being the fix for the recent sales dip, and reviewed the stalled social deliverables for a revive-or-archive call." }
+    { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Pulled a first GA4 week-over-week baseline, flagged that the Sep 2 landing-page build had zero tracking despite being the fix for the recent sales dip, and reviewed the stalled social deliverables for a revive-or-archive call." },
+    { "title": "VIP Steward daily pass (Sept 6-7)", "state": "done", "detail": "Sessions continued down (-31.75% over the trailing 30 days, a continuation of the Sept 6 trend, no new root cause identified); add-to-cart (876) vs purchase (130) sits at a healthy 6.7:1 ratio. Verified the Meta CAPI dedup fix is holding and the Women's Probiotic Page ranking is stable. Roster gap: google_ads_cid and meta_ad_account_id are still blank, blocking daily Ads-side auto-pulls." }
   ],
-  "dataNotes": "Purchases, sessions, users: GA4 property 255641365, Aug 25-31 vs Aug 18-24, pulled Sept 1, 2026. Meta reach/impressions/spend: Supermetrics, Aug 2-31, pulled Sept 1, 2026. CAPI status and event delivery verified Sept 1 in Meta Events Manager (pixel 375810672756468). Judge.me reviews: Smile Guard product page as of 2026-08-02. Pillar scores are Lumen's weighted assessment. Reviews-gap panel currently shows product-level Judge.me only; probiotic-peer comparison will be added once a public data source is agreed on."
+  "dataNotes": "Purchases, sessions, users: GA4 property 255641365, Aug 25-31 vs Aug 18-24, pulled Sept 1, 2026. Meta reach/impressions/spend: Supermetrics, Aug 2-31, pulled Sept 1, 2026. CAPI status and event delivery verified Sept 1 in Meta Events Manager (pixel 375810672756468). Judge.me reviews: Smile Guard product page as of 2026-08-02. Pillar scores are Lumen's weighted assessment. Reviews-gap panel currently shows product-level Judge.me only; probiotic-peer comparison will be added once a public data source is agreed on. VIP Steward daily passes (Sept 6-7) pulled fresh 30-day GA4 sessions/add-to-cart/purchase figures (11,714 sessions -31.75%, 876 add-to-cart, 130 purchases, 6.7:1 ratio) via Supermetrics; confirmed google_ads_cid and meta_ad_account_id are still blank in the automation roster, so daily Ads-side auto-pulls remain blocked (the Meta reach hero above is still the Sept 1 manual pull)."
 }
