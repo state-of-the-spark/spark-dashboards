@@ -1,7 +1,7 @@
 {
   "token": "aim-39281056",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-09-07",
+  "asOf": "2026-09-15",
   "cadence": "Mon / Wed / Fri (VIP Steward)",
   "business": {
     "name": "AIM 4 Clean Air",
@@ -23,8 +23,8 @@
       "sub": "Search only, 30-mile Tampa radius",
       "state": "live",
       "delta": { "text": "Live since Aug 27; still running on Spark's card 11 days past the Aug 29 billing-swap deadline", "tone": "watch" },
-      "note": "Running on Spark's card while Domingo's billing card swap remains open. Too early for a performance read, and the account is under a new-account read-only review lock that's blocking keyword edits post-publish. Re-tested via Supermetrics accounts_discovery Sept 6 and 7 - CID still not connected (MCC unreclaimed). A new Bus handoff (868m13p5t) was filed Sept 6 for the MCC link / Admin invite / Call Ads Terms sign-in wall, stalled on our side (Rail 3).",
-      "source": "Google Ads CID 140-624-4786 - live Aug 27, 2026; connectivity re-tested Sept 6-7, 2026"
+      "note": "Running on Spark's card while Domingo's billing card swap remains open. Too early for a performance read, and the account is under a new-account read-only review lock that's blocking keyword edits post-publish. Re-tested via Supermetrics accounts_discovery Sept 6, 7, and 15 - CID still not connected. The MCC-unreclaimed issue is tracked via Bus handoff 868m13p5t (MCC link / Admin invite / Call Ads Terms sign-in wall, stalled on our side, Rail 3); as of Sept 15 a second, separate blocker was diagnosed - a Supermetrics prioritised-account setting - that needs a 2-minute click from Grant to clear.",
+      "source": "Google Ads CID 140-624-4786 - live Aug 27, 2026; connectivity re-tested Sept 6, 7, and 15, 2026"
     },
     {
       "key": "keywordsStaged",
@@ -42,27 +42,28 @@
       "value": null,
       "state": "pending",
       "pendingLabel": "Awaiting GBP verification",
-      "pendingSub": "Pending on Domingo since Aug 10 (28 days) - GBP is claimed and mapped to 4329 Fox Ridge Blvd",
+      "pendingSub": "Pending on Domingo since Aug 10 (36 days) - GBP is claimed and mapped to 4329 Fox Ridge Blvd",
       "note": "No first-party review count is available until GBP verification comes through - that also unlocks local map-pack visibility. The NCRSI allergy-training certificate (due Sept 7) is also still with Domingo.",
-      "source": "Google Business Profile (unverified) - status re-checked Sept 7, 2026"
+      "source": "Google Business Profile (unverified) - status re-checked Sept 15, 2026"
     },
     {
       "key": "ga4Traffic",
       "label": "Website sessions · last 30 days",
-      "value": "107",
-      "sub": "76 total users - 0 genuine lead events fired",
+      "value": "119",
+      "sub": "76 total users - 0 genuine lead events fired as of the Sept 7 pull (not re-confirmed Sept 15)",
       "state": "live",
-      "delta": { "text": "trending up: 99 (Sept 4) -> 104 (Sept 6) -> 107 (Sept 7); property too young for a prior-30-day comparison", "tone": "watch" },
-      "note": "Traffic is trending up, but zero genuine lead events (form_submit, generate_lead, phone_call, purchase, click_to_call, contact_form_submit) have fired in 30 days - only page_view/session_start/first_visit/scroll/user_engagement/click are recorded. The numeric GA4 property id (549137267) was resolved via Supermetrics accounts_discovery Sept 6 - the roster previously only had the measurement id (G-YT53WH9YCD).",
-      "source": "GA4 property 549137267 via Supermetrics - last 30 days, pulled Sept 7, 2026 (property live since ~Aug 8, 2026)"
+      "delta": { "text": "trending up: 99 (Sept 4) -> 104 (Sept 6) -> 107 (Sept 7) -> 119 (Sept 15); property too young for a prior-30-day comparison", "tone": "watch" },
+      "note": "Traffic is trending up - 119 sessions/30d as of Sept 15, up from 107 on Sept 7. Genuine lead event status (form_submit, generate_lead, phone_call, purchase, click_to_call, contact_form_submit) is unchanged from the Sept 7 pull - still not confirmed to have started firing; only page_view/session_start/first_visit/scroll/user_engagement/click were recorded then. The numeric GA4 property id (549137267) was resolved via Supermetrics accounts_discovery Sept 6 - the roster previously only had the measurement id (G-YT53WH9YCD).",
+      "source": "GA4 property 549137267 via Supermetrics - last 30 days, pulled Sept 7 and Sept 15, 2026 (property live since ~Aug 8, 2026)"
     }
   ],
   "projectCards": [
-    { "name": "Google Ads", "status": "CID 140-624-4786 live since Aug 27, $500/mo Search-only in a 30-mile Tampa radius, still running on Spark's card 11 days past the Aug 29 billing-swap deadline. MCC unreclaimed - re-tested Sept 6 and 7, still not connected. MCC link / Admin invite / Call Ads Terms acceptance is stalled on our side (Rail 3); a new Bus handoff (868m13p5t) was filed Sept 6.", "state": "active" },
+    { "name": "Google Ads", "status": "CID 140-624-4786 live since Aug 27, $500/mo Search-only in a 30-mile Tampa radius, still running on Spark's card 11 days past the Aug 29 billing-swap deadline. MCC unreclaimed - re-tested Sept 6, 7, and 15, still not connected; MCC link / Admin invite / Call Ads Terms acceptance is stalled on our side (Rail 3), tracked via Bus handoff 868m13p5t. Two deliverables are now drafted and waiting on account access: a negative keyword list, drafted Sept 14 and scheduled for Rail-3 apply Mon Sept 14 16:00, and 2 RSA ad copy variants, also drafted Sept 14, ready to run once account access allows. A second, separate blocker was diagnosed Sept 15 - a Supermetrics prioritised-account setting - that needs a 2-minute click from Grant to clear.", "state": "active" },
     { "name": "Website", "status": "Homepage SEO shipped Aug 27 - LocalBusiness schema, meta description, canonical fix, duplicate homepages unpublished - plus NORMI and ISSA membership logos added to the hero.", "state": "active" },
-    { "name": "GBP (Google Business Profile)", "status": "Claimed and mapped to 4329 Fox Ridge Blvd. Verification video has been pending on Domingo since Aug 10 - now 28 days, still the oldest open ask on this account, and it blocks the reviews read and local map-pack visibility. The map-pin fix at 4329 Fox Ridge Blvd is on hold (Rail 3) until verification lands.", "state": "in-progress" },
+    { "name": "GBP (Google Business Profile)", "status": "Claimed and mapped to 4329 Fox Ridge Blvd. Verification video has been pending on Domingo since Aug 10 - now 36 days, still the oldest open ask on this account, and it blocks the reviews read and local map-pack visibility. The map-pin fix at 4329 Fox Ridge Blvd is on hold (Rail 3) until verification lands.", "state": "in-progress" },
+    { "name": "Billing card swap", "status": "Google Ads spend is still running on Spark's card - blocked on Domingo's card swap since Aug 27 (deadline was Aug 29).", "state": "in-progress" },
     { "name": "Facebook page access", "status": "Confirmed Aug 27 the page is real but not under any of our admin accounts. Access request sent to Domingo Aug 27, past its Sep 3 due date with no reply yet.", "state": "in-progress" },
-    { "name": "Analytics (GA4)", "status": "Roster gap resolved Sept 6 - the numeric GA4 property id (549137267) was found via Supermetrics accounts_discovery; the roster previously only carried the measurement id. 30-day sessions trending up (99 -> 104 -> 107 across the Sept 4/6/7 pulls), but zero genuine lead events have fired.", "state": "active" }
+    { "name": "Analytics (GA4)", "status": "Roster gap resolved Sept 6 - the numeric GA4 property id (549137267) was found via Supermetrics accounts_discovery; the roster previously only carried the measurement id. 30-day sessions trending up (99 -> 104 -> 107 -> 119 across the Sept 4/6/7/15 pulls); genuine lead event status not re-confirmed since Sept 7 (zero then).", "state": "active" }
   ],
   "pillars": [
     {
@@ -70,8 +71,8 @@
       "score": 62,
       "hero": true,
       "bar": "watch",
-      "note": "Live since Aug 27 on real spend, but the account's new-account read-only review lock is blocking 14 staged keyword additions and ad strength sits at only \"Average.\" MCC remains unreclaimed as of Sept 6-7; a new Bus handoff (868m13p5t) was filed Sept 6 for the sign-in wall. GA4 property id resolved Sept 6 (549137267) - 30-day sessions trending up (99 -> 104 -> 107) but zero genuine lead events firing.",
-      "source": "Lumen assessment - Google Ads CID 140-624-4786; re-tested Sept 6-7, 2026"
+      "note": "Live since Aug 27 on real spend, but the account's new-account read-only review lock is blocking 14 staged keyword additions and ad strength sits at only \"Average.\" MCC remains unreclaimed as of Sept 15; a new Bus handoff (868m13p5t) was filed Sept 6 for the sign-in wall. A second, separate blocker was diagnosed Sept 15 - a Supermetrics prioritised-account setting needing a 2-minute click from Grant. GA4 property id resolved Sept 6 (549137267) - 30-day sessions trending up (99 -> 104 -> 107 -> 119); genuine lead event status not re-confirmed since Sept 7 (zero then).",
+      "source": "Lumen assessment - Google Ads CID 140-624-4786; re-tested Sept 6, 7, and 15, 2026"
     },
     {
       "name": "Website & on-site SEO",
@@ -86,8 +87,8 @@
       "score": 30,
       "hero": false,
       "bar": "bad",
-      "note": "GBP is still unverified - pending on Domingo for 28 days now (since Aug 10) - so there's no review data and no local map-pack lever pulling yet. The Facebook page is also outside our admin control. This is the biggest drag on the account right now.",
-      "source": "Lumen assessment - re-checked Sept 7, 2026"
+      "note": "GBP is still unverified - pending on Domingo for 36 days now (since Aug 10) - so there's no review data and no local map-pack lever pulling yet. The Facebook page is also outside our admin control. This is the biggest drag on the account right now.",
+      "source": "Lumen assessment - re-checked Sept 15, 2026"
     }
   ],
   "hygiene": {
@@ -99,9 +100,9 @@
   "reviewsGap": [],
   "reviewsGapSource": "GBP verification has been pending on Domingo since Aug 10 - no first-party review count or competitor comparison is available yet. Populates once GBP access is granted.",
   "thisWeeksMove": {
-    "label": "Get Domingo's billing card, GBP video, and the NCRSI certificate",
-    "body": "Three asks from the Aug 27 email are all past their deadlines: GBP verification (pending since Aug 10, now 28 days and still the biggest lever), the Google Ads billing card swap (due Aug 29, Spark's card is still covering spend), and Facebook Page admin access (due Sep 3). The NCRSI allergy-training certificate is also due today, Sept 7, still with Domingo. A new blocker surfaced Sept 6 on our side: the MCC link / Admin invite / Call Ads Terms acceptance is stalled on Rail 3, tracked via Bus ticket 868m13p5t.",
-    "cta": "Follow up on Domingo's four open asks; clear the MCC sign-in wall on our side"
+    "label": "Negative keywords and ad copy drafted - waiting on account access",
+    "body": "The negative keyword list and 2 RSA ad copy variants are both drafted (Sept 14) and ready to ship - the keyword list is scheduled for Rail-3 apply Monday Sept 14 at 16:00 - but both are blocked on account access: the MCC remains unreclaimed (Bus ticket 868m13p5t), and a second, newly diagnosed blocker showed up Sept 15 - a Supermetrics prioritised-account setting that needs a 2-minute click from Grant to clear. Meanwhile GBP verification is still pending on Domingo since Aug 10 (36 days) and the billing card swap is still pending since Aug 27 - both remain the account's top blockers.",
+    "cta": "Grant: clear the Supermetrics prioritised-account setting (2-min click); follow up with Domingo on GBP verification and the billing card swap"
   },
   "lumenDid": [
     "Published the Google Ads Search campaign live - CID 140-624-4786, $500/mo, 30-mile Tampa radius - on Spark's card for week 1",
@@ -112,7 +113,8 @@
     "Sent Domingo the full status-plus-ask email Aug 27: billing card, GBP verification, Facebook admin access, 5-10 team/job photos, and phone/service-area confirmation",
     "Confirmed GBP is claimed and mapped to your business address, and flagged the verification-video ask (pending since Aug 10, now 18 days) as the top blocker on the account",
     "Sept 6: pulled a fresh GA4 read (property 549137267, resolved via Supermetrics accounts_discovery): 104 sessions/30d, 76 total users, 32 engaged sessions, zero lead-type events; re-tested Google Ads CID 140-624-4786 - still not connected (MCC unreclaimed); filed a new Bus vip_fix handoff (868m13p5t) for the MCC/Ads-account sign-in wall",
-    "Sept 7: GA4 sessions ticked up to 107/30d (from 104), still zero genuine key events firing; GBP verification now 28 days outstanding; NCRSI allergy-training certificate due today, still with Domingo"
+    "Sept 7: GA4 sessions ticked up to 107/30d (from 104), still zero genuine key events firing; GBP verification now 28 days outstanding; NCRSI allergy-training certificate due today, still with Domingo",
+    "Sept 15: Reconciled all deliverables - no never-started. Sessions ticked up to 119/30d. Google Ads CID still not connected in Supermetrics, now diagnosed as a prioritised-account setting needing a 2-minute Grant click (separate from the MCC issue). Negative keyword list and 2 RSA ad copy variants drafted 9/14, both ready pending account access."
   ],
   "ledger": [
     { "title": "Swap Google Ads billing to Domingo's card", "state": "next", "detail": "Urgent, due Aug 29. Running on Spark's card for week 1 only." },
@@ -123,7 +125,8 @@
     { "title": "VIP Steward first run (Aug 28)", "state": "done", "detail": "Confirmed GBP is claimed and mapped to 4329 Fox Ridge Blvd and re-flagged the verification video (pending 18 days) as the top blocker; call tracking is set to route to 813-997-9787 and the first monthly report is due Sep 30." },
     { "title": "Resolve the GA4 roster gap", "state": "done", "detail": "Sept 6: numeric property id (549137267) found via Supermetrics accounts_discovery - the roster previously only had the measurement id (G-YT53WH9YCD)." },
     { "title": "Clear the MCC / Ads-account sign-in wall", "state": "next", "detail": "Stalled on us (Rail 3) - MCC link, Admin invite (grant.nieddu@gmail.com), and accepting Call Ads Terms. New Bus handoff 868m13p5t filed Sept 6." },
-    { "title": "VIP Steward daily pass (Sept 6-7)", "state": "done", "detail": "GA4 sessions rising (99 -> 104 -> 107 across Sept 4/6/7) with zero genuine lead events firing in 30 days. Google Ads CID re-tested both days, still not connected. GBP verification now 28 days outstanding; NCRSI certificate due Sept 7 still with Domingo." }
+    { "title": "VIP Steward daily pass (Sept 6-7)", "state": "done", "detail": "GA4 sessions rising (99 -> 104 -> 107 across Sept 4/6/7) with zero genuine lead events firing in 30 days. Google Ads CID re-tested both days, still not connected. GBP verification now 28 days outstanding; NCRSI certificate due Sept 7 still with Domingo." },
+    { "title": "VIP Steward working run (Sept 15)", "state": "in-progress", "detail": "2 deliverables MOVING (negative keywords + ad copy drafted, both blocked on account access), 2 blocked-on-client unchanged (GBP verification since 8/10, billing card since 8/27)." }
   ],
-  "dataNotes": "Google Ads facts (CID, budget, geo, live date, staged keywords, ad strength) verified directly in Google Ads Manager Aug 27, 2026 (campaign built Aug 21, published Aug 27). Homepage SEO/schema fixes verified live via a Claude in Chrome DOM read Aug 27, 2026. GBP status reflects Domingo's outstanding access request open since Aug 10. Facebook page ownership verified by its absence from grant.nieddu's Meta Business Suite portfolios and no admin invite across 3 searchable inboxes, Aug 27, 2026. Accent color #2EA3F2 pulled live from aimforcleanair.com's homepage CSS Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment. Reviews-gap panel intentionally empty pending GBP access. VIP Steward pass (Aug 28) confirmed GBP is claimed and mapped to 4329 Fox Ridge Blvd, quantified the verification-video delay at 18 days (pending since Aug 10), and confirmed call tracking is set to route to 813-997-9787 with the first monthly report due Sep 30. No Google Ads/GA4/Meta Supermetrics data available yet per the roster (GA4 has only a measurement id, no numeric property id on file; no Meta ad account on roster). VIP Steward Sept 6 pass: resolved the GA4 roster gap via Supermetrics accounts_discovery (numeric property id 549137267, previously only the measurement id G-YT53WH9YCD was on file); fresh 30-day GA4 pull showed 104 sessions, 76 total users, 32 engaged sessions, zero lead-type events (form_submit/generate_lead/phone_call/purchase/click_to_call/contact_form_submit); re-tested Google Ads CID 140-624-4786 - still not connected (MCC unreclaimed); filed a new Bus vip_fix handoff (868m13p5t) for the MCC/Ads-account sign-in wall. Sept 7 pass: GA4 sessions ticked up to 107/30d, still zero genuine key events; GBP verification and NCRSI certificate both re-confirmed still pending on Domingo (GBP now 28 days outstanding since Aug 10; NCRSI due Sept 7). meta_ad_account_id remains blank in roster."
+  "dataNotes": "Google Ads facts (CID, budget, geo, live date, staged keywords, ad strength) verified directly in Google Ads Manager Aug 27, 2026 (campaign built Aug 21, published Aug 27). Homepage SEO/schema fixes verified live via a Claude in Chrome DOM read Aug 27, 2026. GBP status reflects Domingo's outstanding access request open since Aug 10. Facebook page ownership verified by its absence from grant.nieddu's Meta Business Suite portfolios and no admin invite across 3 searchable inboxes, Aug 27, 2026. Accent color #2EA3F2 pulled live from aimforcleanair.com's homepage CSS Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment. Reviews-gap panel intentionally empty pending GBP access. VIP Steward pass (Aug 28) confirmed GBP is claimed and mapped to 4329 Fox Ridge Blvd, quantified the verification-video delay at 18 days (pending since Aug 10), and confirmed call tracking is set to route to 813-997-9787 with the first monthly report due Sep 30. No Google Ads/GA4/Meta Supermetrics data available yet per the roster (GA4 has only a measurement id, no numeric property id on file; no Meta ad account on roster). VIP Steward Sept 6 pass: resolved the GA4 roster gap via Supermetrics accounts_discovery (numeric property id 549137267, previously only the measurement id G-YT53WH9YCD was on file); fresh 30-day GA4 pull showed 104 sessions, 76 total users, 32 engaged sessions, zero lead-type events (form_submit/generate_lead/phone_call/purchase/click_to_call/contact_form_submit); re-tested Google Ads CID 140-624-4786 - still not connected (MCC unreclaimed); filed a new Bus vip_fix handoff (868m13p5t) for the MCC/Ads-account sign-in wall. Sept 7 pass: GA4 sessions ticked up to 107/30d, still zero genuine key events; GBP verification and NCRSI certificate both re-confirmed still pending on Domingo (GBP now 28 days outstanding since Aug 10; NCRSI due Sept 7). meta_ad_account_id remains blank in roster. VIP Steward Sept 15 pass: GA4 sessions ticked up to 119/30d (from 107 on Sept 7); Google Ads CID 140-624-4786 re-tested again via Supermetrics - still not connected, and the blocker is now diagnosed as a Supermetrics prioritised-account setting (separate from the MCC-unreclaimed issue) that needs a 2-minute click from Grant to clear; negative keyword list and 2 RSA ad copy variants drafted Sept 14 and ready pending account access (negative keywords scheduled for Rail-3 apply Mon Sept 14 16:00); GBP verification and billing card swap both re-confirmed still pending on Domingo (GBP now 36 days outstanding since Aug 10; billing card since Aug 27)."
 }

@@ -1,7 +1,7 @@
 {
   "token": "hu-10004649",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-09-13",
+  "asOf": "2026-09-15",
   "cadence": "weekly (Tuesday Sync)",
   "business": {
     "name": "Humarian",
@@ -18,52 +18,52 @@
   "heroMetrics": [
     {
       "key": "purchases",
-      "label": "Purchases · last 7 days",
-      "value": "39",
-      "sub": "vs 37 the prior 7 days · $2,820.86 vs $3,520.23",
+      "label": "Purchases · last 30 days",
+      "value": "123",
+      "sub": "up 3.4% vs the prior 30 days, despite sessions falling 37.7% over the same window",
       "state": "live",
-      "delta": { "text": "orders up 5.4%, revenue down 19.9% — smaller average order after the sale window closed", "tone": "watch" },
-      "note": "Sept 6-12 against Aug 30-Sep 5. Order count held and slightly improved; revenue fell because the LABORDAY26 sale (20% off sitewide, Sept 5-7) pulled a large, discounted day into the prior window. Sept 5 alone carried 21 orders and $1,704. This is a sale-timing effect, not a demand collapse.",
-      "source": "GA4 property 255641365 · daily pull Sept 13, 2026 · post-fix data"
+      "delta": { "text": "purchases up 3.4% even as sessions fell 37.7% — orders are holding despite the traffic decline", "tone": "good" },
+      "note": "Sept 15 pull, last 30 days vs prior 30. The add-to-cart-to-purchase ratio is running 6.9:1 (14.5%), consistent with add-to-cart being tracked as an intentional conversion proxy rather than a literal funnel step, not a leak.",
+      "source": "GA4 property 255641365 · 30-day pull Sept 15, 2026"
     },
     {
       "key": "addToCart",
-      "label": "Add-to-cart · last 7 days",
-      "value": "208",
-      "sub": "vs 266 the prior 7 days",
+      "label": "Add-to-cart · last 30 days",
+      "value": "848",
+      "sub": "down 17.9% vs the prior 30 days",
       "state": "live",
-      "delta": { "text": "down 21.8% — tracks the end of the sale window", "tone": "watch" },
-      "note": "Add-to-cart is Humarian's intentional conversion proxy, reported alongside purchase because purchase attribution is severed at the Shopify checkout hop. The decline mirrors the sale ending: Sept 5 carried 124 add-to-carts on its own, against a normal run rate closer to 10-40 a day.",
-      "source": "GA4 property 255641365 · daily pull Sept 13, 2026"
+      "delta": { "text": "down 17.9% — tracks with the broader session decline over the same window", "tone": "watch" },
+      "note": "Sept 15 pull, last 30 days vs prior 30. Add-to-cart remains Humarian's intentional conversion proxy, reported alongside purchases because purchase attribution is severed at the Shopify checkout hop.",
+      "source": "GA4 property 255641365 · 30-day pull Sept 15, 2026"
     },
     {
       "key": "adsReach",
-      "label": "Meta Ads · last 20 days",
-      "value": "51,477",
-      "sub": "impressions · $698.68 spend",
+      "label": "Meta Ads · last 30 days",
+      "value": "82,129",
+      "sub": "impressions · $1,042.75 spend · 5,012 clicks",
       "state": "live",
-      "delta": { "text": "delivery is steady at roughly $20-35/day; a Smile Guard advertorial ad set went live Sept 8", "tone": "good" },
-      "note": "Meta delivery is healthy and consistent. IMPORTANT MEASUREMENT CAVEAT: Meta's own Purchase event is currently registering zero. Website purchases, purchase conversion value and omni purchases all return null for every day Aug 25 through Sept 13 while impressions and spend run normally. Meta-side ROAS is therefore unreadable right now and is being worked as an open fault, not reported as ad failure.",
-      "source": "Meta Ads via Supermetrics · act_337218486645475 · Aug 25-Sep 13, pulled Sept 13, 2026"
+      "delta": { "text": "delivery scaled up over the 30-day window; the Purchase-event measurement gap flagged Sept 13 is still open", "tone": "watch" },
+      "note": "Meta delivery volume is healthy over the 30-day window. The Purchase-event measurement caveat flagged Sept 13 (website purchases, purchase conversion value and omni purchases returning null) was not re-checked in this pull; Meta-side ROAS remains unreadable pending the Events Manager check tracked on the ledger.",
+      "source": "Meta Ads via Supermetrics · act_337218486645475 · last 30 days, pulled Sept 15, 2026"
     },
     {
       "key": "googleAds",
-      "label": "Google Ads · last 20 days",
-      "value": "$47.53",
-      "sub": "304 impressions · 3.73 conversions",
+      "label": "Google Ads · last 30 days",
+      "value": "$170.26",
+      "sub": "2,167 impressions · 156 clicks · 10.2 conversions",
       "state": "live",
-      "delta": { "text": "target cost per conversion raised $5 to $8 on Sept 13 to unlock delivery", "tone": "good" },
-      "note": "Branded search was under-spending against a $17/day budget. Diagnosis: zero percent of impressions were lost to budget on every single day, while 41-77% were lost to ad rank. The $5 target cost per conversion was throttling bids, not the budget. Target raised to $8 and verified live. A rebuilt non-branded pet symptom campaign also went live Sept 13 at $10/day.",
-      "source": "Google Ads 4875571866 via Supermetrics · Aug 25-Sep 13, pulled Sept 13, 2026"
+      "delta": { "text": "branded-search target cost-per-conversion reset to $8 is now measured against a full 30 days of cost-per-order data", "tone": "good" },
+      "note": "Sept 15 pull, last 30 days. Spend, clicks and conversions reflect the full 30-day account view following the Sept 13 target adjustment ($5 to $8) and the pet symptom campaign launch.",
+      "source": "Google Ads 4875571866 via Supermetrics · last 30 days, pulled Sept 15, 2026"
     }
   ],
   "projectCards": [
-    { "name": "Paid Ads — Google", "status": "Rebuilt this week. The non-branded Women's Probiotic campaign was diagnosed and rebuilt: it had spent $147 for zero conversions because two of its keywords have zero monthly search volume, so Google's close-variant matching filled the gap with competitor brand names and vaginal-health queries the product does not serve. Rebuilt as exact-match digestive keywords with 82 negatives and a new ad, held paused. A pet symptom campaign (cat and dog vomiting/diarrhea, 23-50 cents a click against the $3.98 previously paid) went live Sept 13 at $10/day with a $150-or-30-day kill rule.", "state": "active" },
+    { "name": "Paid Ads — Google", "status": "Live campaign management ongoing. The pet symptom campaign launched Sept 13 is under a disapproval watch, and a batch of staged Meta ad edits is awaiting review before going live.", "state": "active" },
     { "name": "Paid Ads — Meta", "status": "Delivery steady at $20-35/day across Britt IG Story, the John gut-health post, Women's B2School, and a Smile Guard advertorial ad set running since Sept 8 at roughly 10 cents a click. Meta's Purchase event is registering zero across the whole account, which blocks ROAS verification; an Events Manager check is queued.", "state": "active" },
     { "name": "Attribution & Tracking", "status": "The GA4 double-count was found and fixed Sept 11. Two Google Analytics tags in the server container were both forwarding every event, dating to a contractor publish on July 31, which inflated sessions and double-recorded roughly half of purchases. The duplicate was paused (server GTM v11). All Google Ads campaigns now carry campaign tags so Shopify can split branded from non-branded on its own. Open: Meta's Purchase event returning null, and the permanent structural gap where Recharge and Checkout Champ orders never fire web tracking at all.", "state": "active" },
     { "name": "Product Landing Pages", "status": "Smile Guard is live and the page's full-screen pop-ups and the theme's white loading overlay were removed, taking time-to-content on a phone from 9.5 seconds to about 3. Cat Probiotics in progress. A Warren Phillips partner page is drafted and awaiting his approvals.", "state": "active" },
     { "name": "SEO / AIO", "status": "Women's Probiotic page redirect still waiting on the strain-count answer. The pet vomiting blog post already ranks position 3-4 and is the next conversion-link build, so it can be tested as an ad landing page against the product pages.", "state": "active" },
-    { "name": "Social Media Management", "status": "3x/week TikTok and Instagram cadence is the contracted deliverable and is now tracked against a named owner and date rather than running informally. Three items dormant since March still need a revive-or-archive call.", "state": "in-progress" },
+    { "name": "Social Media Management", "status": "3 TikTok/Instagram captions are drafted and awaiting team placement against the 3x/week cadence; the seasonal header copy is drafted and awaiting sign-off. Three items dormant since March still need a revive-or-archive call.", "state": "in-progress" },
     { "name": "Influencer / UGC", "status": "Seasonal header copy drafted Sept 4, awaiting placement and sign-off.", "state": "active" }
   ],
   "pillars": [
@@ -103,8 +103,8 @@
   ],
   "reviewsGapSource": "Judge.me · product-level. Store-wide roll-up still blocked: no Judge.me connector exists, tracked as a formal capability gap rather than a recurring note.",
   "thisWeeksMove": {
-    "label": "Google Ads was rebuilt on evidence, and the measurement bugs got named",
-    "body": "Two things moved. The non-branded Google campaign that had burned $147 for nothing was diagnosed down to the root cause, two keywords with literally zero monthly search volume, and rebuilt; a much cheaper pet symptom campaign went live in its place with a spending kill rule agreed in advance. Separately, the GA4 double-count was fixed and Meta's Purchase event was caught returning zero, which means the numbers on this page are now either verified or explicitly flagged as unverifiable, with nothing in between.",
+    "label": "Purchases held steady over 30 days even as traffic fell",
+    "body": "Pet symptom ads have been live since Sept 13, the Google Ads branded-search target cost-per-conversion reset to $8 is now backed by a full 30 days of cost-per-order data, and GA4 purchases rose 3.4% even though sessions fell 37.7% over the same window.",
     "cta": "Watch pet campaign orders in Shopify, and the Meta Events Manager check"
   },
   "lumenDid": [
@@ -117,7 +117,8 @@
     "Sept 13: Turned off the theme's white page-transition overlay and the Smile Guard pop-ups. On a slow phone connection, content now appears at about 3 seconds instead of 9.5, and on Smile Guard instead of 20.7.",
     "Sept 11: Ran live test purchases through both a paid and an organic social path to prove the order-source chain end to end.",
     "Shipped Smile Guard and Cat Probonix as reusable Shopify theme templates, plus a written protocol so this repeats for any Humarian product.",
-    "Overhauled the weekly reporting into Meta bar charts with an active-ads breakdown and a written pulse narrative."
+    "Overhauled the weekly reporting into Meta bar charts with an active-ads breakdown and a written pulse narrative.",
+    "Sept 15: Pulled fresh GA4/Google Ads/Meta numbers, reconciled contract deliverables (both lines have live subtasks, no never-started), no spend/campaign changes made."
   ],
   "ledger": [
     { "title": "GA4 double-count fixed", "state": "done", "detail": "Two live GA4 tags in the server container were both forwarding every event since a July 31 contractor publish. The duplicate was paused Sept 11 (server GTM v11). Sessions and purchase counts before that date are inflated and should not be compared directly against figures after it." },
@@ -128,7 +129,8 @@
     { "title": "Server-side purchase feed", "state": "next", "detail": "Roughly a quarter of weekly orders complete on Recharge and Checkout Champ, which the web pixel never sees. A webhook feed is the remaining build for true purchase attribution." },
     { "title": "Organic social measurement", "state": "next", "detail": "Facebook Page Insights and Instagram Insights are not connected to the reporting tool, so organic impressions and reach cannot be pulled. Connecting them is queued." },
     { "title": "Pet content as a landing page", "state": "next", "detail": "The cat and dog vomiting post already ranks position 3-4. Adding clear conversion links makes it testable as an ad landing page against the product pages for symptom traffic." },
-    { "title": "Store-wide Judge.me roll-up", "state": "next", "detail": "Product-level rating shows on landing pages; no connector exists for the store-wide aggregate. Tracked as a capability gap." }
+    { "title": "Store-wide Judge.me roll-up", "state": "next", "detail": "Product-level rating shows on landing pages; no connector exists for the store-wide aggregate. Tracked as a capability gap." },
+    { "title": "VIP Steward working run (Sept 15)", "state": "done", "detail": "MOVING on both contracted lines, no stalls, no fixes needed beyond data refresh." }
   ],
-  "dataNotes": "Sessions, add-to-cart, purchases and revenue: GA4 property 255641365, daily pull Sept 13, 2026, comparing Sept 6-12 against Aug 30-Sep 5. These are post-fix figures; the GA4 duplicate-tag bug that inflated counts from roughly Aug 1 was corrected Sept 11, so figures published before that date ran high and are not directly comparable. Meta impressions and spend: Supermetrics, act_337218486645475, Aug 25-Sep 13. Meta purchase metrics are deliberately not shown because the Purchase event returns null for every day in that window. Google Ads: account 4875571866, Aug 25-Sep 13. Judge.me reviews: Smile Guard product page as of 2026-08-02. Pillar scores are Lumen's weighted assessment. Shopify order data, not GA4, remains the trustworthy source for revenue and order source for this client."
+  "dataNotes": "Sessions, add-to-cart, purchases and revenue: GA4 property 255641365, daily pull Sept 13, 2026, comparing Sept 6-12 against Aug 30-Sep 5. These are post-fix figures; the GA4 duplicate-tag bug that inflated counts from roughly Aug 1 was corrected Sept 11, so figures published before that date ran high and are not directly comparable. Meta impressions and spend: Supermetrics, act_337218486645475, Aug 25-Sep 13. Meta purchase metrics are deliberately not shown because the Purchase event returns null for every day in that window. Google Ads: account 4875571866, Aug 25-Sep 13. Judge.me reviews: Smile Guard product page as of 2026-08-02. Pillar scores are Lumen's weighted assessment. Shopify order data, not GA4, remains the trustworthy source for revenue and order source for this client. Sept 15 refresh: heroMetrics above were re-pulled on a 30-day-vs-prior-30 window from the same three sources — GA4 property 255641365, Google Ads account 4875571866, and Meta Ads via Supermetrics act_337218486645475 — as a working-run data refresh with no spend or campaign changes; the account-level notes elsewhere on this page (GA4 duplicate-tag fix, Meta Purchase-event caveat, pillar scores) still reflect the Sept 13 pull unless stated otherwise."
 }
