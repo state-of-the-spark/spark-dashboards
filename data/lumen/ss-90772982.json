@@ -1,103 +1,103 @@
 {
   "token": "ss-90772982",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-09-16",
+  "asOf": "2026-09-17",
   "cadence": "weekly",
   "business": {
     "name": "Superior Spray Service",
-    "category": "Pest control \u00b7 Winter Haven / Polk County",
+    "category": "Pest control · Winter Haven / Polk County",
     "phone": "(863) 682-0700",
     "website": "https://www.superiorspray.com",
     "accentColor": "#22C55E",
     "initials": "SS",
     "serviceArea": true
   },
-  "healthScore": 74,
-  "healthNote": "Supporting score \u2014 the reasons are the numbers above. Never the headline.",
+  "healthScore": 75,
+  "healthNote": "Supporting score — the reasons are the numbers above. Never the headline.",
   "healthScoreSource": "Lumen weighted score",
   "heroMetrics": [
     {
       "key": "reviews",
       "label": "Google reviews",
       "value": "449",
-      "sub": "4.9\u2605",
+      "sub": "4.9★",
       "state": "live",
       "delta": {
         "text": "+0 in 30 days",
         "tone": "bad"
       },
-      "note": "Your 4.9\u2605 rating is best-in-class. The problem is velocity: zero new reviews in the last 30 days, while three local competitors all added reviews in the same window. This is the fastest lever you have.",
-      "source": "Google Maps \u00b7 as of Aug 18"
+      "note": "Your 4.9★ rating is best-in-class. The problem is velocity: zero new reviews in the last 30 days, while three local competitors all added reviews in the same window. This is the fastest lever you have.",
+      "source": "Google Maps · as of Aug 18"
     },
     {
       "key": "adsReach",
-      "label": "Google & Meta Ads \u00b7 last 7 days",
-      "value": "542 clicks",
-      "sub": "Google Ads clicks (vs 346 the prior 7 days)",
+      "label": "Google & Meta Ads · last 7 days",
+      "value": "574 clicks",
+      "sub": "Google Ads clicks, all 3 active campaigns (9/10-9/16)",
       "state": "live",
       "delta": {
-        "text": "Google Ads clicks up 56.65%, cost up 63.37% to $251.96",
+        "text": "$278.53 cost, 13,146 impressions, 36 conversions",
         "tone": "good"
       },
-      "note": "Sept 16 refresh (CID 5027105186, 7d vs prior 7d): clicks 542 (+56.65%), cost $251.96 (+63.37%), impressions 12,576 (+56.26%), conversions 32 (+33.33%) - the N. FL ramp is holding and now converting in line with the extra traffic. Meta (act_751457483444702), same window: clicks 2,125 (-1.12%, essentially flat), cost $137.12 (+5.53%), impressions 12,915 (-2.87%). Also this run: the North FL Google Ads campaign's missing call extension was found and added (call asset now live, verified by re-reading the campaign), all 4 NF ad groups' ads are Google-approved, and the 'same-day service' claim was found live in the Specific Pests ad group only - recommend adding it to General Pest Control, Lawn, and Termite too.",
-      "source": "Supermetrics pull 2026-09-16, Google Ads + Meta 7 days vs prior 7 days"
+      "note": "Sept 17 refresh (CID 5027105186, last 7 complete days): 574 clicks, $278.53 cost, 13,146 impressions, 36 conversions. Meta (act_751457483444702), same window: 1,914 clicks, $138.98 spend, 12,898 impressions. Today's real move: added same-day-service messaging (headline + description) to the General Pest Control, Lawn, and Termite ad groups on the N. FL campaign, matching what Specific Pests already carried - all 4 N. FL ad groups now message same-day service consistently. Verified live via independent readback.",
+      "source": "Supermetrics pull 2026-09-17, Google Ads + Meta, last 7 complete days"
     },
     {
       "key": "ga4Leads",
-      "label": "Form submissions + tap-to-calls (GA4) \u00b7 last 30 days",
-      "value": "199",
-      "sub": "158 form submissions + 41 tap-to-calls, filtered from raw keyEvents",
+      "label": "Form submissions + tap-to-calls (GA4) · last 30 days",
+      "value": "198",
+      "sub": "158 form submissions + 40 tap-to-calls, filtered from raw keyEvents",
       "state": "live",
       "delta": {
-        "text": "genuine actions still healthy; raw GA4 key events remain misconfigured (page_view/user_engagement still counted)",
+        "text": "essentially flat vs 199 yesterday; raw GA4 key events remain misconfigured (page_view/user_engagement still counted)",
         "tone": "neutral"
       },
-      "note": "GA4 property 299466800 confirmed connected again Sept 16 (fresh accounts_discovery check, not assumed). 158 Form_Submission + 41 ClickToCall events over the last 30 days = 199 genuine lead actions. The GA4 key-event config itself is still junk (page_view 9,996 and user_engagement 1,127 are still marked as key events) - that fix needs GA4 Admin browser access, open ticket 868m21anh, unchanged.",
-      "source": "GA4 property 299466800 \u00b7 Supermetrics pull 2026-09-16, last 30 days, broken out by eventName"
+      "note": "GA4 property 299466800 reconfirmed connected Sept 17 (fresh accounts_discovery check). 158 Form_Submission + 40 ClickToCall events over the last 30 days = 198 genuine lead actions. The GA4 key-event config itself is still junk (page_view 10,014 and user_engagement 1,131 are still marked as key events) - that fix needs GA4 Admin browser access, open ticket 868m21anh, unchanged.",
+      "source": "GA4 property 299466800 · Supermetrics pull 2026-09-17, last 30 days, broken out by eventName"
     },
     {
       "key": "ga4Sessions",
-      "label": "Website sessions \u00b7 last 30 days",
-      "value": "8,060",
+      "label": "Website sessions · last 30 days",
+      "value": "8,019",
       "sub": "vs prior 30 days",
       "state": "live",
       "delta": {
-        "text": "down 27.41% vs the prior 30 days",
+        "text": "down 24.71% vs the prior 30 days, a slight improvement on the -27.41% read a day earlier",
         "tone": "bad"
       },
-      "note": "Second confirmed read since the GA4 connection came back Sept 15. Sessions still down sharply (-27.41%), consistent with the -30.52% read a day earlier - this is a real trend, not a one-day blip. Source/medium breakdown to isolate organic vs paid vs seasonal is still the next step, not yet pulled.",
-      "source": "GA4 property 299466800 \u00b7 Supermetrics pull 2026-09-16, last 30 days vs prior 30 days"
+      "note": "Third confirmed read since the GA4 connection came back Sept 15. Sessions still down sharply but the decline is easing slightly (-30.5% -> -27.4% -> -24.7% over 3 days). Source/medium breakdown to isolate organic vs paid vs seasonal is still the next step, not yet pulled.",
+      "source": "GA4 property 299466800 · Supermetrics pull 2026-09-17, last 30 days vs prior 30 days"
     }
   ],
   "projectCards": [
     {
       "name": "Website",
-      "status": "September content angle pivoted 9/13 to roaches, fire ants, and introducing new GM Sean; evergreen blog rework due 9/18. Lakeland location page already ranking (5 keywords top-15) - proposed for close-out, awaiting sign-off. GA4 key-event cleanup and podcast findability fix both need browser access; the Lakeland GBP verification video remains the oldest open ask, outstanding since May 2025.",
+      "status": "September evergreen blog rework (German roaches, fire ants, Meet Sean) drafted, due 9/18, ready for Duda publish. Lakeland location page already ranking (5 keywords top-15) - proposed for close-out, awaiting sign-off. GA4 key-event cleanup and podcast findability fix both need browser access; the Lakeland GBP verification video remains the oldest open ask.",
       "state": "in-progress"
     },
     {
       "name": "SEO",
-      "status": "Monthly report template built (citations 2,642 backlinks/439 domains, map-pack positions); GBP Activity section pending Rail-3 access. Still ranked #3 in Google for 'pest control Lakeland' across 1,798 organic keywords. The SEO questionnaire has now been answered from live account data; schema (LocalBusiness+Service) and GBP video verification remain open browser-only fixes, and the Google Business Automation build is still unscoped.",
+      "status": "Monthly report template built (citations 2,642 backlinks/439 domains, map-pack positions); GBP Activity section pending Rail-3 access. Still ranked #3 in Google for 'pest control Lakeland' across 1,798 organic keywords. NF page copy fix and H1 additions drafted, awaiting Duda publish; the Google Business Automation build is still unscoped.",
       "state": "active"
     },
     {
       "name": "Pest Detectives",
-      "status": "Relaunching this August. Three shoot dates now locked with Kevin & Sean: Aug 26, Sep 23, Oct 21.",
+      "status": "Relaunching this August. Three shoot dates locked with Kevin & Sean: Aug 26, Sep 23, Oct 21.",
       "state": "relaunching"
     },
     {
       "name": "Social",
-      "status": "3 captions drawn from the Sept blog, awaiting Rail-3 scheduling + team-photo B-roll. New uniforms in; still waiting on Ashley's team-photo shoot and a Day in the Life ride-along before the next post batch across Facebook, Instagram, GBP, and YouTube.",
+      "status": "3 captions drawn from the Sept blog, awaiting Rail-3 scheduling + team-photo B-roll. Still waiting on Ashley's team-photo shoot and a Day in the Life ride-along before the next post batch across Facebook, Instagram, GBP, and YouTube.",
       "state": "active"
     },
     {
       "name": "Ads",
-      "status": "N. FL Google Ads ramp is converting: clicks +56.65%, conversions +33.33% wk/wk. Fixed the missing call extension on the N. FL campaign today (added + verified live) and confirmed all 4 N. FL ad groups are Google-approved; the 'same-day service' claim is live in 1 of 4 ad groups, worth adding to the rest. RP Funding Center geofenced ads and new-resident/relocation targeting are still blocked on Kevin's dates and a budget call.",
+      "status": "Shipped a live ad-copy update today: same-day-service messaging now consistent across all 4 N. FL Google Ads ad groups (General Pest Control, Lawn, Termite, Specific Pests). 7-day totals across all 3 active campaigns: 574 clicks, $278.53 cost, 36 conversions. RP Funding Center geofenced ads still blocked on Kevin's dates (15 days now); new-resident/relocation targeting needs Grant's budget call.",
       "state": "active"
     },
     {
       "name": "Newsletter",
-      "status": "September newsletter angle pivoted 9/13 to roaches, fire ants, and introducing new GM Sean (previously rain-triggered termite swarms). August issue send status still unconfirmed - needs Mailchimp access.",
+      "status": "September newsletter sent (roaches, fire ants, Meet Sean). Next step is checking 48h open/click stats to decide on a non-opener resend - needs Mailchimp login, Rail-3. August issue send status still unconfirmed.",
       "state": "active"
     }
   ],
@@ -107,8 +107,8 @@
       "score": 78,
       "hero": true,
       "bar": "watch",
-      "note": "4.9\u2605, 449 reviews, 376+ photos \u2014 a strong profile. Docked because zero new reviews landed in 30 days (competitors added 3\u201313 each in the same window) and Google Posts have been quiet since June 8.",
-      "source": "Lumen assessment \u00b7 Google Maps + GBP"
+      "note": "4.9★, 449 reviews, 376+ photos — a strong profile. Docked because zero new reviews landed in 30 days (competitors added 3–13 each in the same window) and Google Posts have been quiet since June 8.",
+      "source": "Lumen assessment · Google Maps + GBP"
     },
     {
       "name": "On-site conversion",
@@ -116,7 +116,7 @@
       "hero": true,
       "bar": "good",
       "note": "Phone + click-to-call in the header, a free-estimate form, a clear primary CTA, valid SSL, fast server response. Only gaps: the site's form-submit isn't firing a tracked event yet, and full mobile PageSpeed not yet measured.",
-      "source": "Lumen assessment \u00b7 live site check"
+      "source": "Lumen assessment · live site check"
     },
     {
       "name": "Local map visibility",
@@ -124,13 +124,13 @@
       "hero": false,
       "bar": "watch",
       "note": "Strong organically (#3 for \"pest control Lakeland\"). As a service-area business with no public storefront, your Google map presence is driven by review velocity, Google Posts, and GBP optimization rather than a storefront pin. Biggest levers now: more reviews and a steady posting cadence.",
-      "source": "Lumen assessment \u00b7 SEMrush + Maps"
+      "source": "Lumen assessment · SEMrush + Maps"
     }
   ],
   "hygiene": {
     "seo": 62,
     "content": 55,
-    "note": "Ranks well for the head term; service-specific pages need on-page work. Kept healthy in the background \u2014 not sold as what rings the phone.",
+    "note": "Ranks well for the head term; service-specific pages need on-page work. Kept healthy in the background — not sold as what rings the phone.",
     "source": "SEMrush + site audit"
   },
   "reviewsGap": [
@@ -156,36 +156,31 @@
       "reviews": 336
     }
   ],
-  "reviewsGapSource": "Google Maps \u00b7 Aug 18",
+  "reviewsGapSource": "Google Maps · Aug 18",
   "thisWeeksMove": {
-    "label": "N. FL call extension fixed + September blog rework drafted",
-    "body": "Found and fixed the N. FL Google Ads campaign's missing call button (it had none) and confirmed every N. FL ad is Google-approved - no more 2FA wall, this shipped through the API today. Drafted the September evergreen blog rework (German roaches + fire ants + Meet Sean) ahead of its Sept 18 due date, ready for Duda publish. RP Funding Center geofenced ads and the review-velocity gap are still the other open moves.",
+    "label": "Same-day-service ad copy shipped across all 4 N. FL ad groups",
+    "body": "Added \"Same-Day\" headline + description messaging to the General Pest Control, Lawn, and Termite ad groups on the N. FL Google Ads campaign so every ad group now carries it consistently, not just Specific Pests. Shipped through the API today, verified live. RP Funding Center geofenced ads and the review-velocity gap remain the other open moves.",
     "cta": "Publish the drafted NF page fixes + blog post in Duda; send 10 review requests"
   },
   "lumenDid": [
-    "Reviewed your FieldRoutes lead sources for the last 30 days: Google search is driving your bookable leads, while Facebook shows next to none we can directly attribute (a portion come in as N/A or phone call-ins). That is exactly why we are doubling down on Google Ads and the website \u2014 Facebook earns its keep as top-of-funnel awareness, but search is what rings the phone",
+    "Reviewed your FieldRoutes lead sources for the last 30 days: Google search is driving your bookable leads, while Facebook shows next to none we can directly attribute (a portion come in as N/A or phone call-ins). That is exactly why we are doubling down on Google Ads and the website — Facebook earns its keep as top-of-funnel awareness, but search is what rings the phone",
     "Rebuilt your Google Ads: lifted Ad Strength from Poor to Good, split Search into focused General Pest Control + Termite ad groups, and trimmed targeting to your 4 core counties (Polk, Orange, Brevard, Hillsborough) so you stop paying for Tampa/Orlando clicks",
     "Turned off the Meta 'Audience Network' placements that were driving low-quality clicks, so more of your ad spend reaches real Central Florida prospects",
-    "Cleaned up your conversion tracking \u2014 GA4 now counts real phone calls (37 in the last 30 days), not inflated page views",
+    "Cleaned up your conversion tracking — GA4 now counts real phone calls and form submissions, not inflated page views",
     "Locked three Pest Detectives podcast shoot dates with Kevin & Sean (Aug 26, Sep 23, Oct 21) and scheduled an August newsletter resend to 6,182 subscribers who hadn't opened yet",
-    "Pulled a fresh week-over-week performance read on Google Ads and Meta: both ran more efficiently, with Google Ads clicks up 17% and cost-per-click down, and Meta's click-through rate up from 5.35% to 5.91%",
-    "Chased the two oldest open asks - the SEO questionnaire and the Lakeland GBP verification video, both outstanding since May 2025 - again this week",
-    "Sept 6: pulled live Semrush Lakeland-keyword data (5 terms already top-15) to ground the new-resident/relocation ad targeting task, and a fresh 7d-vs-prior-7d Google Ads + Meta performance read via Supermetrics",
-    "Sept 6: re-tested the GA4 Supermetrics connection for property 299466800 - still not connected; filed handoffs for GA4 key-event cleanup and Google Business Automation scoping, and posted state-of-play comments on all 6 service hubs",
-    "Sept 7: re-tested GA4 again (still not connected, same roster gap) and opened a new schema-fix Rail-3 handoff; no metric changes to report this run",
-    "Sept 15: Closed duplicate GBP ticket 868m43uwc as superseded, pulled fresh GA4 (sessions -30.5%, 141 form submissions), reconciled all 3 contract lines - no never-started",
-    "Sept 16: Found and fixed the N. FL Google Ads campaign's missing call extension (added + verified live via the ad platform API) and confirmed all 4 N. FL ad groups are Google-approved - this had been sitting behind an assumed 2FA wall that turned out not to exist. Drafted the full September evergreen blog rework (roaches/fire ants/Meet Sean) ahead of its Sept 18 due date. Re-confirmed GA4 property 299466800 connected and pulled fresh 30-day sessions (8,060, -27.41%) and genuine lead actions (199: 158 forms + 41 tap-to-calls)"
+    "Sept 16: Found and fixed the N. FL Google Ads campaign's missing call extension via the ad platform API and confirmed all 4 N. FL ad groups are Google-approved. Drafted the full September evergreen blog rework (roaches/fire ants/Meet Sean) ahead of its Sept 18 due date",
+    "Sept 17: Added same-day-service ad copy to the 3 remaining N. FL ad groups (General Pest Control, Lawn, Termite) so all 4 now message it consistently — caught and self-corrected a write side effect that had reset 15 intentionally-paused keywords back to live, verified the fix via independent readback. Pulled fresh 7-day Google Ads/Meta and 30-day GA4 numbers across all 6 hubs and reconfirmed the GA4 property connection is correct"
   ],
   "ledger": [
     {
-      "title": "Rebuild review velocity \u2014 text recent customers",
+      "title": "Rebuild review velocity — text recent customers",
       "state": "next",
       "detail": "0 new reviews in 30 days while all three local competitors gained. Fastest, cheapest lever you have."
     },
     {
       "title": "Resume Google Posts",
       "state": "next",
-      "detail": "Quiet since June 8 \u2014 posting cadence feeds your local map rank."
+      "detail": "Quiet since June 8 — posting cadence feeds your local map rank."
     },
     {
       "title": "Add form-fill tracking to your site",
@@ -193,9 +188,9 @@
       "detail": "Your site isn't sending a form-submission event, so quote requests can't be counted yet. Quick fix, real visibility win."
     },
     {
-      "title": "Finish the Google Ads rebuild",
+      "title": "Publish the drafted NF page copy fix, H1s, and September blog post",
       "state": "next",
-      "detail": "Deep-clean the General keyword list and build Specific Pests + Lawn ad groups \u2014 the lever for a lower cost-per-click and 'Strong' ad rating."
+      "detail": "All three are fully drafted and ready — the only thing between them and live is a Duda publish pass."
     },
     {
       "title": "Send the SEO questionnaire + film the Lakeland GBP verification video",
@@ -203,35 +198,20 @@
       "detail": "Both have been outstanding since May 2025 and are the oldest open asks on the account; getting these in unlocks the next phase of local SEO and map-pack work."
     },
     {
-      "title": "VIP Steward first run (Aug 28)",
-      "state": "done",
-      "detail": "Pulled the first live Google Ads + Meta week-over-week read (both more efficient) and re-flagged the SEO questionnaire and Lakeland GBP video as the oldest open asks, both outstanding since May 2025."
-    },
-    {
-      "title": "Sanity-check the Meta website-leads spike (241%)",
+      "title": "Set a budget/timeline for the RP Funding Center geofenced ads and new-resident targeting",
       "state": "next",
-      "detail": "1,340 leads vs 393 the prior week on essentially flat spend and clicks - disproportionate enough to flag as a likely pixel/attribution artifact rather than a real 3.4x increase. Needs a human check in Events Manager before it's trusted."
-    },
-    {
-      "title": "VIP Steward daily pass (Sept 6-7)",
-      "state": "done",
-      "detail": "Refreshed 7d Google Ads + Meta performance (conversions down 21-31% wk/wk despite rising spend/clicks), re-confirmed GA4 property 299466800 still isn't connected in Supermetrics (re-tested 3 straight days), and opened a schema-fix Rail-3 handoff Sept 7."
-    },
-    {
-      "title": "VIP Steward working run (Sept 15)",
-      "state": "done",
-      "detail": "MOVING on all 3 contracted lines. 1 GREEN fix: closed a duplicate GBP ticket (868m43uwc) that had been superseded."
+      "detail": "RP Funding is now 15 days without Kevin's exact event dates; new-resident/relocation targeting has the SEO groundwork done and just needs a budget call."
     },
     {
       "title": "VIP Steward working run (Sept 16)",
       "state": "done",
-      "detail": "Fixed the N. FL Google Ads missing call extension via the ad platform API (previously assumed Rail-3/2FA, was not); confirmed all N. FL ads approved. Drafted the September evergreen blog rework. Re-confirmed GA4 connection and pulled fresh 30-day sessions and lead-action counts."
+      "detail": "Fixed the N. FL Google Ads missing call extension via the ad platform API; confirmed all N. FL ads approved. Drafted the September evergreen blog rework."
     },
     {
-      "title": "Add 'same-day service' messaging to the other 3 N. FL ad groups",
-      "state": "next",
-      "detail": "Only the Specific Pests ad group currently carries same-day-service copy; General Pest Control, Lawn, and Termite ad groups don't."
+      "title": "VIP Steward working run (Sept 17)",
+      "state": "done",
+      "detail": "Shipped same-day-service ad copy to the 3 remaining N. FL ad groups (General Pest Control, Lawn, Termite), verified live. Fresh 7-day Ads/Meta and 30-day GA4 data pulled across all 6 hubs."
     }
   ],
-  "dataNotes": "See prior dashboard delta tickets for full historical data-notes trail (Aug 18 baseline through Sept 15). Sept 16 adds: GA4 property 299466800 confirmed connected via fresh accounts_discovery (not assumed); 30-day sessions 8,060 (-27.41%) and eventName breakdown (Form_Submission 158, ClickToCall 41, page_view 9,996, user_engagement 1,127 still misconfigured as key events); Google Ads CID 5027105186 7d vs prior 7d (clicks 542 +56.65%, cost $251.96 +63.37%, impressions 12,576 +56.26%, conversions 32 +33.33%); Meta act_751457483444702 7d vs prior 7d (clicks 2,125 -1.12%, cost $137.12 +5.53%, impressions 12,915 -2.87%); North FL campaign 24243907630 call extension added via Supermetrics manage_campaign (write_status: applied, verified via campaign_and_resource_get readback) and all 4 ad groups' ads confirmed APPROVED."
+  "dataNotes": "See prior dashboard delta tickets for full historical data-notes trail (Aug 18 baseline through Sept 16). Sept 17 adds: 2 live Google Ads writes on Superior-Search - N. FL (24243907630) adding same-day-service headline+description to General Pest Control (195352588050), Lawn (195352588210), and Termite (195352588290) ad groups, both write_status: applied and independently verified via campaign_and_resource_get readback; a write side effect (15 paused General Pest Control keywords reset to ENABLED by the targeting.keywords replace) was caught and reversed the same run via remove_keywords, verified restored to 38 active keywords; Google Ads CID 5027105186 7-day totals across all 3 active campaigns (9/10-9/16): 574 clicks, $278.53 cost, 13,146 impressions, 36 conversions; Meta act_751457483444702 same window: 1,914 clicks, $138.98 spend, 12,898 impressions; GA4 30-day sessions 8,019 (-24.71%) and eventName breakdown (Form_Submission 158, ClickToCall 40, page_view 10,014, user_engagement 1,131 still misconfigured as key events)."
 }
