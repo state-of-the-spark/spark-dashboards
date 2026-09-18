@@ -1,7 +1,7 @@
 {
   "token": "hu-10004649",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-09-17",
+  "asOf": "2026-09-18",
   "cadence": "3x daily working run + Mon/Wed/Fri pulse",
   "business": {
     "name": "Humarian",
@@ -20,89 +20,89 @@
       "key": "purchases",
       "label": "Purchases - last 30 days",
       "value": "118",
-      "sub": "down 4.8% vs the prior 30 days",
+      "sub": "down 4.8% vs the prior 30 days (last refreshed Sept 17)",
       "state": "live",
       "delta": {
-        "text": "down 4.8% over 30 days, but the last 7 days alone show purchases down 83.3% - a much steeper drop worth confirming against real Shopify orders",
+        "text": "30-day trend down 4.8%; the last 7 days alone show only 10 purchases (-82.1%), confirmed again on a fresh Sept 18 pull - the same steep drop, not a one-day blip",
         "tone": "watch"
       },
-      "note": "Sept 17 pull. 30-day: 118 purchases (-4.8%). 7-day: only 10 purchases (-83.3% vs prior 7 days), overlapping the Sept 11 GTM/GA4 dedup-fix window. NEW WATCH: cross-check actual Shopify order counts Sept 10-16 against GA4's 10 purchases - flagged to Grant/Shawn, not yet confirmed.",
-      "source": "GA4 property 255641365 - pulled Sept 17, 2026"
+      "note": "Sept 18 pull (7-day vs prior 7): 10 purchases (-82.1%), 52 add-to-cart (-85.5%). This matches the Sept 17 read almost exactly, so the drop is consistent across two consecutive days, not noise. Shopify order-count cross-check for Sept 10-16 still not done (no Shopify connector this session - open Bus ticket 868m6gb80, re-tested 9/18, still NOT_AUTHENTICATED).",
+      "source": "GA4 property 255641365 - pulled Sept 18, 2026"
     },
     {
       "key": "addToCart",
       "label": "Add-to-cart - last 30 days",
       "value": "810",
-      "sub": "down 23.4% vs the prior 30 days",
+      "sub": "down 23.4% vs the prior 30 days (last refreshed Sept 17)",
       "state": "live",
       "delta": {
-        "text": "down 23.4% over 30 days; the same 7-day window shows add-to-cart down 86.5%",
+        "text": "30-day down 23.4%; 7-day down 85.5%, confirmed again Sept 18",
         "tone": "watch"
       },
-      "note": "Sept 17 pull. ATC:purchase ratio 6.86:1 (14.6%), consistent with prior weeks - intentional conversion proxy, not a junk key event.",
-      "source": "GA4 property 255641365 - pulled Sept 17, 2026"
+      "note": "ATC:purchase ratio on the fresh 7-day read: 5.2:1 (19.2%) - intentional conversion proxy per roster note, not a junk key event.",
+      "source": "GA4 property 255641365 - pulled Sept 18, 2026"
     },
     {
       "key": "adsReach",
-      "label": "Meta Ads - last 30 days",
-      "value": "81,393",
-      "sub": "impressions - $1,053.32 spend - 5,133 clicks",
+      "label": "Meta Ads - last 7 days",
+      "value": "19,672",
+      "sub": "impressions - about $224 spend - about 1,464 clicks (4 active ad sets)",
       "state": "live",
       "delta": {
-        "text": "spend down 44.5% and clicks down 51.7% over 30 days; the Purchase-event 'zero purchases' flag from Sept 13 was corrected Sept 16",
-        "tone": "watch"
+        "text": "SG Advertorial ad set up sharply (+171% spend, +147% clicks, +132% impressions) - consistent with the new Bentley-free SG Ad 3b/4b going live and into Meta review Sept 17",
+        "tone": "positive"
       },
-      "note": "CORRECTED Sept 16: Purchase pixel/CAPI NOT broken - 205 real events, EMQ 8.3/10, confirmed direct in Meta Events Manager. Earlier flag was a Supermetrics field-mapping gap. Open: SG Ad 3/4 edit walled a third time (error_subcode 2061015); 9 unpublished Meta staged edits still await publish/discard.",
-      "source": "Meta Ads via Supermetrics - act_337218486645475 - pulled Sept 17, 2026"
+      "note": "SG Ad 3/4 Bentley-free rebuild: resolved by creating two NEW ads (SG Ad 3b/4b) rather than editing the walled originals - ACTIVE, in Meta review as of 9/17, not yet confirmed cleared. Originals stay paused. Purchase-event tracking confirmed healthy (205 events, EMQ 8.3/10, corrected Sept 16).",
+      "source": "Meta Ads via Supermetrics - act_337218486645475 - pulled Sept 18, 2026"
     },
     {
       "key": "googleAds",
-      "label": "Google Ads - last 30 days",
-      "value": "$154.07",
-      "sub": "2,420 impressions - 169 clicks - 7.77 conversions",
+      "label": "Google Ads - last 7 days",
+      "value": "$40.06",
+      "sub": "1,274 impressions - 64 clicks - 0.56 conversions (Branded Search + Pet Symptoms)",
       "state": "live",
       "delta": {
-        "text": "spend down 19.4%, clicks down 85.5%, conversions down 53.8%, impressions down 96.3% over 30 days",
+        "text": "Branded Search cost down 45.2%, clicks down 6.5%, conversions down 44%, impressions down 44.6% after the 9/15 $8->$1 target cut; Pet Symptoms spending $24.98/35 clicks/0 conversions, budget cut $10->$7/day 9/17 per Grant",
         "tone": "watch"
       },
-      "note": "Conversions still suppressed this week (7-day: $35.71/56 clicks/0.56 conv); Branded Search impression share fell 47.9% after the 9/15 $8->$1 target cut. Strengthens case for Target Impression Share switch (868m5f8mw), Grant's bidding-strategy call.",
-      "source": "Google Ads 4875571866 via Supermetrics - pulled Sept 17, 2026"
+      "note": "Branded Search impression-share loss strengthens the case for Target Impression Share (868m5f8mw) - still a bidding-strategy wall, Grant's call. Pet Symptoms: 90% of impression share lost to rank per 9/17 diagnostic - bid/Quality Score is the constraint, not budget.",
+      "source": "Google Ads 4875571866 via Supermetrics - pulled Sept 18, 2026"
     }
   ],
   "projectCards": [
     {
       "name": "Paid Ads - Google",
-      "status": "Conversions still suppressed post-target-cut; Target Impression Share switch proposed, awaiting Grant. Pet symptom campaign clean of disapprovals. Located the Humarian Tuesday Sync Apps Script report - Drive API can't edit it (Rail 3 wall); recommend retiring it in favor of the Steward's own Mon/Wed/Fri pulse.",
+      "status": "Branded Search and Pet Symptoms both re-confirmed suppressed this week; Target Impression Share switch still proposed, awaiting Grant. Pet budget cut $10->$7/day (Grant's call, 9/17), tags intact.",
       "state": "active"
     },
     {
       "name": "Paid Ads - Meta",
-      "status": "Meta Purchase pixel confirmed healthy (corrected Sept 16). SG Ad 3/4 Bentley-free rebuild confirmed walled a third time, queued for Lumen's browser pass. Bentley organic-to-paid boost closed as BLOCKED-ON-CLIENT (Dr. Benzinger name-use consent still open).",
+      "status": "Bentley-free SG Ad 3b/4b created and live-in-review as a workaround to the tested API wall on the original ads. SG Advertorial ad set delivery up sharply this week, consistent with the new ads. Purchase tracking confirmed healthy.",
       "state": "active"
     },
     {
       "name": "Attribution & Tracking",
-      "status": "GA4 double-count fix and UTM standardization holding. Meta Purchase-event gap resolved as a false alarm. NEW WATCH: 7-day GA4 purchases/ATC fell far more steeply than the 30-day trend right after the Sept 11 tag fix - needs a Shopify order-count cross-check.",
+      "status": "7-day purchase/ATC drop re-confirmed on a second consecutive daily pull (not noise). Shopify cross-check still blocked - no Shopify connector this session (open ticket 868m6gb80). Email-list-to-purchase attribution question from the 9/17 meeting substantially answered: ~82% of Shopify revenue (subscriptions + Checkout Champ) never touches GA4 at all.",
       "state": "active"
     },
     {
       "name": "Product Landing Pages",
-      "status": "Smile Guard live. Cat/dog symptom pages built, awaiting Grant to flip visibility and add conversion links. Warren Phillips partner page drafted, awaiting approval.",
+      "status": "Women's page pop-ups removed 9/17 (2-week test underway, too early to read); dog symptom page still hidden pending Grant's publish click, cat page not yet built. 2 new Rail-3 items found: duplicate badge image on Women's product gallery, and 4 hero images ready to swap to WebP (pre-converted, awaiting a theme edit).",
       "state": "active"
     },
     {
       "name": "SEO / AIO",
-      "status": "Women's Probiotic page redirect waiting on strain-count answer from Sean/Amber. Judge.me store-wide roll-up remains a capability gap. Brand SERP leak to Amazon finding queued for Grant.",
+      "status": "Women's Probiotic page redirect still waiting on Sean/Amber's strain-count answer. Judge.me roll-up remains a capability gap. Two drafted vendor emails (PageFly, Everflow) sit ready, awaiting Grant's send.",
       "state": "active"
     },
     {
       "name": "Social Media Management",
-      "status": "3 TikTok/IG captions and seasonal header copy still awaiting team placement, genuinely in the client/team's court. Three items dormant since March need a revive-or-archive call.",
+      "status": "3 TikTok/IG captions and seasonal header copy still awaiting team placement. LPS prelaunch practitioner ad creatives drafted 9/17, copy-edited 9/18 (em dashes removed); still needs Humarian's product-name confirmation and sign-off before this can run.",
       "state": "in-progress"
     },
     {
       "name": "Influencer / UGC",
-      "status": "Seasonal header copy drafted Sept 4, still awaiting placement and sign-off.",
+      "status": "Seasonal header copy drafted Sept 4, still awaiting placement and sign-off - 14 days idle on the client/team side.",
       "state": "active"
     }
   ],
@@ -112,30 +112,30 @@
       "score": 72,
       "hero": true,
       "bar": "good",
-      "note": "Mobile landing experience improved; page weight is the next lever.",
+      "note": "Mobile landing experience improved; page weight (4 unconverted hero PNGs) is the next lever, prepped and queued for Lumen.",
       "source": "Lumen assessment - slow-4G device probe, Sept 13"
     },
     {
       "name": "Attribution & tracking",
-      "score": 66,
+      "score": 64,
       "hero": true,
       "bar": "watch",
-      "note": "GA4 fix and campaign tagging holding. Meta Purchase scare resolved as a mapping issue - score raised from 58. New watch: 7-day ATC/purchase drop sharper than 30-day trend, not yet confirmed as noise vs real demand dip.",
-      "source": "Lumen assessment - Supermetrics GA4/FA, re-verified Sept 17"
+      "note": "7-day ATC/purchase drop confirmed on a second consecutive pull (Sept 17 and 18 both read the same steep decline) - score lowered 2 points pending the Shopify cross-check that remains blocked.",
+      "source": "Lumen assessment - Supermetrics GA4, re-verified Sept 18"
     },
     {
       "name": "Ad program",
-      "score": 63,
+      "score": 64,
       "hero": false,
       "bar": "watch",
-      "note": "Google Ads conversions suppressed post-target-cut; TIS switch proposed. Meta delivery steady, purchase measurement now confirmed readable (EMQ 8.3/10).",
-      "source": "Lumen assessment - Google Ads + Meta Ads, Sept 17"
+      "note": "Meta: Bentley-free ad workaround live, delivery up. Google: conversions still suppressed post-target-cut, TIS switch still proposed.",
+      "source": "Lumen assessment - Google Ads + Meta Ads, Sept 18"
     }
   ],
   "hygiene": {
     "seo": 60,
     "content": 65,
-    "note": "Product landing pages carry the on-page weight. Pet health content is the clearest organic opportunity.",
+    "note": "Product landing pages carry the on-page weight. LPS prelaunch practitioner content now copy-clean and ready pending client sign-off.",
     "source": "Lumen assessment - Semrush US, Sept 13"
   },
   "reviewsGap": [
@@ -149,19 +149,19 @@
   "reviewsGapSource": "Judge.me - product-level. Store-wide roll-up still blocked, no connector exists.",
   "thisWeeksMove": {
     "label": "Confirm whether the 7-day purchase drop is real demand or a tracking artifact",
-    "body": "GA4 shows only 10 purchases in the last 7 days (-83.3%) against a much milder 30-day trend (-4.8%), landing right after the Sept 11 tag fix. Meta's Purchase-event scare turned out to be a false alarm - the same kind of check is needed here.",
-    "cta": "Confirm Shopify order count Sept 10-16 vs GA4's 10 purchases"
+    "body": "GA4 shows purchases down 82-86% over 7 days on two consecutive daily pulls, against a much milder 30-day trend (-4.8%). Shopify is the only source that can settle this and remains unreachable this session (Supermetrics Shopify has zero connected accounts).",
+    "cta": "Grant/Lumen: pull Shopify order counts for Sept 10-17 directly and compare against GA4's 10 purchases"
   },
   "lumenDid": [
-    "Sept 16: Standardized UTM tracking on 3 live Meta campaigns; verified pet symptom ads clean of disapprovals.",
-    "Sept 16 (Lumen): Corrected the Meta Purchase-event 'zero for 14+ days' flag - 205 real events, EMQ 8.3/10.",
-    "Sept 17: Re-tested SG Ad 3/4 edit a third time - identical Meta API rejection (error_subcode 2061015). Confirmed wall, queued for Lumen's browser pass.",
-    "Sept 17: Reclassified and closed the Bentley organic-boost ticket - blocked on Dr. Benzinger's consent, not a tooling gap.",
+    "Sept 18: Confirmed the 7-day GA4 purchase/ATC drop on a second consecutive daily pull - not a one-day blip.",
+    "Sept 18: Re-tested Supermetrics Shopify auth for the open Shopify-attribution ticket - still zero connected accounts, genuine wall, not re-ticketed.",
+    "Sept 18: Copy-edited the LPS prelaunch creative deck (31 em dashes removed per house style); still needs Humarian's product-name confirmation.",
+    "Sept 18: Confirmed SG Ad 3b/4b (Bentley-free workaround) are ACTIVE and in Meta review; SG Advertorial ad set delivery up sharply this week as a result.",
+    "Sept 18: Filed 2 new Rail-3 handoffs found this run - duplicate badge image on the Women's product, and the 4-image WebP swap on the Women's landing page hero.",
+    "Sept 18: Opened and substantially answered the 9/17 meeting's email-list-to-purchase attribution question (82% of revenue is outside GA4's model, not a tracking bug).",
+    "Sept 18: Drafted a written AI-tools outline for the Shawn tutorial commitment (recording itself needs Grant/Nicole on camera).",
     "Sept 17: Located the Humarian Tuesday Sync Apps Script source; Drive API can't edit it. Recommended retiring it for the Steward's own pulse.",
-    "Sept 17: Flagged a new 7-day purchase-drop watch item, needs Shopify cross-check.",
-    "Sept 11: Found and fixed the GA4 double-count.",
-    "Sept 13: Built and launched a pet symptom Google campaign; rebuilt the zero-conversion non-branded campaign.",
-    "Turned off the theme's white page-transition overlay and Smile Guard pop-ups, cutting mobile time-to-content from 9.5s to ~3s."
+    "Sept 11: Found and fixed the GA4 double-count."
   ],
   "ledger": [
     {
@@ -175,14 +175,24 @@
       "detail": "Corrected Sept 16 - 205 real Purchase events, EMQ 8.3/10, was a Supermetrics mapping gap not a real outage."
     },
     {
-      "title": "SG Ad 3/4 Bentley-free rebuild",
-      "state": "next",
-      "detail": "Walled a third time via Supermetrics (error_subcode 2061015). Needs a manual edit in Meta Ads Manager, ads stay paused."
+      "title": "SG Ad 3/4 Bentley-free workaround",
+      "state": "done",
+      "detail": "Original ads stayed walled a third time; Grant's call 9/17 was to build new ads (SG Ad 3b/4b) instead. ACTIVE, in Meta review."
     },
     {
-      "title": "Bentley organic-to-paid boost",
+      "title": "7-day purchase/ATC drop - Shopify cross-check",
       "state": "next",
-      "detail": "BLOCKED-ON-CLIENT - Dr. Benzinger's name-use consent still open, not a tooling gap."
+      "detail": "Confirmed on a second consecutive pull Sept 18. Needs Shopify order counts Sept 10-17 - no Shopify connector this session, open ticket 868m6gb80."
+    },
+    {
+      "title": "Duplicate badge image - Women's product",
+      "state": "next",
+      "detail": "One manual Shopify admin delete, queued for Lumen's browser pass (ticket 868m6pqc8)."
+    },
+    {
+      "title": "WebP swap - Women's page hero images",
+      "state": "next",
+      "detail": "4 images pre-converted (3.9MB to ~190KB), needs a theme Liquid edit, queued for Lumen (ticket 868m6pqc7)."
     },
     {
       "title": "Humarian Tuesday Sync report cadence",
@@ -190,25 +200,15 @@
       "detail": "Apps Script source located; Drive API can't edit it. Recommend retiring the script for the Steward's own pulse."
     },
     {
-      "title": "7-day purchase/ATC drop - Shopify cross-check",
-      "state": "next",
-      "detail": "GA4 shows only 10 purchases over 7 days (-83.3%), needs Grant/Shawn to confirm real Shopify order counts Sept 10-16."
-    },
-    {
-      "title": "Server-side purchase feed",
-      "state": "next",
-      "detail": "Recharge/Checkout Champ orders never fire web tracking."
-    },
-    {
       "title": "Store-wide Judge.me roll-up",
       "state": "next",
       "detail": "No connector exists for the store-wide aggregate."
     },
     {
-      "title": "VIP Steward working run (Sept 17)",
+      "title": "VIP Steward working run (Sept 18)",
       "state": "done",
-      "detail": "Reconciled all 5 hubs, no NEVER-STARTED. Re-confirmed SG Ad3/4 wall, closed Bentley-boost ticket, located Tuesday Sync script, flagged new watch item, refreshed hero metrics, pushed this dashboard update."
+      "detail": "Read all 5 hubs plus the 9/17 meeting notes and call brief; found and worked 6 new items created since the 9/17 run (LPS copy pass, AI-tutorial outline, attribution investigation, 2 Rail-3 handoffs, SG Ad 3b/4b confirmation); refreshed 7-day hero metrics; pushed this dashboard update."
     }
   ],
-  "dataNotes": "GA4 property 255641365 pulled Sept 17, 2026 (30d-vs-prior-30 and 7d-vs-prior-7). GA4 duplicate-tag bug corrected Sept 11, figures before that are not comparable. Meta act_337218486645475 pulled Sept 17; Purchase-event data (205 events, EMQ 8.3/10) came from a direct Meta Events Manager check Sept 16, not Supermetrics. Google Ads 4875571866 pulled Sept 17. Judge.me reviews as of 2026-08-02. Shopify order data, not GA4, remains the trustworthy source for revenue - hence the new 7-day purchase-drop watch item."
+  "dataNotes": "GA4 property 255641365 pulled Sept 18, 2026 (7d-vs-prior-7). 30-day figures last refreshed Sept 17 and carried forward, labeled accordingly. GA4 duplicate-tag bug corrected Sept 11, figures before that are not comparable. Meta act_337218486645475 pulled Sept 18. Google Ads 4875571866 pulled Sept 18. Judge.me reviews as of 2026-08-02. Shopify order data, not GA4, remains the trustworthy source for revenue - the Supermetrics Shopify source has zero connected accounts this session (re-tested Sept 18), so the purchase-drop watch item stays unconfirmed."
 }
