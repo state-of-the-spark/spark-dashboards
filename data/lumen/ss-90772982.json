@@ -1,7 +1,7 @@
 {
   "token": "ss-90772982",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-09-18",
+  "asOf": "2026-09-19",
   "cadence": "weekly",
   "business": {
     "name": "Superior Spray Service",
@@ -32,52 +32,52 @@
     {
       "key": "adsReach",
       "label": "Google & Meta Ads · last 7 days",
-      "value": "525 clicks",
-      "sub": "Google Ads clicks, all 3 active campaigns (9/11-9/17)",
+      "value": "502 clicks",
+      "sub": "Google Ads clicks, all 3 active campaigns (9/12-9/18)",
       "state": "live",
       "delta": {
-        "text": "$275.05 cost, 11,605 impressions, 36 conversions",
+        "text": "$288.01 cost, 10,637 impressions, 38 conversions",
         "tone": "good"
       },
-      "note": "Sept 18 refresh (CID 5027105186, last 7 complete days 9/11-9/17): 525 clicks, $275.05 cost, 11,605 impressions, 36 conversions. Meta (act_751457483444702), same window: 1,918 clicks, $150.81 spend, 14,387 impressions. No new ad-copy write today - Sept 17's same-day-service messaging rollout across all 4 N. FL ad groups stays live, this is a fresh 7-day-window data refresh.",
-      "source": "Supermetrics pull 2026-09-18, Google Ads + Meta, last 7 complete days"
+      "note": "Sept 19 refresh (CID 5027105186, last 7 complete days 9/12-9/18): 502 clicks, $288.01 cost, 10,637 impressions, 38 conversions - conversions up vs the prior window (36) on a slightly smaller click count. Meta (act_751457483444702), same window: 1,502 clicks, $291.76 spend, 14,304 impressions - Meta spend nearly doubled week over week on lower clicks than the prior read, worth Grant's eyes next optimization pass. No spend/budget/bid changes made. Same-day-service ad copy across all 4 N. FL ad groups (shipped 9/17) verified still holding live, no regression.",
+      "source": "Supermetrics pull 2026-09-19, Google Ads + Meta, last 7 complete days"
     },
     {
       "key": "ga4Leads",
       "label": "Form submissions + tap-to-calls (GA4) · last 30 days",
       "value": "227",
-      "sub": "185 form submissions + 42 tap-to-calls, filtered from raw keyEvents",
+      "sub": "186 form submissions + 41 tap-to-calls, filtered from raw keyEvents",
       "state": "live",
       "delta": {
-        "text": "up from 198 the day before; raw GA4 key events remain misconfigured (page_view/user_engagement still counted)",
+        "text": "flat vs 227 the day before; raw GA4 key events remain misconfigured (page_view/user_engagement still counted)",
         "tone": "good"
       },
-      "note": "GA4 property 299466800 reconfirmed connected. 185 Form_Submission + 42 ClickToCall events over the last 30 days = 227 genuine lead actions, up from 198. The GA4 key-event config itself is still junk (page_view and user_engagement are still marked as key events) - that fix needs GA4 Admin browser access, open ticket 868m21anh, unchanged.",
-      "source": "GA4 property 299466800 · Supermetrics pull 2026-09-18, last 30 days, broken out by eventName"
+      "note": "GA4 property 299466800 reconfirmed connected. 186 Form_Submission + 41 ClickToCall events over the last 30 days = 227 genuine lead actions, essentially flat vs yesterday's 227. The GA4 key-event config itself is still junk (page_view and user_engagement are still marked as key events) - that fix needs GA4 Admin browser access, open ticket 868m21anh, unchanged.",
+      "source": "GA4 property 299466800 · Supermetrics pull 2026-09-19, last 30 days, broken out by eventName"
     },
     {
       "key": "ga4Sessions",
       "label": "Website sessions · last 30 days",
-      "value": "8,080",
+      "value": "8,205",
       "sub": "vs prior 30 days",
       "state": "live",
       "delta": {
-        "text": "down 20.24% vs the prior 30 days, easing further from -24.71% the day before",
+        "text": "down 13.14% vs the prior 30 days, easing further from -20.24% the day before",
         "tone": "bad"
       },
-      "note": "Fourth confirmed read since the GA4 connection came back Sept 15. Sessions still down but the decline keeps easing (-30.5% -> -27.4% -> -24.7% -> -20.2% over 4 days). Source/medium breakdown to isolate organic vs paid vs seasonal is still the next step, not yet pulled.",
-      "source": "GA4 property 299466800 · Supermetrics pull 2026-09-18, last 30 days vs prior 30 days"
+      "note": "Fifth confirmed read since the GA4 connection came back Sept 15. Sessions still down but the decline keeps easing (-30.5% -> -27.4% -> -24.7% -> -20.2% -> -13.1% over 5 days) - the fourth straight day of improvement. Source/medium breakdown to isolate organic vs paid vs seasonal is still the next step, not yet pulled.",
+      "source": "GA4 property 299466800 · Supermetrics pull 2026-09-19, last 30 days vs prior 30 days"
     }
   ],
   "projectCards": [
     {
       "name": "Website",
-      "status": "September evergreen blog rework (German roaches, fire ants, Meet Sean) drafted, due 9/18, ready for Duda publish. Lakeland location page already ranking (5 keywords top-15) - proposed for close-out, awaiting sign-off. GA4 key-event cleanup and podcast findability fix both need browser access; the Lakeland GBP verification video remains the oldest open ask.",
+      "status": "September evergreen blog rework (German roaches, fire ants, Meet Sean) fully drafted since 9/16, now 1 day past its 9/18 due date awaiting the Duda publish (ticket 868m6gbwd, correctly a hard wall). GA4 sessions decline keeps easing (-13.14%, 4th straight day of improvement). GA4 key-event cleanup and podcast findability fix both still need browser access; the Lakeland GBP verification video remains the oldest open ask.",
       "state": "in-progress"
     },
     {
       "name": "SEO",
-      "status": "AI SEO audit closed 9/17 - the NF page copy fix and H1 additions are verified live on superiorspray.com, not just drafted. Fresh Semrush pull 9/18: 1,863 organic keywords, ~306 est. organic traffic/mo. Monthly report template still needs the GBP Activity section, pending Rail-3 access; the Google Business Automation build is still unscoped.",
+      "status": "AI SEO audit closed 9/17, verified live. Local Map Pack + Two-Profiles tracking both MOVING on a current Semrush baseline (last pulled 9/18, weekly cadence). Google Business Automation stays stalled on a 13+ month scope decision (ticket 868m21anj) - recommending it be closed as superseded by the SEO service-page redirect, awaiting Grant's call.",
       "state": "active"
     },
     {
@@ -87,17 +87,17 @@
     },
     {
       "name": "Social",
-      "status": "Caught a content-accuracy gap: the 3 captions drafted 9/11 were built off a termite-swarm angle that got superseded 9/13 by the German roaches/fire ants content that actually shipped. Rewrote all 3 to match, still awaiting Rail-3 scheduling. Still waiting on Ashley's team-photo shoot and a Day in the Life ride-along, now 7 days past its 9/11 due date.",
+      "status": "3 captions (rewritten 9/18 to match the roaches/fire-ants content that actually shipped) still current, awaiting Rail-3 scheduling in Meta Business Suite. Still waiting on Ashley's team-photo shoot and a Day in the Life ride-along, now 8 days past its 9/11 due date.",
       "state": "active"
     },
     {
       "name": "Ads",
-      "status": "Same-day-service messaging across all 4 N. FL Google Ads ad groups stays live (shipped 9/17). Fresh 7-day totals across all 3 active campaigns: 525 clicks, $275.05 cost, 36 conversions. RP Funding Center geofenced ads still blocked on Kevin's dates (16 days now); new-resident/relocation targeting needs Grant's budget call.",
+      "status": "Same-day-service messaging across all 4 N. FL Google Ads ad groups stays live (shipped 9/17). Fresh 7-day totals: 502 clicks, $288.01 cost, 38 conversions (Google); Meta spend nearly doubled week over week on fewer clicks, worth a look. RP Funding Center geofenced ads now 17 days blocked on Kevin's dates, and the 3rd-week-of-September expo window is closing this week; new-resident/relocation targeting still needs Grant's budget call.",
       "state": "active"
     },
     {
       "name": "Newsletter",
-      "status": "September newsletter sent (roaches, fire ants, Meet Sean). Next step is checking 48h open/click stats to decide on a non-opener resend - needs Mailchimp login, Rail-3. August issue send status still unconfirmed.",
+      "status": "September newsletter sent (roaches, fire ants, Meet Sean). Checking 48h open/click stats to decide on a non-opener resend remains blocked: the Mailchimp connector has now failed authentication 6 straight test days (9/16-9/19), needs a human login, Rail-3. August issue send status still unconfirmed.",
       "state": "active"
     }
   ],
@@ -158,9 +158,9 @@
   ],
   "reviewsGapSource": "Google Maps · Aug 18",
   "thisWeeksMove": {
-    "label": "Caught a stale social caption gap and fixed it",
-    "body": "Found that the 3 social captions drafted 9/11 were built off a termite-swarm content angle that got replaced 9/13 by the German roaches/fire ants content that actually shipped in the blog and newsletter. Rewrote all 3 to match what really went out. Also confirmed the AI SEO audit (NF page copy fix + H1 additions) is genuinely live, not just drafted. RP Funding Center geofenced ads and the review-velocity gap remain the other open moves.",
-    "cta": "Publish the September blog post in Duda; send 10 review requests"
+    "label": "GA4 sessions decline keeps easing; RP Funding's expo window is closing",
+    "body": "Fourth straight day the GA4 30-day sessions decline improved (-30.5% -> -27.4% -> -24.7% -> -20.2% -> -13.1%), a real trend worth watching, not noise. Meanwhile RP Funding Center's geofenced ads are now 17 days blocked on Kevin sending exact expo dates, and the 3rd-week-of-September expo window closes this week - if the dates don't land in the next few days that specific opportunity is gone. The September blog is fully drafted and one day past due, waiting only on the Duda publish click.",
+    "cta": "Send Kevin the RP Funding expo dates this week; publish the September blog in Duda"
   },
   "lumenDid": [
     "Reviewed your FieldRoutes lead sources for the last 30 days: Google search is driving your bookable leads, while Facebook shows next to none we can directly attribute (a portion come in as N/A or phone call-ins). That is exactly why we are doubling down on Google Ads and the website — Facebook earns its keep as top-of-funnel awareness, but search is what rings the phone",
@@ -170,7 +170,8 @@
     "Locked three Pest Detectives podcast shoot dates with Kevin & Sean (Aug 26, Sep 23, Oct 21) and scheduled an August newsletter resend to 6,182 subscribers who hadn't opened yet",
     "Sept 16: Found and fixed the N. FL Google Ads campaign's missing call extension via the ad platform API and confirmed all 4 N. FL ad groups are Google-approved. Drafted the full September evergreen blog rework (roaches/fire ants/Meet Sean) ahead of its Sept 18 due date",
     "Sept 17: Added same-day-service ad copy to the 3 remaining N. FL ad groups (General Pest Control, Lawn, Termite) so all 4 now message it consistently — caught and self-corrected a write side effect that had reset 15 intentionally-paused keywords back to live, verified the fix via independent readback. Pulled fresh 7-day Google Ads/Meta and 30-day GA4 numbers across all 6 hubs and reconfirmed the GA4 property connection is correct",
-    "Sept 18: Found and fixed a content-accuracy gap on your social captions — the 3 drafted 9/11 were still pitching termite swarms, a content angle superseded 9/13 by the roaches/fire-ants content that actually shipped. Rewrote all 3 to match. Confirmed the AI SEO audit (NF page copy + H1 fixes) is verified live, not just drafted. Pulled a fresh Semrush keyword snapshot (1,863 organic keywords, ~306 est. traffic/mo) and refreshed 7-day Ads/Meta and 30-day GA4 numbers"
+    "Sept 18: Found and fixed a content-accuracy gap on your social captions — the 3 drafted 9/11 were still pitching termite swarms, a content angle superseded 9/13 by the roaches/fire-ants content that actually shipped. Rewrote all 3 to match. Confirmed the AI SEO audit (NF page copy + H1 fixes) is verified live, not just drafted. Pulled a fresh Semrush keyword snapshot (1,863 organic keywords, ~306 est. traffic/mo) and refreshed 7-day Ads/Meta and 30-day GA4 numbers",
+    "Sept 19: Pulled fresh 7-day Google Ads/Meta and 30-day GA4 numbers across all 6 hubs (sessions decline easing for the 4th straight day, genuine leads holding at 227). Re-tested the Mailchimp connector (still blocked, 6th confirmed test) and flagged RP Funding's expo-window deadline as newly urgent at 17 days blocked. Recommended a close-or-keep decision on the long-dormant Google Business Automation task"
   ],
   "ledger": [
     {
@@ -191,7 +192,12 @@
     {
       "title": "Publish the September blog post",
       "state": "next",
-      "detail": "The NF page copy fix and H1 additions are now confirmed live — the evergreen blog rework (roaches/fire ants/Meet Sean) is the one piece still waiting on a Duda publish pass."
+      "detail": "Fully drafted since 9/16, now 1 day past its 9/18 due date — the evergreen blog rework (roaches/fire ants/Meet Sean) is waiting only on a Duda publish pass."
+    },
+    {
+      "title": "Send Kevin the RP Funding expo dates",
+      "state": "next",
+      "detail": "17 days blocked on Kevin's exact home-expo and real-estate-show dates. The 3rd-week-of-September expo window closes this week — if the dates land late, that opportunity is gone."
     },
     {
       "title": "Send the SEO questionnaire + film the Lakeland GBP verification video",
@@ -201,12 +207,7 @@
     {
       "title": "Set a budget/timeline for the RP Funding Center geofenced ads and new-resident targeting",
       "state": "next",
-      "detail": "RP Funding is now 16 days without Kevin's exact event dates; new-resident/relocation targeting has the SEO groundwork done and just needs a budget call."
-    },
-    {
-      "title": "VIP Steward working run (Sept 16)",
-      "state": "done",
-      "detail": "Fixed the N. FL Google Ads missing call extension via the ad platform API; confirmed all N. FL ads approved. Drafted the September evergreen blog rework."
+      "detail": "New-resident/relocation targeting has the SEO groundwork done and just needs a budget call from Grant."
     },
     {
       "title": "VIP Steward working run (Sept 17)",
@@ -217,7 +218,12 @@
       "title": "VIP Steward working run (Sept 18)",
       "state": "done",
       "detail": "Caught and fixed a stale-content gap on the 3 drafted social captions (termite swarms, superseded 9/13 by roaches/fire ants). Fresh 7-day Ads/Meta and 30-day GA4 data pulled; fresh Semrush keyword snapshot pulled."
+    },
+    {
+      "title": "VIP Steward working run (Sept 19)",
+      "state": "done",
+      "detail": "Fresh 7-day Ads/Meta and 30-day GA4 data pulled across all 6 hubs; GA4 sessions decline easing 4th straight day. Re-tested the Mailchimp connector (still blocked). Flagged RP Funding's closing expo window at 17 days blocked and recommended a scope decision on the dormant Google Business Automation task."
     }
   ],
-  "dataNotes": "See prior dashboard delta tickets for full historical data-notes trail (Aug 18 baseline through Sept 17). Sept 18 adds: Google Ads CID 5027105186 7-day totals across all 3 active campaigns (9/11-9/17): 525 clicks, $275.05 cost, 11,605 impressions, 36 conversions; Meta act_751457483444702 same window: 1,918 clicks, $150.81 spend, 14,387 impressions; GA4 30-day leads 227 (Form_Submission 185, ClickToCall 42, up from 198); GA4 30-day sessions 8,080 (-20.24%, easing from -24.71%); fresh Semrush domain_rank snapshot for superiorspray.com: 1,863 organic keywords, ~306 est. organic traffic/mo; SEO hub verification confirmed AI SEO audit (NF page copy + H1 fixes) is genuinely closed/live, not just drafted; Social hub caught 3 drafted captions (868m4131p) were built off a termite-swarm angle superseded 9/13 by roaches/fire-ants content and rewrote them to match."
+  "dataNotes": "See prior dashboard delta tickets for full historical data-notes trail (Aug 18 baseline through Sept 18). Sept 19 adds: Google Ads CID 5027105186 7-day totals (9/12-9/18): 502 clicks, $288.01 cost, 10,637 impressions, 38 conversions; Meta act_751457483444702 same window: 1,502 clicks, $291.76 spend, 14,304 impressions (spend nearly doubled week over week on fewer clicks vs the prior read, flagged for Grant); GA4 30-day leads 227 (Form_Submission 186, ClickToCall 41, flat vs yesterday); GA4 30-day sessions 8,205 (-13.14%, easing from -20.24%, 4th straight day of improvement); Mailchimp connector re-tested via Supermetrics, still authentication_status NOT_AUTHENTICATED (6th confirmed test, 9/16-9/19), ticket 868m6pq84 unchanged; attempted to verify the September blog's live-publish status via direct site fetch, blocked by this session's own network egress restriction (not a new client-side issue, ticket 868m6gbwd unchanged); RP Funding geofenced ads now 17 days blocked-on-client, expo window (3rd week of September) closing this week, flagged as newly urgent."
 }
