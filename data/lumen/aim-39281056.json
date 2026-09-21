@@ -1,7 +1,7 @@
 {
   "token": "aim-39281056",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-09-18",
+  "asOf": "2026-09-20",
   "cadence": "Mon / Wed / Fri (VIP Steward)",
   "business": {
     "name": "AIM 4 Clean Air",
@@ -12,7 +12,7 @@
     "initials": "A4",
     "serviceArea": true
   },
-  "healthScore": 60,
+  "healthScore": 55,
   "healthNote": "Supporting score - the reasons are the numbers above. Never the headline.",
   "healthScoreSource": "Lumen weighted score",
   "heroMetrics": [
@@ -23,11 +23,11 @@
       "sub": "Search only, 30-mile Tampa radius",
       "state": "live",
       "delta": {
-        "text": "Live since Aug 27; still running on Spark's card, 22 days past the Aug 29 billing-swap deadline",
+        "text": "Live since Aug 27; still running on Spark's card, 24 days past the Aug 27 swap ask - approximately $394.80 fronted so far (budget-ceiling estimate: $16.45/day confirmed live budget x 24 elapsed days), climbing ~$16.45/day",
         "tone": "watch"
       },
-      "note": "Campaign live and spending (29 keywords, 21-term negative list now LIVE as of 9/17). Spend/cost-per-lead cannot be read yet: Supermetrics still refuses CID 140-624-4786 with \"not listed as a prioritised account\" (re-tested live 2026-09-18, unchanged since 9/9). One RSA ad-copy variant is drafted and ready to publish but blocked by a second, separate wall - Supermetrics Google Ads WRITE access is not enabled for team Spark Sites (WRITE_ACCESS_NOT_ENABLED, re-tested live 9/18 with the real creative payload). Both are one Grant click at hub.supermetrics.com, tracked on Bus tickets 868m4h4zc and 868m6gd5x.",
-      "source": "Google Ads CID 140-624-4786 - live Aug 27, 2026; connectivity re-tested Sept 18, 2026"
+      "note": "Campaign live and spending (29 keywords, 21-term negative list live since 9/17, re-confirmed live). Exact billed spend cannot be read yet: Supermetrics still refuses CID 140-624-4786 with \"not listed as a prioritised account\" (re-tested live 2026-09-20, unchanged since 9/9). One RSA ad-copy variant is drafted and ready to publish but blocked by a second, separate wall - Supermetrics Google Ads WRITE access is not enabled for team Spark Sites (WRITE_ACCESS_NOT_ENABLED, re-tested live 9/20 with the real creative payload). NEW 9/19-9/20: the card-swap ask has become a genuine money wall - subtask 868m74bmw now carries the recomputed dollar figure and the three options (card swap, invoice AIM, or pause) for Grant's decision. Both Supermetrics fixes are one Grant click at hub.supermetrics.com, tracked on Bus tickets 868m4h4zc and 868m6gd5x.",
+      "source": "Google Ads CID 140-624-4786 - live Aug 27, 2026; connectivity and budget re-tested Sept 20, 2026"
     },
     {
       "key": "keywordsStaged",
@@ -39,8 +39,8 @@
         "text": "Ad strength: Average",
         "tone": "watch"
       },
-      "note": "All 29 keywords live, plus all 21 drafted negative keywords now confirmed live at the campaign level (published 9/17, re-verified fresh via campaign_and_resource_get 9/18). A second RSA ad (variant B) is drafted and ready the moment Supermetrics write access is enabled for the team.",
-      "source": "Google Ads CID 140-624-4786 - confirmed live via campaign_and_resource_get, Sept 18, 2026"
+      "note": "All 29 keywords live, plus all 21 negative keywords confirmed live at the campaign level (published 9/17, re-verified through 9/19). A second RSA ad (variant B) is drafted and ready the moment Supermetrics write access is enabled for the team - re-tested live 9/20 with the real payload, still blocked.",
+      "source": "Google Ads CID 140-624-4786 - confirmed live via campaign_and_resource_get, Sept 20, 2026"
     },
     {
       "key": "reviews",
@@ -48,28 +48,28 @@
       "value": null,
       "state": "pending",
       "pendingLabel": "Awaiting GBP verification",
-      "pendingSub": "Pending on Domingo since Aug 10 (39 days) - GBP is claimed and mapped to 4329 Fox Ridge Blvd",
-      "note": "No first-party review count is available until GBP verification comes through - that also unlocks local map-pack visibility. Google no longer accepts pre-recorded video for this step; it must be shot live inside the verification screen, which needs a scheduled call with Domingo, not another email.",
-      "source": "Google Business Profile (unverified) - status re-checked Sept 18, 2026"
+      "pendingSub": "Pending on Domingo since Aug 10 (41 days) - GBP is claimed and mapped to 4329 Fox Ridge Blvd",
+      "note": "No first-party review count is available until GBP verification comes through - that also unlocks local map-pack visibility. Google no longer accepts pre-recorded video for this step; it must be shot live inside the verification screen, and now also needs a mailing address on file for a postcard (confirmed live in the verification screen by Lumen, 2026-09-19). Needs a scheduled call with Domingo, not another email - a 3-window scheduling nudge is drafted and unsent, pending Grant's send.",
+      "source": "Google Business Profile (unverified) - status re-checked Sept 20, 2026 (last Rail-3 test 2026-09-19)"
     },
     {
       "key": "ga4Traffic",
       "label": "Website sessions · last 30 days",
-      "value": "129",
-      "sub": "104 total users - genuine lead events firing: phone_click 4, form_submit 2, generate_lead 2, form_start 3",
+      "value": "126",
+      "sub": "102 total users - genuine lead events firing (30d): phone_click 4, form_submit 2, generate_lead 2, form_start 3",
       "state": "live",
       "delta": {
-        "text": "+486% vs prior 30 days (young property, ramping since ~8/8); last 7 days: 24 sessions, 21 users, phone_click 2, form_submit 1, generate_lead 1",
+        "text": "+366.67% vs prior 30 days (young property, ramping since ~8/8); last 7 days: 17 sessions, 14 users, a quiet week with zero genuine lead events (normal noise, not a tracking break)",
         "tone": "up"
       },
-      "note": "Real, repeated lead signals confirmed across five straight pulls (9/12 through 9/18): the lead form (built + live 9/8 with reCAPTCHA) and the phone_click tag are both genuinely firing, not junk key-event config.",
-      "source": "GA4 property 549137267 via Supermetrics - last 30 days and last 7 days, pulled Sept 18, 2026 (property live since ~Aug 8, 2026)"
+      "note": "Real, repeated lead signals confirmed across six straight pulls (9/12 through 9/20): the lead form (built + live 9/8 with reCAPTCHA) and the phone_click tag are both genuinely firing over the 30-day window, not junk key-event config. This week specifically was quiet - zero genuine key events in the narrower 7-day slice, flagged honestly rather than smoothed over.",
+      "source": "GA4 property 549137267 via Supermetrics - last 30 days and last 7 days, pulled Sept 20, 2026 (property live since ~Aug 8, 2026)"
     }
   ],
   "projectCards": [
     {
       "name": "Google Ads",
-      "status": "CID 140-624-4786 live since Aug 27, $500/mo Search-only, 29 keywords + 21 negative keywords live (negatives published 9/17), 30-mile Tampa radius, still on Spark's card (22 days past the Aug 29 swap deadline). One deliverable remains fully drafted and ready to ship the moment access clears: an RSA ad-copy variant B - blocked by Supermetrics WRITE_ACCESS_NOT_ENABLED for team Spark Sites (re-tested live 9/18 with the real creative payload, Bus ticket 868m6gd5x). Reporting is separately blocked: Supermetrics still refuses CID 140-624-4786 as \"not a prioritised account\" (re-tested 9/18, unchanged since 9/9, Bus ticket 868m4h4zc). Both are one Grant click at hub.supermetrics.com. Also flagged: a legacy misconfigured \"Submit lead form\" (WEBPAGE) conversion action is still Enabled with no tag firing it - no Rails-1-2 path exists to edit conversion-action status, tracked on Bus ticket 868m6gd5z for a Rail-3 pass.",
+      "status": "CID 140-624-4786 live since Aug 27, $500/mo Search-only, 29 keywords + 21 negative keywords live, 30-mile Tampa radius, still on Spark's card (24 days past the Aug 27 swap ask - now a flagged money wall, subtask 868m74bmw, ~$394.80 fronted so far). One deliverable remains fully drafted and ready to ship the moment access clears: an RSA ad-copy variant B - blocked by Supermetrics WRITE_ACCESS_NOT_ENABLED for team Spark Sites (re-tested live 9/20 with the real creative payload, Bus ticket 868m6gd5x). Reporting is separately blocked: Supermetrics still refuses CID 140-624-4786 as \"not a prioritised account\" (re-tested 9/20, unchanged since 9/9, Bus ticket 868m4h4zc). Both are one Grant click at hub.supermetrics.com.",
       "state": "active"
     },
     {
@@ -79,33 +79,33 @@
     },
     {
       "name": "GBP (Google Business Profile)",
-      "status": "Claimed and mapped to 4329 Fox Ridge Blvd. Verification video has been pending on Domingo since Aug 10 - now 39 days, the single oldest open ask on this account. Google no longer accepts a pre-recorded video for this step; it must be shot live in the verification screen, which needs a scheduled call, not another email. Blocks the reviews read, local map-pack visibility, and the map-pin fix.",
+      "status": "Claimed and mapped to 4329 Fox Ridge Blvd. Verification video has been pending on Domingo since Aug 10 - now 41 days, the single oldest open ask on this account. Google requires the video shot live in the verification screen plus a mailing address for a postcard (confirmed 9/19) - needs a scheduled call, not another email. A 3-window scheduling nudge is drafted and unsent. Blocks the reviews read, local map-pack visibility, and the map-pin fix.",
       "state": "in-progress"
     },
     {
-      "name": "Billing card swap",
-      "status": "Google Ads spend is still running on Spark's card - blocked on Domingo's card swap since Aug 27 (deadline was Aug 29, now 22 days overdue).",
+      "name": "Billing / ad-spend wall",
+      "status": "MONEY WALL - Google Ads spend is still running on Spark's card, 24 days past the Aug 27 swap ask, approximately $394.80 fronted so far and climbing ~$16.45/day. Grant's decision needed: swap to Domingo's card, invoice AIM for the fronted spend via QuickBooks, or pause the campaign. Flagged on subtask 868m74bmw with the exact figure and the three options; not ours to execute.",
       "state": "in-progress"
     },
     {
       "name": "Monthly report",
-      "status": "First report (due 9/30) is drafted with real, refreshed numbers: 129 sessions/30d (+486%), genuine leads (phone_click 4, form_submit 2, generate_lead 2), campaign live since 8/27, negative keywords now live. Cost-per-lead line stays pending until the Supermetrics prioritised-account wall clears.",
+      "status": "First report (due 9/30) is drafted with real, refreshed numbers: 126 sessions/30d (+366.67%), genuine leads (phone_click 4, form_submit 2, generate_lead 2), campaign live since 8/27, negative keywords live. Cost-per-lead line stays pending until the Supermetrics prioritised-account wall clears.",
       "state": "active"
     },
     {
       "name": "Analytics (GA4)",
-      "status": "Sessions climbing every pull: 99 -> 104 -> 107 -> 119 -> 120 -> 129 (Sept 4 through Sept 18). Genuine lead events (form_submit, generate_lead, phone_click) confirmed firing and repeating across 5 straight pulls - this is real signal, not noise.",
+      "status": "30-day sessions climbing every pull: 104 -> 107 -> 119 -> 120 -> 129 -> 126 (Sept 8 through Sept 20). Genuine lead events (form_submit, generate_lead, phone_click) confirmed firing and repeating across 6 straight pulls - real signal. This week was quiet (0 genuine events in the last 7 days), flagged honestly as normal noise, not a tracking regression.",
       "state": "active"
     }
   ],
   "pillars": [
     {
       "name": "Google Ads program",
-      "score": 68,
+      "score": 65,
       "hero": true,
       "bar": "watch",
-      "note": "Live since Aug 27 on real spend, 29 keywords + 21 negative keywords live (negatives shipped 9/17). One drafted ad-copy variant is ready but blocked on a Supermetrics team-level write-access toggle (re-tested 9/18); Ads reporting is separately blocked on a prioritised-account setting (re-tested 9/18). Both need a single click from Grant at hub.supermetrics.com. GA4-side lead signal is real and growing.",
-      "source": "Lumen assessment - Google Ads CID 140-624-4786; re-tested Sept 18, 2026"
+      "note": "Live since Aug 27 on real spend, 29 keywords + 21 negative keywords live. One drafted ad-copy variant is ready but blocked on a Supermetrics team-level write-access toggle (re-tested 9/20); Ads reporting is separately blocked on a prioritised-account setting (re-tested 9/20). Both need a single click from Grant at hub.supermetrics.com. The unresolved card-swap ask is now a flagged money wall (see Billing/ad-spend wall card). GA4-side lead signal is real over 30 days, though quiet this specific week.",
+      "source": "Lumen assessment - Google Ads CID 140-624-4786; re-tested Sept 20, 2026"
     },
     {
       "name": "Website & on-site SEO",
@@ -117,11 +117,11 @@
     },
     {
       "name": "Local visibility (GBP)",
-      "score": 30,
+      "score": 28,
       "hero": false,
       "bar": "bad",
-      "note": "GBP is still unverified - pending on Domingo for 39 days now (since Aug 10) - so there's no review data and no local map-pack lever pulling yet. This is the biggest drag on the account right now and needs a phone call, not another email.",
-      "source": "Lumen assessment - re-checked Sept 18, 2026"
+      "note": "GBP is still unverified - pending on Domingo for 41 days now (since Aug 10) - so there's no review data and no local map-pack lever pulling yet. This is the biggest drag on the account right now and needs a phone call, not another email; a mailing address for a verification postcard is also now required.",
+      "source": "Lumen assessment - re-checked Sept 20, 2026 (last Rail-3 test 2026-09-19)"
     }
   ],
   "hygiene": {
@@ -133,35 +133,34 @@
   "reviewsGap": [],
   "reviewsGapSource": "GBP verification has been pending on Domingo since Aug 10 - no first-party review count or competitor comparison is available yet. Populates once GBP access is granted.",
   "thisWeeksMove": {
-    "label": "Negative keywords shipped; one Grant click each unlocks the rest",
-    "body": "The 21-term negative-keyword list published live on 9/17 and was re-verified fresh today. Real, repeated lead signal continues: the lead form and phone-click tracking have fired every pull since 9/12 (phone_click 4, form_submit 2, generate_lead 2 in the last 30 days). What's left is entirely gated behind two Supermetrics settings only Grant can flip: (1) add CID 140-624-4786 as a prioritised account so Ads spend/cost-per-lead reporting works, and (2) enable Google Ads write access for team Spark Sites so the drafted ad-copy variant B can publish. On the client side, GBP verification (39 days) and the billing card swap (22 days) both still need Domingo - GBP now needs a scheduled live-video call, not another email.",
-    "cta": "Grant: two 1-2 minute clicks at hub.supermetrics.com (prioritised accounts + AW write access); separately, book a call with Domingo for the live GBP verification and the card swap"
+    "label": "Money wall flagged: ad spend still on Spark's card, ~$394.80 and climbing - needs Grant's decision",
+    "body": "The Google Ads campaign has spent on Spark's own card since 8/27 with no reply to the swap ask - now 24 days outstanding. Recomputed fresh this run from the confirmed live daily budget ($16.45/day x 24 elapsed days): approximately $394.80 fronted so far, climbing about $16.45/day. This is flagged as a genuine money wall (subtask 868m74bmw) with three options for Grant to choose: swap Domingo's card in, invoice AIM for the fronted spend via QuickBooks, or pause the campaign until the card arrives. Separately, two Supermetrics settings only Grant can flip stay open: (1) add CID 140-624-4786 as a prioritised account so Ads spend/cost-per-lead reporting works (this would also give the exact billed total instead of a budget-ceiling estimate), and (2) enable Google Ads write access for team Spark Sites so the drafted ad-copy variant B can publish. On the client side, GBP verification (41 days) now also needs a mailing address for a postcard, plus a scheduled live-video call - not another email.",
+    "cta": "Grant: pick one for the AIM ad-spend wall (card swap / invoice AIM / pause) on subtask 868m74bmw; plus two 1-2 minute Supermetrics clicks at hub.supermetrics.com; separately, book a call with Domingo for the live GBP verification"
   },
   "lumenDid": [
     "Published the Google Ads Search campaign live - CID 140-624-4786, $500/mo, 30-mile Tampa radius",
     "Shipped homepage SEO: LocalBusiness JSON-LD schema, meta description, canonical tag, duplicate-homepage cleanup",
     "Built, tested, and shipped the live lead form (Gravity Forms + reCAPTCHA) on the homepage, wired to GA4 generate_lead",
     "Added a phone_click GA4 tag on every tel: link and registered it as a Google Ads conversion action",
-    "Sept 14: drafted 21-term negative-keyword list and 2 RSA ad-copy variants in full",
-    "Sept 16: confirmed phone_click as a genuine, repeating conversion and closed the call-tracking deliverable",
     "Sept 17: published all 21 negative keywords live to the Search campaign via Rail 3 (Lumen Queue Worker), confirmed via the live Google Ads UI",
-    "Sept 18: fresh GA4 + Google Ads re-tests (7-day and 30-day), monthly report refreshed with current numbers, re-verified negative keywords live and the legacy conversion action still needing a Rail-3 demote, re-tested both open Supermetrics walls (still blocked, unchanged), dashboard rebuilt and pushed"
+    "Sept 19: Lumen (Rail 3) confirmed live in Claude in Chrome that GBP verification now also requires a mailing address for a postcard, and drafted a 3-window scheduling nudge to Domingo for the live video call",
+    "Sept 20: re-tested Supermetrics AW read (cost query, still walled) and write (real RSA variant B payload, still walled) live; recomputed the AIM ad-spend money-wall figure from the confirmed live $16.45/day budget instead of the prior stale estimate, wrote the full breakdown and three options onto subtask 868m74bmw, posted classification comments on both hubs, and rebuilt this dashboard"
   ],
   "ledger": [
     {
-      "title": "Swap Google Ads billing to Domingo's card",
+      "title": "AIM ad spend fronted on Spark's card - Grant's decision needed",
       "state": "next",
-      "detail": "Urgent, due Aug 29, now 22 days overdue. Running on Spark's card."
+      "detail": "MONEY WALL. ~$394.80 fronted so far (24 days x $16.45/day confirmed budget), climbing. Options: card swap, invoice AIM, or pause. See subtask 868m74bmw."
     },
     {
-      "title": "Get GBP verification (live video call needed)",
+      "title": "Get GBP verification (live video call + mailing address needed)",
       "state": "next",
-      "detail": "Pending on Domingo since Aug 10, now 39 days. Google no longer accepts pre-recorded video - needs a scheduled call."
+      "detail": "Pending on Domingo since Aug 10, now 41 days. Needs a scheduled call and a mailing address for a verification postcard."
     },
     {
       "title": "Enable Supermetrics prioritised account for CID 140-624-4786",
       "state": "next",
-      "detail": "One Grant click at hub.supermetrics.com - unlocks Ads spend/cost-per-lead reporting."
+      "detail": "One Grant click at hub.supermetrics.com - unlocks Ads spend/cost-per-lead reporting and the exact billed total for the money wall above."
     },
     {
       "title": "Enable Supermetrics Google Ads write access for team Spark Sites",
@@ -171,12 +170,12 @@
     {
       "title": "Negative keywords published live",
       "state": "done",
-      "detail": "All 21 terms live at campaign level, published 2026-09-17, re-verified 2026-09-18."
+      "detail": "All 21 terms live at campaign level, published 2026-09-17, re-verified through 2026-09-19."
     },
     {
       "title": "Call tracking verified + closed",
       "state": "done",
-      "detail": "phone_click confirmed a genuine, repeating Ads conversion (4x/30d) - closed 2026-09-16."
+      "detail": "phone_click confirmed a genuine, repeating Ads conversion - closed 2026-09-16."
     },
     {
       "title": "First monthly report drafted",
@@ -186,13 +185,13 @@
     {
       "title": "Ad copy variant B drafted, ready to publish",
       "state": "in-progress",
-      "detail": "Fully written; blocked only on the Supermetrics write-access toggle."
+      "detail": "Fully written; blocked only on the Supermetrics write-access toggle, re-tested live 9/20, unchanged."
     },
     {
-      "title": "VIP Steward working run (Sept 18)",
+      "title": "VIP Steward working run (Sept 20, 3pm pass)",
       "state": "done",
-      "detail": "Fresh GA4 + Google Ads re-tests, monthly report refreshed, negative keywords re-verified live, dashboard rebuilt with current numbers."
+      "detail": "Re-tested both Supermetrics walls and the GitHub push wall live, recomputed the ad-spend money-wall figure from real budget data, posted classification comments on both hubs, dashboard rebuilt."
     }
   ],
-  "dataNotes": "Google Ads facts (CID, budget, geo, live date, keyword count, negative-keyword list) verified directly in Google Ads via Supermetrics campaign_and_resource_get, Sept 18, 2026. Lead form + phone_click tracking built and verified live via Pressable WP-CLI and GA4 Realtime, Sept 7-8, 2026. GBP status reflects Domingo's outstanding access request open since Aug 10; Google now requires a live (not pre-recorded) verification video. Accent color #2EA3F2 pulled live from aimforcleanair.com's homepage CSS. Pillar and hygiene scores are Lumen's weighted assessment. Reviews-gap panel intentionally empty pending GBP access. GA4 numbers (property 549137267): last-30-days sessions 129 (+486% vs prior 30d, young property still ramping since ~8/8), total users 104; last-7-days sessions 24, users 21; last-30-days key events phone_click 4, form_start 3, form_submit 2, generate_lead 2, click 1 - all pulled live via Supermetrics GAWA on 2026-09-18. Google Ads spend/cost-per-lead remains unavailable: Supermetrics data_query on CID 140-624-4786 / account 1406244786 fails \"not listed as a prioritised account\" (re-tested live 2026-09-18, unchanged since first diagnosed 2026-09-09, Bus ticket 868m4h4zc). Publishing the drafted ad-copy variant B is separately blocked by Supermetrics WRITE_ACCESS_NOT_ENABLED for team Spark Sites (re-tested live 2026-09-18 with the real creative payload, ticket 868m6gd5x). A legacy misconfigured \"Submit lead form\" (WEBPAGE) conversion action (id 7729199418) remains Enabled with no tag firing it - confirmed still live via campaign_and_resource_get(conversion_types) 2026-09-18; no Rails-1-2 path exists to edit a conversion action's status, tracked on ticket 868m6gd5z for a Rail-3 pass. meta_ad_account_id remains blank in roster (no Meta ad spend on this account). No numbers on this dashboard are invented; every pending field states its source and blocker."
+  "dataNotes": "Google Ads facts (CID, budget, geo, live date, keyword count, negative-keyword list) verified directly in Google Ads via Supermetrics campaign_and_resource_get, Sept 20, 2026. Lead form + phone_click tracking built and verified live via Pressable WP-CLI and GA4 Realtime, Sept 7-8, 2026. GBP status reflects Domingo's outstanding access request open since Aug 10; Google requires a live (not pre-recorded) verification video plus, confirmed 2026-09-19, a mailing address on file for a verification postcard. Accent color #2EA3F2 pulled live from aimforcleanair.com's homepage CSS. Pillar and hygiene scores are Lumen's weighted assessment. Reviews-gap panel intentionally empty pending GBP access. GA4 numbers (property 549137267): last-30-days sessions 126 (+366.67% vs prior 30d, young property still ramping since ~8/8), total users 102 (+628.57%); last-7-days sessions 17, users 14, zero genuine key events this narrower week (normal noise, not a tracking break); last-30-days key events phone_click 4, form_start 3, form_submit 2, generate_lead 2 - all pulled live via Supermetrics GAWA on 2026-09-20. Google Ads spend/cost-per-lead remains unavailable: Supermetrics data_query on CID 140-624-4786 / account 1406244786 fails \"not listed as a prioritised account\" (re-tested live 2026-09-20, unchanged since first diagnosed 2026-09-09, Bus ticket 868m4h4zc). Publishing the drafted ad-copy variant B is separately blocked by Supermetrics WRITE_ACCESS_NOT_ENABLED for team Spark Sites (re-tested live 2026-09-20 with the real creative payload, status explicitly PAUSED to avoid any spend/serving risk even on success, ticket 868m6gd5x). NEW 2026-09-20: the unresolved billing-card-swap ask (open since 8/27, now 24 days) is being surfaced as a genuine money wall - AIM's ad spend is running on Spark's own card. Recomputed the dollar figure from the confirmed live $16.45/day daily budget x 24 elapsed days = approximately $394.80, explicitly labeled a budget-ceiling estimate rather than an exact billed cost, since actual per-day cost data is walled by the same Supermetrics prioritised-account issue above; the precise billed total would come from the Google Ads Billing Summary (Rail 3, behind Spark's card login) or automatically once the Supermetrics fix lands. Full breakdown and three options (card swap, invoice AIM, or pause) written onto ClickUp subtask 868m74bmw for Grant. GitHub write to state-of-the-spark/spark-dashboards was re-tested live 2026-09-20 (create_or_update_file on a throwaway test path) and still returns 403 Resource not accessible by integration, same fingerprint as known bug 868m5u9q7 - this JSON is being handed to Lumen via the Bus for commit rather than pushed directly. meta_ad_account_id remains blank in roster (no Meta ad spend on this account). No numbers on this dashboard are invented; every pending field states its source and blocker."
 }
