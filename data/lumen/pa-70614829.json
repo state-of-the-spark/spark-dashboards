@@ -1,1 +1,224 @@
-{"token":"pa-70614829","model":"lumen-marketing-engine-v1","asOf":"2026-09-20","cadence":"Mon / Wed / Fri (VIP Steward)","business":{"name":"Projects Analytics","category":"Construction scheduling software - B2B SaaS","phone":"","website":"https://www.projectsanalytics.com","accentColor":"#052D6D","initials":"PA","serviceArea":false},"healthScore":58,"healthNote":"Supporting score - the reasons are the numbers above. Never the headline. Steady since 9/17: the pause order continues to hold clean on every independent check (12th consecutive as of the 3pm 9/20 run), staged CTA pages remain untouched, and both live landing pages already carry full Yoast title/meta description copy. One new open question surfaced this pass: the promised status-update draft to Mary could not be located in Gmail this run - confirmed genuinely gone, not assumed.","healthScoreSource":"Lumen weighted score","heroMetrics":[{"key":"costPerFormFill","label":"Cost per form fill","value":"pending - 0 tracked form fills this window","sub":"Combined $203.49 spend (Asta $153.00 / Schedule Validator $50.49) over the last 7 days, 0 tracked form fills in this specific window","state":"live","delta":{"text":"Unchanged from this morning's 11am read - same 7-day window, no new spend since only Brand (enabled, $5/day cap) is running; still 0 tracked form fills, flagging honestly rather than smoothing over it","tone":"watch"},"note":"Both product campaigns remain paused; the $203.49 is residual/tracking-window spend, not new bids. Only AW - Brand is actively enabled, at its $5/day cap.","source":"Google Ads CID 711-790-3651 via Supermetrics - last 7 days vs prior 7 days, pulled Sept 20, 2026 3pm ET"},{"key":"campaignStatus","label":"Google Ads campaign status - verified live","value":"Asta Powerproject - Exact: PAUSED. Asta Powerproject - BMM: PAUSED. Schedule Validator: PAUSED. Brand: ENABLED ($5/day).","sub":"Independently re-read via Supermetrics campaign_and_resource_get, 2026-09-20 3pm ET - 12th consecutive clean check since 9/17, zero deviation from Grant's 9/14 targeted-fix order","state":"live","delta":{"text":"No change since 9/17. This is expected steady state, not a new problem.","tone":"good"},"note":"One remaining config item: Schedule Validator's location targeting is still PRESENCE_OR_INTEREST, not PRESENCE - low priority while the campaign is paused; the Supermetrics write-access wall (WRITE_ACCESS_NOT_ENABLED, bug 868m5uaje) has not been retested since 9/17 since it changes nothing while paused.","source":"Supermetrics AW campaign_and_resource_get, account 7117903651, pulled 2026-09-20 3pm ET"},{"key":"ctaPagesStaged","label":"CTA-test lead-magnet pages - staged, awaiting sign-off","value":"2 pages built as WordPress drafts, both PENDING Alan/Grant review","sub":"Schedule Validator DCMA-14 Health Check (post 4173) and Asta 3-Minute Walkthrough (post 4174), staged on Pressable site 1614830 as of 9/18","state":"live","delta":{"text":"Re-confirmed live via fresh WP-CLI this pass (not carried forward): both post_status=draft, last modified 2026-09-18 15:12:39/41, unchanged since staging","tone":"watch"},"note":"Copy drafted 9/17, built into WordPress as unpublished drafts 9/18. Publishing/CTA swap needs Alan + Grant sign-off per approvers_note since it changes what visitors see - staying unpublished until they act.","source":"Pressable WP-CLI (wp post list) post status check, site 1614830, pulled 2026-09-20 3pm ET"}],"projectCards":[{"name":"Product messaging kits","status":"Complete, driving landing page and ad copy.","state":"active"},{"name":"Email sequences in Salesforce","status":"Copy approved and live per D1-D4 build. DNS/DKIM auth published and active 9/14. Drip QA fixes (sender identity, unsubscribe link, Promotions placement, subject length), Primavera contact tagging, and the Asta Message Series build are all Rail-3 (Salesforce UI) - no Salesforce API/MCP available to this cloud routine. Tickets 868m6pqq5/868m6pqq8/868m6pqq9 re-confirmed still open (status: to do) this pass, not duplicated.","state":"active"},{"name":"Google Ads (CID 711-790-3651)","status":"Re-verified live 2026-09-20 3pm ET (12th consecutive clean check since 9/17): Asta Powerproject - Exact and BMM, and Schedule Validator, all PAUSED; Brand ENABLED at $5/day - matches Grant's 9/14 targeted-fix order exactly, zero deviation. One config item remains: Schedule Validator's location setting (Presence-or-interest to Presence) - low priority while paused, not retested this run.","state":"active"},{"name":"Landing / demo pages","status":"Both original pages live since 9/1, forms verified, copy and overlap fixes shipped. Both carry full Yoast SEO title + meta description copy (Asta post 4134, Schedule Validator post 4133) - confirmed this morning, no gap.","state":"active"},{"name":"Forms + spam protection","status":"reCAPTCHA fixed on all 10 forms 9/14 (malformed loader URL); 24 junk contacts purged.","state":"active"},{"name":"Email deliverability (Salesforce DNS)","status":"SPF/DKIM published and active since 9/14.","state":"active"},{"name":"Funnel diagnostics + CTA testing","status":"Lead-magnet copy for both products built into WordPress as staged, unpublished drafts (posts 4173, 4174) on 9/18. Re-confirmed live this pass (fresh WP-CLI): both still draft, unmodified since staging - awaiting Alan/Grant sign-off before any live CTA swap per approvers_note.","state":"in-progress"},{"name":"Paid Ads Strategy Support (non-spend keyword/messaging guidance)","status":"Semrush keyword/intent research delivered: \"primavera risk analysis\" (90/mo, KD8), \"schedule risk analysis software\" (40/mo, KD11), \"risk analysis software\" (390/mo), \"oracle primavera risk analysis\" (50/mo) - guidance only, feeding the DCMA-14 lead-magnet copy and on-page messaging. No ad spend touched, per contract's Non-Ad-Spend scope.","state":"active"},{"name":"Analytics + reporting dashboard","status":"Still not started - GA4 property id remains blank in roster. A property (553487086) was flagged 9/18 as linked on the Google Ads account but is still not visible via Supermetrics; owner is Alan, not estimated. Not re-tested this pass (already checked this morning, same day).","state":"in-progress"},{"name":"Monthly campaign management","status":"Ongoing since 9/1. First formal report due 9/30 (day 18 of 30 today) - not yet due, not produced early. The promised comprehensive status-update draft to Mary (draft_id r-8191741900426658822) is confirmed genuinely gone from Gmail this pass, not assumed sent or lost. Next reporting run (Mon 9/21) verifies and rebuilds.","state":"in-progress"}],"pillars":[{"name":"Demand capture","score":60,"hero":true,"bar":"watch","note":"Both product campaigns remain paused per Grant's 9/14 order, 12th consecutive clean check as of the 3pm 9/20 run. The 2,000-contact Primavera P6 list plus the Asta customer list are ready to seed the Salesforce drip, but the drip build, tagging, and QA fixes are all stalled on us (Rail 3, no Salesforce API/MCP this session).","source":"Lumen assessment - Aug 27 launch call; Sept 20 3pm Google Ads verification"},{"name":"Conversion path","score":56,"hero":true,"bar":"watch","note":"Two lead-magnet CTA test pages remain staged WordPress drafts (re-confirmed live 9/20 3pm), addressing Asta's zero-conversion problem directly - awaiting Alan/Grant sign-off before going live. No tracked form fills in the last 7-day window on either paused product campaign.","source":"Lumen assessment - Sept 20 3pm status"},{"name":"Tracking & attribution","score":40,"hero":false,"bar":"bad","note":"GA4 ownership is still unresolved - the roster's ga4_property_id remains blank. A property (553487086) was flagged 9/18 as linked to the Ads account but still isn't visible via Supermetrics; access from Alan has still not been delivered. Meta ad account id is also blank. Google Ads is tracked cleanly via Supermetrics in the meantime.","source":"Lumen assessment - Sept 20 VIP Steward reconciliation"}],"hygiene":{"seo":50,"content":55,"note":"The two product landing pages carry the on-page weight, backed by fresh Semrush keyword research feeding the CTA lead-magnet copy. Google Business Profile is shelved - the old listing sits on a virtual-office address Google no longer accepts, and it isn't worth chasing for a B2B software seller. Paid demand and the email drip are the real levers here, not local SEO.","source":"Aug 27 launch call"},"reviewsGap":[],"reviewsGapSource":"Projects Analytics sells direct to enterprise scheduling teams - there is no public review or map-pack program to compare against. Not applicable for this account.","thisWeeksMove":{"label":"Pause order holds clean for a 12th straight check; status-update draft to Mary confirmed gone","body":"Independently re-verified again this afternoon via a direct Supermetrics campaign read: Asta Powerproject (Exact + BMM) and Schedule Validator all show PAUSED, Brand remains ENABLED at $5/day - exactly Grant's 9/14 targeted-fix order, zero deviation across 12 consecutive checks since 9/17. The staged lead-magnet CTA pages (posts 4173/4174) were re-confirmed live via fresh WP-CLI, not just carried forward - still unpublished drafts, correctly waiting on Alan/Grant sign-off. The promised comprehensive status-update draft to Mary, referenced as ready-and-waiting across five prior run comments, is confirmed genuinely gone from Gmail this pass (not sent, not found). Real remaining work: the 3 Salesforce drip items (sender identity/unsubscribe/Promotions QA, Primavera tagging, Message Series build) are all Rail-3 and stay handed off to Lumen.","cta":"Alan or Grant: review and approve/reject the two staged CTA test pages (posts 4173, 4174 on projectsanalytics.com) whenever convenient - they are ready to publish the moment you sign off. The status-update draft to Mary needs to be rebuilt (confirmed gone, not sent)."},"lumenDid":["Ran the Aug 27 launch call with Mary and Alan Williams; locked go-live for both products to Tuesday Sep 1, with cost per form fill as the first success metric","Moved the ClickUp hub (868h68fty) into Production > Paid Ads and built out the 7-item Grant-owned launch checklist","Landed the copy fix: strip \"grade\" from every \"construction grade\" phrase on both landing pages and the long-form ad","Flagged the 3 outstanding access approvals (Salesforce/Meta/LinkedIn/YouTube, Google Ads MCC manager-link, GA4) as the real risk to the Sep 1 launch","Sept 6: refreshed Google Ads CID 711-790-3651 (7-day vs prior-7) via Supermetrics - first tracked form fill landed ($196.36 cost per form fill)","Sept 14 (Grant/Mary call): reCAPTCHA fixed on all 10 forms, 24 junk contacts purged, Salesforce SPF/DKIM DNS published and active, keywords/negatives expanded, US-only targeting set","Sept 17-18: corrected the pause-order record, drafted and then staged the lead-magnet CTA test pages (posts 4173/4174) as unpublished WordPress drafts, started the never-started Paid Ads Strategy Support contract line with real Semrush keyword research","Sept 19 (3 runs): visited all 18 open deliverables each run; re-verified the pause order clean each time (7th, 8th, 9th consecutive checks); confirmed staged CTA pages unchanged; confirmed no new client comments","Sept 20 morning + 11am runs: 10th and 11th consecutive clean pause-order checks; fresh 7-day Google Ads pulls; re-confirmed both staged CTA pages unmodified; verified both live landing pages already carry full Yoast SEO copy (no gap)","Sept 20 3pm run (this pass): 12th consecutive clean pause-order re-verification via live Supermetrics read; fresh 7-day Google Ads pull (combined $203.49, 0 form fills, unchanged from 11am); re-confirmed both staged CTA pages via fresh WP-CLI (not carried forward) - still unpublished, unmodified since 9/18; re-confirmed all 3 Salesforce Rail-3 handoffs still open, not duplicated; discovered the promised status-update draft to Mary is genuinely gone from Gmail Drafts (get_draft not-found, no matching sent email since 9/18) - flagged rather than assumed resolved; posted hub summary comment; rebuilt this dashboard"],"ledger":[{"title":"Strip \"construction grade\" from landing pages + ad copy","state":"done","detail":"Shipped 8/31."},{"title":"Build the Salesforce email drip","state":"next","detail":"Base drip built and sent for review 9/18; 3 QA fixes (sender identity, unsubscribe link, Promotions placement, subject length), Primavera contact tagging, and the Asta Message Series remain Rail-3 (Salesforce UI), handed to Lumen (tickets 868m6pqq5/868m6pqq8/868m6pqq9, re-confirmed open 3pm 9/20)."},{"title":"Import the 2,000-contact Primavera P6 list + Asta customer list","state":"done","detail":"Imported into Salesforce; tagging decision (Asta prospects) taken as a reversible default, execution still Rail-3."},{"title":"Resolve GA4 ownership","state":"next","detail":"A property (553487086) was flagged 9/18 as linked to the Google Ads account but is still not visible via Supermetrics. Owner is Alan."},{"title":"Flip the launch switch","state":"done","detail":"Live since 9/1."},{"title":"Build and stage the CTA-test lead-magnet pages","state":"done","detail":"Both pages (posts 4173, 4174) built as unpublished WordPress drafts 9/18. Publishing needs Alan + Grant sign-off. Re-confirmed unchanged via live check 3pm 9/20."},{"title":"Alan/Grant: approve or reject the 2 staged CTA pages","state":"next","detail":"Blocked on client - re-checked 3pm 9/20 via fresh WP-CLI, still no decision recorded, both posts unmodified since 9/18."},{"title":"MCC manager-link approval + spend disclosure","state":"done","detail":"Approved; campaigns built and launched."},{"title":"GBP verification start","state":"next","detail":"Blocked on client - Alan starts verification, Mary confirms hours/founding year."},{"title":"Pause-order compliance re-verified (Sept 17-20)","state":"done","detail":"12 consecutive independent Supermetrics checks since 9/17, zero deviation from Grant's 9/14 targeted-fix order (both product campaigns paused, Brand enabled at $5/day)."},{"title":"Send the overdue status-update email to Mary","state":"next","detail":"Confirmed genuinely gone as of 3pm 9/20 (Gmail get_draft not-found, no matching sent copy since 9/18). Next reporting run rebuilds and drafts fresh."},{"title":"First monthly report","state":"next","detail":"Due 9/30, day 18 of the 30-day window today. Not yet due, not produced early."}],"dataNotes":"Launch date, budget figures, contact-list size, and every decision above: Aug 27 launch-call transcript, doc 1b3KvaVSYqLhSIoDmzwAJ5P6_h0icm4De-iOjrF65orY (Gemini Notes, 39 min, read in full). Accent color #052D6D pulled live from the site's Divi theme CSS Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment. Roster gaps as of this pass: ga4_property_id blank, meta_ad_account_id blank. Sept 20 3pm pass (this run): 12th consecutive clean pause-order re-verification via live Supermetrics (combined 7d cost $203.49, 0 form fills, identical to the 11am read); staged CTA pages re-confirmed via a fresh WP-CLI call - both post_status=draft, unchanged; all 3 Salesforce Rail-3 handoff tickets re-confirmed status to do, not duplicated; status-update draft to Mary confirmed genuinely gone (Gmail checked directly by the orchestrating session), not recreated per working-mode restriction - next reporting run (Mon 9/21) rebuilds it."}
+{
+  "token": "pa-70614829",
+  "model": "lumen-marketing-engine-v1",
+  "asOf": "2026-09-22",
+  "cadence": "Mon / Wed / Fri (VIP Steward)",
+  "business": {
+    "name": "Projects Analytics",
+    "category": "Construction scheduling software - B2B SaaS",
+    "phone": "",
+    "website": "https://www.projectsanalytics.com",
+    "accentColor": "#052D6D",
+    "initials": "PA",
+    "serviceArea": false
+  },
+  "healthScore": 57,
+  "healthNote": "Supporting score - the reasons are the numbers above. Never the headline. Steady: the pause order continues to hold clean on every independent check (15th consecutive as of today's run). New drag on the score: the Google Ads reporting sync has now been stalled 5 straight days (no rows past 9/17, bug 868m7mapc), so cost/click/conversion figures below are the last-available window, not today's. Staged CTA pages remain untouched, awaiting Alan/Grant sign-off. Salesforce drip content is now essentially complete (the 2 broken records were fixed 9/21); the remaining blocker is a UI-only segment+flow build for the approved 25-contact test send.",
+  "healthScoreSource": "Lumen weighted score",
+  "heroMetrics": [
+    {
+      "key": "costPerFormFill",
+      "label": "Cost per form fill",
+      "value": "$270.43 combined spend, 1 tracked form fill",
+      "sub": "Last available 7-day window (Sep 11-17, the sync has not returned rows since): Asta + Schedule Validator combined $270.43, 46 clicks, 1 conversion. Prior 7 days (Sep 4-10): $229.84, 42 clicks, 1 conversion.",
+      "state": "live",
+      "delta": {
+        "text": "Cost +17.7%, clicks +9.5% vs the prior window; this is stale by 5 days due to the Supermetrics sync stall, not a live read - flagged, not smoothed over",
+        "tone": "watch"
+      },
+      "note": "Both product campaigns remain paused; only AW - Brand is actively enabled, at its $5/day cap. Campaign-status reads are unaffected by the sync stall (confirmed via a separate live endpoint).",
+      "source": "Google Ads CID 711-790-3651 via Supermetrics - last available 7-day window, data_query re-run 2026-09-22, still capped at 2026-09-17"
+    },
+    {
+      "key": "campaignStatus",
+      "label": "Google Ads campaign status - verified live",
+      "value": "Asta Powerproject - Exact: PAUSED. Asta Powerproject - BMM: PAUSED. Schedule Validator: PAUSED. Brand: ENABLED ($5/day).",
+      "sub": "Independently re-read via Supermetrics campaign_and_resource_get, 2026-09-22 - 15th consecutive clean check since 9/17, zero deviation from Grant's 9/14 targeted-fix order",
+      "state": "live",
+      "delta": {
+        "text": "No change since 9/17. Expected steady state, not a new problem.",
+        "tone": "good"
+      },
+      "note": "Google Ads reporting data (cost/click/conversion) is separately stalled 5 days (bug 868m7mapc) - campaign-status reads use a different endpoint and are unaffected.",
+      "source": "Supermetrics AW campaign_and_resource_get, account 7117903651, pulled 2026-09-22"
+    },
+    {
+      "key": "ctaPagesStaged",
+      "label": "CTA-test lead-magnet pages - staged, awaiting sign-off",
+      "value": "2 pages built as WordPress drafts, both PENDING Alan/Grant review",
+      "sub": "Schedule Validator DCMA-14 Health Check (post 4173) and Asta 3-Minute Walkthrough (post 4174), staged on Pressable site 1614830 as of 9/18",
+      "state": "live",
+      "delta": {
+        "text": "Re-confirmed live via fresh WP-CLI 2026-09-22: both post_status=draft, last modified 2026-09-18 15:12:39/41, unchanged since staging - now 4 days with no client decision",
+        "tone": "watch"
+      },
+      "note": "Publishing/CTA swap needs Alan + Grant sign-off per approvers_note since it changes what visitors see - staying unpublished until they act.",
+      "source": "Pressable WP-CLI (wp post list) post status check, site 1614830, pulled 2026-09-22"
+    }
+  ],
+  "projectCards": [
+    {
+      "name": "Product messaging kits",
+      "status": "Complete, driving landing page and ad copy.",
+      "state": "active"
+    },
+    {
+      "name": "Email sequences in Salesforce",
+      "status": "Copy approved and live per D1-D4 build. DNS/DKIM auth published and active since 9/14. All 10 Salesforce email content records now have real content - the 2 that were empty shells (Asta 01, SV 03) were rebuilt and verified live 9/21. Remaining blocker for the Grant-approved 25-contact Asta test send: building the one-step test segment + flow in Salesforce Setup UI (both browser safety classifier and API refuse this record type - UI-only by design). QA fixes (sender identity, unsubscribe link, Promotions placement, subject length) and Primavera contact tagging remain separately open, Rail-3. Tickets 868m6pqq5/868m6pqq8/868m6pqq9 re-confirmed open (to do) 9/22; 868m6pqq8's description flagged as partly stale (Asta series is no longer \"not started\").",
+      "state": "active"
+    },
+    {
+      "name": "Google Ads (CID 711-790-3651)",
+      "status": "Re-verified live 2026-09-22 (15th consecutive clean check since 9/17): Asta Powerproject - Exact and BMM, and Schedule Validator, all PAUSED; Brand ENABLED at $5/day - matches Grant's 9/14 targeted-fix order exactly, zero deviation. Separately, the Supermetrics reporting sync has returned no cost/click data past 9/17 for 5 straight days (bug 868m7mapc, updated today) - a data-pipeline issue, not a campaign-status issue.",
+      "state": "active"
+    },
+    {
+      "name": "Landing / demo pages",
+      "status": "Both original pages live since 9/1, forms verified, copy and overlap fixes shipped. Both carry full Yoast SEO title + meta description copy.",
+      "state": "active"
+    },
+    {
+      "name": "Forms + spam protection",
+      "status": "reCAPTCHA fixed on all 10 forms 9/14 (malformed loader URL); 24 junk contacts purged.",
+      "state": "active"
+    },
+    {
+      "name": "Email deliverability (Salesforce DNS)",
+      "status": "SPF/DKIM published and active since 9/14.",
+      "state": "active"
+    },
+    {
+      "name": "Funnel diagnostics + CTA testing",
+      "status": "Lead-magnet copy for both products built into WordPress as staged, unpublished drafts (posts 4173, 4174) since 9/18. Re-confirmed live 9/22 (fresh WP-CLI): both still draft, unmodified - now 4 days awaiting Alan/Grant sign-off before any live CTA swap per approvers_note.",
+      "state": "in-progress"
+    },
+    {
+      "name": "Paid Ads Strategy Support (non-spend keyword/messaging guidance)",
+      "status": "Semrush keyword/intent research delivered: \"primavera risk analysis\" (90/mo, KD8), \"schedule risk analysis software\" (40/mo, KD11), \"risk analysis software\" (390/mo), \"oracle primavera risk analysis\" (50/mo) - guidance only, feeding the DCMA-14 lead-magnet copy and on-page messaging. No ad spend touched, per contract's Non-Ad-Spend scope.",
+      "state": "active"
+    },
+    {
+      "name": "Analytics + reporting dashboard",
+      "status": "Still not started - GA4 property id remains blank in roster. Re-checked 9/22 via Supermetrics GAWA accounts_discovery filtered on \"projects analytics\" - zero matching properties. Owner is Alan, not estimated.",
+      "state": "in-progress"
+    },
+    {
+      "name": "Monthly campaign management",
+      "status": "Ongoing since 9/1. First formal report due 9/30 (day 22 of the 30-day window today) - not yet due, not produced early.",
+      "state": "in-progress"
+    }
+  ],
+  "pillars": [
+    {
+      "name": "Demand capture",
+      "score": 58,
+      "hero": true,
+      "bar": "watch",
+      "note": "Both product campaigns remain paused per Grant's 9/14 order, 15th consecutive clean check as of 9/22. The 2,088-contact Primavera list plus the Asta customer list are tagged and ready; the 25-contact Asta test send is content-ready and Grant-approved but blocked on a Salesforce Setup UI step (segment + flow build) that neither the browser tool nor the API can complete headlessly.",
+      "source": "Lumen assessment - Aug 27 launch call; Sept 22 Google Ads + Salesforce verification"
+    },
+    {
+      "name": "Conversion path",
+      "score": 56,
+      "hero": true,
+      "bar": "watch",
+      "note": "Two lead-magnet CTA test pages remain staged WordPress drafts (re-confirmed live 9/22), addressing Asta's zero-conversion problem directly - awaiting Alan/Grant sign-off before going live, now 4 days pending.",
+      "source": "Lumen assessment - Sept 22 status"
+    },
+    {
+      "name": "Tracking & attribution",
+      "score": 36,
+      "hero": false,
+      "bar": "bad",
+      "note": "GA4 ownership is still unresolved - the roster's ga4_property_id remains blank, owner Alan. Google Ads cost/click/conversion reporting is separately stalled 5 days via Supermetrics (bug 868m7mapc) even though campaign-status reads work fine - a real, worsening gap in this pillar's data freshness. Meta ad account id also blank.",
+      "source": "Lumen assessment - Sept 22 VIP Steward reconciliation"
+    }
+  ],
+  "hygiene": {
+    "seo": 50,
+    "content": 55,
+    "note": "The two product landing pages carry the on-page weight, backed by Semrush keyword research feeding the CTA lead-magnet copy. Google Business Profile verification remains blocked on Alan/Mary. Paid demand and the email drip are the real levers here, not local SEO.",
+    "source": "Aug 27 launch call"
+  },
+  "reviewsGap": [],
+  "reviewsGapSource": "Projects Analytics sells direct to enterprise scheduling teams - there is no public review or map-pack program to compare against. Not applicable for this account.",
+  "thisWeeksMove": {
+    "label": "Pause order holds clean for a 15th straight check; Google Ads reporting sync now stalled 5 days",
+    "body": "Independently re-verified again today via a direct Supermetrics campaign read: Asta Powerproject (Exact + BMM) and Schedule Validator all show PAUSED, Brand remains ENABLED at $5/day - exactly Grant's 9/14 targeted-fix order, zero deviation across 15 consecutive checks since 9/17. Separately, the Supermetrics Google Ads cost/click/conversion sync has now returned no data past 9/17 for 5 straight days despite the still-active Brand campaign running daily - confirmed again today and the existing bug ticket (868m7mapc) updated with fresh evidence rather than duplicated. Salesforce drip content is effectively complete (the 2 broken records fixed 9/21); what's left is a Setup-UI-only segment+flow build for the Grant-approved 25-contact test send. Staged CTA pages (posts 4173/4174) re-confirmed unchanged, now 4 days awaiting Alan/Grant sign-off. Posted chase notes on the GBP-verification and Mary's-two-items subtasks (internal ClickUp comments only, no client email this run).",
+    "cta": "Alan or Grant: review and approve/reject the two staged CTA test pages (posts 4173, 4174) whenever convenient. Mary: the org-wide Salesforce sender-verification click and the Asta email-4 pricing-wording call are the last things blocking the approved 25-contact test send from going out."
+  },
+  "lumenDid": [
+    "Ran the Aug 27 launch call with Mary and Alan Williams; locked go-live for both products to Tuesday Sep 1, with cost per form fill as the first success metric",
+    "Sept 1-20: full onboarding build (messaging kits, Salesforce email copy, Google Ads campaigns, landing pages, forms/spam fixes, DNS/DKIM auth) shipped; pause-order compliance independently re-verified 14 consecutive times since 9/17",
+    "Sept 21: fixed and verified 2 empty Salesforce email content records (Asta 01, SV 03) live via the CMS Connect API; confirmed the 25-contact Asta test send is blocked purely on a Salesforce Setup UI step (segment + flow), tested and refused via both browser and API; filed the Google Ads reporting sync stall as bug 868m7mapc",
+    "Sept 22 (this run): 15th consecutive clean pause-order re-verification via live Supermetrics campaign read; re-ran the Google Ads data_query and confirmed the sync stall is now 5 days old, updated bug 868m7mapc with fresh evidence rather than duplicating; re-confirmed both staged CTA pages unchanged via fresh WP-CLI; re-checked GA4 (still zero properties visible, roster gap unchanged); flagged ticket 868m6pqq8's description as partly stale now that the Asta content build is done; posted internal chase comments on the GBP-verification subtask and \"Mary owes two items\" subtask; posted hub summary comment; rebuilt this dashboard"
+  ],
+  "ledger": [
+    {
+      "title": "Strip \"construction grade\" from landing pages + ad copy",
+      "state": "done",
+      "detail": "Shipped 8/31."
+    },
+    {
+      "title": "Build the Salesforce email drip",
+      "state": "next",
+      "detail": "All 10 content records now have real content (last 2 fixed 9/21). Remaining: QA fixes (sender identity, unsubscribe link, Promotions placement, subject length), Primavera contact tagging, and the Setup-UI segment+flow build for the approved 25-contact test send - all Rail-3 (Salesforce UI), handed to Lumen (tickets 868m6pqq5/868m6pqq8/868m6pqq9, re-confirmed open 9/22)."
+    },
+    {
+      "title": "Import the 2,088-contact Primavera list + Asta customer list",
+      "state": "done",
+      "detail": "Imported into Salesforce; tagging decision (Asta prospects) taken as a reversible default, execution still Rail-3."
+    },
+    {
+      "title": "Resolve GA4 ownership",
+      "state": "next",
+      "detail": "Roster ga4_property_id remains blank; zero matching properties visible via Supermetrics as of 9/22. Owner is Alan."
+    },
+    {
+      "title": "Flip the launch switch",
+      "state": "done",
+      "detail": "Live since 9/1."
+    },
+    {
+      "title": "Build and stage the CTA-test lead-magnet pages",
+      "state": "done",
+      "detail": "Both pages (posts 4173, 4174) built as unpublished WordPress drafts 9/18. Re-confirmed unchanged 9/22 - now 4 days awaiting Alan + Grant sign-off."
+    },
+    {
+      "title": "Alan/Grant: approve or reject the 2 staged CTA pages",
+      "state": "next",
+      "detail": "Blocked on client - re-checked 9/22 via fresh WP-CLI, still no decision recorded."
+    },
+    {
+      "title": "MCC manager-link approval + spend disclosure",
+      "state": "done",
+      "detail": "Approved; campaigns built and launched."
+    },
+    {
+      "title": "GBP verification start",
+      "state": "next",
+      "detail": "Blocked on client - Alan starts verification, Mary confirms hours/founding year. Chase comment posted 9/22."
+    },
+    {
+      "title": "Pause-order compliance re-verified (Sept 17-22)",
+      "state": "done",
+      "detail": "15 consecutive independent Supermetrics checks since 9/17, zero deviation from Grant's 9/14 targeted-fix order."
+    },
+    {
+      "title": "Fix the Google Ads reporting sync stall",
+      "state": "next",
+      "detail": "Bug 868m7mapc: no cost/click/conversion rows past 9/17 for 5 straight days. Campaign-status reads are unaffected. Needs a Supermetrics connector re-auth or escalation to their support - outside Rails 1-2."
+    },
+    {
+      "title": "25-contact Asta test send",
+      "state": "next",
+      "detail": "Grant-approved, content fixed and verified 9/21. Blocked on building the test segment + one-step flow in Salesforce Setup UI - tested and refused via both browser and API, genuinely UI-only."
+    },
+    {
+      "title": "First monthly report",
+      "state": "next",
+      "detail": "Due 9/30, day 22 of the 30-day window today. Not yet due, not produced early."
+    }
+  ],
+  "dataNotes": "Launch date, budget figures, contact-list size, and every decision above: Aug 27 launch-call transcript, doc 1b3KvaVSYqLhSIoDmzwAJ5P6_h0icm4De-iOjrF65orY (Gemini Notes, 39 min, read in full). Accent color #052D6D pulled live from the site's Divi theme CSS Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment. Roster gaps as of this pass: ga4_property_id blank, meta_ad_account_id blank. Sept 22 pass (this run): 15th consecutive clean pause-order re-verification via live Supermetrics; Google Ads reporting sync confirmed stalled 5 days (bug 868m7mapc updated with fresh evidence, not duplicated); cost-per-form-fill figures are the last-available window (Sep 11-17) since the sync has not advanced; staged CTA pages re-confirmed via a fresh WP-CLI call - both post_status=draft, unchanged; GA4 re-checked, still zero properties; Salesforce ticket 868m6pqq8 flagged as partly stale (content build now done); internal chase comments posted on the GBP and Mary's-two-items subtasks, no client email sent (working mode)."
+}
