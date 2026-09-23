@@ -1,1 +1,229 @@
-{"token":"ss-90772982","model":"lumen-marketing-engine-v1","asOf":"2026-09-21","cadence":"weekly","business":{"name":"Superior Spray Service","category":"Pest control · Winter Haven / Polk County","phone":"(863) 682-0700","website":"https://www.superiorspray.com","accentColor":"#22C55E","initials":"SS","serviceArea":true},"healthScore":75,"healthNote":"Supporting score — the reasons are the numbers above. Never the headline.","healthScoreSource":"Lumen weighted score","heroMetrics":[{"key":"reviews","label":"Google reviews","value":"449","sub":"4.9★","state":"live","delta":{"text":"+0 in 30 days","tone":"bad"},"note":"Your 4.9★ rating is best-in-class. The problem is velocity: zero new reviews in the last 30 days, while three local competitors all added reviews in the same window. This is the fastest lever you have.","source":"Google Maps · as of Aug 18"},{"key":"adsReach","label":"Google & Meta Ads · last 7 days","value":"453 clicks","sub":"Google Ads clicks, all 3 active campaigns","state":"live","delta":{"text":"$354.11 cost (+109.5%), 9,687 impressions, 35 conversions (+34.62%)","tone":"watch"},"note":"Sept 21 refresh (CID 5027105186, last 7 days vs prior 7): 453 clicks (-3.21%), $354.11 cost (+109.5% — cost more than doubled), 9,687 impressions (-7.6%), 35 conversions (+34.62%) — conversions are keeping pace with the cost increase, so the ramp is still converting, but the cost jump is worth a look. Meta (act_751457483444702), same window: $150.89 spend (+10.41%), 790 clicks (-66.24%), 16,897 impressions (+24.9%), 777 inline link clicks (-71.7%) — the click-volume drop flagged since mid-September has continued and gotten worse, a real efficiency issue worth Grant's eyes, not a spend change (no bid/budget/status changes made). No spend, budget, or campaign-status changes made this run.","source":"Supermetrics pull 2026-09-21, Google Ads + Meta, last 7 days vs prior 7"},{"key":"ga4Leads","label":"Form submissions + tap-to-calls (GA4) · last 30 days","value":"231","sub":"188 form submissions + 43 tap-to-calls, filtered from raw keyEvents","state":"live","delta":{"text":"up from 227; raw GA4 key events remain misconfigured (page_view/user_engagement still counted)","tone":"good"},"note":"GA4 property 299466800 reconfirmed connected. 188 Form_Submission + 43 ClickToCall events over the last 30 days = 231 genuine lead actions, up from 227. The GA4 key-event config itself is still junk (page_view and user_engagement are still marked as key events) — that fix needs GA4 Admin browser access, open ticket 868m21anh, unchanged.","source":"GA4 property 299466800 · Supermetrics pull 2026-09-21, last 30 days, broken out by eventName"},{"key":"ga4Sessions","label":"Website sessions · last 30 days","value":"8,330","sub":"vs prior 30 days","state":"live","delta":{"text":"up 1.22% vs the prior 30 days — first positive read since the multi-week decline began","tone":"good"},"note":"The 30-day sessions decline that eased for 5 straight days (-30.5% -> -27.4% -> -24.7% -> -20.2% -> -13.1% -> -6.0%) has now turned positive: +1.22% vs the prior 30 days. Source/medium breakdown to confirm what drove the turnaround is still the next step, not yet pulled.","source":"GA4 property 299466800 · Supermetrics pull 2026-09-21, last 30 days vs prior 30 days"}],"projectCards":[{"name":"Website","status":"September evergreen blog rework (German roaches, fire ants, Meet Sean) fully drafted since 9/16, now 3 days past its 9/18 due date awaiting the Duda publish (ticket 868m6gbwd, correctly a hard wall — new public content). GA4 sessions turned positive for the first time (+1.22%) after a multi-day easing decline. GA4 key-event cleanup and podcast findability fix both still need browser access; the Lakeland GBP verification video remains the oldest open ask.","state":"in-progress"},{"name":"SEO","status":"AI SEO audit closed, verified live. LocalBusiness + Service schema confirmed live on Duda pages. Local Map Pack + Two-Profiles tracking both MOVING on a current Semrush baseline (last pulled 9/18, weekly cadence, not yet due for refresh). Google Business Automation stays stalled on a 13+ month scope decision (ticket 868m21anj) — recommending it be closed as superseded by the SEO service-page redirect, awaiting Grant's call.","state":"active"},{"name":"Pest Detectives","status":"Relaunching this August. Three shoot dates locked with Kevin & Sean: Aug 26, Sep 23, Oct 21.","state":"relaunching"},{"name":"Social","status":"3 captions (rewritten 9/18 to match the roaches/fire-ants content that actually shipped) still current, awaiting Rail-3 scheduling in Meta Business Suite. Still waiting on Ashley's team-photo shoot and a Day in the Life ride-along, now 10 days past its 9/11 due date.","state":"active"},{"name":"Ads","status":"Same-day-service messaging across all 4 N. FL Google Ads ad groups stays live. Fresh 7-day totals: 453 clicks, $354.11 cost (cost more than doubled w/w), 35 conversions keeping pace (Google); Meta click volume down 66% w/w on flat-to-up spend, a worsening trend worth review. RP Funding Center's Meta geofenced campaign is now fully built and sitting in DRAFT (zero spend) — only Kevin's real daily budget number is missing before it can go live; the September expo window has now closed, chase email (unsent) already offers to pivot straight to the October show. New-resident/relocation targeting still needs Grant's budget call.","state":"active"},{"name":"Newsletter","status":"September newsletter sent (roaches, fire ants, Meet Sean). Checking 48h open/click stats to decide on a non-opener resend remains blocked: the Mailchimp connector has now failed authentication for 11 straight test days, needs a human login, Rail-3. August issue send status still unconfirmed.","state":"active"}],"pillars":[{"name":"Google Business Profile","score":78,"hero":true,"bar":"watch","note":"4.9★, 449 reviews, 376+ photos — a strong profile. Docked because zero new reviews landed in 30 days (competitors added 3–13 each in the same window) and Google Posts have been quiet since June 8.","source":"Lumen assessment · Google Maps + GBP"},{"name":"On-site conversion","score":84,"hero":true,"bar":"good","note":"Phone + click-to-call in the header, a free-estimate form, a clear primary CTA, valid SSL, fast server response. Form-submit and click-to-call events now fire in GA4 (188 + 43 in the last 30 days).","source":"Lumen assessment · live site check"},{"name":"Local map visibility","score":64,"hero":false,"bar":"watch","note":"Strong organically (#3 for \"pest control Lakeland\"). As a service-area business with no public storefront, your Google map presence is driven by review velocity, Google Posts, and GBP optimization rather than a storefront pin. Biggest levers now: more reviews and a steady posting cadence.","source":"Lumen assessment · SEMrush + Maps"}],"hygiene":{"seo":62,"content":55,"note":"Ranks well for the head term; service-specific pages need on-page work. Kept healthy in the background — not sold as what rings the phone.","source":"SEMrush + site audit"},"reviewsGap":[{"name":"Anti-Pesto Bug Killers","rating":"5.0","reviews":556},{"name":"Country Boy Pest Control","rating":"4.8","reviews":485},{"name":"Superior Spray Service","rating":"4.9","reviews":449,"self":true},{"name":"Dave's Pest Control","rating":"4.8","reviews":336}],"reviewsGapSource":"Google Maps · Aug 18","thisWeeksMove":{"label":"GA4 sessions turned positive; RP Funding's Meta campaign is built and just needs a budget number","body":"The 30-day GA4 sessions decline that had been easing for days has now flipped positive (+1.22%). The RP Funding Center geofenced Meta campaign is fully built and sitting paused in draft with zero spend — the only thing missing is Kevin's real daily budget, since the September expo window itself has now closed; the drafted chase email already offers to pivot straight to the October show. The September blog is fully drafted and 3 days past due, waiting only on the Duda publish click. Meta click volume continues a real efficiency decline (-66% w/w) worth a look at the next optimization pass.","cta":"Send Kevin the real daily budget number for the RP Funding campaign (or confirm pivoting to the October show); publish the September blog in Duda"},"lumenDid":["Reviewed your FieldRoutes lead sources for the last 30 days: Google search is driving your bookable leads, while Facebook shows next to none we can directly attribute (a portion come in as N/A or phone call-ins). That is exactly why we are doubling down on Google Ads and the website — Facebook earns its keep as top-of-funnel awareness, but search is what rings the phone","Rebuilt your Google Ads: lifted Ad Strength from Poor to Good, split Search into focused General Pest Control + Termite ad groups, and trimmed targeting to your 4 core counties (Polk, Orange, Brevard, Hillsborough) so you stop paying for Tampa/Orlando clicks","Turned off the Meta 'Audience Network' placements that were driving low-quality clicks, so more of your ad spend reaches real Central Florida prospects","Cleaned up your conversion tracking — GA4 now counts real phone calls and form submissions, not inflated page views","Locked three Pest Detectives podcast shoot dates with Kevin & Sean (Aug 26, Sep 23, Oct 21) and scheduled an August newsletter resend to 6,182 subscribers who hadn't opened yet","Sept 17-19: Shipped same-day-service ad copy to all 4 N. FL ad groups, fixed a stale-content gap on the 3 social captions, verified the AI SEO audit's NF page copy + H1 fixes are live, and pulled fresh Ads/Meta/GA4 data each day. Sessions decline eased for 5 straight days.","Sept 20: Built the RP Funding Center geofenced Meta campaign in full (1-mile radius around the expo venue, brand-matched creative, call button, Advantage+ off) and left it sitting paused in draft with zero spend, flagged with a placeholder budget in its own name so it can never be mistaken for live — only Kevin's real number is missing.","Sept 21: Fresh 7-day Ads/Meta and 30-day GA4 numbers pulled across all 6 hubs — GA4 sessions turned positive for the first time (+1.22%), genuine leads up to 231. Re-tested the Mailchimp connector (still blocked, 11th confirmed test). Confirmed the RP Funding chase email and Meta campaign draft are both exactly where they should be, no duplicates, nothing sent."],"ledger":[{"title":"Rebuild review velocity — text recent customers","state":"next","detail":"0 new reviews in 30 days while all three local competitors gained. Fastest, cheapest lever you have."},{"title":"Resume Google Posts","state":"next","detail":"Quiet since June 8 — posting cadence feeds your local map rank."},{"title":"Publish the September blog post","state":"next","detail":"Fully drafted since 9/16, now 3 days past its 9/18 due date — the evergreen blog rework (roaches/fire ants/Meet Sean) is waiting only on a Duda publish pass."},{"title":"Send Kevin the real RP Funding budget number","state":"next","detail":"The geofenced Meta campaign is built and sitting in draft with zero spend. The September expo window has closed; only a real budget number (or confirmation to pivot to October) unlocks it."},{"title":"Send the SEO questionnaire + film the Lakeland GBP verification video","state":"next","detail":"Both have been outstanding since May 2025 and are the oldest open asks on the account; getting these in unlocks the next phase of local SEO and map-pack work."},{"title":"Set a budget/timeline for new-resident/relocation ad targeting","state":"next","detail":"SEO groundwork is done and it just needs a budget call from Grant."},{"title":"VIP Steward working run (Sept 19)","state":"done","detail":"Fresh 7-day Ads/Meta and 30-day GA4 data pulled across all 6 hubs; GA4 sessions decline easing 4th straight day. Re-tested the Mailchimp connector (still blocked). Flagged RP Funding's closing expo window as newly urgent."},{"title":"VIP Steward working run (Sept 20)","state":"done","detail":"RP Funding Meta campaign built in full and staged in draft with zero spend. Fresh Ads/Meta/GA4 data pulled 3 times across the day's runs. RP Funding chase email drafted and confirmed unsent."},{"title":"VIP Steward working run (Sept 21)","state":"done","detail":"Fresh 7-day Ads/Meta and 30-day GA4 data pulled — GA4 sessions turned positive for the first time (+1.22%), genuine leads up to 231. Re-tested the Mailchimp connector (still blocked, 11th test)."}],"dataNotes":"See prior dashboard delta tickets for full historical data-notes trail (Aug 18 baseline through Sept 20). Sept 21 adds: Google Ads CID 5027105186 7-day totals: 453 clicks (-3.21%), $354.11 cost (+109.5%), 9,687 impressions (-7.6%), 35 conversions (+34.62%); Meta act_751457483444702 same window: $150.89 spend (+10.41%), 790 clicks (-66.24%), 16,897 impressions (+24.9%), 777 inline link clicks (-71.7%) — click-volume decline has continued and worsened, flagged for Grant, no spend/budget/status change made; GA4 30-day leads 231 (Form_Submission 188, ClickToCall 43, up from 227); GA4 30-day sessions 8,330 (+1.22%, first positive read after a multi-day easing decline); Mailchimp connector re-tested via Supermetrics, still authentication_status NOT_AUTHENTICATED (11th confirmed test), ticket 868m6pq84 unchanged; September blog rework confirmed still unpublished and correctly held at the Duda-publish hard wall, ticket 868m6gbwd unchanged, now 3 days past its 9/18 due date; RP Funding geofenced Meta campaign confirmed built and sitting in draft with a placeholder $25/day budget flagged in its own name, zero spend — real budget number from Kevin is the only remaining blocker, September expo window has now closed, unsent chase email already offers the October pivot."}
+{
+  "token": "ss-90772982",
+  "model": "lumen-marketing-engine-v1",
+  "asOf": "2026-09-22",
+  "cadence": "weekly",
+  "business": {
+    "name": "Superior Spray Service",
+    "category": "Pest control · Winter Haven / Polk County",
+    "phone": "(863) 682-0700",
+    "website": "https://www.superiorspray.com",
+    "accentColor": "#22C55E",
+    "initials": "SS",
+    "serviceArea": true
+  },
+  "healthScore": 76,
+  "healthNote": "Supporting score — the reasons are the numbers above. Never the headline.",
+  "healthScoreSource": "Lumen weighted score",
+  "heroMetrics": [
+    {
+      "key": "reviews",
+      "label": "Google reviews",
+      "value": "449",
+      "sub": "4.9★",
+      "state": "live",
+      "delta": {
+        "text": "+0 in 30 days",
+        "tone": "bad"
+      },
+      "note": "Your 4.9★ rating is best-in-class. The problem is velocity: zero new reviews in the last 30 days, while three local competitors all added reviews in the same window. This is the fastest lever you have.",
+      "source": "Google Maps · as of Aug 18"
+    },
+    {
+      "key": "adsReach",
+      "label": "Google & Meta Ads · last 7 days",
+      "value": "448 clicks",
+      "sub": "Google Ads clicks, all 3 active campaigns",
+      "state": "live",
+      "delta": {
+        "text": "$304.71 cost (-13.9%), 9,119 impressions (-5.9%), 34 conversions holding steady",
+        "tone": "watch"
+      },
+      "note": "Sept 22 refresh (CID 5027105186, last 7 days): 448 clicks, $304.71 cost, 9,119 impressions, 34 conversions across 3 campaigns (Pest Control Service, Superior-Search, Superior-Search N. FL) — cost eased back down from the prior week's spike while conversions held steady, a healthier ratio. Meta (act_751457483444702), same window: $185.10 spend, 23,756 impressions, 751 link clicks, 13,241 reach — spend and impressions both up vs the prior read, worth continuing to watch for efficiency. No spend, budget, or campaign-status changes made this run.",
+      "source": "Supermetrics pull 2026-09-22, Google Ads + Meta, last 7 days"
+    },
+    {
+      "key": "ga4Leads",
+      "label": "Form submissions + tap-to-calls (GA4) · last 30 days",
+      "value": "261",
+      "sub": "218 form submissions + 43 tap-to-calls, filtered from raw keyEvents",
+      "state": "live",
+      "delta": {
+        "text": "up from 231; raw GA4 key events remain misconfigured (page_view/user_engagement still counted)",
+        "tone": "good"
+      },
+      "note": "GA4 property 299466800 confirmed connected and flowing. 218 Form_Submission + 43 ClickToCall events over the last 30 days = 261 genuine lead actions, up from 231 last week. The GA4 key-event config itself is still junk (page_view and user_engagement are still marked as key events) — that fix needs GA4 Admin browser access, open ticket 868m21anh, unchanged.",
+      "source": "GA4 property 299466800 · Supermetrics pull 2026-09-22, last 30 days, broken out by eventName"
+    },
+    {
+      "key": "ga4Sessions",
+      "label": "Website sessions · last 30 days",
+      "value": "8,671",
+      "sub": "vs prior 30 days",
+      "state": "live",
+      "delta": {
+        "text": "up 10.7% vs the prior 30 days — the positive turn from last week has strengthened",
+        "tone": "good"
+      },
+      "note": "Last week's first-positive read (+1.22%) has continued and strengthened to +10.7% vs the prior 30 days. Source/medium breakdown to confirm what's driving the turnaround is still the next step, not yet pulled.",
+      "source": "GA4 property 299466800 · Supermetrics pull 2026-09-22, last 30 days vs prior 30 days"
+    }
+  ],
+  "projectCards": [
+    {
+      "name": "Website",
+      "status": "September evergreen blog rework (German roaches, fire ants, Meet Sean) fully drafted since 9/16, now 4 days past its 9/18 due date awaiting the Duda publish (ticket 868m6gbwd, correctly a hard wall — new public content). Pest Detectives podcast-findable page copy drafted today (was untouched since creation) — also Duda-walled (868m1xtft). GA4 sessions momentum continues to build (+10.7% 30-day). GA4 key-event cleanup still needs browser access; the Lakeland GBP verification video remains the oldest open ask.",
+      "state": "in-progress"
+    },
+    {
+      "name": "SEO",
+      "status": "Fresh backlink pull today: 2,831 total backlinks (+189), 502 referring domains (+63) since the 9/11 baseline — real citation-building traction. Local Map Pack tracking shows a genuine rank gain: \"termite treatment milton\" moved 8→5. Google Business Automation (13+ month open scope decision) resolved and closed today as superseded — SEO's move to a service-page architecture means the blog→GBP auto-repost it assumed no longer applies; GBP itself stays maintained through the $950/mo Local Map SEO line.",
+      "state": "active"
+    },
+    {
+      "name": "Pest Detectives",
+      "status": "Relaunching this August. Three shoot dates locked with Kevin & Sean: Aug 26, Sep 23, Oct 21. Podcast-findable website page (copy + nav plan) drafted today, ready to build once Duda access lands.",
+      "state": "relaunching"
+    },
+    {
+      "name": "Social",
+      "status": "3 captions (rewritten 9/18 to match the roaches/fire-ants content that actually shipped) still current, posting-walled in Meta Business Suite — new handoff filed today since none previously covered organic posting specifically. Team-photo shot list for the new uniforms + Ashley's Day in the Life ride-along drafted today; still waiting on the client to confirm uniforms arrived and anything was actually shot, now 11 days past its 9/11 due date.",
+      "state": "active"
+    },
+    {
+      "name": "Ads",
+      "status": "Fresh 7-day totals: 448 clicks, $304.71 cost (down from last week's spike), 34 conversions holding steady (Google); Meta spend and impressions both up week-over-week, efficiency worth continued watching. RP Funding Center's Meta geofenced campaign remains fully built and sitting in DRAFT (zero spend) — only Kevin's real daily budget number is missing; the drafted chase email (unsent) already offers to pivot straight to the October FallCon show. New-resident/relocation targeting still needs Grant's budget call; SEO groundwork (authority score 15/100, real headroom) reconfirmed today.",
+      "state": "active"
+    },
+    {
+      "name": "Newsletter",
+      "status": "September newsletter sent (roaches, fire ants, Meet Sean). Checking 48h open/click stats to decide on a non-opener resend remains blocked: the Mailchimp connector has now failed authentication for 12 straight test days, needs a human login, Rail-3.",
+      "state": "active"
+    }
+  ],
+  "pillars": [
+    {
+      "name": "Google Business Profile",
+      "score": 78,
+      "hero": true,
+      "bar": "watch",
+      "note": "4.9★, 449 reviews, 376+ photos — a strong profile. Docked because zero new reviews landed in 30 days (competitors added 3–13 each in the same window) and Google Posts have been quiet since June 8.",
+      "source": "Lumen assessment · Google Maps + GBP"
+    },
+    {
+      "name": "On-site conversion",
+      "score": 85,
+      "hero": true,
+      "bar": "good",
+      "note": "Phone + click-to-call in the header, a free-estimate form, a clear primary CTA, valid SSL, fast server response. Form-submit and click-to-call events now fire in GA4 (218 + 43 in the last 30 days, both up week-over-week).",
+      "source": "Lumen assessment · live site check"
+    },
+    {
+      "name": "Local map visibility",
+      "score": 65,
+      "hero": false,
+      "bar": "watch",
+      "note": "Strong organically (#3 for \"pest control Lakeland\"; \"termite treatment milton\" just moved 8→5). As a service-area business with no public storefront, your Google map presence is driven by review velocity, Google Posts, and GBP optimization rather than a storefront pin. Biggest levers now: more reviews and a steady posting cadence.",
+      "source": "Lumen assessment · SEMrush + Maps"
+    }
+  ],
+  "hygiene": {
+    "seo": 63,
+    "content": 55,
+    "note": "Ranks well for the head term; service-specific pages need on-page work. Backlink profile grew +189 links / +63 referring domains this week. Kept healthy in the background — not sold as what rings the phone.",
+    "source": "SEMrush + site audit"
+  },
+  "reviewsGap": [
+    {
+      "name": "Anti-Pesto Bug Killers",
+      "rating": "5.0",
+      "reviews": 556
+    },
+    {
+      "name": "Country Boy Pest Control",
+      "rating": "4.8",
+      "reviews": 485
+    },
+    {
+      "name": "Superior Spray Service",
+      "rating": "4.9",
+      "reviews": 449,
+      "self": true
+    },
+    {
+      "name": "Dave's Pest Control",
+      "rating": "4.8",
+      "reviews": 336
+    }
+  ],
+  "reviewsGapSource": "Google Maps · Aug 18",
+  "thisWeeksMove": {
+    "label": "GA4 momentum keeps building; a 13-month-old automation decision finally closed",
+    "body": "The GA4 sessions turnaround that started last week (+1.22%) has strengthened to +10.7% vs the prior 30 days, and genuine leads (form submissions + tap-to-calls) climbed to 261 from 231. The long-open Google Business Automation scoping question (open since GBP work was first delegated) was resolved today: closed as superseded rather than built, since SEO's move to a service-page structure means the blog-to-GBP auto-repost it assumed no longer fits the current content cadence. The September blog stays fully drafted and ready, now 4 days past due at the Duda-publish wall; the podcast-findability page and the team-photo shot list both went from untouched to fully prepped today.",
+    "cta": "Send Kevin the real daily budget number for the RP Funding campaign (or confirm pivoting to the October show); publish the September blog in Duda"
+  },
+  "lumenDid": [
+    "Reviewed your FieldRoutes lead sources for the last 30 days: Google search is driving your bookable leads, while Facebook shows next to none we can directly attribute (a portion come in as N/A or phone call-ins). That is exactly why we are doubling down on Google Ads and the website — Facebook earns its keep as top-of-funnel awareness, but search is what rings the phone",
+    "Rebuilt your Google Ads: lifted Ad Strength from Poor to Good, split Search into focused General Pest Control + Termite ad groups, and trimmed targeting to your 4 core counties (Polk, Orange, Brevard, Hillsborough) so you stop paying for Tampa/Orlando clicks",
+    "Turned off the Meta 'Audience Network' placements that were driving low-quality clicks, so more of your ad spend reaches real Central Florida prospects",
+    "Cleaned up your conversion tracking — GA4 now counts real phone calls and form submissions, not inflated page views",
+    "Locked three Pest Detectives podcast shoot dates with Kevin & Sean (Aug 26, Sep 23, Oct 21) and scheduled an August newsletter resend to 6,182 subscribers who hadn't opened yet",
+    "Sept 17-19: Shipped same-day-service ad copy to all 4 N. FL ad groups, fixed a stale-content gap on the 3 social captions, verified the AI SEO audit's NF page copy + H1 fixes are live, and pulled fresh Ads/Meta/GA4 data each day. Sessions decline eased for 5 straight days.",
+    "Sept 20: Built the RP Funding Center geofenced Meta campaign in full (1-mile radius around the expo venue, brand-matched creative, call button, Advantage+ off) and left it sitting paused in draft with zero spend, flagged with a placeholder budget in its own name so it can never be mistaken for live — only Kevin's real number is missing.",
+    "Sept 21: Fresh 7-day Ads/Meta and 30-day GA4 numbers pulled across all 6 hubs — GA4 sessions turned positive for the first time (+1.22%), genuine leads up to 231. Re-tested the Mailchimp connector (still blocked). Confirmed the RP Funding chase email and Meta campaign draft are both exactly where they should be, no duplicates, nothing sent.",
+    "Sept 22: Closed the 13+ month Google Business Automation scoping decision as superseded (not built — SEO's service-page direction made the blog→GBP repost obsolete). Wrote first concrete steps and drafted the actual copy for 2 previously-untouched deliverables: the podcast-findability page and the team-photo shot list. Refreshed backlink baseline (+189 links, +63 domains) and caught a real rank gain (termite treatment milton 8→5). Filed a new Rail-3 handoff for scheduling the drafted social captions in Meta Business Suite. GA4 momentum confirmed strengthening (+10.7% sessions, 261 leads)."
+  ],
+  "ledger": [
+    {
+      "title": "Rebuild review velocity — text recent customers",
+      "state": "next",
+      "detail": "0 new reviews in 30 days while all three local competitors gained. Fastest, cheapest lever you have."
+    },
+    {
+      "title": "Resume Google Posts",
+      "state": "next",
+      "detail": "Quiet since June 8 — posting cadence feeds your local map rank."
+    },
+    {
+      "title": "Publish the September blog post",
+      "state": "next",
+      "detail": "Fully drafted since 9/16, now 4 days past its 9/18 due date — the evergreen blog rework (roaches/fire ants/Meet Sean) is waiting only on a Duda publish pass."
+    },
+    {
+      "title": "Schedule the September social captions",
+      "state": "next",
+      "detail": "3 captions drafted and current, waiting on a Meta Business Suite login to post/schedule them."
+    },
+    {
+      "title": "Send Kevin the real RP Funding budget number",
+      "state": "next",
+      "detail": "The geofenced Meta campaign is built and sitting in draft with zero spend. The September expo window has closed; only a real budget number (or confirmation to pivot to October) unlocks it."
+    },
+    {
+      "title": "Send the SEO questionnaire + film the Lakeland GBP verification video",
+      "state": "next",
+      "detail": "Both have been outstanding since May 2025 and are the oldest open asks on the account; getting these in unlocks the next phase of local SEO and map-pack work."
+    },
+    {
+      "title": "Set a budget/timeline for new-resident/relocation ad targeting",
+      "state": "next",
+      "detail": "SEO groundwork is done and it just needs a budget call from Grant."
+    },
+    {
+      "title": "VIP Steward working run (Sept 20)",
+      "state": "done",
+      "detail": "RP Funding Meta campaign built in full and staged in draft with zero spend. Fresh Ads/Meta/GA4 data pulled 3 times across the day's runs. RP Funding chase email drafted and confirmed unsent."
+    },
+    {
+      "title": "VIP Steward working run (Sept 21)",
+      "state": "done",
+      "detail": "Fresh 7-day Ads/Meta and 30-day GA4 data pulled — GA4 sessions turned positive for the first time (+1.22%), genuine leads up to 231. Re-tested the Mailchimp connector (still blocked, 11th test)."
+    },
+    {
+      "title": "VIP Steward working run (Sept 22)",
+      "state": "done",
+      "detail": "Closed the 13-month Google Business Automation decision as superseded. Drafted first steps + copy for 2 never-started deliverables (podcast page, team-photo brief). Fresh SEO backlink data (+189 links) and a real rank gain (termite treatment milton 8→5). Filed a new handoff for social-post scheduling. GA4 momentum confirmed at +10.7% sessions / 261 leads."
+    }
+  ],
+  "dataNotes": "See prior dashboard delta tickets for full historical data-notes trail (Aug 18 baseline through Sept 21). Sept 22 adds: Google Ads CID 5027105186 7-day totals: 448 clicks, $304.71 cost, 9,119 impressions, 34 conversions (3 campaigns: Pest Control Service, Superior-Search, Superior-Search N. FL); Meta act_751457483444702 same window: $185.10 spend, 23,756 impressions, 751 link clicks, 13,241 reach; GA4 30-day leads 261 (Form_Submission 218, ClickToCall 43, up from 231); GA4 30-day sessions 8,671 (+10.7% vs prior 30 days, strengthening from last week's +1.22%); Semrush backlinks_overview superiorspray.com: 2,831 total backlinks (+189 vs 9/11), 502 referring domains (+63), authority score 15/100 unchanged; Semrush resource_organic: \"termite treatment milton\" position 8→5, other tracked terms holding; Mailchimp connector re-tested via Supermetrics, still authentication_status NOT_AUTHENTICATED (12th confirmed test), ticket 868m6pq84 unchanged; September blog rework confirmed still unpublished and correctly held at the Duda-publish hard wall, ticket 868m6gbwd unchanged, now 4 days past its 9/18 due date; Google Business Automation (8689b53b0) scoping decision closed as superseded, Bus ticket 868m21anj closed to match; new Bus handoff 868m7x2gt filed for Meta Business Suite social-post scheduling (no prior ticket covered this specifically)."
+}
