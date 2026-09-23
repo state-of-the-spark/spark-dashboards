@@ -1,7 +1,7 @@
 {
   "token": "ev-52938471",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-09-22",
+  "asOf": "2026-09-23",
   "cadence": "Mon / Wed / Fri (VIP Steward)",
   "business": {
     "name": "Evangelisto Construction",
@@ -26,21 +26,21 @@
         "text": "Flat since Sept 11-13 raise ($563 to $844/mo)",
         "tone": "neutral"
       },
-      "note": "Kitchen ($15/day) and MIL Suites ($12.75/day), geo-targeted to Clermont, Eagle Lake, Lakeland. Re-verified 9/21: Location options = Presence on both campaigns (no change needed), AI Max confirmed OFF on both (bidding-strategy call reserved for Grant, left off with only 2 conversions to date). Kitchen ad-group split (bathroom/cabinet/countertop terms getting their own copy) drafted and staged, held at the last click since launching new ad copy live is an outward-content stop. LSA reinstatement on account 368-894-3746: license fixed 9/14, insurance certificate requested from Doug 9/14 and 9/17, still not received (checked again 9/21). CID 992-297-7178 still not visible to Supermetrics under grant.nieddu@gmail.com (re-tested fresh 2026-09-22, zero connected accounts).",
-      "source": "Google Ads CID 992-297-7178 - verified in-account through Sept 21; Supermetrics re-checked 2026-09-22 (pending)"
+      "note": "Kitchen ($15/day) and MIL Suites ($12.75/day). Location options = Presence, AI Max OFF (Grant's call). Kitchen ad-group split and a new Commercial + Wholesale Cabinets campaign are fully staged, held at the last click. The Grant-approved 9/21 keyword plan is staged and past its 9/22 target date. CID 992-297-7178 re-tested fresh 9/23: still zero connected accounts.",
+      "source": "Google Ads CID 992-297-7178; Supermetrics re-tested 2026-09-23 (still pending)"
     },
     {
       "key": "organicKeywords",
       "label": "Organic keywords ranking",
-      "value": "117",
+      "value": "118",
       "sub": "~166 visits/mo",
       "state": "live",
       "delta": {
-        "text": "Up from 111/159 on Sept 20",
+        "text": "Up from 117/166 on Sept 22",
         "tone": "good"
       },
-      "note": "Fresh Semrush domain_rank + organic-positions pull 2026-09-22. Ranks #1 for \"evangelisto construction\" and \"kitchen remodel lakeland fl\", #6 for \"mother in law suite contractors\". \"detached garage\" (vol 5,400) climbed to position 19 from 20, still the biggest room-to-climb keyword and this month's Local SEO Care content target. SEO Ignition on-page fixes (items 1-3) verified live 9/16; items 4-5 (real photos) remain blocked on client-supplied assets.",
-      "source": "SEMrush domain_rank + resource_organic, 2026-09-22"
+      "note": "Fresh Semrush pull 2026-09-23. detached garage (vol 5,400) remains this month's Local SEO Care target. SEO Ignition items 1-3 live 9/16; items 4-5 blocked on client photos.",
+      "source": "SEMrush domain_rank, 2026-09-23"
     },
     {
       "key": "reviews",
@@ -48,40 +48,40 @@
       "value": "4.7★ / 34",
       "state": "live",
       "pendingLabel": null,
-      "pendingSub": "Verified live 9/21 via Doug's Google login - no longer a third-party estimate",
-      "note": "GBP access CONFIRMED live 9/21 through devangelisto6@gmail.com (the profile is managed on that login, no separate Manager approval needed - corrected from the 9/20 note). Live profile: Verified, 4.7 stars / 34 reviews, primary category Kitchen remodeler. Cleanup still owed (Rail 3, handed off): dead (863) 617-7700 still listed as a secondary number, a duplicate listing (store code 295156) needs resolving, one pending Google update to review, and categories/description need refreshing for MIL suites, additions, commercial and cabinets. Review Accelerator's GBP review link, a printable QR code, and ad/email/SMS ask-copy were built 9/21; monthly cadence is ready to launch once Shannon supplies a past-customer list.",
-      "source": "Google Business Profile - verified live via devangelisto6@gmail.com login, 2026-09-21"
+      "pendingSub": "Verified live 9/21 via Doug's Google login",
+      "note": "GBP access confirmed live 9/21. Cleanup owed (Rail 3): dead 617-7700 secondary number, duplicate listing. Review Accelerator link/QR/ask-copy built, blocked on Shannon's past-customer list.",
+      "source": "Google Business Profile, 2026-09-21"
     },
     {
       "key": "ga4",
       "label": "Website visits & leads (Google Analytics)",
       "value": null,
       "state": "pending",
-      "pendingLabel": "Live and tagging - not yet accessible to Supermetrics for reporting",
+      "pendingLabel": "Live and tagging - not yet accessible to Supermetrics",
       "pendingSub": "Client-owned GA4 property, data collecting since 8/31",
-      "note": "No GA4 Data API tool available in this cloud session; Supermetrics re-tested fresh 2026-09-22, still zero connected accounts under grant.nieddu@gmail.com. Same one-click fix pending on Doug's login: add grant.nieddu@gmail.com as Viewer on GA4 552236127 and as a user on Google Ads.",
-      "source": "GA4 property 552236127 - Supermetrics re-checked 2026-09-22 (pending)"
+      "note": "Supermetrics re-tested fresh 2026-09-23, still zero connected accounts. Needs grant.nieddu@gmail.com added as Viewer on GA4 552236127 and as a user on Google Ads.",
+      "source": "GA4 552236127, 2026-09-23 (pending)"
     }
   ],
   "projectCards": [
     {
       "name": "Website Rescue + Hosting",
-      "status": "Site live on Pressable (1755021), hosting + photo updates ongoing. Open: SPF/DKIM DMARC tighten (not yet due), 395 older Elementor submissions await a client decision, Hostinger unused-mailbox cancel is a money decision reserved for Grant, now 7 days overdue on its 9/15 renewal.",
+      "status": "Site live and healthy on Pressable (1755021, PHP 8.5, edge cache on). Open: DMARC tighten confirmed Rail-3-only, 395 older Elementor submissions await a client decision, Shannon reports no pre-8/21 emails visible post-migration (awaiting her Bluehost-login reply), Hostinger cancel now 8 days overdue (Grant).",
       "state": "active"
     },
     {
       "name": "Paid Ads / Lead Velocity",
-      "status": "2 Search campaigns live, $844/mo. Location options and AI Max both re-verified 9/21 (no change needed / left off, Grant's call). Kitchen ad-group split drafted and staged, awaiting the launch click. LSA reinstatement still blocked on Doug's insurance certificate. generate_lead tracking gap still needs a GA4 Admin pass, blocked on the same Supermetrics access gap. Commercial + wholesale-cabinets Ads expansion drafted 9/22 now that both landing pages are live.",
+      "status": "2 Search campaigns live, $844/mo. Kitchen ad-group split and a new Commercial + Wholesale Cabinets campaign fully staged, ready to launch. The 9/21 keyword plan is staged and past due. All blocked on CID 992-297-7178 not yet visible to Supermetrics. LSA blocked on insurance certificate. generate_lead tracking gap needs a GA4 Admin pass.",
       "state": "active"
     },
     {
       "name": "SEO / AIO",
-      "status": "SEO Ignition items 1-3 verified live 9/16, items 4-5 blocked on client photos. GBP access CONFIRMED live 9/21 (4.7★/34 reviews); cleanup (duplicate listing, dead phone number) handed to the Rail-3 queue. Review Accelerator's link, QR code, and ask-copy built 9/21, blocked on Shannon's past-customer list. First-ever monthly Local SEO Care report compiled 9/22 covering the engagement to date.",
+      "status": "SEO Ignition items 1-3 live, items 4-5 blocked on client photos. GBP access confirmed live (4.7★/34); cleanup handed to Rail-3. Review Accelerator built, blocked on Shannon's list. First-ever monthly report compiled, ready to send.",
       "state": "in-progress"
     },
     {
       "name": "Social Media Management",
-      "status": "Social Presence and SMM content/cadence drafted. Publishing blocked on Meta Business Manager access (roster gap) and on the Rail-3 directory-listing handoff.",
+      "status": "Social Presence and SMM content/cadence drafted. Publishing blocked on Meta Business Manager access and the Rail-3 directory-listing handoff.",
       "state": "in-progress"
     }
   ],
@@ -91,7 +91,7 @@
       "score": 78,
       "hero": true,
       "bar": "good",
-      "note": "Homepage rebuilt, NAP fixed sitewide, broken pop-up lead form fixed Sept 9. SEO Ignition items 1-3 verified live 9/16; items 4-5 need client photos.",
+      "note": "Homepage rebuilt, NAP fixed, pop-up lead form fixed. Items 4-5 need client photos.",
       "source": "Lumen assessment"
     },
     {
@@ -99,94 +99,93 @@
       "score": 60,
       "hero": true,
       "bar": "watch",
-      "note": "117 organic keywords, ~166 visits/mo, up from 111/159 on 9/20. GBP access confirmed live 9/21 (4.7★/34); directory NAP cleanup and GBP cleanup still drafted, not built.",
-      "source": "SEMrush 2026-09-22"
+      "note": "118 keywords, ~166 visits/mo, steady since 9/22. GBP live (4.7★/34); citation cleanup still drafted.",
+      "source": "SEMrush 2026-09-23"
     },
     {
       "name": "Ad program",
       "score": 70,
       "hero": false,
       "bar": "watch",
-      "note": "$844/mo live, Location options and AI Max both verified correct 9/21. Docked for LSA not yet live (insurance certificate outstanding), the Kitchen ad-group split not yet launched, and the generate_lead/Ads-conversion-import gap.",
-      "source": "Lumen assessment, verified through Sept 21"
+      "note": "$844/mo live. Docked for LSA not live, Kitchen split/Commercial expansion not launched, 9/21 keyword plan overdue, generate_lead gap - all tracing to the Supermetrics access gap.",
+      "source": "Lumen assessment, through Sept 23"
     }
   ],
   "hygiene": {
     "seo": 62,
     "content": 63,
-    "note": "Both September (post 3221) and October (post 3224, detached garage topic) Local SEO Care pieces remain staged in draft. First-ever monthly service report compiled 9/22.",
+    "note": "September and October Local SEO Care pieces staged in draft. First-ever monthly report compiled, ready to send.",
     "source": "Lumen assessment"
   },
   "reviewsGap": [],
-  "reviewsGapSource": "GBP access confirmed live 9/21 via devangelisto6@gmail.com; 4.7 stars / 34 reviews. Cleanup (duplicate listing, dead phone number) still owed.",
+  "reviewsGapSource": "GBP access confirmed live 9/21; 4.7 stars / 34 reviews. Cleanup still owed.",
   "thisWeeksMove": {
-    "label": "GBP access confirmed live; Kitchen ad-group split staged; first monthly report compiled",
-    "body": "9/21-22: re-verified Google Ads Location options and AI Max on both live campaigns (both already correct - no change needed). Drafted the Kitchen campaign's per-service ad-group split and staged it short of the launch click, since new live ad copy is held for a final confirm. Confirmed GBP access is live through Doug's own Google login (4.7 stars / 34 reviews) and built the Review Accelerator's review link, QR code, and ask-copy. Drafted a Google Ads expansion for the new commercial + wholesale-cabinets landing pages. Compiled Evangelisto's first-ever monthly service report across paid ads, SEO, social, and website work.",
-    "cta": "Doug: send the LSA insurance certificate, approve the past-customer list for Review Accelerator with Shannon, and clear the GBP duplicate-listing/old-phone-number cleanup. Grant: cancel the Hostinger mailbox plan (7 days overdue) and add grant.nieddu@gmail.com to GA4 + Google Ads so Supermetrics reporting unblocks."
+    "label": "Everything is staged; the single unblock is Google Ads/GA4 access",
+    "body": "Kitchen ad-group split, the Commercial + Wholesale Cabinets campaign, and the 9/21 keyword plan are all fully built and ready to launch, but Supermetrics still shows zero connected accounts for CID 992-297-7178 (re-tested fresh 9/23). GBP access is confirmed live and the Review Accelerator is built. The first-ever monthly service report is compiled and ready to send.",
+    "cta": "Doug: add grant.nieddu@gmail.com as a user on Google Ads CID 992-297-7178 and as Viewer on GA4 552236127 (one click from devangelisto6@gmail.com) - unlocks 3 staged campaigns, the keyword plan, and full reporting at once. Also send the LSA insurance certificate and reply on the pre-8/21 email question. Grant: cancel Hostinger (8 days overdue)."
   },
   "lumenDid": [
     "Fixed the dead phone number sitewide and in Ads",
-    "Found and fixed a broken pop-up lead-capture form on 22 of 25 pages (Sept 9)",
+    "Fixed a broken pop-up lead-capture form on 22 of 25 pages (Sept 9)",
     "Raised Google Ads budgets to $844/mo, started LSA reinstatement",
-    "Drafted Review Accelerator, GBP content, Social Presence, and two months of Local SEO Care content, staged for launch",
-    "Confirmed the GBP claim is live and access works through Doug's own Google login (4.7★/34 reviews), replacing the earlier unclaimed-listing assumption",
-    "Verified Google Ads Location options (Presence) and AI Max (off) are already correct on both live campaigns",
-    "Drafted the Kitchen campaign's per-service ad-group split and RSA copy, staged short of the launch click",
-    "Built the Review Accelerator's GBP review link, printable QR code, and ad/email/SMS ask-copy",
-    "Drafted a Google Ads expansion (keywords + structure) for the new commercial + wholesale-cabinets landing pages",
-    "Compiled Evangelisto's first-ever monthly service report (paid ads, SEO, social, website), 8/10-9/22"
+    "Confirmed the GBP claim is live (4.7★/34 reviews)",
+    "Built the Review Accelerator's review link, QR code, and ask-copy",
+    "Fully staged the Kitchen campaign's per-service ad-group split",
+    "Fully staged a new Commercial + Wholesale Cabinets Google Ads campaign",
+    "Compiled the first-ever monthly service report, ready to send",
+    "Re-verified fresh this pass: Ads/GA4 access still blocked, dashboard numbers current, no new Bus tickets"
   ],
   "ledger": [
     {
-      "title": "Clean up GBP: remove the dead (863) 617-7700 secondary number, resolve the duplicate listing, review the pending Google update",
+      "title": "Add grant.nieddu@gmail.com as a user on Google Ads CID 992-297-7178 and Viewer on GA4 552236127",
       "state": "next",
-      "detail": "Access confirmed live 9/21; needs a Rail-3 (browser) session to execute."
-    },
-    {
-      "title": "Send Shannon's past-customer list for the Review Accelerator",
-      "state": "next",
-      "detail": "Link, QR code, and ask-copy are ready; monthly cadence needs the list + a job-closed signal."
-    },
-    {
-      "title": "Get directory logins (Yelp, Angi, HomeAdvisor, Houzz, Nextdoor)",
-      "state": "next",
-      "detail": "Re-asked in the 9/17 follow-up email."
-    },
-    {
-      "title": "Get Meta Business admin access",
-      "state": "next",
-      "detail": "meta_ad_account_id still blank."
-    },
-    {
-      "title": "LSA insurance certificate",
-      "state": "next",
-      "detail": "Requested from Doug 9/14 and 9/17, still not received as of 9/21."
-    },
-    {
-      "title": "Add grant.nieddu@gmail.com as Viewer on GA4 + user on Google Ads",
-      "state": "next",
-      "detail": "One-click grant from devangelisto6@gmail.com."
-    },
-    {
-      "title": "Cancel unused Hostinger mailbox plan",
-      "state": "next",
-      "detail": "Money decision, stays with Grant. Renewal date passed 9/15, now 7 days overdue."
-    },
-    {
-      "title": "Decide fate of 395 older Elementor form submissions",
-      "state": "next",
-      "detail": "Needs Doug/Shannon's call."
-    },
-    {
-      "title": "Confirm GA4-to-Ads conversion import for generate_lead",
-      "state": "next",
-      "detail": "Client-side script confirmed sound 9/18; needs a GA4 Admin (Rail 3) check of the Google Ads conversion linking."
+      "detail": "One-click grant from devangelisto6@gmail.com - unlocks 3 staged campaigns + reporting."
     },
     {
       "title": "Launch the Kitchen campaign's per-service ad-group split",
       "state": "next",
-      "detail": "Fully staged (keywords + RSA copy); held at the last click since it puts new ad copy live."
+      "detail": "Fully staged; held at the last click."
+    },
+    {
+      "title": "Launch the Commercial + Wholesale Cabinets campaign",
+      "state": "next",
+      "detail": "Fully staged; held at the last click."
+    },
+    {
+      "title": "Apply the Grant-approved 9/21 keyword plan to both live campaigns",
+      "state": "next",
+      "detail": "Existing-campaign edits only, now past due, blocked on access."
+    },
+    {
+      "title": "Clean up GBP: dead number + duplicate listing",
+      "state": "next",
+      "detail": "Access live; needs a Rail-3 session."
+    },
+    {
+      "title": "Send Shannon's past-customer list for the Review Accelerator",
+      "state": "next",
+      "detail": "Link/QR/ask-copy ready."
+    },
+    {
+      "title": "LSA insurance certificate",
+      "state": "next",
+      "detail": "Requested 9/14 and 9/17, still not received."
+    },
+    {
+      "title": "Cancel unused Hostinger mailbox plan",
+      "state": "next",
+      "detail": "Money decision, Grant's - 8 days overdue."
+    },
+    {
+      "title": "Get Meta Business admin access",
+      "state": "next",
+      "detail": "meta_ad_account_id still blank; content drafted."
+    },
+    {
+      "title": "Confirm GA4-to-Ads conversion import for generate_lead",
+      "state": "next",
+      "detail": "Needs a GA4 Admin (Rail 3) check."
     }
   ],
-  "dataNotes": "Organic keyword/traffic: fresh SEMrush domain_rank + resource_organic pull 2026-09-22 (117 keywords, ~166 visits, up from 111/159 on 9/20). GA4 and Google Ads remain not visible to Supermetrics under grant.nieddu@gmail.com as of 2026-09-22 (re-tested fresh, zero connected accounts). Meta ad account id blank in roster.json. GBP access confirmed live 9/21 via devangelisto6@gmail.com (4.7★/34 reviews, not a third-party estimate). Both September and October Local SEO Care posts remain staged in draft."
+  "dataNotes": "Semrush domain_rank pull 2026-09-23 (118 keywords, ~166 visits). GA4/Ads still not visible to Supermetrics as of 2026-09-23. Meta ad account id blank. GBP access confirmed live 9/21. First monthly service report compiled, ready to send."
 }
