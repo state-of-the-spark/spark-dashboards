@@ -1,7 +1,7 @@
 {
   "token": "hu-10004649",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-09-23",
+  "asOf": "2026-09-24",
   "cadence": "3x daily working run + Mon/Wed/Fri pulse",
   "business": {
     "name": "Humarian",
@@ -19,41 +19,41 @@
     {
       "key": "purchases",
       "label": "Purchases - last 7 days",
-      "value": "9",
-      "sub": "add_to_cart 67 in the same window (intentional conversion proxy, GA4 purchase attribution is broken post-checkout for this client)",
+      "value": "8",
+      "sub": "add_to_cart 44 in the same window (intentional conversion proxy, GA4 purchase attribution is broken post-checkout for this client)",
       "state": "live",
       "delta": {
-        "text": "Purchases -10% vs prior 7 days, add_to_cart +76% vs prior 7 days, sessions -18.7% (re-pulled this pass, session count moved off the earlier +8.7% read within the same day - GA4 same-day processing lag, not a new trend). ATC volume rising faster than purchases - watch, not yet a red flag given the small base.",
+        "text": "Purchases -20.0% vs prior 7 days, add_to_cart -15.4% vs prior 7 days, sessions +0.5%. Both purchases and add_to_cart eased back this week after last week's spike; sessions held flat.",
         "tone": "watch"
       },
       "note": "Shopify order-count cross-check still not possible - Supermetrics Shopify remains NOT_AUTHENTICATED (open ticket 868m6gb80).",
-      "source": "GA4 property 255641365 - re-pulled Sept 23, 2026 working run (3rd pull today)"
+      "source": "GA4 property 255641365 - pulled Sept 24, 2026 working run"
     },
     {
       "key": "addToCart",
       "label": "Add-to-cart - last 7 days",
-      "value": "67",
-      "sub": "purchases 9 in the same window - ratio 13.4% (intentional proxy, reported side by side, never flagged as junk)",
+      "value": "44",
+      "sub": "purchases 8 in the same window - ratio 18.2% (intentional proxy, reported side by side, never flagged as junk)",
       "state": "live",
       "delta": {
-        "text": "Up 76% vs prior 7 days, matching this morning's and midday's reads exactly - confirms stability, not drift.",
+        "text": "Down 15.4% vs prior 7 days - last week's +76% read was a spike (driven mostly by two high days, 9/16 and 9/18); this week is back near the 3-week baseline.",
         "tone": "neutral"
       },
-      "note": "30-day re-pull this pass: sessions 15,098 (-40.2%), add_to_cart 659 events (-40.8%), purchase 102 events (-17.1%) vs prior 30 days - all three down together, consistent with the traffic pullback, not a new tracking break.",
-      "source": "GA4 property 255641365 - re-pulled Sept 23, 2026 working run (3rd pull today)"
+      "note": "9/17-9/23 vs 9/10-9/16, day-by-day GA4 pull. Sessions 2,047 vs 2,037 (+0.5%).",
+      "source": "GA4 property 255641365 - pulled Sept 24, 2026 working run"
     },
     {
       "key": "adsReach",
       "label": "Meta Ads - last 7 days",
-      "value": "16,927",
-      "sub": "impressions - $169.69 spend - 1,291 clicks (SG Ad 3b/4b still delivering)",
+      "value": "15,268",
+      "sub": "impressions - $155.11 spend - 1,202 clicks (SG Ad 3b/4b still delivering)",
       "state": "live",
       "delta": {
-        "text": "Spend -25.3%, impressions -13.8%, clicks -11.2% vs prior 7 days; CTR up 3.0% to 7.63%. Matches earlier passes today within rounding - stable, no new deviation.",
-        "tone": "neutral"
+        "text": "Spend -34.2%, impressions -26.5%, clicks -20.9% vs prior 7 days; CTR 7.87% (up from 7.32%). Broad pullback across the account this week.",
+        "tone": "watch"
       },
-      "note": "9 unpublished staged edits in the Meta account still await a publish/discard click (868m4tr4j) - filed as a standalone Rail-3 handoff this pass (never had its own ticket before, only carried on hub comments).",
-      "source": "Meta Ads via Supermetrics - act_337218486645475 - re-pulled Sept 23, 2026 working run"
+      "note": "9 (actually 12) unpublished staged edits in the Meta account still await Grant's publish/discard click (ticket 868m8mnt3, exact click posted 9/23 16:40 ET, still open as of this pass).",
+      "source": "Meta Ads via Supermetrics - act_337218486645475 - pulled Sept 24, 2026 working run"
     },
     {
       "key": "googleAds",
@@ -62,27 +62,27 @@
       "sub": "AW - Branded Search ($20/day, Maximize Clicks, $1 CPC cap) + AW - Search - Non-Branded - Pet Symptoms ($10/day, manual CPC)",
       "state": "live",
       "delta": {
-        "text": "Re-verified live via campaign_and_resource_get this pass - only these 2 campaigns ENABLED, everything else (Women's Digestive, all Blog/PMax/legacy campaigns) confirmed PAUSED, matching the roster's money-wall list. No status changes made.",
+        "text": "Re-verified live via campaign_and_resource_get this pass - only these 2 campaigns ENABLED, everything else (Women's Digestive, all Blog/PMax/legacy campaigns) confirmed PAUSED. No status changes made.",
         "tone": "neutral"
       },
-      "note": "Target Impression Share switch (868m5f8mw) stays CLOSED/complete - superseded 9/22 by Grant's direct call to Maximize Clicks. Women's Digestive re-enable (868m4p2c6) stays BLOCKED-ON-CLIENT, a go/no-go for Grant.",
-      "source": "Google Ads 4875571866 via Supermetrics - re-verified Sept 23, 2026 working run"
+      "note": "Women's Digestive re-enable (868m4p2c6) stays BLOCKED-ON-CLIENT, a go/no-go for Grant.",
+      "source": "Google Ads 4875571866 via Supermetrics - re-verified Sept 24, 2026 working run"
     }
   ],
   "projectCards": [
     {
       "name": "Paid Ads - Google",
-      "status": "Branded Search on Maximize Clicks, $20/day, $1 CPC cap (Grant's 9/22 call). Pet Symptoms $10/day manual CPC, still 0 conversions - landing-page/bid issue, unchanged. Women's Digestive campaign confirmed PAUSED, re-enable is Grant's go/no-go.",
+      "status": "Branded Search on Maximize Clicks, $20/day, $1 CPC cap. Pet Symptoms $10/day manual CPC, still 0 conversions - landing-page/bid issue, unchanged. Women's Digestive campaign confirmed PAUSED, re-enable is Grant's go/no-go.",
       "state": "active"
     },
     {
       "name": "Paid Ads - Meta",
-      "status": "SG Ad 3b/4b (Bentley-free rebuild) still ACTIVE, delivering. 9 unpublished staged edits now have their own Rail-3 handoff (filed this pass) instead of only living in hub comments.",
+      "status": "SG Ad 3b/4b (Bentley-free rebuild) still ACTIVE, delivering. 9 (really 12) unpublished staged edits still await Grant's publish/discard click in Meta Business Manager - exact click posted on ticket 868m8mnt3, still open.",
       "state": "active"
     },
     {
       "name": "Attribution & Tracking",
-      "status": "7-day: purchases -10%, add_to_cart +76%. 30-day re-pull this pass: sessions/ATC/purchase all down together (-40%/-41%/-17%) - a broad pullback, not a one-step tracking break. Shopify cross-check still blocked (Supermetrics Shopify NOT_AUTHENTICATED, ticket 868m6gb80).",
+      "status": "7-day: purchases -20%, add_to_cart -15% (both easing back after last week's spike). /probonix and /drz direct-traffic anomaly re-checked: down to 5.5% of Direct sessions from 57% on 9/8 - largely resolved, still 0 add-to-cart on those paths. Shopify cross-check still blocked (ticket 868m6gb80).",
       "state": "active"
     },
     {
@@ -92,17 +92,17 @@
     },
     {
       "name": "SEO / AIO",
-      "status": "Women's Probiotic page redirect still waiting on Sean/Amber's strain-count answer (8 vs 12). Judge.me roll-up remains a capability gap. Two vendor emails (PageFly, Everflow) confirmed still not actually drafted anywhere in ClickUp despite being marked 'ready to send.'",
+      "status": "Women's Probiotic page redirect still waiting on Sean/Amber's strain-count answer (8 vs 12). Judge.me roll-up remains a capability gap. Two vendor emails (PageFly, Everflow) still not actually drafted anywhere in ClickUp despite being marked 'ready to send.'",
       "state": "in-progress"
     },
     {
       "name": "Social Media Management",
-      "status": "3 fresh TikTok/IG captions written this run's earlier pass (pet gut health, kids back-to-school, Probonics education) - still need Nicole/Amber or a Rail-3 pass to post, no native posting connector this session.",
+      "status": "3 fresh TikTok/IG captions (written 9/23: pet gut health, kids back-to-school, Probonics education) still need Nicole/Amber or a Rail-3 pass to post - no native posting connector this session.",
       "state": "in-progress"
     },
     {
       "name": "Influencer / UGC",
-      "status": "10 UGC creators for Subscribe & Save (868kzjh7f) worked this pass - creator-criteria brief + first-contact outreach template written directly on the subtask, now MOVING on Nicole's side. Seasonal header copy still awaiting placement/sign-off (19 days idle).",
+      "status": "10 UGC creators for Subscribe & Save (868kzjh7f): creator-criteria brief + first-contact outreach template written 9/23, now MOVING on Nicole's side. Seasonal header copy still awaiting placement/sign-off (20 days idle).",
       "state": "active"
     }
   ],
@@ -113,23 +113,23 @@
       "hero": true,
       "bar": "good",
       "note": "WebP hero-image swap (4 pre-converted images) still queued for Lumen's Rail-3 pass.",
-      "source": "Lumen assessment - Sept 23"
+      "source": "Lumen assessment - Sept 24"
     },
     {
       "name": "Attribution & tracking",
-      "score": 64,
+      "score": 66,
       "hero": true,
       "bar": "watch",
-      "note": "30-day sessions/ATC/purchase all down together (-40%/-41%/-17%) - broad pullback, Shopify cross-check still blocked.",
-      "source": "Lumen assessment - Supermetrics GA4, re-verified Sept 23"
+      "note": "/probonix and /drz direct-traffic anomaly largely resolved (5.5% of Direct sessions this week vs 57% on 9/8). Shopify cross-check still blocked.",
+      "source": "Lumen assessment - Supermetrics GA4, re-verified Sept 24"
     },
     {
       "name": "Ad program",
       "score": 67,
       "hero": false,
       "bar": "watch",
-      "note": "Google: only 2 campaigns ENABLED, Branded Search ramping on Maximize Clicks. Meta: Bentley-free ad workaround still delivering; 9 staged edits now formally handed off.",
-      "source": "Lumen assessment - Google Ads + Meta Ads, Sept 23"
+      "note": "Google: only 2 campaigns ENABLED, Branded Search on Maximize Clicks. Meta: broad pullback this week (spend -34%, clicks -21%); 12 staged edits still await Grant's click.",
+      "source": "Lumen assessment - Google Ads + Meta Ads, Sept 24"
     }
   ],
   "hygiene": {
@@ -148,29 +148,34 @@
   ],
   "reviewsGapSource": "Judge.me - product-level. Store-wide roll-up still blocked, no connector exists.",
   "thisWeeksMove": {
-    "label": "Get the 9 unpublished Meta staged edits resolved and the 3 fresh social captions scheduled",
-    "body": "The 9 unpublished staged edits in the Meta account have sat untouched since being flagged - now formally handed to Lumen as their own Rail-3 ticket instead of only living in hub comments. Separately, 3 fresh TikTok/IG captions (written this run) need Nicole/Amber or a Rail-3 pass to actually post.",
-    "cta": "Lumen: publish or discard the 9 staged Meta edits, and swap the 4 pre-converted WebP hero images into the Women's page theme."
+    "label": "Get the 12 unpublished Meta staged edits resolved and the 3 fresh social captions scheduled",
+    "body": "The Meta staged edits (1 campaign, 4 ad sets, 7 ads - 12 total, not the originally-reported 9) still await Grant's publish/discard click; the exact click is posted on ticket 868m8mnt3. Separately, 3 fresh TikTok/IG captions from 9/23 need Nicole/Amber or a Rail-3 pass to actually post.",
+    "cta": "Grant: open Meta Ads Manager, click Review and publish (12), publish the SmileGuard creative refresh and discard the rest per the ticket's suggested default."
   },
   "lumenDid": [
-    "Sept 23 (VIP Steward working run, 3rd pass today): Re-verified GA4 (7d + 30d), Google Ads (live campaign list) and Meta Ads (7d) - all numbers stable within rounding of the earlier two passes today, no new drift found.",
-    "Sept 23: Filed a standalone Rail-3 handoff for the 9 unpublished Meta staged edits (868m4tr4j) - this item had never had its own Bus ticket before, only hub comments.",
+    "Sept 24 (VIP Steward working run): Re-pulled GA4 (7d vs prior 7d), Google Ads (live campaign list) and Meta Ads (7d vs prior 7d) - purchases and add_to_cart eased back from last week's spike, sessions flat, Meta spend/clicks/impressions down across the board.",
+    "Sept 24: Re-checked the /probonix and /drz direct-traffic anomaly first flagged 9/8 (2,154 direct sessions, 57% of Direct, suspected bot) - now down to 30 combined direct sessions this week, 5.5% of Direct - largely resolved. Also found the URLs carry real Everflow-style affiliate params, suggesting affiliate-redirect traffic rather than a bot, pending Shawn/Rick confirmation. Posted finding on subtask 868m2y7t3.",
+    "Sept 24: Confirmed the Meta 12-item staged-edit wall (ticket 868m8mnt3) is unchanged and still awaiting Grant's click - not re-tested a second time today per doctrine, exact click already posted 9/23.",
+    "Sept 23 (prior pass): Filed a standalone Rail-3 handoff for the unpublished Meta staged edits - this item had never had its own Bus ticket before, only hub comments.",
     "Sept 23: Worked the standalone Influencer/UGC subtask 868kzjh7f (recruit 10 UGC creators) - wrote a creator-criteria brief and first-contact outreach template directly on the subtask.",
-    "Sept 23 (earlier passes): Confirmed the Target Impression Share subtask (868m5f8mw) closed - superseded by Grant's direct call to Maximize Clicks, $20/day, $1 CPC cap. Wrote 3 new TikTok/IG captions. Worked 4 standalone Content Support list tasks. Checked Supermetrics manage_dashboards for a scheduled Google Ads report - none exist.",
     "Sept 21 3pm ET: Duplicate badge image on the Women's product page deleted.",
-    "Sept 20 11am ET: Confirmed SG Ad 3b delivering real spend/clicks after clearing Meta review.",
     "Sept 11: Found and fixed the GA4 double-count."
   ],
   "ledger": [
     {
-      "title": "9 unpublished Meta staged edits - handoff filed",
+      "title": "/probonix + /drz direct-traffic anomaly re-checked",
+      "state": "done",
+      "detail": "Down to 5.5% of Direct sessions this week from 57% on 9/8 - largely resolved. URLs carry Everflow-style affiliate params, not a plain 404/bot pattern. Posted on subtask 868m2y7t3."
+    },
+    {
+      "title": "12 unpublished Meta staged edits - still awaiting Grant's click",
       "state": "next",
-      "detail": "Never had its own Bus ticket before (only hub comments since 9/13). Filed this pass as a standalone Rail-3 handoff for Lumen: publish or discard in Meta Business Manager."
+      "detail": "Ticket 868m8mnt3 open since 9/23 with the exact click (Review and publish (12), publish SG creative refresh, discard the rest). Unchanged this pass."
     },
     {
       "title": "UGC creator recruitment brief written",
       "state": "next",
-      "detail": "Subtask 868kzjh7f: creator-criteria brief + first-contact outreach template written directly on the subtask for Nicole. Recruitment itself is human outreach."
+      "detail": "Subtask 868kzjh7f: creator-criteria brief + first-contact outreach template written 9/23 for Nicole. Recruitment itself is human outreach."
     },
     {
       "title": "Target Impression Share -> Maximize Clicks",
@@ -183,16 +188,6 @@
       "detail": "Original ads stayed walled; new ads (SG Ad 3b/4b) built instead. ACTIVE and delivering."
     },
     {
-      "title": "Duplicate badge image - Women's product",
-      "state": "done",
-      "detail": "Deleted 9/21."
-    },
-    {
-      "title": "7-day ATC-up / purchase-down divergence",
-      "state": "next",
-      "detail": "add_to_cart +76% w/w vs purchase -10% w/w, stable across 3 pulls today. Needs Shopify order counts to confirm - Supermetrics Shopify still NOT_AUTHENTICATED, open ticket 868m6gb80."
-    },
-    {
       "title": "3 fresh social captions - written, not scheduled",
       "state": "next",
       "detail": "Pet gut health, kids back-to-school, Probonics education - posted to hub subtask 868m41332. Needs Nicole/Amber or a Rail-3 pass to post."
@@ -203,14 +198,9 @@
       "detail": "4 images pre-converted, needs a theme Liquid edit, queued for Lumen (ticket 868m6pqc7)."
     },
     {
-      "title": "Google Ads Tuesday-Tuesday report cycle",
-      "state": "next",
-      "detail": "No Supermetrics scheduled dashboard exists for this account (checked 9/23, 0 results). Report source unclear, unresolved."
-    },
-    {
       "title": "2 vendor emails (PageFly, Everflow) - not actually drafted",
       "state": "next",
-      "detail": "Confirmed again this pass: no draft text exists anywhere in ClickUp despite being marked 'drafted, ready to send.'"
+      "detail": "Still no draft text anywhere in ClickUp despite being marked 'drafted, ready to send.'"
     },
     {
       "title": "QuickBooks hourly channel ($60/hr, customer 139)",
@@ -218,10 +208,10 @@
       "detail": "No QuickBooks connector this session - Website & Content Support billing line still unreconciled against QBO."
     },
     {
-      "title": "VIP Steward working run (Sept 23, 3rd pass)",
+      "title": "VIP Steward working run (Sept 24)",
       "state": "done",
-      "detail": "Read all 5 hubs plus open subtasks and comments since the last pass, re-verified hero metrics for stability, filed 1 new Rail-3 handoff, worked 1 standalone UGC subtask, pushed this dashboard."
+      "detail": "Read all 5 hubs plus open subtasks and comments, re-pulled GA4/Ads/Meta, re-verified the /probonix affiliate-traffic finding with fresh data, confirmed the Meta staged-edit wall unchanged, pushed this dashboard."
     }
   ],
-  "dataNotes": "GA4 property 255641365 re-pulled Sept 23, 2026 (3rd pull today; 7d-vs-prior-7d and 30d-vs-prior-30d). GA4 duplicate-tag bug corrected Sept 11, figures before that are not comparable. Meta act_337218486645475 re-pulled Sept 23 (7d-vs-prior-7d). Google Ads 4875571866 campaign list re-verified live Sept 23 (only 2 campaigns ENABLED). Judge.me reviews as of 2026-08-02. Shopify order data, not GA4, remains the trustworthy source for revenue - the Supermetrics Shopify source is still NOT_AUTHENTICATED this session, so the ATC/purchase divergence stays unconfirmed. add_to_cart is Humarian's intentional attribution proxy (checkout severs client_id in GA4) - always reported alongside purchases with the ratio, never flagged as junk."
+  "dataNotes": "GA4 property 255641365 pulled Sept 24, 2026 (7d-vs-prior-7d, day-by-day). GA4 duplicate-tag bug corrected Sept 11, figures before that are not comparable. Meta act_337218486645475 pulled Sept 24 (7d-vs-prior-7d, day-by-day). Google Ads 4875571866 campaign list re-verified live Sept 24 (only 2 campaigns ENABLED). Judge.me reviews as of 2026-08-02. Shopify order data, not GA4, remains the trustworthy source for revenue - the Supermetrics Shopify source is still NOT_AUTHENTICATED this session, so the ATC/purchase divergence stays unconfirmed. add_to_cart is Humarian's intentional attribution proxy (checkout severs client_id in GA4) - always reported alongside purchases with the ratio, never flagged as junk."
 }
