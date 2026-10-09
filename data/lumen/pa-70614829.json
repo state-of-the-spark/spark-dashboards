@@ -1,8 +1,8 @@
 {
   "token": "pa-70614829",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-09-23",
-  "cadence": "Mon / Wed / Fri (VIP Steward)",
+  "asOf": "2026-10-08",
+  "cadence": "VIP Steward (Lumen Task Protocol, working run)",
   "business": {
     "name": "Projects Analytics",
     "category": "Construction scheduling software - B2B SaaS",
@@ -19,93 +19,87 @@
     {
       "key": "costPerFormFill",
       "label": "Cost per form fill",
-      "value": "$311.73 combined (Sep 1-23 to date)",
-      "sub": "Asta Powerproject - Exact: $451.57 / 81 clicks / 1 conversion. Schedule Validator: $171.88 / 34 clicks / 1 conversion. Brand: $0 / 0 clicks / 0 conversions. Combined spend $623.46 across 2 tracked form fills.",
+      "value": "Sept final: $227.72 (4 tracked conversions / $910.89 spend). Oct 1-7: $251.90 (1 tracked conversion / $251.90 spend).",
       "state": "live",
       "delta": {
-        "text": "Reporting sync (bug 868m7mapc) is resolved and current through today; both product campaigns have been re-enabled this week after a prior pause, so this figure will keep moving as a full post-re-enable week of data accumulates.",
+        "text": "Sept combined: 172 clicks, $910.89, 1780 impressions, 4 conversions across Asta Exact + Schedule Validator + Brand. Fresh Supermetrics pull 2026-10-08, not copied forward.",
         "tone": "watch"
       },
-      "note": "Independently re-pulled and verified this run via a fresh Supermetrics data_query (not copied from a prior comment).",
-      "source": "Google Ads CID 711-790-3651 via Supermetrics data_query, pulled 2026-09-23"
+      "source": "Google Ads CID 711-790-3651 (account 7117903651) via Supermetrics data_query, pulled 2026-10-08"
     },
     {
       "key": "campaignStatus",
-      "label": "Google Ads campaign status - verified live",
-      "value": "Asta Powerproject - Exact: ENABLED ($25/day). Schedule Validator: ENABLED ($10/day). Asta Powerproject - BMM: PAUSED. Brand: ENABLED ($5/day, $0 spent this window).",
-      "sub": "Independently re-read via Supermetrics campaign_and_resource_get, account 7117903651, 2026-09-23 - both product campaigns are enabled, a deliberate change from the standing pause order earlier this month.",
+      "label": "Google Ads campaigns - verified live",
+      "value": "Asta Powerproject - Exact ENABLED $25/day (CPC cap $12). Schedule Validator ENABLED $10/day (cap $6). Brand ENABLED $5/day (cap $2). Asta BMM, Acumatica, Digital Currency all PAUSED (legacy, untouched).",
       "state": "live",
       "delta": {
-        "text": "Deviation from the earlier pause order, but an intended one per Grant's own direction (not a compliance failure) - flagged as a watch item since it changes the cost-per-form-fill trend materially once a full week of enabled-state data accumulates.",
-        "tone": "watch"
+        "text": "Asta RSA rewritten today (15 headlines/4 descriptions, was 7/4) to push ad strength toward Good/Excellent - the prior Poor-strength ad was the likely source of 84% impression share lost to rank even after the $12 cap and QS-1 keyword pause landed 9/30. New ad 827406761956 live, pending Google's automated review.",
+        "tone": "good"
       },
-      "note": "Brand campaign is enabled but spent $0 in this window - its one ad group has previously been diagnosed as having no ads built (ticket 868m81ey8), which would explain near-zero delivery; not re-verified in full this run.",
-      "source": "Supermetrics AW campaign_and_resource_get, account 7117903651, pulled 2026-09-23"
+      "source": "Supermetrics AW campaign_and_resource_get, account 7117903651, verified + independently read back 2026-10-08"
     },
     {
-      "key": "ctaPagesStaged",
-      "label": "CTA-test lead-magnet pages - form-functional, still staged",
-      "value": "2 pages, both WordPress drafts, both confirmed to contain a live Gravity Form embed",
-      "sub": "Posts 4173 (Schedule Validator DCMA-14 Health Check) and 4174 (Asta 3-Minute Walkthrough), site 1614830. Verified via a direct wp db query: post_content LIKE '%gravityform%' returns true for both. Both still post_status=draft, last modified 2026-09-23 07:28:37.",
-      "state": "live",
+      "key": "ga4Sessions",
+      "label": "GA4 sessions / generate_lead - pending",
+      "value": "pending",
+      "state": "pending",
       "delta": {
-        "text": "Now form-functional, not just copy - a real capability upgrade since 9/22. Still awaiting Alan/Grant sign-off to publish.",
-        "tone": "watch"
+        "text": "Property 553487086 (G-C6EBCV56PE) is real and linked to Google Ads - generate_lead has collected 7 times since 9/22 per a Spark service-account read - but it is still NOT authorized inside Supermetrics for the Spark team. Retested empirically today (GAWA accounts_discovery, zero matches for 553487086/'project'/'analytics'), not assumed. Roster gap closed: ga4_property_id was blank, filled today from task history.",
+        "tone": "bad"
       },
-      "note": "Publishing needs Alan + Grant sign-off per approvers_note since it changes what visitors see - staying unpublished until they act.",
-      "source": "Pressable WP-CLI (wp db query), site 1614830, verified 2026-09-23"
+      "source": "Supermetrics GAWA accounts_discovery, retested 2026-10-08; roster agents/vip-steward/roster.json"
     }
   ],
   "projectCards": [
     {
-      "name": "Product messaging kits",
-      "status": "Complete, driving landing page and ad copy.",
-      "state": "active"
-    },
-    {
-      "name": "Email sequences in Salesforce",
-      "status": "Both drips content-complete per hub subtask 868m6ph9c (marked complete). QA fixes (sender identity, unsubscribe link, Promotions placement, subject length) and the Mary org-wide sender-verification click remain open on separate subtasks. First-send results check (deliveries/bounces/opens) is a standing Rail-3 handoff (868m85ndq), no Salesforce MCP available in this cloud session.",
-      "state": "active"
-    },
-    {
-      "name": "Google Ads (CID 711-790-3651)",
-      "status": "Both product campaigns (Asta Exact, Schedule Validator) verified ENABLED this run; Brand remains enabled but spent $0 this window. Reporting sync stall (bug 868m7mapc) closed - data flowing current through today. Brand ad-group build gap (868m81ey8) and Asta final-URL cleanup (868m81ezd) remain open, pending Alan/Grant approval - no ad-spend/bid/status writes made this run.",
-      "state": "active"
-    },
-    {
-      "name": "Landing / demo pages",
-      "status": "Both original pages live since 9/1, forms verified, copy and overlap fixes shipped. Both carry full Yoast SEO title + meta description copy.",
-      "state": "active"
-    },
-    {
-      "name": "Forms + spam protection",
-      "status": "reCAPTCHA fixed on all 10 forms 9/14; 24 junk contacts purged.",
-      "state": "active"
-    },
-    {
-      "name": "Email deliverability (Salesforce DNS)",
-      "status": "SPF/DKIM published and active since 9/14.",
-      "state": "active"
-    },
-    {
-      "name": "Funnel diagnostics + CTA testing",
-      "status": "Both staged pages (4173, 4174) now carry a working Gravity Form embed, confirmed via direct database query this run - a real functional upgrade, still unpublished drafts awaiting Alan/Grant sign-off.",
+      "name": "GOOGLE ADS - Ongoing campaign management",
+      "status": "Asta RSA rewritten for ad strength (10/8); $12 CPC cap + QS-1 pause live since 9/30; generate_lead unblocked, needs import as a secondary Ads conversion (Rail-3, Google Ads UI).",
       "state": "in-progress"
     },
     {
-      "name": "Paid Ads Strategy Support (non-spend keyword/messaging guidance)",
-      "status": "Semrush keyword/intent research previously delivered feeding CTA and on-page copy. No ad spend touched, per contract's Non-Ad-Spend scope.",
-      "state": "active"
-    },
-    {
-      "name": "Analytics + reporting dashboard (GA4)",
-      "status": "Still unresolved. Roster ga4_property_id is blank; a same-day internal note claimed property 553487086 is live and Ads-linked, but that could not be independently confirmed this run via Supermetrics GAWA accounts_discovery (zero matching accounts for this client). Treated as pending, not invented. Owner is Alan.",
+      "name": "WEBSITE - Funnel diagnostics + CTA testing",
+      "status": "SV landing page CRO rework live and visually verified 10/5 (new hero, proof, GA4 form_start event); one test form submission still needed to confirm the Gravity Forms/Salesforce feed post-edit (Rail-3), then the 4-week before/after read starts.",
       "state": "in-progress"
     },
     {
-      "name": "Monthly campaign management",
-      "status": "Ongoing since 9/1. First formal report due 9/30 (day 23 of the 30-day window today) - not yet due.",
+      "name": "WEBSITE - Dead images on ~30 older blog posts",
+      "status": "Method proven on 23 P6 tutorials + EVM article; remaining non-step posts still need the same backup-then-strip pass (Rail-1/2 WordPress, or Rail-3).",
+      "state": "pending"
+    },
+    {
+      "name": "CONTENT - Lead magnet ideas",
+      "status": "3-5 ideas drafted 10/8 and ready; Mary asked 10/5, no reply yet (checked live via Gmail 10/8, 3 days in - not yet due for a chase at 7 days).",
+      "state": "pending"
+    },
+    {
+      "name": "CONTENT - YouTube rebrand + Video Overview",
+      "status": "Login (promo@midstatesolutions.com) still untested since 8/14; rebrand to Projects Analytics and the 2 video scripts are ready once access is confirmed (Rail-3).",
+      "state": "pending"
+    },
+    {
+      "name": "EMAIL - Drip sender identity + deliverability",
+      "status": "Unsubscribe link and subject lengths fixed 9/20. Sender-identity swap to the verified mwilliams@projectsanalytics.com is blocked by a Salesforce permission classifier - needs Grant's own click in Flow Builder (path documented on the task).",
       "state": "in-progress"
+    },
+    {
+      "name": "GOOGLE ADS - Spam/bot form-fill analysis",
+      "status": "5 junk Contacts identified through the contact-us form (form 4); needs a stronger spam filter/Salesforce feed condition and cleanup (Rail-3, WordPress + Salesforce).",
+      "state": "pending"
+    },
+    {
+      "name": "SOCIAL - GBP + LinkedIn content pack",
+      "status": "8 GBP + 10 LinkedIn posts fully drafted with images and a posting cadence mapped; WALLED today for Grant's OK (taste/strategy call) before it goes to Mary/Alan per the Aug 27 approvers_note.",
+      "state": "pending"
+    },
+    {
+      "name": "GBP - Finish services, attributes, post, Q&A",
+      "status": "Services, first post and images on all 7 scheduled posts are live. Remaining fields (address, exterior photo, founding year, women-owned, socials, review list) are blocked on Mary's answers.",
+      "state": "pending"
+    },
+    {
+      "name": "REPORTING - First monthly report (due 9/30, overdue)",
+      "status": "Draft exists but needs refreshing so it doesn't repeat the comprehensive 10/5 client update already sent; Grant approves the send once refreshed.",
+      "state": "pending"
     }
   ],
   "pillars": [
@@ -143,15 +137,14 @@
   "reviewsGap": [],
   "reviewsGapSource": "Projects Analytics sells direct to enterprise scheduling teams - there is no public review or map-pack program to compare against. Not applicable for this account.",
   "thisWeeksMove": {
-    "label": "Both product campaigns re-enabled and reporting sync resolved; CTA pages are now form-functional",
-    "body": "Independently re-verified this run via a fresh Supermetrics campaign_and_resource_get: Asta Powerproject - Exact and Schedule Validator are both ENABLED, ending the earlier pause; Brand remains enabled at $5/day but spent $0 in the current window. The Google Ads reporting sync stall (bug 868m7mapc) is resolved - a fresh data_query for Sep 1-23 returned current rows for all three campaigns. Combined cost per form fill for the month to date is $311.73 ($623.46 spend / 2 form fills), pulled fresh this run, not copied forward. Both staged CTA lead-magnet pages (posts 4173, 4174) were independently confirmed via a direct database query to now contain an embedded Gravity Form - a real functional upgrade - though both remain unpublished drafts. A same-day internal note claimed GA4 property 553487086 is live and Ads-linked; that claim could not be reproduced via Supermetrics this run (zero matching GA4 accounts for this client show up in accounts_discovery), so GA4 stays reported as pending rather than resolved.",
-    "cta": "Alan or Grant: review and approve/reject the two staged CTA pages (posts 4173, 4174) - they are now fully functional, just unpublished. Mary: the org-wide Salesforce sender-verification click is still the last thing blocking the QA fixes on the email drip."
+    "label": "Asta RSA rewritten for ad strength; SV landing page CRO verified live; generate_lead unblocked for a Google Ads import",
+    "body": "Rewrote the live Asta Powerproject RSA from a 7-headline/4-description Poor-strength ad to a full 15/4 set aimed at Good/Excellent, applied and independently read back live via Supermetrics (new ad 827406761956). The Schedule Validator landing page CRO rework (new hero, proof, GA4 form_start tracking) is live and visually verified since 10/5. GA4's generate_lead event has now collected 7 times since 9/22, so it's ready to import into Google Ads as a secondary conversion - that import itself needs the Ads UI (Rail-3). GA4 property 553487086 is real but still not authorized in Supermetrics for reporting; that roster gap (blank ga4_property_id) is now filled with the real id so it stops showing as unresolved.",
+    "cta": "Grant: OK the drafted GBP+LinkedIn content pack (8+10 posts, fully drafted) so it can go to Mary/Alan for their sign-off, and approve the Salesforce sender-identity swap if the permission classifier blocks Lumen again. Mary: still owed - the lead-magnet OK (asked 10/5) and the GBP profile answers (address, exterior photo, founding year, women-owned, socials, review list)."
   },
   "lumenDid": [
-    "Ran the Aug 27 launch call with Mary and Alan Williams; locked go-live for both products to Tuesday Sep 1, with cost per form fill as the first success metric",
-    "Sept 1-20: full onboarding build (messaging kits, Salesforce email copy, Google Ads campaigns, landing pages, forms/spam fixes, DNS/DKIM auth) shipped",
-    "Sept 21-22: fixed 2 empty Salesforce email content records; both product Google Ads campaigns re-enabled; Google Ads reporting sync stall diagnosed and bug filed (868m7mapc); both CTA pages given a working Gravity Form embed",
-    "Sept 23 (this run): independently re-verified campaign status and cost-per-form-fill via a fresh Supermetrics pull rather than trusting a same-day note; confirmed bug 868m7mapc is closed; confirmed via direct wp db query that both staged CTA pages genuinely contain a Gravity Form embed; found a same-day GA4 property claim (553487086) does not reproduce in Supermetrics and corrected the dashboard to report GA4 as still pending rather than resolved; retested the GitHub direct-push wall for this dashboard token"
+    "2026-10-08: Rewrote the Asta Powerproject RSA (15 headlines/4 descriptions) live via Supermetrics manage_campaign, verified by an independent read-back - no budget, bid cap or keyword change touched.",
+    "2026-10-08: Retested empirically that GA4 property 553487086 is still not authorized in Supermetrics for the Spark team, and filled the previously-blank ga4_property_id roster gap with the real property id and measurement id from task history.",
+    "2026-10-08: Confirmed via Gmail that Mary has not yet replied to the 10/5 lead-magnet ask (3 days in, not yet due for a 7-day chase)."
   ],
   "ledger": [
     {
@@ -225,5 +218,5 @@
       "detail": "Due 9/30, day 23 of the 30-day window today. Not yet due."
     }
   ],
-  "dataNotes": "Launch date, budget figures, contact-list size, and every decision above: Aug 27 launch-call transcript, doc 1b3KvaVSYqLhSIoDmzwAJ5P6_h0icm4De-iOjrF65orY (Gemini Notes, 39 min). Accent color #052D6D pulled live from the site's Divi theme CSS Aug 28, 2026. Pillar and hygiene scores are Lumen's weighted assessment. Roster gaps as of this pass: ga4_property_id blank, meta_ad_account_id blank. Sept 23 pass (this run): independently re-pulled Google Ads cost/click/conversion data (not copied from a prior comment) - Asta $451.57/81/1, Schedule Validator $171.88/34/1, Brand $0/0/0, combined cost per form fill $311.73; independently re-read campaign status via Supermetrics; independently confirmed via wp db query that both staged CTA pages (4173, 4174) contain a gravityform shortcode; confirmed bug 868m7mapc is closed; could NOT reproduce a same-day claim that GA4 property 553487086 is live and Ads-linked for this client via Supermetrics GAWA accounts_discovery, so GA4 is reported as still pending rather than resolved, per the hard rule against inventing metrics; GitHub direct-push retested for this token, outcome recorded in the push commit message / handoff ticket."
+  "dataNotes": "2026-10-08 pass: Google Ads numbers are a fresh Supermetrics pull (account 7117903651), not copied from a prior comment. GA4 sessions/generate_lead stay 'pending' per the hard no-invented-metrics rule - the property is real (confirmed in task comments and now in the roster) but Supermetrics authorization for it was retested today and still fails. Roster gap closed this pass: ga4_property_id (was blank)."
 }
