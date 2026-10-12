@@ -1,7 +1,7 @@
 {
   "token": "hu-10004649",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-09-24",
+  "asOf": "2026-10-12",
   "cadence": "3x daily working run + Mon/Wed/Fri pulse",
   "business": {
     "name": "Humarian",
@@ -148,11 +148,13 @@
   ],
   "reviewsGapSource": "Judge.me - product-level. Store-wide roll-up still blocked, no connector exists.",
   "thisWeeksMove": {
-    "label": "Get the 12 unpublished Meta staged edits resolved and the 3 fresh social captions scheduled",
-    "body": "The Meta staged edits (1 campaign, 4 ad sets, 7 ads - 12 total, not the originally-reported 9) still await Grant's publish/discard click; the exact click is posted on ticket 868m8mnt3. Separately, 3 fresh TikTok/IG captions from 9/23 need Nicole/Amber or a Rail-3 pass to actually post.",
-    "cta": "Grant: open Meta Ads Manager, click Review and publish (12), publish the SmileGuard creative refresh and discard the rest per the ticket's suggested default."
+    "label": "Meta restart decision at the 10/13 2pm Humarian call",
+    "body": "Meta fully paused, Google Ads running Branded Search only at $22/day; Meta restart decision lands at the 2026-10-13 2pm Humarian x Spark call."
   },
   "lumenDid": [
+    "Refreshed GA4/Google Ads/Meta numbers for this dashboard",
+    "Verified the recreated Smile Guard Google ad is approved and correctly placed",
+    "Drafted 2 corrected long-copy Smile Guard ad concepts (human product) for Amber",
     "Sept 24 (VIP Steward working run): Re-pulled GA4 (7d vs prior 7d), Google Ads (live campaign list) and Meta Ads (7d vs prior 7d) - purchases and add_to_cart eased back from last week's spike, sessions flat, Meta spend/clicks/impressions down across the board.",
     "Sept 24: Re-checked the /probonix and /drz direct-traffic anomaly first flagged 9/8 (2,154 direct sessions, 57% of Direct, suspected bot) - now down to 30 combined direct sessions this week, 5.5% of Direct - largely resolved. Also found the URLs carry real Everflow-style affiliate params, suggesting affiliate-redirect traffic rather than a bot, pending Shawn/Rick confirmation. Posted finding on subtask 868m2y7t3.",
     "Sept 24: Confirmed the Meta 12-item staged-edit wall (ticket 868m8mnt3) is unchanged and still awaiting Grant's click - not re-tested a second time today per doctrine, exact click already posted 9/23.",
@@ -211,7 +213,12 @@
       "title": "VIP Steward working run (Sept 24)",
       "state": "done",
       "detail": "Read all 5 hubs plus open subtasks and comments, re-pulled GA4/Ads/Meta, re-verified the /probonix affiliate-traffic finding with fresh data, confirmed the Meta staged-edit wall unchanged, pushed this dashboard."
+    },
+    {
+      "title": "Weekly numbers 10/12: purchases 15 vs 19, revenue $1,022.85 vs $928.15",
+      "state": "done",
+      "detail": "Sessions 1,725 vs 2,914 prior 7 (Meta paused since 10/2). Google Ads Branded Search $79.97, 44 clicks, 5.39 conversions. Add-to-cart per purchase 3.53 vs 3.16."
     }
   ],
-  "dataNotes": "GA4 property 255641365 pulled Sept 24, 2026 (7d-vs-prior-7d, day-by-day). GA4 duplicate-tag bug corrected Sept 11, figures before that are not comparable. Meta act_337218486645475 pulled Sept 24 (7d-vs-prior-7d, day-by-day). Google Ads 4875571866 campaign list re-verified live Sept 24 (only 2 campaigns ENABLED). Judge.me reviews as of 2026-08-02. Shopify order data, not GA4, remains the trustworthy source for revenue - the Supermetrics Shopify source is still NOT_AUTHENTICATED this session, so the ATC/purchase divergence stays unconfirmed. add_to_cart is Humarian's intentional attribution proxy (checkout severs client_id in GA4) - always reported alongside purchases with the ratio, never flagged as junk."
+  "dataNotes": "GA4 property 255641365 pulled Sept 24, 2026 (7d-vs-prior-7d, day-by-day). GA4 duplicate-tag bug corrected Sept 11, figures before that are not comparable. Meta act_337218486645475 pulled Sept 24 (7d-vs-prior-7d, day-by-day). Google Ads 4875571866 campaign list re-verified live Sept 24 (only 2 campaigns ENABLED). Judge.me reviews as of 2026-08-02. Shopify order data, not GA4, remains the trustworthy source for revenue - the Supermetrics Shopify source is still NOT_AUTHENTICATED this session, so the ATC/purchase divergence stays unconfirmed. add_to_cart is Humarian's intentional attribution proxy (checkout severs client_id in GA4) - always reported alongside purchases with the ratio, never flagged as junk. | 2026-10-12 refresh: GA4 last 7 vs prior 7: sessions 1725 vs 2914, purchases 15 vs 19, add to carts 53 vs 60, revenue $1022.85 vs $928.15. Google Ads AW - Branded Search last 7: $79.97, 44 clicks, 5.39 conversions. Meta: $0 last 7 (fully paused since 10/2) vs $97.41 prior 7. Hero metrics above are the 9/24 snapshot."
 }

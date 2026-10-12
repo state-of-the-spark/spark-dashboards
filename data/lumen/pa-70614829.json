@@ -1,7 +1,7 @@
 {
   "token": "pa-70614829",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-10-08",
+  "asOf": "2026-10-12",
   "cadence": "VIP Steward (Lumen Task Protocol, working run)",
   "business": {
     "name": "Projects Analytics",
@@ -216,7 +216,12 @@
       "title": "First monthly report",
       "state": "next",
       "detail": "Due 9/30, day 23 of the 30-day window today. Not yet due."
+    },
+    {
+      "title": "Google Ads 30 days: $914.18 spent, 3 tracked conversions",
+      "state": "next",
+      "detail": "$304.73 per tracked conversion on Google Ads data only. GA4 reporting is blocked until the property is authorized in Supermetrics. Dead-image blog cleanup: 18 posts remaining, down from 23."
     }
   ],
-  "dataNotes": "2026-10-08 pass: Google Ads numbers are a fresh Supermetrics pull (account 7117903651), not copied from a prior comment. GA4 sessions/generate_lead stay 'pending' per the hard no-invented-metrics rule - the property is real (confirmed in task comments and now in the roster) but Supermetrics authorization for it was retested today and still fails. Roster gap closed this pass: ga4_property_id (was blank)."
+  "dataNotes": "2026-10-08 pass: Google Ads numbers are a fresh Supermetrics pull (account 7117903651), not copied from a prior comment. GA4 sessions/generate_lead stay 'pending' per the hard no-invented-metrics rule - the property is real (confirmed in task comments and now in the roster) but Supermetrics authorization for it was retested today and still fails. Roster gap closed this pass: ga4_property_id (was blank). | 2026-10-12 refresh: Google Ads 711-790-3651 last 7 days (10/6-10/12): 41 clicks, $222.05 cost, 440 impressions, 0 conversions. Last 30 days: 171 clicks, $914.18, 3 tracked conversions, $304.73 per tracked conversion (true cost per fill likely lower once GA4 generate_lead reconciles). GA4 stays pending: property 553487086 not authorized in Supermetrics for the Spark team."
 }
