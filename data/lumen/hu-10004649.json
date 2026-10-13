@@ -140,13 +140,19 @@
   },
   "reviewsGap": [
     {
+      "name": "Humarian store-wide (Judge.me)",
+      "rating": "4.76",
+      "reviews": 563,
+      "self": true
+    },
+    {
       "name": "Smile Guard (Judge.me)",
       "rating": "4.76",
       "reviews": 549,
       "self": true
     }
   ],
-  "reviewsGapSource": "Judge.me - product-level. Store-wide roll-up still blocked, no connector exists.",
+  "reviewsGapSource": "Judge.me public store page judge.me/reviews/stores/humarian.com, read 2026-10-13: store-wide 4.76 / 5 on 563 reviews (476 five-star, 61 four, 12 three, 4 two, 10 one; 52% verified). Smile Guard row is the earlier product-level read.",
   "thisWeeksMove": {
     "label": "Restart decision for both paid channels lands tomorrow, 10/13",
     "body": "Google Ads runs only Branded Search at its approved $22/day budget; Meta stays fully paused. Revenue is actually up 10.2% week over week on lower traffic. Everything needed to resume Meta is staged: two Sales-objective rebuilds ready to go live the moment Grant and Shawn approve at the 10/13 2pm call.",
