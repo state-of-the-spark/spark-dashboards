@@ -136,8 +136,18 @@
   },
   "reviewsGap": [],
   "reviewsGapSource": "Projects Analytics sells direct to enterprise scheduling teams - there is no public review or map-pack program to compare against. Not applicable for this account.",
-  "thisWeeksMove": "Dead-image cleanup down to 15 posts remaining; Google Ads steady at standing budgets with no deviation; GA4 dashboard metric still pending Supermetrics authorization.",
-  "lumenDid": "Fixed 3 more dead-image/link blog posts via Pressable WP-CLI (18 to 15 remaining); refreshed Google Ads 7-day/30-day numbers via Supermetrics, no budget or status change made.",
+  "thisWeeksMove": {
+    "label": "Dead-image cleanup at 15 posts left; Ads steady; generate_lead now imported to Google Ads",
+    "body": "Dead-image cleanup down to 15 posts remaining; Google Ads steady at standing budgets with no deviation; GA4 dashboard metric still pending Supermetrics authorization. On 10/13 the GA4 generate_lead event was imported into Google Ads as a Primary form-lead conversion and a test sign-up confirmed the demo form records a lead end to end (test lead removed).",
+    "cta": "Grant: OK the drafted GBP+LinkedIn content pack (8+10 posts, fully drafted) so it can go to Mary/Alan for their sign-off, and approve the Salesforce sender-identity swap if the permission classifier blocks Lumen again. Mary: still owed - the lead-magnet OK (asked 10/5) and the GBP profile answers (address, exterior photo, founding year, women-owned, socials, review list)."
+  },
+  "lumenDid": [
+    "2026-10-08: Rewrote the Asta Powerproject RSA (15 headlines/4 descriptions) live via Supermetrics manage_campaign, verified by an independent read-back - no budget, bid cap or keyword change touched.",
+    "2026-10-08: Retested empirically that GA4 property 553487086 is still not authorized in Supermetrics for the Spark team, and filled the previously-blank ga4_property_id roster gap with the real property id and measurement id from task history.",
+    "2026-10-08: Confirmed via Gmail that Mary has not yet replied to the 10/5 lead-magnet ask (3 days in, not yet due for a 7-day chase).",
+    "2026-10-12: Fixed 3 more dead-image/link blog posts via Pressable WP-CLI (18 to 15 remaining); refreshed Google Ads 7-day/30-day numbers via Supermetrics, no budget or status change made.",
+    "2026-10-13: Imported GA4 generate_lead into Google Ads (account 711-790-3651) as a Primary Submit lead form conversion; ran one test sign-up on the Schedule Validator demo form and saw generate_lead in GA4 Realtime and the lead reach Salesforce, then deleted the test lead and restored the CAPTCHA."
+  ],
   "ledger": [
     {
       "title": "Strip \"construction grade\" from landing pages + ad copy",
