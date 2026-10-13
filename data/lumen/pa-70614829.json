@@ -63,8 +63,8 @@
     },
     {
       "name": "WEBSITE - Dead images on ~30 older blog posts",
-      "status": "Method proven on 23 P6 tutorials + EVM article; remaining non-step posts still need the same backup-then-strip pass (Rail-1/2 WordPress, or Rail-3).",
-      "state": "pending"
+      "status": "15 of original 56 posts still carry a dead-host reference (down from 18 this morning); 3 fixed this pass (2609, 2610, 2612)",
+      "state": "in-progress"
     },
     {
       "name": "CONTENT - Lead magnet ideas",
@@ -136,16 +136,8 @@
   },
   "reviewsGap": [],
   "reviewsGapSource": "Projects Analytics sells direct to enterprise scheduling teams - there is no public review or map-pack program to compare against. Not applicable for this account.",
-  "thisWeeksMove": {
-    "label": "Asta RSA rewritten for ad strength; SV landing page CRO verified live; generate_lead unblocked for a Google Ads import",
-    "body": "Rewrote the live Asta Powerproject RSA from a 7-headline/4-description Poor-strength ad to a full 15/4 set aimed at Good/Excellent, applied and independently read back live via Supermetrics (new ad 827406761956). The Schedule Validator landing page CRO rework (new hero, proof, GA4 form_start tracking) is live and visually verified since 10/5. GA4's generate_lead event has now collected 7 times since 9/22, so it's ready to import into Google Ads as a secondary conversion - that import itself needs the Ads UI (Rail-3). GA4 property 553487086 is real but still not authorized in Supermetrics for reporting; that roster gap (blank ga4_property_id) is now filled with the real id so it stops showing as unresolved.",
-    "cta": "Grant: OK the drafted GBP+LinkedIn content pack (8+10 posts, fully drafted) so it can go to Mary/Alan for their sign-off, and approve the Salesforce sender-identity swap if the permission classifier blocks Lumen again. Mary: still owed - the lead-magnet OK (asked 10/5) and the GBP profile answers (address, exterior photo, founding year, women-owned, socials, review list)."
-  },
-  "lumenDid": [
-    "2026-10-08: Rewrote the Asta Powerproject RSA (15 headlines/4 descriptions) live via Supermetrics manage_campaign, verified by an independent read-back - no budget, bid cap or keyword change touched.",
-    "2026-10-08: Retested empirically that GA4 property 553487086 is still not authorized in Supermetrics for the Spark team, and filled the previously-blank ga4_property_id roster gap with the real property id and measurement id from task history.",
-    "2026-10-08: Confirmed via Gmail that Mary has not yet replied to the 10/5 lead-magnet ask (3 days in, not yet due for a 7-day chase)."
-  ],
+  "thisWeeksMove": "Dead-image cleanup down to 15 posts remaining; Google Ads steady at standing budgets with no deviation; GA4 dashboard metric still pending Supermetrics authorization.",
+  "lumenDid": "Fixed 3 more dead-image/link blog posts via Pressable WP-CLI (18 to 15 remaining); refreshed Google Ads 7-day/30-day numbers via Supermetrics, no budget or status change made.",
   "ledger": [
     {
       "title": "Strip \"construction grade\" from landing pages + ad copy",
@@ -223,5 +215,5 @@
       "detail": "$304.73 per tracked conversion on Google Ads data only. GA4 reporting is blocked until the property is authorized in Supermetrics. Dead-image blog cleanup: 18 posts remaining, down from 23."
     }
   ],
-  "dataNotes": "2026-10-08 pass: Google Ads numbers are a fresh Supermetrics pull (account 7117903651), not copied from a prior comment. GA4 sessions/generate_lead stay 'pending' per the hard no-invented-metrics rule - the property is real (confirmed in task comments and now in the roster) but Supermetrics authorization for it was retested today and still fails. Roster gap closed this pass: ga4_property_id (was blank). | 2026-10-12 refresh: Google Ads 711-790-3651 last 7 days (10/6-10/12): 41 clicks, $222.05 cost, 440 impressions, 0 conversions. Last 30 days: 171 clicks, $914.18, 3 tracked conversions, $304.73 per tracked conversion (true cost per fill likely lower once GA4 generate_lead reconciles). GA4 stays pending: property 553487086 not authorized in Supermetrics for the Spark team."
+  "dataNotes": "2026-10-08 pass: Google Ads numbers are a fresh Supermetrics pull (account 7117903651), not copied from a prior comment. GA4 sessions/generate_lead stay 'pending' per the hard no-invented-metrics rule - the property is real (confirmed in task comments and now in the roster) but Supermetrics authorization for it was retested today and still fails. Roster gap closed this pass: ga4_property_id (was blank). | 2026-10-12 refresh: Google Ads 711-790-3651 last 7 days (10/6-10/12): 41 clicks, $222.05 cost, 440 impressions, 0 conversions. Last 30 days: 171 clicks, $914.18, 3 tracked conversions, $304.73 per tracked conversion (true cost per fill likely lower once GA4 generate_lead reconciles). GA4 stays pending: property 553487086 not authorized in Supermetrics for the Spark team. | 2026-10-12 3pm refresh: Google Ads 711-790-3651 last 7 days: 43 clicks, $239.59 cost, 506 impressions, 0 conversions. Last 30 days: 170 clicks, $907.25, 2000 impressions, 3 conversions. No budget or status change."
 }

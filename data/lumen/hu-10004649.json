@@ -12,124 +12,124 @@
     "initials": "HU",
     "serviceArea": false
   },
-  "healthScore": 63,
-  "healthNote": "Supporting score - the reasons are the numbers above. Never the headline.",
+  "healthScore": 54,
+  "healthNote": "Both paid channels still off, but revenue is actually up 10.2% week over week even as sessions/purchases dropped with the ad pause - the restart decision lands at tomorrow's 10/13 2pm call.",
   "healthScoreSource": "Lumen weighted score",
   "heroMetrics": [
     {
       "key": "purchases",
       "label": "Purchases - last 7 days",
-      "value": "8",
-      "sub": "add_to_cart 44 in the same window (intentional conversion proxy, GA4 purchase attribution is broken post-checkout for this client)",
+      "value": "15",
+      "sub": "add_to_cart 53 in the same window (intentional conversion proxy, GA4 purchase attribution is broken post-checkout for this client); ATC:purchase ratio 3.5:1",
       "state": "live",
       "delta": {
-        "text": "Purchases -20.0% vs prior 7 days, add_to_cart -15.4% vs prior 7 days, sessions +0.5%. Both purchases and add_to_cart eased back this week after last week's spike; sessions held flat.",
+        "text": "Purchases -21.1% vs prior 7 days (19), add_to_cart -11.7% (60), sessions -40.8% (2,914 to 1,725). Revenue +10.2% ($928.15 to $1,022.85) despite lower volume - average order value rose.",
         "tone": "watch"
       },
-      "note": "Shopify order-count cross-check still not possible - Supermetrics Shopify remains NOT_AUTHENTICATED (open ticket 868m6gb80).",
-      "source": "GA4 property 255641365 - pulled Sept 24, 2026 working run"
+      "note": "Shopify order-count cross-check still not possible - Supermetrics Shopify remains NOT_AUTHENTICATED (open ticket 868m6gb80, re-tested 2026-10-12).",
+      "source": "GA4 property 255641365 - pulled Oct 12, 2026 working run"
     },
     {
       "key": "addToCart",
       "label": "Add-to-cart - last 7 days",
-      "value": "44",
-      "sub": "purchases 8 in the same window - ratio 18.2% (intentional proxy, reported side by side, never flagged as junk)",
+      "value": "53",
+      "sub": "purchases 15 in the same window - ratio 3.5:1 (intentional proxy, reported side by side, never flagged as junk)",
       "state": "live",
       "delta": {
-        "text": "Down 15.4% vs prior 7 days - last week's +76% read was a spike (driven mostly by two high days, 9/16 and 9/18); this week is back near the 3-week baseline.",
-        "tone": "neutral"
+        "text": "Down 11.7% vs prior 7 days (60), tracking the sessions decline (-40.8%) rather than a conversion-rate problem.",
+        "tone": "watch"
       },
-      "note": "9/17-9/23 vs 9/10-9/16, day-by-day GA4 pull. Sessions 2,047 vs 2,037 (+0.5%).",
-      "source": "GA4 property 255641365 - pulled Sept 24, 2026 working run"
+      "note": "Sessions 1,725 this week vs 2,914 prior 7 days.",
+      "source": "GA4 property 255641365 - pulled Oct 12, 2026 working run"
     },
     {
       "key": "adsReach",
       "label": "Meta Ads - last 7 days",
-      "value": "15,268",
-      "sub": "impressions - $155.11 spend - 1,202 clicks (SG Ad 3b/4b still delivering)",
+      "value": "0",
+      "sub": "impressions, spend and clicks - fully paused since 10/2",
       "state": "live",
       "delta": {
-        "text": "Spend -34.2%, impressions -26.5%, clicks -20.9% vs prior 7 days; CTR 7.87% (up from 7.32%). Broad pullback across the account this week.",
-        "tone": "watch"
+        "text": "Prior week $97.41 / 11,151 impressions; this week $0 / 0 impressions. Confirmed zero activity, not a reporting gap.",
+        "tone": "alert"
       },
-      "note": "9 (actually 12) unpublished staged edits in the Meta account still await Grant's publish/discard click (ticket 868m8mnt3, exact click posted 9/23 16:40 ET, still open as of this pass).",
-      "source": "Meta Ads via Supermetrics - act_337218486645475 - pulled Sept 24, 2026 working run"
+      "note": "Restart decision is on the calendar for the Humarian x Spark meeting, Tue 10/13 2pm ET (ticket 868mcefap). Two Sales-objective ad rebuilds (John, Amber) staged and ready to go live once approved.",
+      "source": "Meta Ads via Supermetrics - act_337218486645475 - pulled Oct 12, 2026 working run"
     },
     {
       "key": "googleAds",
       "label": "Google Ads - last 7 days",
-      "value": "2 campaigns ENABLED",
-      "sub": "AW - Branded Search ($20/day, Maximize Clicks, $1 CPC cap) + AW - Search - Non-Branded - Pet Symptoms ($10/day, manual CPC)",
+      "value": "$79.97 spend, 44 clicks",
+      "sub": "Only AW - Branded Search enabled, ~5.4 conversions - matches the 10/10 $22/day setting exactly",
       "state": "live",
       "delta": {
-        "text": "Re-verified live via campaign_and_resource_get this pass - only these 2 campaigns ENABLED, everything else (Women's Digestive, all Blog/PMax/legacy campaigns) confirmed PAUSED. No status changes made.",
+        "text": "Branded Search is the only enabled campaign; spend matches the approved $22/day budget with no drift since the 10/9 correction.",
         "tone": "neutral"
       },
-      "note": "Women's Digestive re-enable (868m4p2c6) stays BLOCKED-ON-CLIENT, a go/no-go for Grant.",
-      "source": "Google Ads 4875571866 via Supermetrics - re-verified Sept 24, 2026 working run"
+      "note": "Same restart decision as Meta, same 10/13 meeting (ticket 868mcefap).",
+      "source": "Google Ads 4875571866 via Supermetrics - pulled Oct 12, 2026 working run"
     }
   ],
   "projectCards": [
     {
       "name": "Paid Ads - Google",
-      "status": "Branded Search on Maximize Clicks, $20/day, $1 CPC cap. Pet Symptoms $10/day manual CPC, still 0 conversions - landing-page/bid issue, unchanged. Women's Digestive campaign confirmed PAUSED, re-enable is Grant's go/no-go.",
-      "state": "active"
+      "status": "AW - Branded Search is the only enabled campaign, spending exactly to its approved $22/day budget ($79.97 this week, 44 clicks). Pet Symptoms stays off by default. Broader restart decision deferred to the 10/13 Humarian meeting.",
+      "state": "pending"
     },
     {
       "name": "Paid Ads - Meta",
-      "status": "SG Ad 3b/4b (Bentley-free rebuild) still ACTIVE, delivering. 9 (really 12) unpublished staged edits still await Grant's publish/discard click in Meta Business Manager - exact click posted on ticket 868m8mnt3, still open.",
-      "state": "active"
+      "status": "Fully paused since 10/2, $0 spend this week (prior week $97.41). Two Sales-objective rebuilds (John, Amber) staged and ready pending the 10/13 restart decision.",
+      "state": "pending"
     },
     {
       "name": "Attribution & Tracking",
-      "status": "7-day: purchases -20%, add_to_cart -15% (both easing back after last week's spike). /probonix and /drz direct-traffic anomaly re-checked: down to 5.5% of Direct sessions from 57% on 9/8 - largely resolved, still 0 add-to-cart on those paths. Shopify cross-check still blocked (ticket 868m6gb80).",
+      "status": "7-day: sessions -40.8%, purchases -21.1%, add_to_cart -11.7%, revenue +10.2% - directionally consistent with the ad pause, not a tracking defect. Meta Click ID (fbc) coverage improving on PageView/ViewContent; AddToCart/Purchase coverage still needs ad-click volume once Meta resumes.",
       "state": "active"
     },
     {
       "name": "Product Landing Pages",
-      "status": "WebP hero-image swap (868m6pqc7, 4 images pre-converted) still queued for a Lumen Rail-3 pass. Pop-up removal test still inside its window.",
+      "status": "Women's Probiotic page strain-count fix (8 to 12) defaulted and queued for the Shopify edit; buy-box A/B test inconclusive so far (Meta pause starved the test variant), resumes with the restart.",
       "state": "active"
     },
     {
       "name": "SEO / AIO",
-      "status": "Women's Probiotic page redirect still waiting on Sean/Amber's strain-count answer (8 vs 12). Judge.me roll-up remains a capability gap. Two vendor emails (PageFly, Everflow) still not actually drafted anywhere in ClickUp despite being marked 'ready to send.'",
+      "status": "Women's Probiotic page redirect/strain-count fix queued (Rail 3). Judge.me store-wide roll-up remains a capability gap - no connector reaches it yet.",
       "state": "in-progress"
     },
     {
       "name": "Social Media Management",
-      "status": "3 fresh TikTok/IG captions (written 9/23: pet gut health, kids back-to-school, Probonics education) still need Nicole/Amber or a Rail-3 pass to post - no native posting connector this session.",
+      "status": "Two caption batches (9/11, 9/23) drafted and still unposted - scheduling needs a Rail-3/Nicole-Amber pass, not more content.",
       "state": "in-progress"
     },
     {
       "name": "Influencer / UGC",
-      "status": "10 UGC creators for Subscribe & Save (868kzjh7f): creator-criteria brief + first-contact outreach template written 9/23, now MOVING on Nicole's side. Seasonal header copy still awaiting placement/sign-off (20 days idle).",
+      "status": "10 UGC creators for Subscribe & Save (868kzjh7f): creator-criteria brief + outreach template written, MOVING on Nicole's side. Warren Phillips landing page built and hidden, waiting on 5 external approvals.",
       "state": "active"
     }
   ],
   "pillars": [
     {
       "name": "Shopify store conversion",
-      "score": 73,
+      "score": 75,
       "hero": true,
       "bar": "good",
-      "note": "WebP hero-image swap (4 pre-converted images) still queued for Lumen's Rail-3 pass.",
-      "source": "Lumen assessment - Sept 24"
+      "note": "Revenue per session rose this week even with lower traffic; WebP hero-image swap still queued for a Rail-3 pass.",
+      "source": "Lumen assessment - Oct 12"
     },
     {
       "name": "Attribution & tracking",
       "score": 66,
       "hero": true,
       "bar": "watch",
-      "note": "/probonix and /drz direct-traffic anomaly largely resolved (5.5% of Direct sessions this week vs 57% on 9/8). Shopify cross-check still blocked.",
-      "source": "Lumen assessment - Supermetrics GA4, re-verified Sept 24"
+      "note": "This week's drops track the ad pause cleanly across sessions/purchases/ATC - no divergence that would point to a tracking break.",
+      "source": "Lumen assessment - Supermetrics GA4, Oct 12"
     },
     {
       "name": "Ad program",
-      "score": 67,
+      "score": 38,
       "hero": false,
-      "bar": "watch",
-      "note": "Google: only 2 campaigns ENABLED, Branded Search on Maximize Clicks. Meta: broad pullback this week (spend -34%, clicks -21%); 12 staged edits still await Grant's click.",
-      "source": "Lumen assessment - Google Ads + Meta Ads, Sept 24"
+      "bar": "alert",
+      "note": "Meta still fully off; Google running only Branded Search at its approved budget. Restart decision lands at tomorrow's 10/13 2pm call; everything needed to resume is staged.",
+      "source": "Lumen assessment - Google Ads + Meta Ads, Oct 12"
     }
   ],
   "hygiene": {
@@ -148,61 +148,51 @@
   ],
   "reviewsGapSource": "Judge.me - product-level. Store-wide roll-up still blocked, no connector exists.",
   "thisWeeksMove": {
-    "label": "Meta restart decision at the 10/13 2pm Humarian call",
-    "body": "Meta fully paused, Google Ads running Branded Search only at $22/day; Meta restart decision lands at the 2026-10-13 2pm Humarian x Spark call."
+    "label": "Restart decision for both paid channels lands tomorrow, 10/13",
+    "body": "Google Ads runs only Branded Search at its approved $22/day budget; Meta stays fully paused. Revenue is actually up 10.2% week over week on lower traffic. Everything needed to resume Meta is staged: two Sales-objective rebuilds ready to go live the moment Grant and Shawn approve at the 10/13 2pm call.",
+    "cta": "No action needed before 10/13 - the decision is already on Grant's calendar."
   },
   "lumenDid": [
-    "Refreshed GA4/Google Ads/Meta numbers for this dashboard",
-    "Verified the recreated Smile Guard Google ad is approved and correctly placed",
-    "Drafted 2 corrected long-copy Smile Guard ad concepts (human product) for Amber",
-    "Sept 24 (VIP Steward working run): Re-pulled GA4 (7d vs prior 7d), Google Ads (live campaign list) and Meta Ads (7d vs prior 7d) - purchases and add_to_cart eased back from last week's spike, sessions flat, Meta spend/clicks/impressions down across the board.",
-    "Sept 24: Re-checked the /probonix and /drz direct-traffic anomaly first flagged 9/8 (2,154 direct sessions, 57% of Direct, suspected bot) - now down to 30 combined direct sessions this week, 5.5% of Direct - largely resolved. Also found the URLs carry real Everflow-style affiliate params, suggesting affiliate-redirect traffic rather than a bot, pending Shawn/Rick confirmation. Posted finding on subtask 868m2y7t3.",
-    "Sept 24: Confirmed the Meta 12-item staged-edit wall (ticket 868m8mnt3) is unchanged and still awaiting Grant's click - not re-tested a second time today per doctrine, exact click already posted 9/23.",
-    "Sept 23 (prior pass): Filed a standalone Rail-3 handoff for the unpublished Meta staged edits - this item had never had its own Bus ticket before, only hub comments.",
-    "Sept 23: Worked the standalone Influencer/UGC subtask 868kzjh7f (recruit 10 UGC creators) - wrote a creator-criteria brief and first-contact outreach template directly on the subtask.",
-    "Sept 21 3pm ET: Duplicate badge image on the Women's product page deleted.",
-    "Sept 11: Found and fixed the GA4 double-count."
+    "Oct 12 (VIP Steward working run): Re-pulled GA4, Google Ads and Meta 7-day-vs-prior-7 numbers; confirmed Branded Search tracking its approved budget exactly and Meta still fully paused; pushed this dashboard refresh.",
+    "Oct 10 (prior pass): Re-pulled GA4/Ads/Meta live, confirmed both paid channels at zero spend.",
+    "Oct 9: Caught Branded Search re-enabled and spending against the pause order; re-paused and confirmed independently.",
+    "Sept 24 (prior pass): Re-checked the /probonix and /drz direct-traffic anomaly - resolved to 5.5% of Direct sessions."
   ],
   "ledger": [
     {
-      "title": "/probonix + /drz direct-traffic anomaly re-checked",
+      "title": "Revenue up 10.2% this week despite the ad pause",
       "state": "done",
-      "detail": "Down to 5.5% of Direct sessions this week from 57% on 9/8 - largely resolved. URLs carry Everflow-style affiliate params, not a plain 404/bot pattern. Posted on subtask 868m2y7t3."
+      "detail": "GA4 7-day-vs-prior-7: revenue $1,022.85 vs $928.15, on sessions down 40.8%. Average order value is rising while paid traffic is off."
     },
     {
-      "title": "12 unpublished Meta staged edits - still awaiting Grant's click",
+      "title": "Both paid channels still off, restart lands 10/13",
       "state": "next",
-      "detail": "Ticket 868m8mnt3 open since 9/23 with the exact click (Review and publish (12), publish SG creative refresh, discard the rest). Unchanged this pass."
+      "detail": "Google Ads (4875571866) running only Branded Search at its approved budget; Meta (act_337218486645475) fully paused. Restart decision at the Humarian x Spark meeting, Tue 10/13 2pm ET. Ticket 868mcefap."
+    },
+    {
+      "title": "Branded Search caught re-enabled 10/6-10/8, corrected",
+      "state": "done",
+      "detail": "Spent $21.65 over 3 days against the pause order; re-paused 10/9, independently read back as 0 ENABLED, now tracking its approved $22/day exactly."
+    },
+    {
+      "title": "12 unpublished Meta staged edits",
+      "state": "next",
+      "detail": "Ticket 868m8mnt3 - still awaiting Grant's publish/discard click, folded into the 10/13 restart decision."
     },
     {
       "title": "UGC creator recruitment brief written",
       "state": "next",
-      "detail": "Subtask 868kzjh7f: creator-criteria brief + first-contact outreach template written 9/23 for Nicole. Recruitment itself is human outreach."
-    },
-    {
-      "title": "Target Impression Share -> Maximize Clicks",
-      "state": "done",
-      "detail": "Superseded 9/22 by Grant's direct call - Branded Search switched to Maximize Clicks, $20/day, $1 CPC cap."
-    },
-    {
-      "title": "SG Ad 3/4 Bentley-free workaround",
-      "state": "done",
-      "detail": "Original ads stayed walled; new ads (SG Ad 3b/4b) built instead. ACTIVE and delivering."
+      "detail": "Subtask 868kzjh7f: creator-criteria brief + first-contact outreach template written for Nicole. Recruitment itself is human outreach."
     },
     {
       "title": "3 fresh social captions - written, not scheduled",
       "state": "next",
-      "detail": "Pet gut health, kids back-to-school, Probonics education - posted to hub subtask 868m41332. Needs Nicole/Amber or a Rail-3 pass to post."
+      "detail": "Posted to hub subtask 868m41332. Needs Nicole/Amber or a Rail-3 pass to post."
     },
     {
-      "title": "WebP swap - Women's page hero images",
+      "title": "Women's page strain-count fix (8 to 12) defaulted",
       "state": "next",
-      "detail": "4 images pre-converted, needs a theme Liquid edit, queued for Lumen (ticket 868m6pqc7)."
-    },
-    {
-      "title": "2 vendor emails (PageFly, Everflow) - not actually drafted",
-      "state": "next",
-      "detail": "Still no draft text anywhere in ClickUp despite being marked 'drafted, ready to send.'"
+      "detail": "Subtask 868kek114: default taken per Grant's own stated fallback; queued for the Shopify edit."
     },
     {
       "title": "QuickBooks hourly channel ($60/hr, customer 139)",
@@ -210,15 +200,10 @@
       "detail": "No QuickBooks connector this session - Website & Content Support billing line still unreconciled against QBO."
     },
     {
-      "title": "VIP Steward working run (Sept 24)",
+      "title": "VIP Steward working run (Oct 12)",
       "state": "done",
-      "detail": "Read all 5 hubs plus open subtasks and comments, re-pulled GA4/Ads/Meta, re-verified the /probonix affiliate-traffic finding with fresh data, confirmed the Meta staged-edit wall unchanged, pushed this dashboard."
-    },
-    {
-      "title": "Weekly numbers 10/12: purchases 15 vs 19, revenue $1,022.85 vs $928.15",
-      "state": "done",
-      "detail": "Sessions 1,725 vs 2,914 prior 7 (Meta paused since 10/2). Google Ads Branded Search $79.97, 44 clicks, 5.39 conversions. Add-to-cart per purchase 3.53 vs 3.16."
+      "detail": "Re-pulled GA4/Ads/Meta live, confirmed the ad-pause-vs-revenue story, pushed this dashboard."
     }
   ],
-  "dataNotes": "GA4 property 255641365 pulled Sept 24, 2026 (7d-vs-prior-7d, day-by-day). GA4 duplicate-tag bug corrected Sept 11, figures before that are not comparable. Meta act_337218486645475 pulled Sept 24 (7d-vs-prior-7d, day-by-day). Google Ads 4875571866 campaign list re-verified live Sept 24 (only 2 campaigns ENABLED). Judge.me reviews as of 2026-08-02. Shopify order data, not GA4, remains the trustworthy source for revenue - the Supermetrics Shopify source is still NOT_AUTHENTICATED this session, so the ATC/purchase divergence stays unconfirmed. add_to_cart is Humarian's intentional attribution proxy (checkout severs client_id in GA4) - always reported alongside purchases with the ratio, never flagged as junk. | 2026-10-12 refresh: GA4 last 7 vs prior 7: sessions 1725 vs 2914, purchases 15 vs 19, add to carts 53 vs 60, revenue $1022.85 vs $928.15. Google Ads AW - Branded Search last 7: $79.97, 44 clicks, 5.39 conversions. Meta: $0 last 7 (fully paused since 10/2) vs $97.41 prior 7. Hero metrics above are the 9/24 snapshot."
+  "dataNotes": "GA4 property 255641365 pulled Oct 12, 2026 (7d-vs-prior-7d). Meta act_337218486645475 pulled Oct 12 (7d-vs-prior-7d): $0/0 impressions this week vs $97.41/11,151 impressions prior week, confirmed zero activity not a reporting gap. Google Ads 4875571866 pulled Oct 12: only AW - Branded Search enabled, $79.97 spend/44 clicks/~5.4 conversions this week, matching the approved $22/day budget exactly. Judge.me reviews as of 2026-08-02. Shopify order data, not GA4, remains the trustworthy source for revenue - the Supermetrics Shopify source is still NOT_AUTHENTICATED this session (re-tested 2026-10-12). add_to_cart is Humarian's intentional attribution proxy (checkout severs client_id in GA4) - always reported alongside purchases with the ratio, never flagged as junk."
 }
