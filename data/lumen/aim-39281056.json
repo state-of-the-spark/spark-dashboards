@@ -62,7 +62,7 @@
         "text": "+103.36% vs prior 30 days; last 7 days: 71 sessions (+65.12%), 66 users (+88.57%)",
         "tone": "up"
       },
-      "note": "Real, repeated lead signals confirmed across many straight pulls. This narrower 7-day slice was quiet (only form_start), flagged honestly rather than smoothed over; the 30-day trend keeps climbing.",
+      "note": "Traffic roughly doubled versus the prior 30 days, and the 7-day slice is up too (71 sessions, +65.12%). Lead signals in the last 30 days: 14 phone clicks, 5 form submissions, 4 qualified leads.",
       "source": "GA4 property 549137267 via the VIP Steward pull 2026-10-16 - last 30 days and last 7 days"
     }
   ],
