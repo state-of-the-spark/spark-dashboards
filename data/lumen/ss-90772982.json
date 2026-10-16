@@ -65,7 +65,7 @@
         "text": "down 16.5% vs the prior 30 days",
         "tone": "watch"
       },
-      "note": "Sessions momentum keeps building: +25.48% vs the prior 30 days (following +13.3% on 9/23, +10.7% on 9/22, +1.22% on 9/21). Source/medium breakdown to confirm what's driving the turnaround is still the next step, not yet pulled.",
+      "note": "Sessions are down 16.5% vs the prior 30 days (6,685 now), after four straight improving reads through 9/24. Lead actions still grew over the same window (form submissions +34.25%, tap-to-calls +13.16%), so the traffic that arrives is converting.",
       "source": "GA4 property 299466800 · VIP Steward pull 2026-10-15, last 30 days vs prior 30 days"
     }
   ],
