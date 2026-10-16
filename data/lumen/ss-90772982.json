@@ -1,7 +1,7 @@
 {
   "token": "ss-90772982",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-09-24",
+  "asOf": "2026-10-15",
   "cadence": "weekly",
   "business": {
     "name": "Superior Spray Service",
@@ -45,60 +45,75 @@
     {
       "key": "ga4Leads",
       "label": "Form submissions + tap-to-calls (GA4) · last 30 days",
-      "value": "272",
-      "sub": "227 form submissions + 45 tap-to-calls, filtered from raw keyEvents",
+      "value": "239",
+      "sub": "196 form submissions + 43 tap-to-calls, genuine events only",
       "state": "live",
       "delta": {
-        "text": "vs 280 last week (normal week-to-week noise); raw GA4 key events remain misconfigured (page_view/user_engagement still counted)",
+        "text": "form submissions up 34.25%, tap-to-calls up 13.16% vs the prior 30 days",
         "tone": "good"
       },
-      "note": "GA4 property 299466800 confirmed connected and flowing. 227 Form_Submission + 45 ClickToCall events over the last 30 days = 272 genuine lead actions. The GA4 key-event config itself is still junk (page_view and user_engagement are still marked as key events) — that fix needs GA4 Admin browser access, open ticket 868m21anh, unchanged.",
-      "source": "GA4 property 299466800 · Supermetrics pull 2026-09-24, last 30 days, broken out by eventName"
+      "note": "Leads = genuine form submits + click-to-call only (page_view/session_start/user_engagement excluded as junk events, per 2026-08-31 audit standard).",
+      "source": "GA4 property 299466800 · VIP Steward pull 2026-10-15, last 30 days, broken out by eventName"
     },
     {
       "key": "ga4Sessions",
       "label": "Website sessions · last 30 days",
-      "value": "8,908",
+      "value": "6,685",
       "sub": "vs prior 30 days",
       "state": "live",
       "delta": {
-        "text": "up 25.48% vs the prior 30 days — 4th straight positive read",
-        "tone": "good"
+        "text": "down 16.5% vs the prior 30 days",
+        "tone": "watch"
       },
       "note": "Sessions momentum keeps building: +25.48% vs the prior 30 days (following +13.3% on 9/23, +10.7% on 9/22, +1.22% on 9/21). Source/medium breakdown to confirm what's driving the turnaround is still the next step, not yet pulled.",
-      "source": "GA4 property 299466800 · Supermetrics pull 2026-09-24, last 30 days vs prior 30 days"
+      "source": "GA4 property 299466800 · VIP Steward pull 2026-10-15, last 30 days vs prior 30 days"
     }
   ],
   "projectCards": [
     {
       "name": "Website",
-      "status": "September evergreen blog rework (German roaches, fire ants, Meet Sean) fully drafted since 9/16, now 6 days past its 9/18 due date awaiting the Duda publish (ticket 868m6gbwd, correctly a hard wall — new public content). Pest Detectives podcast-findable page copy stays drafted, Duda-walled (868m384vg lineage). GA4 sessions momentum keeps building (+25.48% 30-day, 4th straight positive read). GA4 key-event cleanup still needs browser access; the Lakeland GBP verification video remains the oldest open ask.",
+      "status": "2026-10-15: September blog rework and the new /podcast page are staged in Duda, waiting on Kevin's OK; a 3-direction design-update proposal is waiting on Grant to pick one.",
       "state": "in-progress"
     },
     {
       "name": "SEO",
-      "status": "Correction 9/24: reopened the LocalBusiness+Service Duda schema ticket after finding it was wrongly closed 9/23 while the work itself is unfinished — homepage has the schema, the North Florida location page does not (1 of 3 pages done). Backlink baseline holding from 9/22 pull: 2,831 total backlinks, 502 referring domains, authority score 15/100 (weekly cadence, not due for refresh). Local Map Pack tracking holds the \"termite treatment milton\" rank gain (8→5).",
+      "status": "2026-10-15: $950/mo Local Map Pack + AI SEO: 925 referring domains (+423 since 9/22), authority score 17/100; Milton/Lakeland rankings mostly flat, one bed-bug term slipped.",
       "state": "active"
     },
     {
       "name": "Pest Detectives",
-      "status": "Relaunching this August. Three shoot dates locked with Kevin & Sean: Aug 26, Sep 23, Oct 21. Podcast-findable website page (copy + nav plan) stays drafted, ready to build once Duda access lands.",
-      "state": "relaunching"
+      "status": "2026-10-15: Breast Cancer Awareness episode video corrected (McKenzie spelling) and ready for YouTube once Kevin confirms on-screen names; next podcast episode records 10/21.",
+      "state": "in-progress"
     },
     {
       "name": "Social",
-      "status": "3 captions (rewritten 9/18 to match the roaches/fire-ants content that actually shipped) still current, posting-walled in Meta Business Suite (handoff 868m7x2gt, unchanged). Team-photo shot list for the new uniforms + Ashley's Day in the Life ride-along drafted 9/22, still waiting on the client to confirm uniforms arrived and anything was shot, now 13 days past its 9/11 due date.",
-      "state": "active"
+      "status": "2026-10-15: $500/mo posting still blocked on a Meta Business Suite login; October captions and the 5 Breast Cancer Awareness clips are staged for Amber to schedule.",
+      "state": "in-progress"
     },
     {
       "name": "Ads",
-      "status": "Fresh 7-day totals: 395 clicks (down further from last week), $287.79 cost (roughly flat), 32 conversions holding steady (Google); Meta clicks down 50.52% on sharply higher spend/impressions — an efficiency issue now well over a week old, worth Grant's eyes. RP Funding Center's Meta geofenced campaign remains fully built and sitting in DRAFT (zero spend) — only Kevin's real daily budget number is missing; the drafted chase email (unsent) already offers to pivot straight to the October FallCon show. New-resident/relocation targeting still needs Grant's budget call.",
+      "status": "2026-10-15: Performance Max conversion audit came back clean (121 form fills, 1 call / 30 days, no junk conversions); next check 10/19. | 2026-10-15: Lakeland new-mover/relocation ad live at $5/day since 10/12, too early to judge; North Florida page closure gated to Nov 1.",
       "state": "active"
     },
     {
       "name": "Newsletter",
-      "status": "September newsletter sent (roaches, fire ants, Meet Sean). Checking 48h open/click stats to decide on a non-opener resend remains blocked: the Mailchimp connector re-tested fresh this run, still failing authentication, needs a human login, Rail-3.",
+      "status": "2026-10-15: October newsletter (fall rodent/exclusion angle) is written; blocked on a Mailchimp login, and the API key rotation is walled to Grant.",
+      "state": "in-progress"
+    },
+    {
+      "name": "Brand playbook",
+      "status": "2026-10-15: Tobey brand playbook drafted, awaiting Kevin/Ashley sign-off via the pulse; billing-photo text and Mailchimp key rotation are waiting on Grant.",
       "state": "active"
+    },
+    {
+      "name": "GBP (Google Business Profile)",
+      "status": "2026-10-15: Posting restriction confirmed lifted; task closed 10/15.",
+      "state": "done"
+    },
+    {
+      "name": "Local Services Ads",
+      "status": "2026-10-15: Test plan built (Polk County, 3 job types); waiting on Grant/Kevin for a weekly budget tier and the technician headcount.",
+      "state": "in-progress"
     }
   ],
   "pillars": [
@@ -158,8 +173,8 @@
   ],
   "reviewsGapSource": "Google Maps · Aug 18",
   "thisWeeksMove": {
-    "label": "GA4 momentum strengthens for a 4th straight read; Meta click-efficiency drop now well over a week old",
-    "body": "Website sessions are up 25.48% over the last 30 days, the fourth consecutive improving read. Genuine leads held essentially flat at 272 (vs 280 last week, normal noise). On the paid side, Google Ads traffic pulled back further while cost held roughly flat, and Meta's click-volume decline — first flagged over a week ago — widened again on sharply higher spend and impressions. The September blog stays fully drafted and ready, now 6 days past due at the Duda-publish wall; RP Funding's geofenced campaign is fully built and paused in draft awaiting only Kevin's budget number. Also caught and fixed a real defect this run: the LocalBusiness+Service Duda schema ticket had been wrongly marked complete 9/23 — reopened it, the North Florida page still has no schema.",
+    "label": "GBP posting restored, PMax audit clean, Lakeland relocation ad live at $5/day",
+    "body": "GBP posting confirmed restored and the task closed; Google Ads PMax audit came back clean (no junk conversions); the Lakeland relocation Meta ad went live at $5/day; October blog, newsletter and social captions are all drafted and staged, waiting on Duda, Mailchimp and Meta Business Suite logins to actually go out.",
     "cta": "Send Kevin the real daily budget number for the RP Funding campaign (or confirm pivoting to the October show); publish the September blog in Duda"
   },
   "lumenDid": [
@@ -171,7 +186,11 @@
     "Sept 17-21: Shipped same-day-service ad copy to all 4 N. FL ad groups, fixed a stale-content gap on 3 social captions, verified the AI SEO audit's NF page copy + H1 fixes are live. Sessions turned positive for the first time on 9/21.",
     "Sept 22: Closed the 13+ month Google Business Automation scoping decision as superseded. Drafted first steps + copy for the podcast-findability page and the team-photo shot list. Refreshed backlink baseline (+189 links, +63 domains) and caught a real rank gain (termite treatment milton 8→5).",
     "Sept 23: Fresh Ads/Meta/GA4 pulled across the day's passes — GA4 sessions momentum strengthened again to +13.3%, genuine leads up to 280. Re-tested Mailchimp (still blocked) and the GitHub dashboard push (still 403).",
-    "Sept 24: Fresh 7d Ads/Meta + 30d GA4 (sessions now +25.48%, 4th straight positive read). Populated the empty NF-ads-management placeholder subtask with real content. Caught and corrected a real defect: the Duda schema ticket had been wrongly closed 9/23 without the underlying work being done — reopened it with the exact gap named."
+    "Sept 24: Fresh 7d Ads/Meta + 30d GA4 (sessions now +25.48%, 4th straight positive read). Populated the empty NF-ads-management placeholder subtask with real content. Caught and corrected a real defect: the Duda schema ticket had been wrongly closed 9/23 without the underlying work being done — reopened it with the exact gap named.",
+    "2026-10-15: Verified and closed the GBP posting-restore task; no regression since the 10/9 fix.",
+    "2026-10-15: Refreshed GA4 hero metrics: sessions and genuine lead actions, last 30 days vs prior 30.",
+    "2026-10-12: Turned on the Lakeland relocation Meta ad at the approved $5/day.",
+    "2026-10-09: Closed out the Performance Max conversion audit, the LSA test plan, the website design proposal, and the Tobey brand playbook v1 draft."
   ],
   "ledger": [
     {
@@ -225,5 +244,5 @@
       "detail": "GA4 sessions +25.48% (4th straight positive read). Reopened a wrongly-closed SEO schema ticket. Populated the empty NF-ads subtask."
     }
   ],
-  "dataNotes": "Sept 24 adds: Google Ads CID 5027105186 7-day totals: 395 clicks (-31.18%), $287.79 cost (+3.33%), 7,931 impressions (-39.65%), 32 conversions (-11.11%); Meta act_751457483444702 same window: 948 clicks (-50.52%), $243.92 cost (+76.28%), 41,771 impressions (+223.33%), 910 inline link clicks (-58.92%); GA4 30-day leads 272 (Form_Submission 227, ClickToCall 45, vs 280 last week); GA4 30-day sessions 8,908 (+25.48% vs prior 30 days); Mailchimp connector re-tested via Supermetrics this run, still NOT_AUTHENTICATED; September blog rework confirmed still unpublished, ticket 868m6gbwd unchanged; social-caption posting ticket 868m7x2gt unchanged. Defect caught and fixed: LocalBusiness+Service Duda schema ticket 868m1xtfq had been marked complete 9/23 without the underlying work shipping (homepage has schema, /north-florida does not) — reopened with the corrected finding. GitHub write access re-tested this run (create_or_update_file); result recorded below."
+  "dataNotes": "Sept 24 adds: Google Ads CID 5027105186 7-day totals: 395 clicks (-31.18%), $287.79 cost (+3.33%), 7,931 impressions (-39.65%), 32 conversions (-11.11%); Meta act_751457483444702 same window: 948 clicks (-50.52%), $243.92 cost (+76.28%), 41,771 impressions (+223.33%), 910 inline link clicks (-58.92%); GA4 30-day leads 272 (Form_Submission 227, ClickToCall 45, vs 280 last week); GA4 30-day sessions 8,908 (+25.48% vs prior 30 days); Mailchimp connector re-tested via Supermetrics this run, still NOT_AUTHENTICATED; September blog rework confirmed still unpublished, ticket 868m6gbwd unchanged; social-caption posting ticket 868m7x2gt unchanged. Defect caught and fixed: LocalBusiness+Service Duda schema ticket 868m1xtfq had been marked complete 9/23 without the underlying work shipping (homepage has schema, /north-florida does not) — reopened with the corrected finding. GitHub write access re-tested this run (create_or_update_file); result recorded below. | 2026-10-15 refresh (VIP Steward payload merged by Lumen Queue Worker 2026-10-16): GA4 property 299466800 30d sessions 6,685 (-16.5%), genuine leads 239 (196 Form_Submission +34.25%, 43 ClickToCall +13.16%); junk events excluded per the 2026-08-31 audit standard. Project cards and Lumen-did entries updated from the Steward's card list. Google Ads/Meta hero tile (7-day totals) and reviews tile are carried from 2026-09-24 / Aug 18 and were not refreshed in this payload."
 }
