@@ -23,11 +23,11 @@
       "sub": "Search only, statewide Florida",
       "state": "live",
       "delta": {
-        "text": "Live since Aug 27; still running on Spark's card, 28 days past the Aug 27 swap ask - approximately $460.60 fronted so far (budget-ceiling estimate: $16.45/day confirmed live budget x 28 elapsed days), climbing ~$16.45/day",
-        "tone": "watch"
+        "text": "Campaign ENABLED; delivery recovered to about 83 views/day after the billing fix (last verified 10/10)",
+        "tone": "good"
       },
-      "note": "Campaign confirmed ENABLED, $16.45/day. 29 keywords + 34 negative keywords live. Ad-copy variant B is now published live as PAUSED/APPROVED (Supermetrics write access resolved 9/22) - ready for Grant's one-click enable, no bid/budget/spend touched. Card-swap plan (Grant, 9/23): Domingo adds his own card during tomorrow's Fri 9/25 9:30am on-site visit; fronted-spend invoice decision stays separately open. Subtask 868m74bmw carries the recomputed figure and the three options.",
-      "source": "Google Ads CID 140-624-4786 - live Aug 27, 2026; re-tested Sept 24, 2026"
+      "note": "Campaign ENABLED at $16.45/day with 29 keywords and 34 negative keywords. Cost per lead is pending: this account is outside the 3 prioritised accounts the reporting connector allows (re-tested 10/16).",
+      "source": "Google Ads CID 140-624-4786 - last verified 2026-10-10; cost-per-lead check re-tested 2026-10-16"
     },
     {
       "key": "keywordsStaged",
@@ -47,10 +47,10 @@
       "label": "Google reviews (GBP)",
       "value": null,
       "state": "pending",
-      "pendingLabel": "Verification scheduled tomorrow",
-      "pendingSub": "Live video verification Fri 9/25, 9:30-10:30am ET, on-site at 4329 Fox Ridge Blvd (calendar event confirmed) - day 45 since the 8/10 ask",
-      "note": "No first-party review count is available until GBP verification comes through - that also unlocks local map-pack visibility and the Local Services Ads application. GBP profile config is pre-drafted and ready to paste in during or right after tomorrow's visit. LSA still also needs an insurance certificate and field-worker count from Domingo, both queued for the same visit.",
-      "source": "Google Business Profile (unverified) - status re-checked Sept 24, 2026"
+      "pendingLabel": "Verified, not yet public",
+      "pendingSub": "Business Profile verified since 10/6; still not showing in Search/Maps at the last browser check on 10/15",
+      "note": "No first-party review count is available until the profile is public in Search and Maps. The 10/14 Google Ads consult did happen; its summary covered bidding and tracking only, so it is unconfirmed whether the profile-visibility or LSA question was raised.",
+      "source": "VIP Steward status 2026-10-16 (last browser check 10/15)"
     },
     {
       "key": "ga4Traffic",
