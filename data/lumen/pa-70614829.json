@@ -1,7 +1,7 @@
 {
   "token": "pa-70614829",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-10-12",
+  "asOf": "2026-10-19",
   "cadence": "VIP Steward (Lumen Task Protocol, working run)",
   "business": {
     "name": "Projects Analytics",
@@ -19,13 +19,13 @@
     {
       "key": "costPerFormFill",
       "label": "Cost per form fill",
-      "value": "Sept final: $227.72 (4 tracked conversions / $910.89 spend). Oct 1-7: $251.90 (1 tracked conversion / $251.90 spend).",
+      "value": "Last 30 days: $307.10 (3 Ads-tracked conversions / $921.30 spend). Last 7 days: $181.88 spend, 56 clicks, 0 conversions.",
       "state": "live",
       "delta": {
-        "text": "Sept combined: 172 clicks, $910.89, 1780 impressions, 4 conversions across Asta Exact + Schedule Validator + Brand. Fresh Supermetrics pull 2026-10-08, not copied forward.",
+        "text": "30 days: 196 clicks, 1,975 impressions, $921.30, 3 conversions across Asta Exact + Schedule Validator + Brand. Fresh Supermetrics pull 2026-10-19.",
         "tone": "watch"
       },
-      "source": "Google Ads CID 711-790-3651 (account 7117903651) via Supermetrics data_query, pulled 2026-10-08"
+      "source": "Google Ads CID 711-790-3651 via Supermetrics, VIP Steward pull 2026-10-19"
     },
     {
       "key": "campaignStatus",
@@ -138,7 +138,7 @@
   "reviewsGapSource": "Projects Analytics sells direct to enterprise scheduling teams - there is no public review or map-pack program to compare against. Not applicable for this account.",
   "thisWeeksMove": {
     "label": "Dead-image cleanup at 15 posts left; Ads steady; generate_lead now imported to Google Ads",
-    "body": "Dead-image cleanup down to 15 posts remaining; Google Ads steady at standing budgets with no deviation; GA4 dashboard metric still pending Supermetrics authorization. On 10/13 the GA4 generate_lead event was imported into Google Ads as a Primary form-lead conversion and a test sign-up confirmed the demo form records a lead end to end (test lead removed).",
+    "body": "Campaigns are running at Grant's standing budgets (Asta $15/day, Schedule Validator $10/day, Brand $5/day, set 10/14) with zero Ads-tracked conversions this week. Re-verified 10/19 this is not spend against the 9/10 pause order (resolved 9/22). The one open item: the GA4 generate_lead conversion import is built and enabled but has not counted its first lead yet.",
     "cta": "Grant: OK the drafted GBP+LinkedIn content pack (8+10 posts, fully drafted) so it can go to Mary/Alan for their sign-off, and approve the Salesforce sender-identity swap if the permission classifier blocks Lumen again. Mary: still owed - the lead-magnet OK (asked 10/5) and the GBP profile answers (address, exterior photo, founding year, women-owned, socials, review list)."
   },
   "lumenDid": [

@@ -1,7 +1,7 @@
 {
   "token": "ss-90772982",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-10-15",
+  "asOf": "2026-10-19",
   "cadence": "weekly",
   "business": {
     "name": "Superior Spray Service",
@@ -45,28 +45,28 @@
     {
       "key": "ga4Leads",
       "label": "Form submissions + tap-to-calls (GA4) · last 30 days",
-      "value": "239",
-      "sub": "196 form submissions + 43 tap-to-calls, genuine events only",
+      "value": "226",
+      "sub": "182 form submissions + 44 tap-to-calls, genuine events only",
       "state": "live",
       "delta": {
-        "text": "form submissions up 34.25%, tap-to-calls up 13.16% vs the prior 30 days",
-        "tone": "good"
+        "text": "last 30 days; both are real lead actions (no page_view or engagement junk found)",
+        "tone": "neutral"
       },
       "note": "Leads = genuine form submits + click-to-call only (page_view/session_start/user_engagement excluded as junk events, per 2026-08-31 audit standard).",
-      "source": "GA4 property 299466800 · VIP Steward pull 2026-10-15, last 30 days, broken out by eventName"
+      "source": "GA4 property 299466800 · VIP Steward pull 2026-10-19, last 30 days"
     },
     {
       "key": "ga4Sessions",
       "label": "Website sessions · last 30 days",
-      "value": "6,685",
+      "value": "6,387",
       "sub": "vs prior 30 days",
       "state": "live",
       "delta": {
-        "text": "down 16.5% vs the prior 30 days",
+        "text": "down 21% vs the prior 30 days (8,148)",
         "tone": "watch"
       },
       "note": "Sessions are down 16.5% vs the prior 30 days (6,685 now), after four straight improving reads through 9/24. Lead actions still grew over the same window (form submissions +34.25%, tap-to-calls +13.16%), so the traffic that arrives is converting.",
-      "source": "GA4 property 299466800 · VIP Steward pull 2026-10-15, last 30 days vs prior 30 days"
+      "source": "GA4 property 299466800 · VIP Steward pull 2026-10-19, last 30 days vs prior 30 days"
     }
   ],
   "projectCards": [
@@ -173,11 +173,16 @@
   ],
   "reviewsGapSource": "Google Maps · Aug 18",
   "thisWeeksMove": {
-    "label": "GBP posting restored, PMax audit clean, Lakeland relocation ad live at $5/day",
-    "body": "GBP posting confirmed restored and the task closed; Google Ads PMax audit came back clean (no junk conversions); the Lakeland relocation Meta ad went live at $5/day; October blog, newsletter and social captions are all drafted and staged, waiting on Duda, Mailchimp and Meta Business Suite logins to actually go out.",
+    "label": "Real SEO gain: \"termite treatment lakeland\" jumped from position 21 to 6",
+    "body": "Found why content capture looked stalled for 9 months: Allison left the company in January, so the real new-footage channel is now the Pest Detectives podcast shoot dates, not her old Drive folder. Also a real SEO gain: termite treatment lakeland jumped from position 21 to 6.",
     "cta": "Send Kevin the real daily budget number for the RP Funding campaign (or confirm pivoting to the October show); publish the September blog in Duda"
   },
   "lumenDid": [
+    "Re-verified Mailchimp is still not connected (blocks the October newsletter and the overdue key rotation)",
+    "Ran a fresh Semrush check: real movement on Lakeland rankings, Milton flat",
+    "Pulled fresh GA4 hero metrics with a genuine-key-event check (no junk events this pass)",
+    "Checked Gmail for Kevin's approval on the blog post and podcast page: still not in hand",
+    "Traced the stale Allison-folder checks to her January departure and redirected the next check to the real footage source",
     "Reviewed your FieldRoutes lead sources for the last 30 days: Google search is driving your bookable leads, while Facebook shows next to none we can directly attribute. That is exactly why we are doubling down on Google Ads and the website.",
     "Rebuilt your Google Ads: lifted Ad Strength from Poor to Good, split Search into focused General Pest Control + Termite ad groups, and trimmed targeting to your 4 core counties so you stop paying for Tampa/Orlando clicks.",
     "Turned off the Meta 'Audience Network' placements that were driving low-quality clicks.",

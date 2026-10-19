@@ -1,7 +1,7 @@
 {
   "token": "hu-10004649",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-10-12",
+  "asOf": "2026-10-19",
   "cadence": "3x daily working run + Mon/Wed/Fri pulse",
   "business": {
     "name": "Humarian",
@@ -19,28 +19,28 @@
     {
       "key": "purchases",
       "label": "Purchases - last 7 days",
-      "value": "15",
-      "sub": "add_to_cart 53 in the same window (intentional conversion proxy, GA4 purchase attribution is broken post-checkout for this client); ATC:purchase ratio 3.5:1",
+      "value": "74",
+      "sub": "add_to_cart 316 in the same 30 days (intentional conversion proxy, reported side by side); ATC:purchase ratio 4.27:1",
       "state": "live",
       "delta": {
-        "text": "Purchases -21.1% vs prior 7 days (19), add_to_cart -11.7% (60), sessions -40.8% (2,914 to 1,725). Revenue +10.2% ($928.15 to $1,022.85) despite lower volume - average order value rose.",
-        "tone": "watch"
+        "text": "last 30 days; sessions 9,875 vs 9,979 prior 30 days (-1%)",
+        "tone": "neutral"
       },
       "note": "Shopify order-count cross-check still not possible - Supermetrics Shopify remains NOT_AUTHENTICATED (open ticket 868m6gb80, re-tested 2026-10-12).",
-      "source": "GA4 property 255641365 - pulled Oct 12, 2026 working run"
+      "source": "GA4 property 255641365 - VIP Steward pull 2026-10-19, last 30 days"
     },
     {
       "key": "addToCart",
       "label": "Add-to-cart - last 7 days",
-      "value": "53",
-      "sub": "purchases 15 in the same window - ratio 3.5:1 (intentional proxy, reported side by side, never flagged as junk)",
+      "value": "316",
+      "sub": "purchases 74 in the same 30 days - ratio 4.27:1 (intentional proxy, never flagged as junk)",
       "state": "live",
       "delta": {
-        "text": "Down 11.7% vs prior 7 days (60), tracking the sessions decline (-40.8%) rather than a conversion-rate problem.",
-        "tone": "watch"
+        "text": "last 30 days; sessions flat (-1%) vs the prior 30 days",
+        "tone": "neutral"
       },
       "note": "Sessions 1,725 this week vs 2,914 prior 7 days.",
-      "source": "GA4 property 255641365 - pulled Oct 12, 2026 working run"
+      "source": "GA4 property 255641365 - VIP Steward pull 2026-10-19, last 30 days"
     },
     {
       "key": "adsReach",
@@ -154,11 +154,14 @@
   ],
   "reviewsGapSource": "Judge.me public store page judge.me/reviews/stores/humarian.com, read 2026-10-13: store-wide 4.76 / 5 on 563 reviews (476 five-star, 61 four, 12 three, 4 two, 10 one; 52% verified). Smile Guard row is the earlier product-level read.",
   "thisWeeksMove": {
-    "label": "Restart decision for both paid channels lands tomorrow, 10/13",
-    "body": "Google Ads runs only Branded Search at its approved $22/day budget; Meta stays fully paused. Revenue is actually up 10.2% week over week on lower traffic. Everything needed to resume Meta is staged: two Sales-objective rebuilds ready to go live the moment Grant and Shawn approve at the 10/13 2pm call.",
+    "label": "Meta still paused awaiting approval; Branded Search efficiency slipping",
+    "body": "Meta has been fully paused since 10/2, awaiting Shawn Jr's approval to restart 2 Sales-goal campaigns at $6/day each. Google Ads Branded Search efficiency has dropped 3 days running (cost per conversion about $92 to $195, was $13 to $59 earlier in October); worth flagging to Shawn.",
     "cta": "No action needed before 10/13 - the decision is already on Grant's calendar."
   },
   "lumenDid": [
+    "Corrected a stale loop on 3 tasks (header copy, testimonial clearance, ChatGPT ads report) that falsely claimed items were queued into the Weekly Pulse email; verified against 6 actual Pulse sends and handed all 3 to Amber for real review.",
+    "Confirmed the PageFly question is already answered (loads globally, not used as real page content in any page sampled); it is now a pure Shopify-admin removal job.",
+    "Pulled fresh GA4, Google Ads and Meta reads across 9 monitoring tasks; Meta confirmed still $0 spend and fully paused.",
     "Oct 12 (VIP Steward working run): Re-pulled GA4, Google Ads and Meta 7-day-vs-prior-7 numbers; confirmed Branded Search tracking its approved budget exactly and Meta still fully paused; pushed this dashboard refresh.",
     "Oct 10 (prior pass): Re-pulled GA4/Ads/Meta live, confirmed both paid channels at zero spend.",
     "Oct 9: Caught Branded Search re-enabled and spending against the pause order; re-paused and confirmed independently.",

@@ -1,7 +1,7 @@
 {
   "token": "aim-39281056",
   "model": "lumen-marketing-engine-v1",
-  "asOf": "2026-10-16",
+  "asOf": "2026-10-19",
   "cadence": "Mon / Wed / Fri (VIP Steward)",
   "business": {
     "name": "AIM 4 Clean Air",
@@ -55,15 +55,15 @@
     {
       "key": "ga4Traffic",
       "label": "Website sessions - last 30 days",
-      "value": "242",
-      "sub": "204 total users - genuine lead events firing (30d): phone_click 14, form_submit 5, generate_lead 4, form_start 8, click 1",
+      "value": "254",
+      "sub": "genuine lead events (30d): phone_click 16, generate_lead 4",
       "state": "live",
       "delta": {
-        "text": "+103.36% vs prior 30 days; last 7 days: 71 sessions (+65.12%), 66 users (+88.57%)",
+        "text": "+93.89% vs prior 30 days (131); last 7 days: 64 sessions (-11.11%)",
         "tone": "up"
       },
       "note": "Traffic roughly doubled versus the prior 30 days, and the 7-day slice is up too (71 sessions, +65.12%). Lead signals in the last 30 days: 14 phone clicks, 5 form submissions, 4 qualified leads.",
-      "source": "GA4 property 549137267 via the VIP Steward pull 2026-10-16 - last 30 days and last 7 days"
+      "source": "GA4 property 549137267 via the VIP Steward pull 2026-10-19"
     }
   ],
   "projectCards": [
